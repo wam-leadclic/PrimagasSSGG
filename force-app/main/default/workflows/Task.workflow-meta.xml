@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Tareas_p_blicas</fullName>
+        <description>Para que los usuarios de las partner communities puedan ver el historial de tareas</description>
+        <field>IsVisibleInSelfService</field>
+        <literalValue>1</literalValue>
+        <name>Tareas públicas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Vto_tarea</fullName>
+        <description>Actualiza fecha de vencimiento cuando se crea una tarea a fecha de hoy+6</description>
+        <field>ReminderDateTime</field>
+        <formula>DATETIMEVALUE(TODAY()+7)</formula>
+        <name>Vto. tarea</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Tarea publica</fullName>
+        <actions>
+            <name>Tareas_p_blicas</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.IsVisibleInSelfService</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Para que los usuarios de partner community vean el historial de tareas</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update fecha vto tarea</fullName>
+        <actions>
+            <name>Vto_tarea</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Atención al cliente</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Gestión Comercial Clientes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Dirección Comercial</value>
+        </criteriaItems>
+        <description>Update fecha vto tarea cuando lo crea customer care</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

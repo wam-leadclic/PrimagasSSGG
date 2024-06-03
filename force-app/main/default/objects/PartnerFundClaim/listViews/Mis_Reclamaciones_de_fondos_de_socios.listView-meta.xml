@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_Reclamaciones_de_fondos_de_socios</fullName>
+    <filterScope>Mine</filterScope>
+    <label>Mis Reclamaciones de fondos de socios</label>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Membrete_notificacion_oferta_pendiente_de_aprobar</letterhead>
+    <name>Notificación oferta pendiente de aprobar (permitido firmar)</name>
+    <style>freeForm</style>
+    <subject>Oferta pendiente de aprobar</subject>
+    <textOnly>Estimado/a {!User.FirstName},
+
+Se le notifica que tiene la oferta &quot;{!Quote.Name}&quot; ({!Quote.Link}) pendiente de aprobar, cuyo contrato podía ser firmado sin aprobación:
+
+Total inversión: {!Quote.Total_inversion__c}
+Inversión no recuperable: {!Quote.Inversion_no_recuperable__c}
+Crédito: {!Quote.Credito__c}
+PB: {!Quote.PB__c}
+Total kg: {!Quote.Kg__c} kg
+Delegado comercial: {!Quote.Propietario_de_oportunidad__c}
+
+Un saludo</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

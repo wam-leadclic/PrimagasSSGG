@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ayudanos</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Satisfacci_n_a_la_resoluci_n__c</columns>
+    <columns>Rapidez_en_la_resoluci_n__c</columns>
+    <columns>Atenci_n_recibida_telef_nicamente__c</columns>
+    <columns>NPS__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>NPS_transaccional__c.Ay_danos_a_mejorar</value>
+    </filters>
+    <label>Ayúdanos a mejorar</label>
+    <language>es</language>
+</ListView>

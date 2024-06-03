@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dimension1__c</fullName>
+    <externalId>false</externalId>
+    <label>Dimensión 1 (Producto)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10-BULK</fullName>
+                <default>false</default>
+                <label>10-BULK</label>
+            </value>
+            <value>
+                <fullName>20-LNG</fullName>
+                <default>false</default>
+                <label>20-LNG</label>
+            </value>
+            <value>
+                <fullName>30-AUTOGAS</fullName>
+                <default>false</default>
+                <label>30-AUTOGAS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

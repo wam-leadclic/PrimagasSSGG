@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oferta_estandar</fullName>
+    <active>true</active>
+    <label>Oferta estándar</label>
+    <picklistValues>
+        <picklist>Contract_length__c</picklist>
+        <values>
+            <fullName>1 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 años</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 años</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Derechos_de_uso__c</picklist>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propiedad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servidumbre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uso</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entrega_de_Producto__c</picklist>
+        <values>
+            <fullName>Automática</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bajo pedido</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estacionalidad__c</picklist>
+        <values>
+            <fullName>Invierno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Líneal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verano</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado_instalaci_n__c</picklist>
+        <values>
+            <fullName>Activo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En ID</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado_tanque__c</picklist>
+        <values>
+            <fullName>Activo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En ID</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Financiacion_seleccionada__c</picklist>
+        <values>
+            <fullName>Financia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financia12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FinanciaGas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modalidad__c</picklist>
+        <values>
+            <fullName>Hágalo usted mismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modo_de_Pago_Forfait_3_mensualidades__c</picklist>
+        <values>
+            <fullName>%C2%BF%3F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opcion_seleccionada_producto__c</picklist>
+        <values>
+            <fullName>Contador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fijo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plana</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origen__c</picklist>
+        <values>
+            <fullName>Asociación gremio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avisio va PS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviso va chofer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaña márketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correo ordinario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUROS X KW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferias y eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info%40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamada call center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamada oficina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescriptores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospección directa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regalo doble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teleprospección</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origen_tipo_cliente_2__c</picklist>
+        <values>
+            <fullName>Cambio botellas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito BP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito CEPSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito REPSOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito VITOGAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Fuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Gasóleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nueva creación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origen_tipo_cliente__c</picklist>
+        <values>
+            <fullName>Cambio botellas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito BP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito CEPSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito REPSOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito VITOGAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Fuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Gasóleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nueva creación</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Perfil_base__c</picklist>
+        <values>
+            <fullName>100HOTEL VERANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120LINEAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12CASTELLON CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16CUENCA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17GIRONA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19GUADALAJARA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1VITORIA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20SAN SEBASTIAN CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22HUESCA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24LEON CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25LERIDA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26LOGROÑO CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28MADRID CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2ALBACETE CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31PAMPLONA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33ASTURIAS CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34PALENCIA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37SALAMANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39SANTANDER CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3ALICANTE CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40SEGOVIA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42SORIA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43TARRAGONA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44TERUEL CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45TOLEDO CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46VALENCIA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47VALLADOLID CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48BILBAO CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49ZAMORA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50ZARAGOZA  CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5AVILA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8BARCELONA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90SEGUNDA RESIDENCIA LINEAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95CAMPAÑA SECADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>97CLIENTE QUE DESEA SOLO LECTURAS REALES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9BURGOS CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA CORUÑA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUGO CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORENSE CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PONTEVEDRA CALEFACCION</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plantilla_entrada_datos__c</picklist>
+        <values>
+            <fullName>B-CENTRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B-ESTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B-NORTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEP%2EPROP%2EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEP%2EPROP%2EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEP%2EPROP%2EN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-CEN-AGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-CEN-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-CEN-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-CEN-IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-EST-AGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-EST-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-EST-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-ESTE-IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-NOR-AGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-NOR-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-NOR-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG-NOR-IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-CEN-IND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-CENT-AGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-CENT-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-CENT-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-ESTE-AGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-ESTE-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-ESTE-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-ESTE-IND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-NOR-AGRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-NOR-IND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-NORT-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P-NORT-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-CEN-H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-CEN-I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-EST-H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-EST-I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-NOR-H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATR-NOR-I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-PROM-CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-PROM-ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-PROM-NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-US-CENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-US-ESTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC-US-NORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTEC DOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTEC PROF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plazos_de_pago_gas__c</picklist>
+        <values>
+            <fullName>20 días</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 días</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros días</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prioridades_impacto__c</picklist>
+        <values>
+            <fullName>Impacto alto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impacto bajo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impacto medio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Producto_contratado__c</picklist>
+        <values>
+            <fullName>ACONDICIONAMIENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALQUILER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALTA PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-AGRICOLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-INCAEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-PERLIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-PUIGNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-SAUC-A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-SAUC-B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMO-SAULED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANTICIPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO TITULAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLOCACIÓN TELEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONEXION CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSIGNACION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COPIADOCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DESMONTAJE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPV ALQUILER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPV BUTANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPV GLP-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPV MANTENIMIENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPV PROPANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSCTO COMERCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dº ACOMETIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEE-FIJO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORFAIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP1 - NO STOCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP1-FUND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIEE CARBURANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIEE CARRETILLAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIEE EXENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIEE GLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INERTIZACION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LECTURA CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MANTENIMIENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTO TELEMEDIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIVELDIST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIVELDISTINST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIVELDISTMANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO CONSUMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUEVOS PRODUCTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRECINTO CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIMACONFORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROMOCIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ INSP EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ INSP INT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO DEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO EXTINTOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO METANOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO NIVEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ MTO VAPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ OC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ REPARACIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ RET EXTINTOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ RET OCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ RETIMBRADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ REV EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ REV INT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ REV OCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ S24H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAPPEL PROPANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAPPEL SOBRE VENTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECLM%2ESEGURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOL%2ECONTADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-BUROFAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-CONT%2EURGENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-DEVOL-RECIBOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-INMOV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-INTERESES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-LOG-FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-LOG-SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-RK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-TEC-08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REF-VARIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RET ETERNELLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETIRADA CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETIRADA DEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUSTIT CONT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SWAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TASA REV EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELEMEDIDA - EQUIPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELEMEDIDA - SERVTOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TFC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP INSP EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP MTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP MTO EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP MTO METANOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP MTO RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP OC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP REPARACIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP RET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP RET EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP RET OCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP REV EXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP REV INT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP REV OCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TP S24H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VACIADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VARIOS CON IVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VARIOS SIN IVA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Propiedad_del_tanque__c</picklist>
+        <values>
+            <fullName>Primagas</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Propio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provincia_env_o__c</picklist>
+        <values>
+            <fullName>A CORUÑA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALBACETE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALICANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALMERÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASTURIAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BADAJOZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BALEARES %28ILLES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARCELONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BURGOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANTABRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASTELLÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIUDAD REAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUENCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÁCERES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÁDIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÓRDOBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIRONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRANADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUADALAJARA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUIPÚZCOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUELVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUESCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAÉN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA RIOJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAS PALMAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LLEIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MELILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MURCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MÁLAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAVARRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OURENSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PONTEVEDRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SALAMANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SANTA CRUZ DE TENERIFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGOVIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEVILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TARRAGONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TERUEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOLEDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALLADOLID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIZCAYA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZAMORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZARAGOZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ÁLAVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ÁVILA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provincia_facturaci_n__c</picklist>
+        <values>
+            <fullName>A CORUÑA%2FLA CORUÑA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALAVA%2FARABA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALBACETE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALICANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALMERÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASTURIAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BADAJOZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BALEARES %28ILLES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARCELONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIZKAIA%2FVIZCAYA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BURGOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANTABRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASTELLÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIUDAD REAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUENCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÁCERES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÁDIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÓRDOBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIPUZKOA%2FGUIPUZCOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIRONA%2FGERONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRANADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUADALAJARA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUELVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUESCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAÉN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA RIOJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAS PALMAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LLEIDA%2FLÉRIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MELILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MURCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MÁLAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAVARRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORENSE%2FOURENSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PONTEVEDRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SALAMANCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SANTA CRUZ DE TENERIFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGOVIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEVILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TARRAGONA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TERUEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOLEDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALENCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALLADOLID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZAMORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZARAGOZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ÁVILA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reminder_Terms_Code__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INSP INT%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REV%2E INT%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Privado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Público</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Aprobada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caducado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No aprobada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente aprobación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente aprobación %28permitido firmar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparando</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TP_tipo_instalaci_n__c</picklist>
+        <values>
+            <fullName>3 mensualidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A recepción factura</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_Contrato__c</picklist>
+        <values>
+            <fullName>Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bienestar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depóstio propio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC Promotor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poliza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profesional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_cami_n__c</picklist>
+        <values>
+            <fullName>11 tns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19 tns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 tns</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_emplazamiento__c</picklist>
+        <values>
+            <fullName>Azotea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aéreo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semienterrado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_otros_ingresos__c</picklist>
+        <values>
+            <fullName>Primaservicios</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_deposito__c</picklist>
+        <values>
+            <fullName>Aéreo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterrado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_instalaci_n__c</picklist>
+        <values>
+            <fullName>Hágaselo usted mismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llave en mano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vaporizador__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sí</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

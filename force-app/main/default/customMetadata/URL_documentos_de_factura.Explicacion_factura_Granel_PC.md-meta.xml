@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Explicacion factura Granel PC</label>
+    <protected>false</protected>
+    <values>
+        <field>Tipo__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+    <values>
+        <field>URL__c</field>
+        <value xsi:type="xsd:string">https://primagas.my.salesforce.com/sfc/p/D0000000qW2D/a/2p00000018Gm/BxtPn1pYC2EFFHtDwME2FkCN_IVpD3LDjAK4FTSFCwY</value>
+    </values>
+</CustomMetadata>

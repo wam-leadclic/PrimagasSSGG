@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ERROR_GENERICO_GUARDAR_INCIDENCIA</label>
+    <protected>false</protected>
+    <values>
+        <field>Castellano__c</field>
+        <value xsi:type="xsd:string">No ha sido posible realizar el registro de la incidencia</value>
+    </values>
+    <values>
+        <field>Catalan__c</field>
+        <value xsi:type="xsd:string">No ha estat possible realitzar el registre de la incidència.</value>
+    </values>
+</CustomMetadata>

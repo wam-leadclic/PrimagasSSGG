@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modalidad_de_instalaci_n__c</fullName>
+    <externalId>false</externalId>
+    <label>Modalidad de instalación</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modular</fullName>
+                <default>true</default>
+                <label>Modular</label>
+            </value>
+            <value>
+                <fullName>Hágalo usted mismo</fullName>
+                <default>false</default>
+                <label>Hágalo usted mismo</label>
+            </value>
+            <value>
+                <fullName>Llave en mano</fullName>
+                <default>false</default>
+                <label>Llave en mano</label>
+            </value>
+            <value>
+                <fullName>Depósito propio</fullName>
+                <default>false</default>
+                <label>Depósito propio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

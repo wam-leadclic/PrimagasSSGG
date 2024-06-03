@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen_tipo_de_cliente__c</fullName>
+    <externalId>false</externalId>
+    <label>Origen tipo de cliente</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nueva Creación</fullName>
+                <default>false</default>
+                <label>Nueva Creación</label>
+            </value>
+            <value>
+                <fullName>Cambio Botellas</fullName>
+                <default>false</default>
+                <label>Cambio Botellas</label>
+            </value>
+            <value>
+                <fullName>Cambio Depósito REPSOL</fullName>
+                <default>false</default>
+                <label>Cambio Depósito REPSOL</label>
+            </value>
+            <value>
+                <fullName>Cambio Depósito CEPSA</fullName>
+                <default>false</default>
+                <label>Cambio Depósito CEPSA</label>
+            </value>
+            <value>
+                <fullName>Cambio Depósito BP</fullName>
+                <default>false</default>
+                <label>Cambio Depósito BP</label>
+            </value>
+            <value>
+                <fullName>Cambio Depósito VITOGÁS</fullName>
+                <default>false</default>
+                <label>Cambio Depósito VITOGÁS</label>
+            </value>
+            <value>
+                <fullName>Cambio Depósito OTRO</fullName>
+                <default>false</default>
+                <label>Cambio Depósito OTRO</label>
+            </value>
+            <value>
+                <fullName>Cambio Energía Electricidad</fullName>
+                <default>false</default>
+                <label>Cambio Energía Electricidad</label>
+            </value>
+            <value>
+                <fullName>Cambio Energía Fuel</fullName>
+                <default>false</default>
+                <label>Cambio Energía Fuel</label>
+            </value>
+            <value>
+                <fullName>Cambio Energía Gasóleo</fullName>
+                <default>false</default>
+                <label>Cambio Energía Gasóleo</label>
+            </value>
+            <value>
+                <fullName>Cambio Energía Otro</fullName>
+                <default>false</default>
+                <label>Cambio Energía Otro</label>
+            </value>
+            <value>
+                <fullName>Galp</fullName>
+                <default>false</default>
+                <label>Galp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[Hola&nbsp;{!ApprovalRequest__c.Approver__c},<div><br></div><div>Tiene la siguiente solicitud pendiente de aprobar: {!ApprovalRequest__c.Link}.</div><div><br></div><div>A continuación se muestran las métricas que debe aprobar:</div><div><br></div><div><ul><li>Crédito ({!ApprovalRequest__c.CheckCredit__c}):&nbsp;{!ApprovalRequest__c.Credit__c}</li><li>Inversión ({!ApprovalRequest__c.CheckInvestment__c}):&nbsp;{!ApprovalRequest__c.Investment__c}</li><li>PBA ({!ApprovalRequest__c.CheckPBA__c}):&nbsp;{!ApprovalRequest__c.PBA__c}</li><li>Margen Gas ({!ApprovalRequest__c.CheckGasPriceRange__c}):&nbsp;{!ApprovalRequest__c.GasPriceRange__c}</li><li>Inversión no recuperable ({!ApprovalRequest__c.CheckNonRecoveryInvestment__c}):&nbsp;{!ApprovalRequest__c.NonRecoveryInvestment__c}</li></ul><div>Por favor, proceda a su revisión</div></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

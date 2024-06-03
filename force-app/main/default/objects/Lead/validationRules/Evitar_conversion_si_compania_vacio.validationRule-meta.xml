@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evitar_conversion_si_compania_vacio</fullName>
+    <active>true</active>
+    <description>El campo compañía del candidato debe estar informado</description>
+    <errorConditionFormula>AND(IsConverted , ISBLANK(Company))</errorConditionFormula>
+    <errorMessage>El campo compañía del candidato debe estar informado</errorMessage>
+</ValidationRule>

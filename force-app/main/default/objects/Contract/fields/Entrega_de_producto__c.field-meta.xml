@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entrega_de_producto__c</fullName>
+    <externalId>false</externalId>
+    <label>Entrega de producto</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automática</fullName>
+                <default>false</default>
+                <label>Automática</label>
+            </value>
+            <value>
+                <fullName>Semi-automática</fullName>
+                <default>false</default>
+                <label>Semi-automática</label>
+            </value>
+            <value>
+                <fullName>Bajo pedido</fullName>
+                <default>false</default>
+                <label>Bajo pedido</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

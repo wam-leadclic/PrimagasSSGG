@@ -1,0 +1,152 @@
+<apex:page showHeader="false" sidebar="false" controller="PreferenciasController" title="Mis preferencias">
+    
+    <style type="text/css">
+        table
+        {
+            width: 40%;
+        }
+
+        body
+        {
+            font-size: 95%;
+        }
+
+        .boton
+        {
+            box-shadow: none !important;
+            font-family: Arial !important;
+            font-size: 1.08em !important;
+            background-color: #e20613 !important;
+            background-image: -webkit-linear-gradient(top, #e20613 0, #e20613 100%) !important;
+            display: inline-block !important;
+            padding-top: 0 !important;
+            padding-bottom: 1px !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            height: 40px !important;
+            width: 20% !important;
+            color: #fff !important;
+            border-radius: 2px !important;
+            margin: 0 !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
+            padding: 3px 6px !important;
+            overflow: visible !important;
+            cursor: pointer !important;
+            position: relative !important;
+            background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top ,  #e20613 0px,  #e20613 100%) repeat scroll 0 0 !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function hideContent()
+        {
+            document.querySelector('[id$="errorMsg"]').style.display="none";
+        }
+    </script>
+
+    <div >
+        <apex:form >
+            <apex:actionFunction name="showInfo1" action="{!showInfo1}" reRender="info"/>
+            <apex:actionFunction name="showInfo2" action="{!showInfo2}" reRender="info"/>
+            <apex:actionFunction name="showInfo3" action="{!showInfo3}" reRender="info"/>
+            
+            <apex:outputPanel id="errorMsg" onclick="hideContent()" >
+                <apex:pageMessages escape="false"/> 
+            </apex:outputPanel>
+            <apex:outputPanel >
+                 
+                <div align="center" valign="top">
+                    <apex:outputPanel >
+                        <div>
+                            <apex:image url="{!$Resource.LogoPrimagas}" width="25%" height="25%"/>
+                        </div>
+                    </apex:outputPanel>
+                </div>
+                
+                <apex:outputPanel rendered="{!persona!=null}" id="info">
+                    <div align="center">                
+                        <br/>
+                        <table>
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!$Label.Intro}"/>                                  
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        
+                        <table>        
+                            <tr>
+                                <td>
+                                    <apex:outputText value="Autorización de comunicaciones:" style="font-weight: bold; text-decoration: underline;"/>
+                                </td>
+                            </tr>
+                            <tr><td height="10"></td></tr>
+                            <tr>
+                                <td>
+                                    <apex:inputCheckbox value="{!promocionesDespues}" label="Test"/>   
+                                    <apex:outputText value="{!$Label.Campanyas_y_promociones}" escape="false"/>
+                                    &nbsp;
+                                    <apex:image id="infoImage1" value="{!$Resource.Info}" width="12" height="12" alt="Mas información" onclick="showInfo1()" title="Pulsa para ver más información"/>       
+                                </td>
+                            </tr>
+                            <tr><td height="10"></td></tr>
+                            <apex:outputText value="{!$Label.Campanyas_y_promociones_extension}" escape="false" rendered="{!info1}"/>         
+                            <tr><td height="10"></td></tr>
+                            <tr>
+                                <td>
+                                    <apex:inputCheckbox value="{!encuestasDespues}"/>   
+                                    <apex:outputText value="{!$Label.Encuestas_de_satisfaccion}" escape="false"/>
+                                    &nbsp;
+                                    <apex:image id="infoImage2" value="{!$Resource.Info}" width="12" height="12" alt="Mas información" onclick="showInfo2()" title="Pulsa para ver más información"/>       
+                                </td>
+                            </tr>
+                            <tr><td height="10"></td></tr>
+                            <apex:outputText value="{!$Label.Encuestas_de_satisfaccion_extension}" escape="false" rendered="{!info2}"/>
+                        </table>                    
+                        <br/>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <apex:outputText value="Fines y derechos" style="font-weight: bold; text-decoration: underline;"/>
+                                    &nbsp;
+                                    <apex:image id="infoImage3" value="{!$Resource.Info}" width="12" height="12" alt="Mas información" onclick="showInfo3()" title="Pulsa para ver más información"/> 
+                                </td>
+                            </tr>
+                        </table>                        
+                        <apex:outputPanel rendered="{!info3}">
+                            <div align="center">
+                            <table>         
+                                <tr><td height="10" ></td></tr>                                 
+                                <apex:outputText value="{!$Label.Disclaimer}" escape="false" /> 
+                                <tr><td height="10" ></td></tr>             
+                                <apex:outputText value="{!$Label.Fin_de_los_tratamientos}" escape="false" />
+                                <tr><td height="10" ></td></tr> 
+                                <apex:outputText value="{!$Label.Criterios_de_conservacion}" escape="false" />
+                                <tr><td height="10" ></td></tr>
+                                <apex:outputText value="{!$Label.Comunicacion_de_los_datos}" escape="false" />
+                                <tr><td height="10" ></td></tr> 
+                                <apex:outputText value="{!$Label.Derechos}" escape="false" />
+                                <tr><td height="10" ></td></tr>
+                                <apex:outputText value="{!$Label.Datos_de_contacto}" escape="false" />
+                                <tr><td height="10" ></td></tr> 
+                            </table>
+                        </div>
+                        </apex:outputPanel>
+                    </div>
+                    <br/>
+                    <div align="center">
+                        <apex:commandButton action="{!actualizarDatosCliente}" value="Aceptar" id="botonActualizar" styleClass="boton"/>
+                    </div>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!persona==null}">
+                    <div align="center">
+                        <apex:outputText value="{!$Label.Hash_invalido}" escape="false"/>
+                    </div>
+                </apex:outputPanel>
+            </apex:outputPanel>
+        </apex:form>
+    </div>
+</apex:page>

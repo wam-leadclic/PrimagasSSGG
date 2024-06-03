@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clientes</fullName>
+    <description>Conversión de un prospect de cliente a cliente</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>0%2E Ahora no</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>0%2E No válido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>0%2E- Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>1%2E Candidato</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>1%2E- Suspect</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>2%2E Cualificado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>2%2E- Cold Lead</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>3%2E- Hot Lead</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>4%2E- Prospect%3A Contacted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>5%2E- Offer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>6%2E- Customer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Convertido</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

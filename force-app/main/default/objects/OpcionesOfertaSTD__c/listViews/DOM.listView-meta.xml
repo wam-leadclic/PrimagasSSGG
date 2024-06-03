@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOM</fullName>
+    <columns>NAME</columns>
+    <columns>Oferta__c</columns>
+    <columns>Caldera__c</columns>
+    <columns>Contador__c</columns>
+    <columns>Activo__c</columns>
+    <columns>CuotaMensual__c</columns>
+    <columns>Desde__c</columns>
+    <columns>Dto_E_Kg__c</columns>
+    <columns>DuracionDto__c</columns>
+    <columns>Inspeccion_interiores_obligatoria_DOM__c</columns>
+    <columns>Inspeccion_interiores_obligatoria_PROF__c</columns>
+    <columns>InversionSinDeposito__c</columns>
+    <columns>Mantenimiento_bianual__c</columns>
+    <columns>OpcExterior__c</columns>
+    <columns>Resolucion_anticipada__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oferta__c</field>
+        <operation>contains</operation>
+        <value>DOM</value>
+    </filters>
+    <filters>
+        <field>Desde__c</field>
+        <operation>equals</operation>
+        <value>750</value>
+    </filters>
+    <label>DOM 750</label>
+    <language>es</language>
+</ListView>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Perfil_base__c</fullName>
+    <externalId>false</externalId>
+    <label>Perfil base</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1VITORIA CALEFACCION</fullName>
+                <default>false</default>
+                <label>1VITORIA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>2ALBACETE CALEFACCION</fullName>
+                <default>false</default>
+                <label>2ALBACETE CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>3ALICANTE CALEFACCION</fullName>
+                <default>false</default>
+                <label>3ALICANTE CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>5AVILA CALEFACCION</fullName>
+                <default>false</default>
+                <label>5AVILA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>8BARCELONA CALEFACCION</fullName>
+                <default>false</default>
+                <label>8BARCELONA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>9BURGOS CALEFACCION</fullName>
+                <default>false</default>
+                <label>9BURGOS CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>100HOTEL VERANO</fullName>
+                <default>false</default>
+                <label>100HOTEL VERANO</label>
+            </value>
+            <value>
+                <fullName>12CASTELLON CALEFACCION</fullName>
+                <default>false</default>
+                <label>12CASTELLON CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>120LINEAL</fullName>
+                <default>false</default>
+                <label>120LINEAL</label>
+            </value>
+            <value>
+                <fullName>16CUENCA CALEFACCION</fullName>
+                <default>false</default>
+                <label>16CUENCA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>17GIRONA CALEFACCION</fullName>
+                <default>false</default>
+                <label>17GIRONA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>19GUADALAJARA CALEFACCION</fullName>
+                <default>false</default>
+                <label>19GUADALAJARA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>20SAN SEBASTIAN CALEFACCION</fullName>
+                <default>false</default>
+                <label>20SAN SEBASTIAN CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>22HUESCA CALEFACCION</fullName>
+                <default>false</default>
+                <label>22HUESCA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>24LEON CALEFACCION</fullName>
+                <default>false</default>
+                <label>24LEON CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>25LERIDA CALEFACCION</fullName>
+                <default>false</default>
+                <label>25LERIDA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>26LOGROÑO CALEFACCION</fullName>
+                <default>false</default>
+                <label>26LOGROÑO CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>28MADRID CALEFACCION</fullName>
+                <default>false</default>
+                <label>28MADRID CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>31PAMPLONA CALEFACCION</fullName>
+                <default>false</default>
+                <label>31PAMPLONA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>33ASTURIAS CALEFACCION</fullName>
+                <default>false</default>
+                <label>33ASTURIAS CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>34PALENCIA CALEFACCION</fullName>
+                <default>false</default>
+                <label>34PALENCIA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>37SALAMANCA</fullName>
+                <default>false</default>
+                <label>37SALAMANCA</label>
+            </value>
+            <value>
+                <fullName>39SANTANDER CALEFACCION</fullName>
+                <default>false</default>
+                <label>39SANTANDER CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>40SEGOVIA CALEFACCION</fullName>
+                <default>false</default>
+                <label>40SEGOVIA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>42SORIA CALEFACCION</fullName>
+                <default>false</default>
+                <label>42SORIA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>43TARRAGONA CALEFACCION</fullName>
+                <default>false</default>
+                <label>43TARRAGONA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>44TERUEL CALEFACCION</fullName>
+                <default>false</default>
+                <label>44TERUEL CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>45TOLEDO CALEFACCION</fullName>
+                <default>false</default>
+                <label>45TOLEDO CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>46VALENCIA CALEFACCION</fullName>
+                <default>false</default>
+                <label>46VALENCIA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>47VALLADOLID CALEFACCION</fullName>
+                <default>false</default>
+                <label>47VALLADOLID CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>48BILBAO CALEFACCION</fullName>
+                <default>false</default>
+                <label>48BILBAO CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>49ZAMORA CALEFACCION</fullName>
+                <default>false</default>
+                <label>49ZAMORA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>50ZARAGOZA  CALEFACCION</fullName>
+                <default>false</default>
+                <label>50ZARAGOZA  CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>90SEGUNDA RESIDENCIA LINEAL</fullName>
+                <default>false</default>
+                <label>90SEGUNDA RESIDENCIA LINEAL</label>
+            </value>
+            <value>
+                <fullName>95CAMPAÑA SECADO</fullName>
+                <default>false</default>
+                <label>95CAMPAÑA SECADO</label>
+            </value>
+            <value>
+                <fullName>97CLIENTE QUE DESEA SOLO LECTURAS REALES</fullName>
+                <default>false</default>
+                <label>97CLIENTE QUE DESEA SOLO LECTURAS REALES</label>
+            </value>
+            <value>
+                <fullName>ORENSE CALEFACCION</fullName>
+                <default>false</default>
+                <label>ORENSE CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>LA CORUÑA CALEFACCION</fullName>
+                <default>false</default>
+                <label>LA CORUÑA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>PONTEVEDRA CALEFACCION</fullName>
+                <default>false</default>
+                <label>PONTEVEDRA CALEFACCION</label>
+            </value>
+            <value>
+                <fullName>LUGO CALEFACCION</fullName>
+                <default>false</default>
+                <label>LUGO CALEFACCION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

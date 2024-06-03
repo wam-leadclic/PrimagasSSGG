@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Copiar_valor_credito_en_credito_divisa</fullName>
+        <field>Credito_divisa__c</field>
+        <formula>Credito__c</formula>
+        <name>Copiar valor crédito en crédito (divisa)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copiar campo %22Crédito%22</fullName>
+        <actions>
+            <name>Copiar_valor_credito_en_credito_divisa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Copia el valor del campo fórmula &quot;Crédito&quot; en el campo divisa &quot;Crédito (divisa)&quot; para poder rellenar el campo resumen &quot;Crédito&quot; del presupuesto con la suma de los créditos de todos los depósitos del presupuesto.</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

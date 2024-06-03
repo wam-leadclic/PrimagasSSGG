@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>conv_importe_term_fijo__c</fullName>
+    <description>No borrar, se usa para la integración con Docusign</description>
+    <externalId>false</externalId>
+    <formula>IF(Importe_t_rmino_fijo__c &lt; 1, &apos;0&apos;&amp;TEXT(Importe_t_rmino_fijo__c), TEXT(Importe_t_rmino_fijo__c))</formula>
+    <label>conv_importe_term_fijo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

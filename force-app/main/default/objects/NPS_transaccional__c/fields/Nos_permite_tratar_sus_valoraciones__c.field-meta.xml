@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nos_permite_tratar_sus_valoraciones__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Si fuese necesario, ¿nos permite tratar sus valoraciones con nuestro servicio de gestión de incidencias?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Si fuese necesario, ¿nos permite tratar sus valoraciones con nuestro servicio de gestión de incidencias?</inlineHelpText>
+    <label>¿Nos permite tratar sus valoraciones?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

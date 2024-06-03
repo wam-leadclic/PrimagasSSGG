@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consultar_sharepoint</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Consultar sharepoint</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://shvenergy.sharepoint.com/sites/es-primagas-documentacion/clientes/Forms/AllFiles.aspx?newTargetListUrl=%2Fsites%2Fes%2Dprimagas%2Ddocumentacion%2Fclientes&amp;viewpath=%2Fsites%2Fes%2Dprimagas%2Ddocumentacion%2Fclientes%2FForms%2FAllFiles%2Easpx&amp;viewid=c0ffde87%2Dbce2%2D4c0b%2D9ef7%2D863fc399303a&amp;id=%2Fsites%2Fes%2Dprimagas%2Ddocumentacion%2Fclientes%2F{!Account.Id_Navision__c}</url>
+</WebLink>

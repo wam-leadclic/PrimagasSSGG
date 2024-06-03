@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_del_contrato_actual__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado del contrato actual</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Contrato en vigor</fullName>
+                <default>false</default>
+                <label>Contrato en vigor</label>
+            </value>
+            <value>
+                <fullName>Contrato finalizado</fullName>
+                <default>false</default>
+                <label>Contrato finalizado</label>
+            </value>
+            <value>
+                <fullName>Sin contrato</fullName>
+                <default>false</default>
+                <label>Sin contrato</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

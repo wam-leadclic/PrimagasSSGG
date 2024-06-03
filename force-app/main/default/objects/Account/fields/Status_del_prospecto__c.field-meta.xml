@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_del_prospecto__c</fullName>
+    <description>Campo para marcar calcular el status prima_LNG_cuando se convierte el prospecto.</description>
+    <externalId>false</externalId>
+    <label>Estado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5.- Offer</fullName>
+                <default>true</default>
+                <label>5.- Offer</label>
+            </value>
+            <value>
+                <fullName>6.- Customer</fullName>
+                <default>false</default>
+                <label>6.- Customer</label>
+            </value>
+            <value>
+                <fullName>0.- Lost</fullName>
+                <default>false</default>
+                <label>0.- Lost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

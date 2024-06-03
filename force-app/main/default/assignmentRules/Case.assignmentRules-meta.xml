@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Casos a Primagas Telper</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>telper1@primagas.es</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Casos cola abinitio</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Cola_Abinitio</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Abinitio</value>
+            </criteriaItems>
+            <overrideExistingTeams>true</overrideExistingTeams>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>De Joan a Primagas Telper</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Primagas_ATC_Granel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Cola_Abinitio</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Abinitio</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Primagas_ATC_Granel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Eva Calabuig</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Irene Castilla</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Soledad Machado</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Monica Sala</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Sili Llorens</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Victor Gomez</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Primagas_ATC_Granel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND ( 2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Account.Segmento1__c</field>
+                <operation>equals</operation>
+                <value>Depósito</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.UserRoleId</field>
+                <operation>equals</operation>
+                <value>TELPER Socio Usuario</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.UserRoleId</field>
+                <operation>equals</operation>
+                <value>ABINITIO Canalizados Socio Usuario</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Primagas_Contador</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.Segmento1__c</field>
+                <operation>equals</operation>
+                <value>Canalizado</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.UserRoleId</field>
+                <operation>equals</operation>
+                <value>TELPER Socio Usuario</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Primagas_ATC_Canalizado</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Account.Segmento1__c</field>
+                <operation>equals</operation>
+                <value>Canalizado</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.UserRoleId</field>
+                <operation>equals</operation>
+                <value>ABINITIO Canalizados Socio Usuario</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>true</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

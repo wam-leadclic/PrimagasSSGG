@@ -1,0 +1,2465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CNAE3__c</fullName>
+    <externalId>false</externalId>
+    <label>CNAE3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CNAE2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>011 - Cultivos no perennes</fullName>
+                <default>false</default>
+                <label>011 - Cultivos no perennes</label>
+            </value>
+            <value>
+                <fullName>012 - Cultivos perennes</fullName>
+                <default>false</default>
+                <label>012 - Cultivos perennes</label>
+            </value>
+            <value>
+                <fullName>013 - Propagación de plantas</fullName>
+                <default>false</default>
+                <label>013 - Propagación de plantas</label>
+            </value>
+            <value>
+                <fullName>014 - Producción ganadera</fullName>
+                <default>false</default>
+                <label>014 - Producción ganadera</label>
+            </value>
+            <value>
+                <fullName>015 - Producción agrícola combinada con la producción ganadera</fullName>
+                <default>false</default>
+                <label>015 - Producción agrícola combinada con la producción ganadera</label>
+            </value>
+            <value>
+                <fullName>016 - Act. de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha</fullName>
+                <default>false</default>
+                <label>016 - Act. de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha</label>
+            </value>
+            <value>
+                <fullName>017 - Caza, captura de animales y servicios relacionados con las mismas</fullName>
+                <default>false</default>
+                <label>017 - Caza, captura de animales y servicios relacionados con las mismas</label>
+            </value>
+            <value>
+                <fullName>021 - Silvicultura y otras Act. forestales</fullName>
+                <default>false</default>
+                <label>021 - Silvicultura y otras Act. forestales</label>
+            </value>
+            <value>
+                <fullName>022 - Explotación de la madera</fullName>
+                <default>false</default>
+                <label>022 - Explotación de la madera</label>
+            </value>
+            <value>
+                <fullName>023 - Recolección de productos silvestres, excepto madera</fullName>
+                <default>false</default>
+                <label>023 - Recolección de productos silvestres, excepto madera</label>
+            </value>
+            <value>
+                <fullName>024 - Servicios de apoyo a la silvicultura</fullName>
+                <default>false</default>
+                <label>024 - Servicios de apoyo a la silvicultura</label>
+            </value>
+            <value>
+                <fullName>031 - Pesca</fullName>
+                <default>false</default>
+                <label>031 - Pesca</label>
+            </value>
+            <value>
+                <fullName>032 - Acuicultura</fullName>
+                <default>false</default>
+                <label>032 - Acuicultura</label>
+            </value>
+            <value>
+                <fullName>051 - Extracción de antracita y hulla</fullName>
+                <default>false</default>
+                <label>051 - Extracción de antracita y hulla</label>
+            </value>
+            <value>
+                <fullName>052 - Extracción de lignito</fullName>
+                <default>false</default>
+                <label>052 - Extracción de lignito</label>
+            </value>
+            <value>
+                <fullName>061 - Extracción de crudo de petróleo</fullName>
+                <default>false</default>
+                <label>061 - Extracción de crudo de petróleo</label>
+            </value>
+            <value>
+                <fullName>062 - Extracción de gas natural</fullName>
+                <default>false</default>
+                <label>062 - Extracción de gas natural</label>
+            </value>
+            <value>
+                <fullName>071 - Extracción de minerales de hierro</fullName>
+                <default>false</default>
+                <label>071 - Extracción de minerales de hierro</label>
+            </value>
+            <value>
+                <fullName>072 - Extracción de minerales metálicos no férreos</fullName>
+                <default>false</default>
+                <label>072 - Extracción de minerales metálicos no férreos</label>
+            </value>
+            <value>
+                <fullName>081 - Extracción de piedra, arena y arcilla</fullName>
+                <default>false</default>
+                <label>081 - Extracción de piedra, arena y arcilla</label>
+            </value>
+            <value>
+                <fullName>089 - Industrias extractivas n.c.o.p.</fullName>
+                <default>false</default>
+                <label>089 - Industrias extractivas n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>091 - Act. de apoyo a la extracción de petróleo y gas natural</fullName>
+                <default>false</default>
+                <label>091 - Act. de apoyo a la extracción de petróleo y gas natural</label>
+            </value>
+            <value>
+                <fullName>099 - Act. de apoyo a otras industrias extractivas</fullName>
+                <default>false</default>
+                <label>099 - Act. de apoyo a otras industrias extractivas</label>
+            </value>
+            <value>
+                <fullName>101 - Procesado y conservación de carne y elaboración de productos cárnicos</fullName>
+                <default>false</default>
+                <label>101 - Procesado y conservación de carne y elaboración de productos cárnicos</label>
+            </value>
+            <value>
+                <fullName>102 - Procesado y conservación de pescados, crustáceos y moluscos</fullName>
+                <default>false</default>
+                <label>102 - Procesado y conservación de pescados, crustáceos y moluscos</label>
+            </value>
+            <value>
+                <fullName>103 - Procesado y conservación de frutas y hortalizas</fullName>
+                <default>false</default>
+                <label>103 - Procesado y conservación de frutas y hortalizas</label>
+            </value>
+            <value>
+                <fullName>104 - Fab. de aceites y grasas vegetales y animales</fullName>
+                <default>false</default>
+                <label>104 - Fab. de aceites y grasas vegetales y animales</label>
+            </value>
+            <value>
+                <fullName>105 - Fab. de productos lácteos</fullName>
+                <default>false</default>
+                <label>105 - Fab. de productos lácteos</label>
+            </value>
+            <value>
+                <fullName>106 - Fab. de productos de molinería, almidones y productos amiláceos</fullName>
+                <default>false</default>
+                <label>106 - Fab. de productos de molinería, almidones y productos amiláceos</label>
+            </value>
+            <value>
+                <fullName>107 - Fab. de productos de panadería y pastas alimenticias</fullName>
+                <default>false</default>
+                <label>107 - Fab. de productos de panadería y pastas alimenticias</label>
+            </value>
+            <value>
+                <fullName>108 - Fab. de otros productos alimenticios</fullName>
+                <default>false</default>
+                <label>108 - Fab. de otros productos alimenticios</label>
+            </value>
+            <value>
+                <fullName>109 - Fab. de productos para la alimentación animal</fullName>
+                <default>false</default>
+                <label>109 - Fab. de productos para la alimentación animal</label>
+            </value>
+            <value>
+                <fullName>110 - Fab. de bebidas</fullName>
+                <default>false</default>
+                <label>110 - Fab. de bebidas</label>
+            </value>
+            <value>
+                <fullName>120 - Industria del tabaco</fullName>
+                <default>false</default>
+                <label>120 - Industria del tabaco</label>
+            </value>
+            <value>
+                <fullName>131 - Preparación e hilado de fibras textiles</fullName>
+                <default>false</default>
+                <label>131 - Preparación e hilado de fibras textiles</label>
+            </value>
+            <value>
+                <fullName>132 - Fab. de tejidos textiles</fullName>
+                <default>false</default>
+                <label>132 - Fab. de tejidos textiles</label>
+            </value>
+            <value>
+                <fullName>133 - Acabado de textiles</fullName>
+                <default>false</default>
+                <label>133 - Acabado de textiles</label>
+            </value>
+            <value>
+                <fullName>139 - Fab. de otros productos textiles</fullName>
+                <default>false</default>
+                <label>139 - Fab. de otros productos textiles</label>
+            </value>
+            <value>
+                <fullName>141 - Confección de prendas de vestir, excepto de peletería</fullName>
+                <default>false</default>
+                <label>141 - Confección de prendas de vestir, excepto de peletería</label>
+            </value>
+            <value>
+                <fullName>142 - Fab. de artículos de peletería</fullName>
+                <default>false</default>
+                <label>142 - Fab. de artículos de peletería</label>
+            </value>
+            <value>
+                <fullName>143 - Confección de prendas de vestir de punto</fullName>
+                <default>false</default>
+                <label>143 - Confección de prendas de vestir de punto</label>
+            </value>
+            <value>
+                <fullName>151 - Preparación, curtido y acabado del cuero; Fab. de artículos de marroquinería, viaje y de guarnicionería y talabartería; preparación y teñido de pieles</fullName>
+                <default>false</default>
+                <label>151 - Preparación, curtido y acabado del cuero; Fab. de artículos de marroquinería, viaje y de guarnicionería y talabartería; preparación y teñido de pieles</label>
+            </value>
+            <value>
+                <fullName>152 - Fab. de calzado</fullName>
+                <default>false</default>
+                <label>152 - Fab. de calzado</label>
+            </value>
+            <value>
+                <fullName>161 - Aserrado y cepillado de la madera</fullName>
+                <default>false</default>
+                <label>161 - Aserrado y cepillado de la madera</label>
+            </value>
+            <value>
+                <fullName>162 - Fab. de productos de madera, corcho, cestería y espartería</fullName>
+                <default>false</default>
+                <label>162 - Fab. de productos de madera, corcho, cestería y espartería</label>
+            </value>
+            <value>
+                <fullName>171 - Fab. de pasta papelera, papel y cartón</fullName>
+                <default>false</default>
+                <label>171 - Fab. de pasta papelera, papel y cartón</label>
+            </value>
+            <value>
+                <fullName>172 - Fab. de artículos de papel y de cartón</fullName>
+                <default>false</default>
+                <label>172 - Fab. de artículos de papel y de cartón</label>
+            </value>
+            <value>
+                <fullName>181 - Artes gráficas y servicios relacionados con las mismas</fullName>
+                <default>false</default>
+                <label>181 - Artes gráficas y servicios relacionados con las mismas</label>
+            </value>
+            <value>
+                <fullName>182 - Reproducción de soportes grabados</fullName>
+                <default>false</default>
+                <label>182 - Reproducción de soportes grabados</label>
+            </value>
+            <value>
+                <fullName>191 - Coquerías</fullName>
+                <default>false</default>
+                <label>191 - Coquerías</label>
+            </value>
+            <value>
+                <fullName>192 - Refino de petróleo</fullName>
+                <default>false</default>
+                <label>192 - Refino de petróleo</label>
+            </value>
+            <value>
+                <fullName>201 - Fab. de productos químicos básicos, compuestos nitrogenados, fertilizantes, plásticos y caucho sintético en formas primarias</fullName>
+                <default>false</default>
+                <label>201 - Fab. de productos químicos básicos, compuestos nitrogenados, fertilizantes, plásticos y caucho sintético en formas primarias</label>
+            </value>
+            <value>
+                <fullName>202 - Fab. de pesticidas y otros productos agroquímicos</fullName>
+                <default>false</default>
+                <label>202 - Fab. de pesticidas y otros productos agroquímicos</label>
+            </value>
+            <value>
+                <fullName>203 - Fab. de pinturas, barnices y revestimientos similares; tintas de imprenta y masillas</fullName>
+                <default>false</default>
+                <label>203 - Fab. de pinturas, barnices y revestimientos similares; tintas de imprenta y masillas</label>
+            </value>
+            <value>
+                <fullName>204 - Fab. de jabones, detergentes y otros artículos de limpieza y abrillantamiento; Fab. de perfumes y cosméticos</fullName>
+                <default>false</default>
+                <label>204 - Fab. de jabones, detergentes y otros artículos de limpieza y abrillantamiento; Fab. de perfumes y cosméticos</label>
+            </value>
+            <value>
+                <fullName>205 - Fab. de otros productos químicos</fullName>
+                <default>false</default>
+                <label>205 - Fab. de otros productos químicos</label>
+            </value>
+            <value>
+                <fullName>206 - Fab. de fibras artificiales y sintéticas</fullName>
+                <default>false</default>
+                <label>206 - Fab. de fibras artificiales y sintéticas</label>
+            </value>
+            <value>
+                <fullName>211 - Fab. de productos farmacéuticos de base</fullName>
+                <default>false</default>
+                <label>211 - Fab. de productos farmacéuticos de base</label>
+            </value>
+            <value>
+                <fullName>212 - Fab. de especialidades farmacéuticas</fullName>
+                <default>false</default>
+                <label>212 - Fab. de especialidades farmacéuticas</label>
+            </value>
+            <value>
+                <fullName>221 - Fab. de productos de caucho</fullName>
+                <default>false</default>
+                <label>221 - Fab. de productos de caucho</label>
+            </value>
+            <value>
+                <fullName>222 - Fab. de productos de plástico</fullName>
+                <default>false</default>
+                <label>222 - Fab. de productos de plástico</label>
+            </value>
+            <value>
+                <fullName>231 - Fab. de vidrio y productos de vidrio</fullName>
+                <default>false</default>
+                <label>231 - Fab. de vidrio y productos de vidrio</label>
+            </value>
+            <value>
+                <fullName>232 - Fab. de productos cerámicos refractarios</fullName>
+                <default>false</default>
+                <label>232 - Fab. de productos cerámicos refractarios</label>
+            </value>
+            <value>
+                <fullName>233 - Fab. de productos cerámicos para la construcción</fullName>
+                <default>false</default>
+                <label>233 - Fab. de productos cerámicos para la construcción</label>
+            </value>
+            <value>
+                <fullName>234 - Fab. de otros productos cerámicos</fullName>
+                <default>false</default>
+                <label>234 - Fab. de otros productos cerámicos</label>
+            </value>
+            <value>
+                <fullName>235 - Fab. de cemento, cal y yeso</fullName>
+                <default>false</default>
+                <label>235 - Fab. de cemento, cal y yeso</label>
+            </value>
+            <value>
+                <fullName>236 - Fab. de elementos de hormigón, cemento y yeso</fullName>
+                <default>false</default>
+                <label>236 - Fab. de elementos de hormigón, cemento y yeso</label>
+            </value>
+            <value>
+                <fullName>237 - Corte, tallado y acabado de la piedra</fullName>
+                <default>false</default>
+                <label>237 - Corte, tallado y acabado de la piedra</label>
+            </value>
+            <value>
+                <fullName>239 - Fab. de productos abrasivos y productos minerales no metálicos n.c.o.p.</fullName>
+                <default>false</default>
+                <label>239 - Fab. de productos abrasivos y productos minerales no metálicos n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>241 - Fab. de productos básicos de hierro, acero y ferroaleaciones</fullName>
+                <default>false</default>
+                <label>241 - Fab. de productos básicos de hierro, acero y ferroaleaciones</label>
+            </value>
+            <value>
+                <fullName>242 - Fab. de tubos, tuberías, perfiles huecos y sus accesorios, de acero</fullName>
+                <default>false</default>
+                <label>242 - Fab. de tubos, tuberías, perfiles huecos y sus accesorios, de acero</label>
+            </value>
+            <value>
+                <fullName>243 - Fab. de otros productos de primera transformación del acero</fullName>
+                <default>false</default>
+                <label>243 - Fab. de otros productos de primera transformación del acero</label>
+            </value>
+            <value>
+                <fullName>244 - Producción de metales preciosos y de otros metales no férreos</fullName>
+                <default>false</default>
+                <label>244 - Producción de metales preciosos y de otros metales no férreos</label>
+            </value>
+            <value>
+                <fullName>245 - Fundición de metales</fullName>
+                <default>false</default>
+                <label>245 - Fundición de metales</label>
+            </value>
+            <value>
+                <fullName>251 - Fab. de elementos metálicos para la construcción</fullName>
+                <default>false</default>
+                <label>251 - Fab. de elementos metálicos para la construcción</label>
+            </value>
+            <value>
+                <fullName>252 - Fab. de cisternas, grandes depósitos y contenedores de metal</fullName>
+                <default>false</default>
+                <label>252 - Fab. de cisternas, grandes depósitos y contenedores de metal</label>
+            </value>
+            <value>
+                <fullName>253 - Fab. de generadores de vapor, excepto calderas de calefacción central</fullName>
+                <default>false</default>
+                <label>253 - Fab. de generadores de vapor, excepto calderas de calefacción central</label>
+            </value>
+            <value>
+                <fullName>254 - Fab. de armas y municiones</fullName>
+                <default>false</default>
+                <label>254 - Fab. de armas y municiones</label>
+            </value>
+            <value>
+                <fullName>255 - Forja, estampación y embutición de metales; metalurgia de polvos</fullName>
+                <default>false</default>
+                <label>255 - Forja, estampación y embutición de metales; metalurgia de polvos</label>
+            </value>
+            <value>
+                <fullName>256 - Tratamiento y revestimiento de metales; ingeniería mecánica por cuenta de terceros</fullName>
+                <default>false</default>
+                <label>256 - Tratamiento y revestimiento de metales; ingeniería mecánica por cuenta de terceros</label>
+            </value>
+            <value>
+                <fullName>257 - Fab. de artículos de cuchillería y cubertería, herramientas y ferretería</fullName>
+                <default>false</default>
+                <label>257 - Fab. de artículos de cuchillería y cubertería, herramientas y ferretería</label>
+            </value>
+            <value>
+                <fullName>259 - Fab. de otros productos metálicos</fullName>
+                <default>false</default>
+                <label>259 - Fab. de otros productos metálicos</label>
+            </value>
+            <value>
+                <fullName>261 - Fab. de componentes electrónicos y circuitos impresos ensamblados</fullName>
+                <default>false</default>
+                <label>261 - Fab. de componentes electrónicos y circuitos impresos ensamblados</label>
+            </value>
+            <value>
+                <fullName>262 - Fab. de ordenadores y equipos periféricos</fullName>
+                <default>false</default>
+                <label>262 - Fab. de ordenadores y equipos periféricos</label>
+            </value>
+            <value>
+                <fullName>263 - Fab. de equipos de telecomunicaciones</fullName>
+                <default>false</default>
+                <label>263 - Fab. de equipos de telecomunicaciones</label>
+            </value>
+            <value>
+                <fullName>264 - Fab. de productos electrónicos de consumo</fullName>
+                <default>false</default>
+                <label>264 - Fab. de productos electrónicos de consumo</label>
+            </value>
+            <value>
+                <fullName>265 - Fab. de instrumentos y aparatos de medida, verificación y navegación; Fab. de relojes</fullName>
+                <default>false</default>
+                <label>265 - Fab. de instrumentos y aparatos de medida, verificación y navegación; Fab. de relojes</label>
+            </value>
+            <value>
+                <fullName>266 - Fab. de equipos de radiación, electromédicos y electroterapéuticos</fullName>
+                <default>false</default>
+                <label>266 - Fab. de equipos de radiación, electromédicos y electroterapéuticos</label>
+            </value>
+            <value>
+                <fullName>267 - Fab. de instrumentos de óptica y equipo fotográfico</fullName>
+                <default>false</default>
+                <label>267 - Fab. de instrumentos de óptica y equipo fotográfico</label>
+            </value>
+            <value>
+                <fullName>268 - Fab. de soportes magnéticos y ópticos</fullName>
+                <default>false</default>
+                <label>268 - Fab. de soportes magnéticos y ópticos</label>
+            </value>
+            <value>
+                <fullName>271 - Fab. de motores, generadores y transformadores eléctricos, y de aparatos de distribución y control eléctrico</fullName>
+                <default>false</default>
+                <label>271 - Fab. de motores, generadores y transformadores eléctricos, y de aparatos de distribución y control eléctrico</label>
+            </value>
+            <value>
+                <fullName>272 - Fab. de pilas y acumuladores eléctricos</fullName>
+                <default>false</default>
+                <label>272 - Fab. de pilas y acumuladores eléctricos</label>
+            </value>
+            <value>
+                <fullName>273 - Fab. de cables y dispositivos de cableado</fullName>
+                <default>false</default>
+                <label>273 - Fab. de cables y dispositivos de cableado</label>
+            </value>
+            <value>
+                <fullName>274 - Fab. de lámparas y aparatos eléctricos de iluminación</fullName>
+                <default>false</default>
+                <label>274 - Fab. de lámparas y aparatos eléctricos de iluminación</label>
+            </value>
+            <value>
+                <fullName>275 - Fab. de aparatos domésticos</fullName>
+                <default>false</default>
+                <label>275 - Fab. de aparatos domésticos</label>
+            </value>
+            <value>
+                <fullName>279 - Fab. de otro material y equipo eléctrico</fullName>
+                <default>false</default>
+                <label>279 - Fab. de otro material y equipo eléctrico</label>
+            </value>
+            <value>
+                <fullName>281 - Fab. de maquinaria de uso general</fullName>
+                <default>false</default>
+                <label>281 - Fab. de maquinaria de uso general</label>
+            </value>
+            <value>
+                <fullName>282 - Fab. de otra maquinaria de uso general</fullName>
+                <default>false</default>
+                <label>282 - Fab. de otra maquinaria de uso general</label>
+            </value>
+            <value>
+                <fullName>283 - Fab. de maquinaria agraria y forestal</fullName>
+                <default>false</default>
+                <label>283 - Fab. de maquinaria agraria y forestal</label>
+            </value>
+            <value>
+                <fullName>284 - Fab. de máquinas herramienta para trabajar el metal y otras máquinas herramienta</fullName>
+                <default>false</default>
+                <label>284 - Fab. de máquinas herramienta para trabajar el metal y otras máquinas herramienta</label>
+            </value>
+            <value>
+                <fullName>289 - Fab. de otra maquinaria para usos específicos</fullName>
+                <default>false</default>
+                <label>289 - Fab. de otra maquinaria para usos específicos</label>
+            </value>
+            <value>
+                <fullName>291 - Fab. de vehículos de motor</fullName>
+                <default>false</default>
+                <label>291 - Fab. de vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>292 - Fab. de carrocerías para vehículos de motor; Fab. de remolques y semirremolques</fullName>
+                <default>false</default>
+                <label>292 - Fab. de carrocerías para vehículos de motor; Fab. de remolques y semirremolques</label>
+            </value>
+            <value>
+                <fullName>293 - Fab. de componentes, piezas y accesorios para vehículos de motor</fullName>
+                <default>false</default>
+                <label>293 - Fab. de componentes, piezas y accesorios para vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>301 - Construcción naval</fullName>
+                <default>false</default>
+                <label>301 - Construcción naval</label>
+            </value>
+            <value>
+                <fullName>302 - Fab. de locomotoras y material ferroviario</fullName>
+                <default>false</default>
+                <label>302 - Fab. de locomotoras y material ferroviario</label>
+            </value>
+            <value>
+                <fullName>303 - Construcción aeronáutica y espacial y su maquinaria</fullName>
+                <default>false</default>
+                <label>303 - Construcción aeronáutica y espacial y su maquinaria</label>
+            </value>
+            <value>
+                <fullName>304 - Fab. de vehículos militares de combate</fullName>
+                <default>false</default>
+                <label>304 - Fab. de vehículos militares de combate</label>
+            </value>
+            <value>
+                <fullName>309 - Fab. de otro material de transporte n.c.o.p.</fullName>
+                <default>false</default>
+                <label>309 - Fab. de otro material de transporte n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>310 - Fab. de muebles</fullName>
+                <default>false</default>
+                <label>310 - Fab. de muebles</label>
+            </value>
+            <value>
+                <fullName>321 - Fab. de artículos de joyería, bisutería y similares</fullName>
+                <default>false</default>
+                <label>321 - Fab. de artículos de joyería, bisutería y similares</label>
+            </value>
+            <value>
+                <fullName>322 - Fab. de instrumentos musicales</fullName>
+                <default>false</default>
+                <label>322 - Fab. de instrumentos musicales</label>
+            </value>
+            <value>
+                <fullName>323 - Fab. de artículos de deporte</fullName>
+                <default>false</default>
+                <label>323 - Fab. de artículos de deporte</label>
+            </value>
+            <value>
+                <fullName>324 - Fab. de juegos y juguetes</fullName>
+                <default>false</default>
+                <label>324 - Fab. de juegos y juguetes</label>
+            </value>
+            <value>
+                <fullName>325 - Fab. de instrumentos y suministros médicos y odontológicos</fullName>
+                <default>false</default>
+                <label>325 - Fab. de instrumentos y suministros médicos y odontológicos</label>
+            </value>
+            <value>
+                <fullName>329 - Industrias manufactureras n.c.o.p.</fullName>
+                <default>false</default>
+                <label>329 - Industrias manufactureras n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>331 - Reparación de productos metálicos, maquinaria y equipo</fullName>
+                <default>false</default>
+                <label>331 - Reparación de productos metálicos, maquinaria y equipo</label>
+            </value>
+            <value>
+                <fullName>332 - Instalación de máquinas y equipos industriales</fullName>
+                <default>false</default>
+                <label>332 - Instalación de máquinas y equipos industriales</label>
+            </value>
+            <value>
+                <fullName>351 - Producción, transporte y distribución de energía eléctrica</fullName>
+                <default>false</default>
+                <label>351 - Producción, transporte y distribución de energía eléctrica</label>
+            </value>
+            <value>
+                <fullName>352 - Producción de gas; distribución por tubería de combustibles gaseosos</fullName>
+                <default>false</default>
+                <label>352 - Producción de gas; distribución por tubería de combustibles gaseosos</label>
+            </value>
+            <value>
+                <fullName>353 - Suministro de vapor y aire acondicionado</fullName>
+                <default>false</default>
+                <label>353 - Suministro de vapor y aire acondicionado</label>
+            </value>
+            <value>
+                <fullName>360 - Captación, depuración y distribución de agua</fullName>
+                <default>false</default>
+                <label>360 - Captación, depuración y distribución de agua</label>
+            </value>
+            <value>
+                <fullName>370 - Recogida y tratamiento de aguas residuales</fullName>
+                <default>false</default>
+                <label>370 - Recogida y tratamiento de aguas residuales</label>
+            </value>
+            <value>
+                <fullName>381 - Recogida de residuos</fullName>
+                <default>false</default>
+                <label>381 - Recogida de residuos</label>
+            </value>
+            <value>
+                <fullName>382 - Tratamiento y eliminación de residuos</fullName>
+                <default>false</default>
+                <label>382 - Tratamiento y eliminación de residuos</label>
+            </value>
+            <value>
+                <fullName>383 - Valorización</fullName>
+                <default>false</default>
+                <label>383 - Valorización</label>
+            </value>
+            <value>
+                <fullName>390 - Act. de descontaminación y otros servicios de gestión de residuos</fullName>
+                <default>false</default>
+                <label>390 - Act. de descontaminación y otros servicios de gestión de residuos</label>
+            </value>
+            <value>
+                <fullName>411 - Promoción inmobiliaria</fullName>
+                <default>false</default>
+                <label>411 - Promoción inmobiliaria</label>
+            </value>
+            <value>
+                <fullName>412 - Construcción de edificios</fullName>
+                <default>false</default>
+                <label>412 - Construcción de edificios</label>
+            </value>
+            <value>
+                <fullName>421 - Construcción de carreteras y vías férreas, puentes y túneles</fullName>
+                <default>false</default>
+                <label>421 - Construcción de carreteras y vías férreas, puentes y túneles</label>
+            </value>
+            <value>
+                <fullName>422 - Construcción de redes</fullName>
+                <default>false</default>
+                <label>422 - Construcción de redes</label>
+            </value>
+            <value>
+                <fullName>429 - Construcción de otros proyectos de ingeniería civil</fullName>
+                <default>false</default>
+                <label>429 - Construcción de otros proyectos de ingeniería civil</label>
+            </value>
+            <value>
+                <fullName>431 - Demolición y preparación de terrenos</fullName>
+                <default>false</default>
+                <label>431 - Demolición y preparación de terrenos</label>
+            </value>
+            <value>
+                <fullName>432 - Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción</fullName>
+                <default>false</default>
+                <label>432 - Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción</label>
+            </value>
+            <value>
+                <fullName>433 - Acabado de edificios</fullName>
+                <default>false</default>
+                <label>433 - Acabado de edificios</label>
+            </value>
+            <value>
+                <fullName>439 - Otras Act. de construcción especializada</fullName>
+                <default>false</default>
+                <label>439 - Otras Act. de construcción especializada</label>
+            </value>
+            <value>
+                <fullName>451 - Venta de vehículos de motor</fullName>
+                <default>false</default>
+                <label>451 - Venta de vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>452 - Mantenimiento y reparación de vehículos de motor</fullName>
+                <default>false</default>
+                <label>452 - Mantenimiento y reparación de vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>453 - Comercio de repuestos y accesorios de vehículos de motor</fullName>
+                <default>false</default>
+                <label>453 - Comercio de repuestos y accesorios de vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>454 - Venta, mantenimiento y reparación de motocicletas y de sus repuestos y accesorios</fullName>
+                <default>false</default>
+                <label>454 - Venta, mantenimiento y reparación de motocicletas y de sus repuestos y accesorios</label>
+            </value>
+            <value>
+                <fullName>461 - Intermediarios del comercio</fullName>
+                <default>false</default>
+                <label>461 - Intermediarios del comercio</label>
+            </value>
+            <value>
+                <fullName>462 - Comercio al por mayor de materias primas agrarias y de animales vivos</fullName>
+                <default>false</default>
+                <label>462 - Comercio al por mayor de materias primas agrarias y de animales vivos</label>
+            </value>
+            <value>
+                <fullName>463 - Comercio al por mayor de productos alimenticios, bebidas y tabaco</fullName>
+                <default>false</default>
+                <label>463 - Comercio al por mayor de productos alimenticios, bebidas y tabaco</label>
+            </value>
+            <value>
+                <fullName>464 - Comercio al por mayor de artículos de uso doméstico</fullName>
+                <default>false</default>
+                <label>464 - Comercio al por mayor de artículos de uso doméstico</label>
+            </value>
+            <value>
+                <fullName>465 - Comercio al por mayor de equipos para las tecnologías de la información y las comunicaciones</fullName>
+                <default>false</default>
+                <label>465 - Comercio al por mayor de equipos para las tecnologías de la información y las comunicaciones</label>
+            </value>
+            <value>
+                <fullName>466 - Comercio al por mayor de otra maquinaria, equipos y suministros</fullName>
+                <default>false</default>
+                <label>466 - Comercio al por mayor de otra maquinaria, equipos y suministros</label>
+            </value>
+            <value>
+                <fullName>467 - Otro comercio al por mayor especializado</fullName>
+                <default>false</default>
+                <label>467 - Otro comercio al por mayor especializado</label>
+            </value>
+            <value>
+                <fullName>469 - Comercio al por mayor no especializado</fullName>
+                <default>false</default>
+                <label>469 - Comercio al por mayor no especializado</label>
+            </value>
+            <value>
+                <fullName>471 - Comercio al por menor en establecimientos no especializados</fullName>
+                <default>false</default>
+                <label>471 - Comercio al por menor en establecimientos no especializados</label>
+            </value>
+            <value>
+                <fullName>472 - Comercio al por menor de productos alimenticios, bebidas y tabaco en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>472 - Comercio al por menor de productos alimenticios, bebidas y tabaco en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>473 - Comercio al por menor de combustible para la automoción en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>473 - Comercio al por menor de combustible para la automoción en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>474 - Comercio al por menor de equipos para las tecnologías de la información y las comunicaciones en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>474 - Comercio al por menor de equipos para las tecnologías de la información y las comunicaciones en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>475 - Comercio al por menor de otros artículos de uso doméstico en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>475 - Comercio al por menor de otros artículos de uso doméstico en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>476 - Comercio al por menor de artículos culturales y recreativos en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>476 - Comercio al por menor de artículos culturales y recreativos en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>477 - Comercio al por menor de otros artículos en establecimientos especializados</fullName>
+                <default>false</default>
+                <label>477 - Comercio al por menor de otros artículos en establecimientos especializados</label>
+            </value>
+            <value>
+                <fullName>478 - Comercio al por menor en puestos de venta y en mercadillos</fullName>
+                <default>false</default>
+                <label>478 - Comercio al por menor en puestos de venta y en mercadillos</label>
+            </value>
+            <value>
+                <fullName>479 - Comercio al por menor no realizado ni en establecimientos, ni en puestos de venta ni en mercadillos</fullName>
+                <default>false</default>
+                <label>479 - Comercio al por menor no realizado ni en establecimientos, ni en puestos de venta ni en mercadillos</label>
+            </value>
+            <value>
+                <fullName>491 - Transporte interurbano de pasajeros por ferrocarril</fullName>
+                <default>false</default>
+                <label>491 - Transporte interurbano de pasajeros por ferrocarril</label>
+            </value>
+            <value>
+                <fullName>492 - Transporte de mercancías por ferrocarril</fullName>
+                <default>false</default>
+                <label>492 - Transporte de mercancías por ferrocarril</label>
+            </value>
+            <value>
+                <fullName>493 - Otro transporte terrestre de pasajeros</fullName>
+                <default>false</default>
+                <label>493 - Otro transporte terrestre de pasajeros</label>
+            </value>
+            <value>
+                <fullName>494 - Transporte de mercancías por carretera y servicios de mudanza</fullName>
+                <default>false</default>
+                <label>494 - Transporte de mercancías por carretera y servicios de mudanza</label>
+            </value>
+            <value>
+                <fullName>495 - Transporte por tubería</fullName>
+                <default>false</default>
+                <label>495 - Transporte por tubería</label>
+            </value>
+            <value>
+                <fullName>501 - Transporte marítimo de pasajeros</fullName>
+                <default>false</default>
+                <label>501 - Transporte marítimo de pasajeros</label>
+            </value>
+            <value>
+                <fullName>502 - Transporte marítimo de mercancías</fullName>
+                <default>false</default>
+                <label>502 - Transporte marítimo de mercancías</label>
+            </value>
+            <value>
+                <fullName>503 - Transporte de pasajeros por vías navegables interiores</fullName>
+                <default>false</default>
+                <label>503 - Transporte de pasajeros por vías navegables interiores</label>
+            </value>
+            <value>
+                <fullName>504 - Transporte de mercancías por vías navegables interiores</fullName>
+                <default>false</default>
+                <label>504 - Transporte de mercancías por vías navegables interiores</label>
+            </value>
+            <value>
+                <fullName>511 - Transporte aéreo de pasajeros</fullName>
+                <default>false</default>
+                <label>511 - Transporte aéreo de pasajeros</label>
+            </value>
+            <value>
+                <fullName>512 - Transporte aéreo de mercancías y transporte espacial</fullName>
+                <default>false</default>
+                <label>512 - Transporte aéreo de mercancías y transporte espacial</label>
+            </value>
+            <value>
+                <fullName>521 - Depósito y almacenamiento</fullName>
+                <default>false</default>
+                <label>521 - Depósito y almacenamiento</label>
+            </value>
+            <value>
+                <fullName>522 - Act. anexas al transporte</fullName>
+                <default>false</default>
+                <label>522 - Act. anexas al transporte</label>
+            </value>
+            <value>
+                <fullName>531 - Act. postales sometidas a la obligación del servicio universal</fullName>
+                <default>false</default>
+                <label>531 - Act. postales sometidas a la obligación del servicio universal</label>
+            </value>
+            <value>
+                <fullName>532 - Otras Act. postales y de correos</fullName>
+                <default>false</default>
+                <label>532 - Otras Act. postales y de correos</label>
+            </value>
+            <value>
+                <fullName>551 - Hoteles y alojamientos similares</fullName>
+                <default>false</default>
+                <label>551 - Hoteles y alojamientos similares</label>
+            </value>
+            <value>
+                <fullName>552 - Alojamientos turísticos y otros alojamientos de corta estancia</fullName>
+                <default>false</default>
+                <label>552 - Alojamientos turísticos y otros alojamientos de corta estancia</label>
+            </value>
+            <value>
+                <fullName>553 - Campings y aparcamientos para caravanas</fullName>
+                <default>false</default>
+                <label>553 - Campings y aparcamientos para caravanas</label>
+            </value>
+            <value>
+                <fullName>559 - Otros alojamientos</fullName>
+                <default>false</default>
+                <label>559 - Otros alojamientos</label>
+            </value>
+            <value>
+                <fullName>561 - Restaurantes y puestos de comidas</fullName>
+                <default>false</default>
+                <label>561 - Restaurantes y puestos de comidas</label>
+            </value>
+            <value>
+                <fullName>562 - Provisión de comidas preparadas para eventos y otros servicios de comidas</fullName>
+                <default>false</default>
+                <label>562 - Provisión de comidas preparadas para eventos y otros servicios de comidas</label>
+            </value>
+            <value>
+                <fullName>563 - Establecimientos de bebidas</fullName>
+                <default>false</default>
+                <label>563 - Establecimientos de bebidas</label>
+            </value>
+            <value>
+                <fullName>581 - Edición de libros, periódicos y otras Act. editoriales</fullName>
+                <default>false</default>
+                <label>581 - Edición de libros, periódicos y otras Act. editoriales</label>
+            </value>
+            <value>
+                <fullName>582 - Edición de programas informáticos</fullName>
+                <default>false</default>
+                <label>582 - Edición de programas informáticos</label>
+            </value>
+            <value>
+                <fullName>591 - Act. cinematográficas, de vídeo y de programas de televisión</fullName>
+                <default>false</default>
+                <label>591 - Act. cinematográficas, de vídeo y de programas de televisión</label>
+            </value>
+            <value>
+                <fullName>592 - Act. de grabación de sonido y edición musical</fullName>
+                <default>false</default>
+                <label>592 - Act. de grabación de sonido y edición musical</label>
+            </value>
+            <value>
+                <fullName>601 - Act. de radiodifusión</fullName>
+                <default>false</default>
+                <label>601 - Act. de radiodifusión</label>
+            </value>
+            <value>
+                <fullName>602 - Act. de programación y emisión de televisión</fullName>
+                <default>false</default>
+                <label>602 - Act. de programación y emisión de televisión</label>
+            </value>
+            <value>
+                <fullName>611 - Telecomunicaciones por cable</fullName>
+                <default>false</default>
+                <label>611 - Telecomunicaciones por cable</label>
+            </value>
+            <value>
+                <fullName>612 - Telecomunicaciones inalámbricas</fullName>
+                <default>false</default>
+                <label>612 - Telecomunicaciones inalámbricas</label>
+            </value>
+            <value>
+                <fullName>613 - Telecomunicaciones por satélite</fullName>
+                <default>false</default>
+                <label>613 - Telecomunicaciones por satélite</label>
+            </value>
+            <value>
+                <fullName>619 - Otras Act. de telecomunicaciones</fullName>
+                <default>false</default>
+                <label>619 - Otras Act. de telecomunicaciones</label>
+            </value>
+            <value>
+                <fullName>620 - Programación, consultoría y otras Act. relacionadas con la informática</fullName>
+                <default>false</default>
+                <label>620 - Programación, consultoría y otras Act. relacionadas con la informática</label>
+            </value>
+            <value>
+                <fullName>631 - Proceso de datos, hosting y Act. relacionadas; portales web</fullName>
+                <default>false</default>
+                <label>631 - Proceso de datos, hosting y Act. relacionadas; portales web</label>
+            </value>
+            <value>
+                <fullName>639 - Otros servicios de información</fullName>
+                <default>false</default>
+                <label>639 - Otros servicios de información</label>
+            </value>
+            <value>
+                <fullName>641 - Intermediación monetaria</fullName>
+                <default>false</default>
+                <label>641 - Intermediación monetaria</label>
+            </value>
+            <value>
+                <fullName>642 - Act. de las sociedades holding</fullName>
+                <default>false</default>
+                <label>642 - Act. de las sociedades holding</label>
+            </value>
+            <value>
+                <fullName>643 - Inversión colectiva, fondos y entidades financieras similares</fullName>
+                <default>false</default>
+                <label>643 - Inversión colectiva, fondos y entidades financieras similares</label>
+            </value>
+            <value>
+                <fullName>649 - Otros servicios financieros, excepto seguros y fondos de pensiones</fullName>
+                <default>false</default>
+                <label>649 - Otros servicios financieros, excepto seguros y fondos de pensiones</label>
+            </value>
+            <value>
+                <fullName>651 - Seguros</fullName>
+                <default>false</default>
+                <label>651 - Seguros</label>
+            </value>
+            <value>
+                <fullName>652 - Reaseguros</fullName>
+                <default>false</default>
+                <label>652 - Reaseguros</label>
+            </value>
+            <value>
+                <fullName>653 - Fondos de pensiones</fullName>
+                <default>false</default>
+                <label>653 - Fondos de pensiones</label>
+            </value>
+            <value>
+                <fullName>661 - Act. auxiliares a los servicios financieros, excepto seguros y fondos de pensiones</fullName>
+                <default>false</default>
+                <label>661 - Act. auxiliares a los servicios financieros, excepto seguros y fondos de pensiones</label>
+            </value>
+            <value>
+                <fullName>662 - Act. auxiliares a seguros y fondos de pensiones</fullName>
+                <default>false</default>
+                <label>662 - Act. auxiliares a seguros y fondos de pensiones</label>
+            </value>
+            <value>
+                <fullName>663 - Act. de gestión de fondos</fullName>
+                <default>false</default>
+                <label>663 - Act. de gestión de fondos</label>
+            </value>
+            <value>
+                <fullName>681 - Compraventa de bienes inmobiliarios por cuenta propia</fullName>
+                <default>false</default>
+                <label>681 - Compraventa de bienes inmobiliarios por cuenta propia</label>
+            </value>
+            <value>
+                <fullName>682 - Alquiler de bienes inmobiliarios por cuenta propia</fullName>
+                <default>false</default>
+                <label>682 - Alquiler de bienes inmobiliarios por cuenta propia</label>
+            </value>
+            <value>
+                <fullName>683 - Act. inmobiliarias por cuenta de terceros</fullName>
+                <default>false</default>
+                <label>683 - Act. inmobiliarias por cuenta de terceros</label>
+            </value>
+            <value>
+                <fullName>691 - Act. jurídicas</fullName>
+                <default>false</default>
+                <label>691 - Act. jurídicas</label>
+            </value>
+            <value>
+                <fullName>692 - Act. de contabilidad, teneduría de libros, auditoría y asesoría fiscal</fullName>
+                <default>false</default>
+                <label>692 - Act. de contabilidad, teneduría de libros, auditoría y asesoría fiscal</label>
+            </value>
+            <value>
+                <fullName>701 - Act. de las sedes centrales</fullName>
+                <default>false</default>
+                <label>701 - Act. de las sedes centrales</label>
+            </value>
+            <value>
+                <fullName>702 - Act. de consultoría de gestión empresarial</fullName>
+                <default>false</default>
+                <label>702 - Act. de consultoría de gestión empresarial</label>
+            </value>
+            <value>
+                <fullName>711 - Servicios técnicos de arquitectura e ingeniería y otras Act. relacionadas con el asesoramiento técnico</fullName>
+                <default>false</default>
+                <label>711 - Servicios técnicos de arquitectura e ingeniería y otras Act. relacionadas con el asesoramiento técnico</label>
+            </value>
+            <value>
+                <fullName>712 - Ensayos y análisis técnicos</fullName>
+                <default>false</default>
+                <label>712 - Ensayos y análisis técnicos</label>
+            </value>
+            <value>
+                <fullName>721 - Investigación y desarrollo experimental en ciencias naturales y técnicas</fullName>
+                <default>false</default>
+                <label>721 - Investigación y desarrollo experimental en ciencias naturales y técnicas</label>
+            </value>
+            <value>
+                <fullName>722 - Investigación y desarrollo experimental en ciencias sociales y humanidades</fullName>
+                <default>false</default>
+                <label>722 - Investigación y desarrollo experimental en ciencias sociales y humanidades</label>
+            </value>
+            <value>
+                <fullName>731 - Publicidad</fullName>
+                <default>false</default>
+                <label>731 - Publicidad</label>
+            </value>
+            <value>
+                <fullName>732 - Estudio de mercado y realización de encuestas de opinión pública</fullName>
+                <default>false</default>
+                <label>732 - Estudio de mercado y realización de encuestas de opinión pública</label>
+            </value>
+            <value>
+                <fullName>741 - Act. de diseño especializado</fullName>
+                <default>false</default>
+                <label>741 - Act. de diseño especializado</label>
+            </value>
+            <value>
+                <fullName>742 - Act. de fotografía</fullName>
+                <default>false</default>
+                <label>742 - Act. de fotografía</label>
+            </value>
+            <value>
+                <fullName>743 - Act. de traducción e interpretación</fullName>
+                <default>false</default>
+                <label>743 - Act. de traducción e interpretación</label>
+            </value>
+            <value>
+                <fullName>749 - Otras Act. profesionales, científicas y técnicas n.c.o.p.</fullName>
+                <default>false</default>
+                <label>749 - Otras Act. profesionales, científicas y técnicas n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>750 - Act. veterinarias</fullName>
+                <default>false</default>
+                <label>750 - Act. veterinarias</label>
+            </value>
+            <value>
+                <fullName>771 - Alquiler de vehículos de motor</fullName>
+                <default>false</default>
+                <label>771 - Alquiler de vehículos de motor</label>
+            </value>
+            <value>
+                <fullName>772 - Alquiler de efectos personales y artículos de uso doméstico</fullName>
+                <default>false</default>
+                <label>772 - Alquiler de efectos personales y artículos de uso doméstico</label>
+            </value>
+            <value>
+                <fullName>773 - Alquiler de otra maquinaria, equipos y bienes tangibles</fullName>
+                <default>false</default>
+                <label>773 - Alquiler de otra maquinaria, equipos y bienes tangibles</label>
+            </value>
+            <value>
+                <fullName>774 - Arrendamiento de la propiedad intelectual y productos similares, excepto trabajos protegidos por los derechos de autor</fullName>
+                <default>false</default>
+                <label>774 - Arrendamiento de la propiedad intelectual y productos similares, excepto trabajos protegidos por los derechos de autor</label>
+            </value>
+            <value>
+                <fullName>781 - Act. de las agencias de colocación</fullName>
+                <default>false</default>
+                <label>781 - Act. de las agencias de colocación</label>
+            </value>
+            <value>
+                <fullName>782 - Act. de las empresas de trabajo temporal</fullName>
+                <default>false</default>
+                <label>782 - Act. de las empresas de trabajo temporal</label>
+            </value>
+            <value>
+                <fullName>783 - Otra provisión de recursos humanos</fullName>
+                <default>false</default>
+                <label>783 - Otra provisión de recursos humanos</label>
+            </value>
+            <value>
+                <fullName>791 - Act. de agencias de viajes y operadores turísticos</fullName>
+                <default>false</default>
+                <label>791 - Act. de agencias de viajes y operadores turísticos</label>
+            </value>
+            <value>
+                <fullName>799 - Otros servicios de reservas y Act. relacionadas con los mismos</fullName>
+                <default>false</default>
+                <label>799 - Otros servicios de reservas y Act. relacionadas con los mismos</label>
+            </value>
+            <value>
+                <fullName>801 - Act. de seguridad privada</fullName>
+                <default>false</default>
+                <label>801 - Act. de seguridad privada</label>
+            </value>
+            <value>
+                <fullName>802 - Servicios de sistemas de seguridad</fullName>
+                <default>false</default>
+                <label>802 - Servicios de sistemas de seguridad</label>
+            </value>
+            <value>
+                <fullName>803 - Act. de investigación</fullName>
+                <default>false</default>
+                <label>803 - Act. de investigación</label>
+            </value>
+            <value>
+                <fullName>811 - Servicios integrales a edificios e instalaciones</fullName>
+                <default>false</default>
+                <label>811 - Servicios integrales a edificios e instalaciones</label>
+            </value>
+            <value>
+                <fullName>812 - Act. de limpieza</fullName>
+                <default>false</default>
+                <label>812 - Act. de limpieza</label>
+            </value>
+            <value>
+                <fullName>813 - Act. de jardinería</fullName>
+                <default>false</default>
+                <label>813 - Act. de jardinería</label>
+            </value>
+            <value>
+                <fullName>821 - Act. administrativas y auxiliares de oficina</fullName>
+                <default>false</default>
+                <label>821 - Act. administrativas y auxiliares de oficina</label>
+            </value>
+            <value>
+                <fullName>822 - Act. de los centros de llamadas</fullName>
+                <default>false</default>
+                <label>822 - Act. de los centros de llamadas</label>
+            </value>
+            <value>
+                <fullName>823 - Organización de convenciones y ferias de muestras</fullName>
+                <default>false</default>
+                <label>823 - Organización de convenciones y ferias de muestras</label>
+            </value>
+            <value>
+                <fullName>829 - Act. de apoyo a las empresas n.c.o.p.</fullName>
+                <default>false</default>
+                <label>829 - Act. de apoyo a las empresas n.c.o.p.</label>
+            </value>
+            <value>
+                <fullName>841 - Administración Pública y de la política económica y social</fullName>
+                <default>false</default>
+                <label>841 - Administración Pública y de la política económica y social</label>
+            </value>
+            <value>
+                <fullName>842 - Prestación de servicios a la comunidad en general</fullName>
+                <default>false</default>
+                <label>842 - Prestación de servicios a la comunidad en general</label>
+            </value>
+            <value>
+                <fullName>843 - Seguridad Social obligatoria</fullName>
+                <default>false</default>
+                <label>843 - Seguridad Social obligatoria</label>
+            </value>
+            <value>
+                <fullName>851 - Educación preprimaria</fullName>
+                <default>false</default>
+                <label>851 - Educación preprimaria</label>
+            </value>
+            <value>
+                <fullName>852 - Educación primaria</fullName>
+                <default>false</default>
+                <label>852 - Educación primaria</label>
+            </value>
+            <value>
+                <fullName>853 - Educación secundaria</fullName>
+                <default>false</default>
+                <label>853 - Educación secundaria</label>
+            </value>
+            <value>
+                <fullName>854 - Educación postsecundaria</fullName>
+                <default>false</default>
+                <label>854 - Educación postsecundaria</label>
+            </value>
+            <value>
+                <fullName>855 - Otra educación</fullName>
+                <default>false</default>
+                <label>855 - Otra educación</label>
+            </value>
+            <value>
+                <fullName>856 - Act. auxiliares a la educación</fullName>
+                <default>false</default>
+                <label>856 - Act. auxiliares a la educación</label>
+            </value>
+            <value>
+                <fullName>861 - Act. hospitalarias</fullName>
+                <default>false</default>
+                <label>861 - Act. hospitalarias</label>
+            </value>
+            <value>
+                <fullName>862 - Act. médicas y odontológicas</fullName>
+                <default>false</default>
+                <label>862 - Act. médicas y odontológicas</label>
+            </value>
+            <value>
+                <fullName>869 - Otras Act. sanitarias</fullName>
+                <default>false</default>
+                <label>869 - Otras Act. sanitarias</label>
+            </value>
+            <value>
+                <fullName>871 - Asistencia en establecimientos residenciales con cuidados sanitarios</fullName>
+                <default>false</default>
+                <label>871 - Asistencia en establecimientos residenciales con cuidados sanitarios</label>
+            </value>
+            <value>
+                <fullName>872 - Asistencia en establecimientos residenciales para personas con discapacidad intelectual, enfermedad mental y drogodependencia</fullName>
+                <default>false</default>
+                <label>872 - Asistencia en establecimientos residenciales para personas con discapacidad intelectual, enfermedad mental y drogodependencia</label>
+            </value>
+            <value>
+                <fullName>873 - Asistencia en establecimientos residenciales para personas mayores y con discapacidad física</fullName>
+                <default>false</default>
+                <label>873 - Asistencia en establecimientos residenciales para personas mayores y con discapacidad física</label>
+            </value>
+            <value>
+                <fullName>879 - Otras Act. de asistencia en establecimientos residenciales</fullName>
+                <default>false</default>
+                <label>879 - Otras Act. de asistencia en establecimientos residenciales</label>
+            </value>
+            <value>
+                <fullName>881 - Act. de servicios sociales sin alojamiento para personas mayores y con discapacidad</fullName>
+                <default>false</default>
+                <label>881 - Act. de servicios sociales sin alojamiento para personas mayores y con discapacidad</label>
+            </value>
+            <value>
+                <fullName>889 - Otros Act. de servicios sociales sin alojamiento</fullName>
+                <default>false</default>
+                <label>889 - Otros Act. de servicios sociales sin alojamiento</label>
+            </value>
+            <value>
+                <fullName>900 - Act. de creación, artísticas y espectáculos</fullName>
+                <default>false</default>
+                <label>900 - Act. de creación, artísticas y espectáculos</label>
+            </value>
+            <value>
+                <fullName>910 - Act. de bibliotecas, archivos, museos y otras Act. culturales</fullName>
+                <default>false</default>
+                <label>910 - Act. de bibliotecas, archivos, museos y otras Act. culturales</label>
+            </value>
+            <value>
+                <fullName>920 - Act. de juegos de azar y apuestas</fullName>
+                <default>false</default>
+                <label>920 - Act. de juegos de azar y apuestas</label>
+            </value>
+            <value>
+                <fullName>931 - Act. deportivas</fullName>
+                <default>false</default>
+                <label>931 - Act. deportivas</label>
+            </value>
+            <value>
+                <fullName>932 - Act. recreativas y de entretenimiento</fullName>
+                <default>false</default>
+                <label>932 - Act. recreativas y de entretenimiento</label>
+            </value>
+            <value>
+                <fullName>941 - Act. de organizaciones empresariales, profesionales y patronales</fullName>
+                <default>false</default>
+                <label>941 - Act. de organizaciones empresariales, profesionales y patronales</label>
+            </value>
+            <value>
+                <fullName>942 - Act. sindicales</fullName>
+                <default>false</default>
+                <label>942 - Act. sindicales</label>
+            </value>
+            <value>
+                <fullName>949 - Otras Act. asociativas</fullName>
+                <default>false</default>
+                <label>949 - Otras Act. asociativas</label>
+            </value>
+            <value>
+                <fullName>951 - Reparación de ordenadores y equipos de comunicación</fullName>
+                <default>false</default>
+                <label>951 - Reparación de ordenadores y equipos de comunicación</label>
+            </value>
+            <value>
+                <fullName>952 - Reparación de efectos personales y artículos de uso doméstico</fullName>
+                <default>false</default>
+                <label>952 - Reparación de efectos personales y artículos de uso doméstico</label>
+            </value>
+            <value>
+                <fullName>960 - Otros servicios personales</fullName>
+                <default>false</default>
+                <label>960 - Otros servicios personales</label>
+            </value>
+            <value>
+                <fullName>970 - Act. de los hogares como empleadores de personal doméstico</fullName>
+                <default>false</default>
+                <label>970 - Act. de los hogares como empleadores de personal doméstico</label>
+            </value>
+            <value>
+                <fullName>981 - Act. de los hogares como productores de bienes para uso propio</fullName>
+                <default>false</default>
+                <label>981 - Act. de los hogares como productores de bienes para uso propio</label>
+            </value>
+            <value>
+                <fullName>982 - Act. de los hogares como productores de servicios para uso propio</fullName>
+                <default>false</default>
+                <label>982 - Act. de los hogares como productores de servicios para uso propio</label>
+            </value>
+            <value>
+                <fullName>990 - Act. de organizaciones y organismos extraterritoriales</fullName>
+                <default>false</default>
+                <label>990 - Act. de organizaciones y organismos extraterritoriales</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>49 - Transporte terrestre y por tubería</controllingFieldValue>
+            <valueName>491 - Transporte interurbano de pasajeros por ferrocarril</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>49 - Transporte terrestre y por tubería</controllingFieldValue>
+            <valueName>492 - Transporte de mercancías por ferrocarril</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>49 - Transporte terrestre y por tubería</controllingFieldValue>
+            <valueName>493 - Otro transporte terrestre de pasajeros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>49 - Transporte terrestre y por tubería</controllingFieldValue>
+            <valueName>494 - Transporte de mercancías por carretera y servicios de mudanza</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>49 - Transporte terrestre y por tubería</controllingFieldValue>
+            <valueName>495 - Transporte por tubería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>99 - Actividades de organizaciones y organismos extraterritoriales</controllingFieldValue>
+            <valueName>990 - Act. de organizaciones y organismos extraterritoriales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Transporte marítimo y por vías navegables interiores</controllingFieldValue>
+            <valueName>501 - Transporte marítimo de pasajeros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Transporte marítimo y por vías navegables interiores</controllingFieldValue>
+            <valueName>502 - Transporte marítimo de mercancías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Transporte marítimo y por vías navegables interiores</controllingFieldValue>
+            <valueName>503 - Transporte de pasajeros por vías navegables interiores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Transporte marítimo y por vías navegables interiores</controllingFieldValue>
+            <valueName>504 - Transporte de mercancías por vías navegables interiores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - Transporte aéreo</controllingFieldValue>
+            <valueName>511 - Transporte aéreo de pasajeros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - Transporte aéreo</controllingFieldValue>
+            <valueName>512 - Transporte aéreo de mercancías y transporte espacial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>52 - Almacenamiento y actividades anexas al transporte</controllingFieldValue>
+            <valueName>521 - Depósito y almacenamiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>52 - Almacenamiento y actividades anexas al transporte</controllingFieldValue>
+            <valueName>522 - Act. anexas al transporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>53 - Actividades postales y de correos</controllingFieldValue>
+            <valueName>531 - Act. postales sometidas a la obligación del servicio universal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>53 - Actividades postales y de correos</controllingFieldValue>
+            <valueName>532 - Otras Act. postales y de correos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>55 - Servicios de alojamiento</controllingFieldValue>
+            <valueName>551 - Hoteles y alojamientos similares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>55 - Servicios de alojamiento</controllingFieldValue>
+            <valueName>552 - Alojamientos turísticos y otros alojamientos de corta estancia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>55 - Servicios de alojamiento</controllingFieldValue>
+            <valueName>553 - Campings y aparcamientos para caravanas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>55 - Servicios de alojamiento</controllingFieldValue>
+            <valueName>559 - Otros alojamientos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Servicios de comidas y bebidas</controllingFieldValue>
+            <valueName>561 - Restaurantes y puestos de comidas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Servicios de comidas y bebidas</controllingFieldValue>
+            <valueName>562 - Provisión de comidas preparadas para eventos y otros servicios de comidas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Servicios de comidas y bebidas</controllingFieldValue>
+            <valueName>563 - Establecimientos de bebidas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>58 - Edición</controllingFieldValue>
+            <valueName>581 - Edición de libros, periódicos y otras Act. editoriales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>58 - Edición</controllingFieldValue>
+            <valueName>582 - Edición de programas informáticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>59 - Actividades cinematográficas, de vídeo y de programas de televisión, grabación de sonido y edición musical</controllingFieldValue>
+            <valueName>591 - Act. cinematográficas, de vídeo y de programas de televisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>59 - Actividades cinematográficas, de vídeo y de programas de televisión, grabación de sonido y edición musical</controllingFieldValue>
+            <valueName>592 - Act. de grabación de sonido y edición musical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Actividades de programación y emisión de radio y televisión</controllingFieldValue>
+            <valueName>601 - Act. de radiodifusión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Actividades de programación y emisión de radio y televisión</controllingFieldValue>
+            <valueName>602 - Act. de programación y emisión de televisión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11 - Fabricación de bebidas</controllingFieldValue>
+            <valueName>110 - Fab. de bebidas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Telecomunicaciones</controllingFieldValue>
+            <valueName>611 - Telecomunicaciones por cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Telecomunicaciones</controllingFieldValue>
+            <valueName>612 - Telecomunicaciones inalámbricas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Telecomunicaciones</controllingFieldValue>
+            <valueName>613 - Telecomunicaciones por satélite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Telecomunicaciones</controllingFieldValue>
+            <valueName>619 - Otras Act. de telecomunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12 - Industria del tabaco</controllingFieldValue>
+            <valueName>120 - Industria del tabaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Programación, consultoría y otras actividades relacionadas con la informática</controllingFieldValue>
+            <valueName>620 - Programación, consultoría y otras Act. relacionadas con la informática</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>13 - Industria textil</controllingFieldValue>
+            <valueName>131 - Preparación e hilado de fibras textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>13 - Industria textil</controllingFieldValue>
+            <valueName>132 - Fab. de tejidos textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>13 - Industria textil</controllingFieldValue>
+            <valueName>133 - Acabado de textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>13 - Industria textil</controllingFieldValue>
+            <valueName>139 - Fab. de otros productos textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Servicios de información</controllingFieldValue>
+            <valueName>631 - Proceso de datos, hosting y Act. relacionadas; portales web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Servicios de información</controllingFieldValue>
+            <valueName>639 - Otros servicios de información</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - Confección de prendas de vestir</controllingFieldValue>
+            <valueName>141 - Confección de prendas de vestir, excepto de peletería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - Confección de prendas de vestir</controllingFieldValue>
+            <valueName>142 - Fab. de artículos de peletería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - Confección de prendas de vestir</controllingFieldValue>
+            <valueName>143 - Confección de prendas de vestir de punto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Servicios financieros, excepto seguros y fondos de pensiones</controllingFieldValue>
+            <valueName>641 - Intermediación monetaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Servicios financieros, excepto seguros y fondos de pensiones</controllingFieldValue>
+            <valueName>642 - Act. de las sociedades holding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Servicios financieros, excepto seguros y fondos de pensiones</controllingFieldValue>
+            <valueName>643 - Inversión colectiva, fondos y entidades financieras similares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Servicios financieros, excepto seguros y fondos de pensiones</controllingFieldValue>
+            <valueName>649 - Otros servicios financieros, excepto seguros y fondos de pensiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15 - Industria del cuero y del calzado</controllingFieldValue>
+            <valueName>151 - Preparación, curtido y acabado del cuero; Fab. de artículos de marroquinería, viaje y de guarnicionería y talabartería; preparación y teñido de pieles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15 - Industria del cuero y del calzado</controllingFieldValue>
+            <valueName>152 - Fab. de calzado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>65 - Seguros, reaseguros y fondos de pensiones, excepto Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>651 - Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>65 - Seguros, reaseguros y fondos de pensiones, excepto Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>652 - Reaseguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>65 - Seguros, reaseguros y fondos de pensiones, excepto Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>653 - Fondos de pensiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16 - Industria de la madera y del corcho, excepto muebles; cestería y espartería</controllingFieldValue>
+            <valueName>161 - Aserrado y cepillado de la madera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>16 - Industria de la madera y del corcho, excepto muebles; cestería y espartería</controllingFieldValue>
+            <valueName>162 - Fab. de productos de madera, corcho, cestería y espartería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Actividades auxiliares a los servicios financieros y a los seguros</controllingFieldValue>
+            <valueName>661 - Act. auxiliares a los servicios financieros, excepto seguros y fondos de pensiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Actividades auxiliares a los servicios financieros y a los seguros</controllingFieldValue>
+            <valueName>662 - Act. auxiliares a seguros y fondos de pensiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Actividades auxiliares a los servicios financieros y a los seguros</controllingFieldValue>
+            <valueName>663 - Act. de gestión de fondos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>17 - Industria del papel</controllingFieldValue>
+            <valueName>171 - Fab. de pasta papelera, papel y cartón</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>17 - Industria del papel</controllingFieldValue>
+            <valueName>172 - Fab. de artículos de papel y de cartón</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>18 - Artes gráficas y reproducción de soportes grabados</controllingFieldValue>
+            <valueName>181 - Artes gráficas y servicios relacionados con las mismas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>18 - Artes gráficas y reproducción de soportes grabados</controllingFieldValue>
+            <valueName>182 - Reproducción de soportes grabados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19 - Coquerías y refino de petróleo</controllingFieldValue>
+            <valueName>191 - Coquerías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>19 - Coquerías y refino de petróleo</controllingFieldValue>
+            <valueName>192 - Refino de petróleo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>201 - Fab. de productos químicos básicos, compuestos nitrogenados, fertilizantes, plásticos y caucho sintético en formas primarias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>202 - Fab. de pesticidas y otros productos agroquímicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>203 - Fab. de pinturas, barnices y revestimientos similares; tintas de imprenta y masillas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>204 - Fab. de jabones, detergentes y otros artículos de limpieza y abrillantamiento; Fab. de perfumes y cosméticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>205 - Fab. de otros productos químicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Industria química</controllingFieldValue>
+            <valueName>206 - Fab. de fibras artificiales y sintéticas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>011 - Cultivos no perennes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>012 - Cultivos perennes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>013 - Propagación de plantas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>014 - Producción ganadera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>015 - Producción agrícola combinada con la producción ganadera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>016 - Act. de apoyo a la agricultura, a la ganadería y de preparación posterior a la cosecha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01 - Agricultura, ganadería, caza y servicios relacionados con las mismas</controllingFieldValue>
+            <valueName>017 - Caza, captura de animales y servicios relacionados con las mismas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>02 - Silvicultura y explotación forestal</controllingFieldValue>
+            <valueName>021 - Silvicultura y otras Act. forestales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>02 - Silvicultura y explotación forestal</controllingFieldValue>
+            <valueName>022 - Explotación de la madera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>02 - Silvicultura y explotación forestal</controllingFieldValue>
+            <valueName>023 - Recolección de productos silvestres, excepto madera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>02 - Silvicultura y explotación forestal</controllingFieldValue>
+            <valueName>024 - Servicios de apoyo a la silvicultura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>03 - Pesca y acuicultura</controllingFieldValue>
+            <valueName>031 - Pesca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>03 - Pesca y acuicultura</controllingFieldValue>
+            <valueName>032 - Acuicultura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05 - Extracción de antracita, hulla y lignito</controllingFieldValue>
+            <valueName>051 - Extracción de antracita y hulla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05 - Extracción de antracita, hulla y lignito</controllingFieldValue>
+            <valueName>052 - Extracción de lignito</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>06 - Extracción de crudo de petróleo y gas natural</controllingFieldValue>
+            <valueName>061 - Extracción de crudo de petróleo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>06 - Extracción de crudo de petróleo y gas natural</controllingFieldValue>
+            <valueName>062 - Extracción de gas natural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>07 - Extracción de minerales metálicos</controllingFieldValue>
+            <valueName>071 - Extracción de minerales de hierro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>07 - Extracción de minerales metálicos</controllingFieldValue>
+            <valueName>072 - Extracción de minerales metálicos no férreos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>08 - Otras industrias extractivas</controllingFieldValue>
+            <valueName>081 - Extracción de piedra, arena y arcilla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>08 - Otras industrias extractivas</controllingFieldValue>
+            <valueName>089 - Industrias extractivas n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>09 - Actividades de apoyo a las industrias extractivas</controllingFieldValue>
+            <valueName>091 - Act. de apoyo a la extracción de petróleo y gas natural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>09 - Actividades de apoyo a las industrias extractivas</controllingFieldValue>
+            <valueName>099 - Act. de apoyo a otras industrias extractivas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>101 - Procesado y conservación de carne y elaboración de productos cárnicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>102 - Procesado y conservación de pescados, crustáceos y moluscos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>103 - Procesado y conservación de frutas y hortalizas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>104 - Fab. de aceites y grasas vegetales y animales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>105 - Fab. de productos lácteos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>106 - Fab. de productos de molinería, almidones y productos amiláceos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>107 - Fab. de productos de panadería y pastas alimenticias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>108 - Fab. de otros productos alimenticios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Industria de la alimentación</controllingFieldValue>
+            <valueName>109 - Fab. de productos para la alimentación animal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>68 - Actividades inmobiliarias</controllingFieldValue>
+            <valueName>681 - Compraventa de bienes inmobiliarios por cuenta propia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>68 - Actividades inmobiliarias</controllingFieldValue>
+            <valueName>682 - Alquiler de bienes inmobiliarios por cuenta propia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>68 - Actividades inmobiliarias</controllingFieldValue>
+            <valueName>683 - Act. inmobiliarias por cuenta de terceros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>69 - Actividades jurídicas y de contabilidad</controllingFieldValue>
+            <valueName>691 - Act. jurídicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>69 - Actividades jurídicas y de contabilidad</controllingFieldValue>
+            <valueName>692 - Act. de contabilidad, teneduría de libros, auditoría y asesoría fiscal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70 - Actividades de las sedes centrales; actividades de consultoría de gestión empresarial</controllingFieldValue>
+            <valueName>701 - Act. de las sedes centrales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70 - Actividades de las sedes centrales; actividades de consultoría de gestión empresarial</controllingFieldValue>
+            <valueName>702 - Act. de consultoría de gestión empresarial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71 - Servicios técnicos de arquitectura e ingeniería; ensayos y análisis técnicos</controllingFieldValue>
+            <valueName>711 - Servicios técnicos de arquitectura e ingeniería y otras Act. relacionadas con el asesoramiento técnico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71 - Servicios técnicos de arquitectura e ingeniería; ensayos y análisis técnicos</controllingFieldValue>
+            <valueName>712 - Ensayos y análisis técnicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21 - Fabricación de productos farmacéuticos</controllingFieldValue>
+            <valueName>211 - Fab. de productos farmacéuticos de base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21 - Fabricación de productos farmacéuticos</controllingFieldValue>
+            <valueName>212 - Fab. de especialidades farmacéuticas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>72 - Investigación y desarrollo</controllingFieldValue>
+            <valueName>721 - Investigación y desarrollo experimental en ciencias naturales y técnicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>72 - Investigación y desarrollo</controllingFieldValue>
+            <valueName>722 - Investigación y desarrollo experimental en ciencias sociales y humanidades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22 - Fabricación de productos de caucho y plásticos</controllingFieldValue>
+            <valueName>221 - Fab. de productos de caucho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22 - Fabricación de productos de caucho y plásticos</controllingFieldValue>
+            <valueName>222 - Fab. de productos de plástico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>73 - Publicidad y estudios de mercado</controllingFieldValue>
+            <valueName>731 - Publicidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>73 - Publicidad y estudios de mercado</controllingFieldValue>
+            <valueName>732 - Estudio de mercado y realización de encuestas de opinión pública</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>231 - Fab. de vidrio y productos de vidrio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>232 - Fab. de productos cerámicos refractarios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>233 - Fab. de productos cerámicos para la construcción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>234 - Fab. de otros productos cerámicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>235 - Fab. de cemento, cal y yeso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>236 - Fab. de elementos de hormigón, cemento y yeso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>237 - Corte, tallado y acabado de la piedra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Fabricación de otros productos minerales no metálicos</controllingFieldValue>
+            <valueName>239 - Fab. de productos abrasivos y productos minerales no metálicos n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>74 - Otras actividades profesionales, científicas y técnicas</controllingFieldValue>
+            <valueName>741 - Act. de diseño especializado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>74 - Otras actividades profesionales, científicas y técnicas</controllingFieldValue>
+            <valueName>742 - Act. de fotografía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>74 - Otras actividades profesionales, científicas y técnicas</controllingFieldValue>
+            <valueName>743 - Act. de traducción e interpretación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>74 - Otras actividades profesionales, científicas y técnicas</controllingFieldValue>
+            <valueName>749 - Otras Act. profesionales, científicas y técnicas n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones</controllingFieldValue>
+            <valueName>241 - Fab. de productos básicos de hierro, acero y ferroaleaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones</controllingFieldValue>
+            <valueName>242 - Fab. de tubos, tuberías, perfiles huecos y sus accesorios, de acero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones</controllingFieldValue>
+            <valueName>243 - Fab. de otros productos de primera transformación del acero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones</controllingFieldValue>
+            <valueName>244 - Producción de metales preciosos y de otros metales no férreos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Metalurgia; fabricación de productos de hierro, acero y ferroaleaciones</controllingFieldValue>
+            <valueName>245 - Fundición de metales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>75 - Actividades veterinarias</controllingFieldValue>
+            <valueName>750 - Act. veterinarias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>251 - Fab. de elementos metálicos para la construcción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>252 - Fab. de cisternas, grandes depósitos y contenedores de metal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>253 - Fab. de generadores de vapor, excepto calderas de calefacción central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>254 - Fab. de armas y municiones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>255 - Forja, estampación y embutición de metales; metalurgia de polvos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>256 - Tratamiento y revestimiento de metales; ingeniería mecánica por cuenta de terceros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>257 - Fab. de artículos de cuchillería y cubertería, herramientas y ferretería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>25 - Fabricación de productos metálicos, excepto maquinaria y equipo</controllingFieldValue>
+            <valueName>259 - Fab. de otros productos metálicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77 - Actividades de alquiler</controllingFieldValue>
+            <valueName>771 - Alquiler de vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77 - Actividades de alquiler</controllingFieldValue>
+            <valueName>772 - Alquiler de efectos personales y artículos de uso doméstico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77 - Actividades de alquiler</controllingFieldValue>
+            <valueName>773 - Alquiler de otra maquinaria, equipos y bienes tangibles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77 - Actividades de alquiler</controllingFieldValue>
+            <valueName>774 - Arrendamiento de la propiedad intelectual y productos similares, excepto trabajos protegidos por los derechos de autor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>261 - Fab. de componentes electrónicos y circuitos impresos ensamblados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>262 - Fab. de ordenadores y equipos periféricos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>263 - Fab. de equipos de telecomunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>264 - Fab. de productos electrónicos de consumo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>265 - Fab. de instrumentos y aparatos de medida, verificación y navegación; Fab. de relojes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>266 - Fab. de equipos de radiación, electromédicos y electroterapéuticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>267 - Fab. de instrumentos de óptica y equipo fotográfico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>26 - Fabricación de productos informáticos, electrónicos y ópticos</controllingFieldValue>
+            <valueName>268 - Fab. de soportes magnéticos y ópticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>78 - Actividades relacionadas con el empleo</controllingFieldValue>
+            <valueName>781 - Act. de las agencias de colocación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>78 - Actividades relacionadas con el empleo</controllingFieldValue>
+            <valueName>782 - Act. de las empresas de trabajo temporal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>78 - Actividades relacionadas con el empleo</controllingFieldValue>
+            <valueName>783 - Otra provisión de recursos humanos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>271 - Fab. de motores, generadores y transformadores eléctricos, y de aparatos de distribución y control eléctrico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>272 - Fab. de pilas y acumuladores eléctricos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>273 - Fab. de cables y dispositivos de cableado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>274 - Fab. de lámparas y aparatos eléctricos de iluminación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>275 - Fab. de aparatos domésticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>27 - Fabricación de material y equipo eléctrico</controllingFieldValue>
+            <valueName>279 - Fab. de otro material y equipo eléctrico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - Fabricación de maquinaria y equipo n.c.o.p.</controllingFieldValue>
+            <valueName>281 - Fab. de maquinaria de uso general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - Fabricación de maquinaria y equipo n.c.o.p.</controllingFieldValue>
+            <valueName>282 - Fab. de otra maquinaria de uso general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - Fabricación de maquinaria y equipo n.c.o.p.</controllingFieldValue>
+            <valueName>283 - Fab. de maquinaria agraria y forestal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - Fabricación de maquinaria y equipo n.c.o.p.</controllingFieldValue>
+            <valueName>284 - Fab. de máquinas herramienta para trabajar el metal y otras máquinas herramienta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>28 - Fabricación de maquinaria y equipo n.c.o.p.</controllingFieldValue>
+            <valueName>289 - Fab. de otra maquinaria para usos específicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>29 - Fabricación de vehículos de motor, remolques y semirremolques</controllingFieldValue>
+            <valueName>291 - Fab. de vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>29 - Fabricación de vehículos de motor, remolques y semirremolques</controllingFieldValue>
+            <valueName>292 - Fab. de carrocerías para vehículos de motor; Fab. de remolques y semirremolques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>29 - Fabricación de vehículos de motor, remolques y semirremolques</controllingFieldValue>
+            <valueName>293 - Fab. de componentes, piezas y accesorios para vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Fabricación de otro material de transporte</controllingFieldValue>
+            <valueName>301 - Construcción naval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Fabricación de otro material de transporte</controllingFieldValue>
+            <valueName>302 - Fab. de locomotoras y material ferroviario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Fabricación de otro material de transporte</controllingFieldValue>
+            <valueName>303 - Construcción aeronáutica y espacial y su maquinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Fabricación de otro material de transporte</controllingFieldValue>
+            <valueName>304 - Fab. de vehículos militares de combate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Fabricación de otro material de transporte</controllingFieldValue>
+            <valueName>309 - Fab. de otro material de transporte n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>79 - Actividades de agencias de viajes, operadores turísticos, servicios de reservas y actividades relacionadas con los mismos</controllingFieldValue>
+            <valueName>791 - Act. de agencias de viajes y operadores turísticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>79 - Actividades de agencias de viajes, operadores turísticos, servicios de reservas y actividades relacionadas con los mismos</controllingFieldValue>
+            <valueName>799 - Otros servicios de reservas y Act. relacionadas con los mismos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80 - Actividades de seguridad e investigación</controllingFieldValue>
+            <valueName>801 - Act. de seguridad privada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80 - Actividades de seguridad e investigación</controllingFieldValue>
+            <valueName>802 - Servicios de sistemas de seguridad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80 - Actividades de seguridad e investigación</controllingFieldValue>
+            <valueName>803 - Act. de investigación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>81 - Servicios a edificios y actividades de jardinería</controllingFieldValue>
+            <valueName>811 - Servicios integrales a edificios e instalaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>81 - Servicios a edificios y actividades de jardinería</controllingFieldValue>
+            <valueName>812 - Act. de limpieza</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>81 - Servicios a edificios y actividades de jardinería</controllingFieldValue>
+            <valueName>813 - Act. de jardinería</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - Actividades administrativas de oficina y otras actividades auxiliares a las empresas</controllingFieldValue>
+            <valueName>821 - Act. administrativas y auxiliares de oficina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - Actividades administrativas de oficina y otras actividades auxiliares a las empresas</controllingFieldValue>
+            <valueName>822 - Act. de los centros de llamadas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - Actividades administrativas de oficina y otras actividades auxiliares a las empresas</controllingFieldValue>
+            <valueName>823 - Organización de convenciones y ferias de muestras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - Actividades administrativas de oficina y otras actividades auxiliares a las empresas</controllingFieldValue>
+            <valueName>829 - Act. de apoyo a las empresas n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>31 - Fabricación de muebles</controllingFieldValue>
+            <valueName>310 - Fab. de muebles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84 - Administración Pública y defensa; Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>841 - Administración Pública y de la política económica y social</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84 - Administración Pública y defensa; Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>842 - Prestación de servicios a la comunidad en general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84 - Administración Pública y defensa; Seguridad Social obligatoria</controllingFieldValue>
+            <valueName>843 - Seguridad Social obligatoria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>321 - Fab. de artículos de joyería, bisutería y similares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>322 - Fab. de instrumentos musicales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>323 - Fab. de artículos de deporte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>324 - Fab. de juegos y juguetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>325 - Fab. de instrumentos y suministros médicos y odontológicos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>32 - Otras industrias manufactureras</controllingFieldValue>
+            <valueName>329 - Industrias manufactureras n.c.o.p.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>851 - Educación preprimaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>852 - Educación primaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>853 - Educación secundaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>854 - Educación postsecundaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>855 - Otra educación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Educación</controllingFieldValue>
+            <valueName>856 - Act. auxiliares a la educación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>33 - Reparación e instalación de maquinaria y equipo</controllingFieldValue>
+            <valueName>331 - Reparación de productos metálicos, maquinaria y equipo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>33 - Reparación e instalación de maquinaria y equipo</controllingFieldValue>
+            <valueName>332 - Instalación de máquinas y equipos industriales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>86 - Actividades sanitarias</controllingFieldValue>
+            <valueName>861 - Act. hospitalarias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>86 - Actividades sanitarias</controllingFieldValue>
+            <valueName>862 - Act. médicas y odontológicas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>86 - Actividades sanitarias</controllingFieldValue>
+            <valueName>869 - Otras Act. sanitarias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>35 - Suministro de energía eléctrica, gas, vapor y aire acondicionado</controllingFieldValue>
+            <valueName>351 - Producción, transporte y distribución de energía eléctrica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>35 - Suministro de energía eléctrica, gas, vapor y aire acondicionado</controllingFieldValue>
+            <valueName>352 - Producción de gas; distribución por tubería de combustibles gaseosos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>35 - Suministro de energía eléctrica, gas, vapor y aire acondicionado</controllingFieldValue>
+            <valueName>353 - Suministro de vapor y aire acondicionado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>87 - Asistencia en establecimientos residenciales</controllingFieldValue>
+            <valueName>871 - Asistencia en establecimientos residenciales con cuidados sanitarios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>87 - Asistencia en establecimientos residenciales</controllingFieldValue>
+            <valueName>872 - Asistencia en establecimientos residenciales para personas con discapacidad intelectual, enfermedad mental y drogodependencia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>87 - Asistencia en establecimientos residenciales</controllingFieldValue>
+            <valueName>873 - Asistencia en establecimientos residenciales para personas mayores y con discapacidad física</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>87 - Asistencia en establecimientos residenciales</controllingFieldValue>
+            <valueName>879 - Otras Act. de asistencia en establecimientos residenciales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>36 - Captación, depuración y distribución de agua</controllingFieldValue>
+            <valueName>360 - Captación, depuración y distribución de agua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>88 - Actividades de servicios sociales sin alojamiento</controllingFieldValue>
+            <valueName>881 - Act. de servicios sociales sin alojamiento para personas mayores y con discapacidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>88 - Actividades de servicios sociales sin alojamiento</controllingFieldValue>
+            <valueName>889 - Otros Act. de servicios sociales sin alojamiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>37 - Recogida y tratamiento de aguas residuales</controllingFieldValue>
+            <valueName>370 - Recogida y tratamiento de aguas residuales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>90 - Actividades de creación, artísticas y espectáculos</controllingFieldValue>
+            <valueName>900 - Act. de creación, artísticas y espectáculos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>38 - Recogida, tratamiento y eliminación de residuos; valorización</controllingFieldValue>
+            <valueName>381 - Recogida de residuos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>38 - Recogida, tratamiento y eliminación de residuos; valorización</controllingFieldValue>
+            <valueName>382 - Tratamiento y eliminación de residuos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>38 - Recogida, tratamiento y eliminación de residuos; valorización</controllingFieldValue>
+            <valueName>383 - Valorización</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>39 - Actividades de descontaminación y otros servicios de gestión de residuos</controllingFieldValue>
+            <valueName>390 - Act. de descontaminación y otros servicios de gestión de residuos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41 - Construcción de edificios</controllingFieldValue>
+            <valueName>411 - Promoción inmobiliaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41 - Construcción de edificios</controllingFieldValue>
+            <valueName>412 - Construcción de edificios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Ingeniería civil</controllingFieldValue>
+            <valueName>421 - Construcción de carreteras y vías férreas, puentes y túneles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Ingeniería civil</controllingFieldValue>
+            <valueName>422 - Construcción de redes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Ingeniería civil</controllingFieldValue>
+            <valueName>429 - Construcción de otros proyectos de ingeniería civil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>91 - Actividades de bibliotecas, archivos, museos y otras actividades culturales</controllingFieldValue>
+            <valueName>910 - Act. de bibliotecas, archivos, museos y otras Act. culturales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>92 - Actividades de juegos de azar y apuestas</controllingFieldValue>
+            <valueName>920 - Act. de juegos de azar y apuestas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93 - Actividades deportivas, recreativas y de entretenimiento</controllingFieldValue>
+            <valueName>931 - Act. deportivas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93 - Actividades deportivas, recreativas y de entretenimiento</controllingFieldValue>
+            <valueName>932 - Act. recreativas y de entretenimiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>94 - Actividades asociativas</controllingFieldValue>
+            <valueName>941 - Act. de organizaciones empresariales, profesionales y patronales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>94 - Actividades asociativas</controllingFieldValue>
+            <valueName>942 - Act. sindicales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>94 - Actividades asociativas</controllingFieldValue>
+            <valueName>949 - Otras Act. asociativas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Actividades de construcción especializada</controllingFieldValue>
+            <valueName>431 - Demolición y preparación de terrenos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Actividades de construcción especializada</controllingFieldValue>
+            <valueName>432 - Instalaciones eléctricas, de fontanería y otras instalaciones en obras de construcción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Actividades de construcción especializada</controllingFieldValue>
+            <valueName>433 - Acabado de edificios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Actividades de construcción especializada</controllingFieldValue>
+            <valueName>439 - Otras Act. de construcción especializada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>95 - Reparación de ordenadores, efectos personales y artículos de uso doméstico</controllingFieldValue>
+            <valueName>951 - Reparación de ordenadores y equipos de comunicación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>95 - Reparación de ordenadores, efectos personales y artículos de uso doméstico</controllingFieldValue>
+            <valueName>952 - Reparación de efectos personales y artículos de uso doméstico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45 - Venta y reparación de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>451 - Venta de vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45 - Venta y reparación de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>452 - Mantenimiento y reparación de vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45 - Venta y reparación de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>453 - Comercio de repuestos y accesorios de vehículos de motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45 - Venta y reparación de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>454 - Venta, mantenimiento y reparación de motocicletas y de sus repuestos y accesorios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96 - Otros servicios personales</controllingFieldValue>
+            <valueName>960 - Otros servicios personales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>461 - Intermediarios del comercio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>462 - Comercio al por mayor de materias primas agrarias y de animales vivos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>463 - Comercio al por mayor de productos alimenticios, bebidas y tabaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>464 - Comercio al por mayor de artículos de uso doméstico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>465 - Comercio al por mayor de equipos para las tecnologías de la información y las comunicaciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>466 - Comercio al por mayor de otra maquinaria, equipos y suministros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>467 - Otro comercio al por mayor especializado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Comercio al por mayor e intermediarios del comercio, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>469 - Comercio al por mayor no especializado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>97 - Actividades de los hogares como empleadores de personal doméstico</controllingFieldValue>
+            <valueName>970 - Act. de los hogares como empleadores de personal doméstico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>471 - Comercio al por menor en establecimientos no especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>472 - Comercio al por menor de productos alimenticios, bebidas y tabaco en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>473 - Comercio al por menor de combustible para la automoción en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>474 - Comercio al por menor de equipos para las tecnologías de la información y las comunicaciones en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>475 - Comercio al por menor de otros artículos de uso doméstico en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>476 - Comercio al por menor de artículos culturales y recreativos en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>477 - Comercio al por menor de otros artículos en establecimientos especializados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>478 - Comercio al por menor en puestos de venta y en mercadillos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Comercio al por menor, excepto de vehículos de motor y motocicletas</controllingFieldValue>
+            <valueName>479 - Comercio al por menor no realizado ni en establecimientos, ni en puestos de venta ni en mercadillos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>98 - Actividades de los hogares como productores de bienes y servicios para uso propio</controllingFieldValue>
+            <valueName>981 - Act. de los hogares como productores de bienes para uso propio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>98 - Actividades de los hogares como productores de bienes y servicios para uso propio</controllingFieldValue>
+            <valueName>982 - Act. de los hogares como productores de servicios para uso propio</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

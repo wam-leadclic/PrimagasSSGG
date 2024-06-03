@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>allow_only_integer_in_consumo_energia_1a</fullName>
+    <active>false</active>
+    <description>Permet només número en el camp consumo energia 1a estimación</description>
+    <errorConditionFormula>AND(
+    NOT(ISNUMBER(Consumo_energia_1a_estimacion__c)),
+    NOT(ISBLANK(Consumo_energia_1a_estimacion__c))
+)</errorConditionFormula>
+    <errorDisplayField>Consumo_energia_1a_estimacion__c</errorDisplayField>
+    <errorMessage>Solo se permiten valores numéricos</errorMessage>
+</ValidationRule>

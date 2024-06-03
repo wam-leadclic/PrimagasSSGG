@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gasoil_a_convertir__c</fullName>
+    <description>Este campo se usa para el cálculo de los kilos y toneladas totales</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Usar este campo para convertir solo una parte de los litros de gasoil por año. Esta será la cantidad que se tendrá en cuenta para los cálculos.</inlineHelpText>
+    <label>Gasoil a convertir</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

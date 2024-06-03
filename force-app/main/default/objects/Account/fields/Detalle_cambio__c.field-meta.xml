@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detalle_cambio__c</fullName>
+    <externalId>false</externalId>
+    <label>Detalle cambio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Cambio_a__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Repsol</fullName>
+                <default>false</default>
+                <label>Repsol</label>
+            </value>
+            <value>
+                <fullName>Cepsa</fullName>
+                <default>false</default>
+                <label>Cepsa</label>
+            </value>
+            <value>
+                <fullName>Vitogas</fullName>
+                <default>false</default>
+                <label>Vitogas</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>HAM</fullName>
+                <default>false</default>
+                <label>HAM</label>
+            </value>
+            <value>
+                <fullName>MOLGAS</fullName>
+                <default>false</default>
+                <label>MOLGAS</label>
+            </value>
+            <value>
+                <fullName>Crisergas</fullName>
+                <default>false</default>
+                <label>Crisergas</label>
+            </value>
+            <value>
+                <fullName>Red GN</fullName>
+                <default>false</default>
+                <label>Red GN</label>
+            </value>
+            <value>
+                <fullName>Botellas</fullName>
+                <default>false</default>
+                <label>Botellas</label>
+            </value>
+            <value>
+                <fullName>Gasóleo/fuel</fullName>
+                <default>false</default>
+                <label>Gasóleo/fuel</label>
+            </value>
+            <value>
+                <fullName>Biomasa</fullName>
+                <default>false</default>
+                <label>Biomasa</label>
+            </value>
+            <value>
+                <fullName>Electricidad</fullName>
+                <default>false</default>
+                <label>Electricidad</label>
+            </value>
+            <value>
+                <fullName>Geotermia</fullName>
+                <default>false</default>
+                <label>Geotermia</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Competencia GLP</controllingFieldValue>
+            <valueName>Repsol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GLP</controllingFieldValue>
+            <valueName>Cepsa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GLP</controllingFieldValue>
+            <valueName>Vitogas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GLP</controllingFieldValue>
+            <controllingFieldValue>Competencia GNL</controllingFieldValue>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GNL</controllingFieldValue>
+            <valueName>HAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GNL</controllingFieldValue>
+            <valueName>MOLGAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competencia GNL</controllingFieldValue>
+            <valueName>Crisergas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Red GN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Botellas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Gasóleo/fuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Biomasa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Electricidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Otras energías/soluciones</controllingFieldValue>
+            <valueName>Geotermia</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

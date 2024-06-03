@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Credito__c</field>
+        <field>PB__c</field>
+        <field>Total_Inversion_con_deposito__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>integrador@nts.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Se pone un criterio que no se puede cumplir nunca para que se apruebe siempre automáticamente.</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Quote.Name</field>
+                <operation>equals</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Aprobar automáticamente</label>
+        <name>Aprobar_automaticamente</name>
+    </approvalStep>
+    <description>Cuando una oferta pasa al estado &quot;Preparando&quot; debido a la aplicación NewSales y se trata del &quot;PERFIL 1&quot;, entra en el proceso de aprobación. En caso de no cumplirse ninguno de los criterios, se aprueba automáticamente el presupuesto y se le cambia el estado a &quot;Aprobada&quot;.</description>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Quote.Status</field>
+            <operation>equals</operation>
+            <value>Preparando</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Total_Inversion_con_deposito__c</field>
+            <operation>lessOrEqual</operation>
+            <value>6000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Credito__c</field>
+            <operation>lessOrEqual</operation>
+            <value>6000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.PB_proceso_aprobacion__c</field>
+            <operation>lessOrEqual</operation>
+            <value>33</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Cambiar_estado_oferta_a_Aprobada</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Aprobación oferta (permitido firmar) 2</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

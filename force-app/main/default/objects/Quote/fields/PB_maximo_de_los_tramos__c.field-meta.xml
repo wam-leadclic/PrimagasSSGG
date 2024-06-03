@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PB_maximo_de_los_tramos__c</fullName>
+    <externalId>false</externalId>
+    <label>PB máximo de los tramos</label>
+    <summarizedField>Tramo__c.PBA__c</summarizedField>
+    <summaryForeignKey>Tramo__c.Presupuesto__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

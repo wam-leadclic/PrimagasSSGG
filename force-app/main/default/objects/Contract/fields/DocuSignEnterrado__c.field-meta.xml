@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignEnterrado__c</fullName>
+    <description>Marca para mapear en docusign cuando el tipo de tanque es Enterrado</description>
+    <externalId>false</externalId>
+    <formula>if(text( Tipo_de_tanque__c )=&apos;Enterrado&apos;, true, false)</formula>
+    <label>Enterrado DocuSign</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

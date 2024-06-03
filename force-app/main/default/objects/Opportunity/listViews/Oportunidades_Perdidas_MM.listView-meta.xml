@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidades_Perdidas_MM</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Observaciones_P__c</columns>
+    <columns>Motivos_de_P_rdida__c</columns>
+    <columns>Descripcion__c</columns>
+    <columns>Sub_actividad__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Cerrada perdida</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>MM</value>
+    </filters>
+    <label>Oportunidades Perdidas MM</label>
+    <language>es</language>
+    <sharedTo>
+        <group>Comercial</group>
+    </sharedTo>
+</ListView>

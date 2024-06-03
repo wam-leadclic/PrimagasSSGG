@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Botellas_HRO</fullName>
+    <columns>Oferta__c</columns>
+    <columns>NAME</columns>
+    <columns>Desde__c</columns>
+    <columns>Tarifa__c</columns>
+    <columns>Dto_E_Kg__c</columns>
+    <columns>DuracionDto__c</columns>
+    <columns>Deposito__c</columns>
+    <columns>CuotaMensual__c</columns>
+    <columns>Telemedida__c</columns>
+    <columns>Contador__c</columns>
+    <columns>InversionSinDeposito__c</columns>
+    <columns>Nivel_a_distancia__c</columns>
+    <columns>OpcExterior__c</columns>
+    <columns>OpcInterior__c</columns>
+    <columns>OpcServicio__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oferta__c</field>
+        <operation>contains</operation>
+        <value>competencia</value>
+    </filters>
+    <filters>
+        <field>Deposito__c</field>
+        <operation>contains</operation>
+        <value>2450</value>
+    </filters>
+    <label>Botellas HRO</label>
+    <language>es</language>
+</ListView>

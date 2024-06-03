@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignAereoDeposito1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo creado para el mapeo depósito propio en DocuSign</description>
+    <externalId>false</externalId>
+    <label>Aéreo Depósito 1 (DocuSign)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

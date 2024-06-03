@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coste_actual_gas__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( Provincia_env_o__c , 
+&quot;Guipúzcoa&quot;, 82,
+&quot;Asturias&quot;, 82,
+&quot;Álava&quot;, 117,
+&quot;Alicante&quot;, 110,
+&quot;Avila&quot;, 84,
+&quot;Barcelona&quot;, 54,
+&quot;Castellón&quot;, 110,
+&quot;A Coruña&quot;, 82,
+&quot;Girona&quot;, 54,
+&quot;Guadalajara&quot;, 84,
+&quot;Guipúzcoa&quot;, 82,
+&quot;Huesca&quot;, 102,
+&quot;León&quot;, 84,
+&quot;Lleida&quot;, 54,
+&quot;Lleida Vielha&quot;, 125,
+&quot;La Rioja&quot;, 117,
+&quot;Logroño&quot;, 117,
+&quot;Lugo&quot;, 82,
+&quot;Madrid&quot;, 84,
+&quot;Navarra&quot;, 117,
+&quot;Ourense&quot;, 82,
+&quot;Oviedo&quot;, 82,
+&quot;Palencia&quot;, 84,
+&quot;Pontevedra&quot;, 82,
+&quot;Salamanca&quot;, 84,
+&quot;Cantabria&quot;, 82,
+&quot;Segovia&quot;, 84,
+&quot;Soria&quot;, 84,
+&quot;Tarragona&quot;, 54,
+&quot;Teruel&quot;, 102,
+&quot;Valencia&quot;, 110,
+&quot;Valladolid&quot;, 84,
+&quot;Vizcaya&quot;, 82,
+&quot;Zamora&quot;, 84,
+&quot;Zaragoza&quot;, 102,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Coste actual gas</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

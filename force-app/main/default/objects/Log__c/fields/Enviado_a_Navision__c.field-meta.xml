@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enviado_a_Navision__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Se marcará cuando se haya enviado el log a Navision para no enviar nunca el mismo log dos veces.</description>
+    <externalId>false</externalId>
+    <label>Enviado a Navision</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_center__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo para los candidatos gestionados por telper, se usa para informes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Candidato gestionado por telper</inlineHelpText>
+    <label>Call center</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

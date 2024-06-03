@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Reactivacion_de_oportunidades_perdidas_y_aplazadas_con_fecha_de_reactivacion</fullName>
+        <description>Reactivación de oportunidades perdidas y aplazadas con fecha de reactivación</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Reactivacion_de_oportunidades_perdidas_y_aplazadas_con_fecha_de_reactivacion</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Actualiacion_de_etapa_a_Identificada</fullName>
+        <field>StageName</field>
+        <literalValue>Identificada</literalValue>
+        <name>Actualiación de etapa a Identificada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizacion_Fecha_de_Cierre</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY() + 14</formula>
+        <name>Actualizacion Fecha de Cierre</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizacion_de_fecha_de_cierre</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY() + 14</formula>
+        <name>Actualización de fecha de cierre</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizar_Fecha_de_Cierre</fullName>
+        <description>hoy+14 días</description>
+        <field>CloseDate</field>
+        <formula>TODAY() + 14</formula>
+        <name>Actualizar Fecha de Cierre</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Caducar_oportunidad</fullName>
+        <field>StageName</field>
+        <literalValue>Caducada</literalValue>
+        <name>Caducar oportunidad</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Caducar_oportunidad_Identificada</fullName>
+        <field>StageName</field>
+        <literalValue>Caducada</literalValue>
+        <name>Caducar oportunidad Identificada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Caducar_oportunidad_en_etapa_negociacion</fullName>
+        <field>StageName</field>
+        <literalValue>Caducada</literalValue>
+        <name>Caducar oportunidad en etapa negociacion</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_Estado_a_Caducada</fullName>
+        <field>StageName</field>
+        <literalValue>Caducada</literalValue>
+        <name>Cambiar Estado a Caducada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cerrar_venta_como_ganada</fullName>
+        <field>StageName</field>
+        <literalValue>Cerrada ganada</literalValue>
+        <name>Cerrar venta como ganada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fecha_de_cierre_en_30_dias</fullName>
+        <description>Actualización de fecha de cierre para el workflow 	&quot;Actualizar fecha de cierre de oportunidad en etapa de negociacion&quot;</description>
+        <field>CloseDate</field>
+        <formula>TODAY()+30</formula>
+        <name>Fecha de cierre en 30 dias</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rellenar_fecha_cierre_con_fecha_actual</fullName>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>Rellenar fecha cierre con fecha actual</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rellenar_tiempo_en_pasar_a_negociacion</fullName>
+        <field>Dias_en_pasar_a_estado_Negociacion__c</field>
+        <formula>NOW() - CreatedDate</formula>
+        <name>Rellenar tiempo en pasar a negociación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Actualizar fecha de cierre de oportunidad en etapa de negociacion</fullName>
+        <actions>
+            <name>Fecha_de_cierre_en_30_dias</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si etapa pasa a negociación y fecha de cierre &lt;Hoy+30 días -&gt; Fecha de cierre=hoy+30 días.
+Si etapa pasa a negociación y fecha de cierre&gt;Hoy+30 días -&gt; Fecha de cierre se mantiene</description>
+        <formula>AND( TEXT(StageName) = &apos;Negociación / Revisión&apos;, CloseDate &lt; TODAY()+30)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Caducar oportunidades Identificadas</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Identificada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Pasa a Caducadas las oportunidades que sean identificadas. Es dependiente del tiempo, cuando pasa a identificada, se programa en la fecha de cierre para que pase a Caducada</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Caducar_oportunidad_Identificada</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Caducar oportunidades en Negociación%2FRevisión</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Negociación / Revisión</value>
+        </criteriaItems>
+        <description>Si Fecha de última modificación  – Hoy = 30
+Entonces etapa de la oportunidad pasa de identificada a caducada.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Caducar_oportunidad</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.LastModifiedDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Caducar oportunidades en negociación</fullName>
+        <actions>
+            <name>Caducar_oportunidad_en_etapa_negociacion</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Negociación / Revisión</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Si etapa=negociación y fecha de cierre&lt;hoy -&gt; Etapa=caducada</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CambiarEstadoCaducada</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Cerrada ganada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Cerrada perdida</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Caducada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Fecha_ultima_modificacion_presupuestos__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Cuando han pasado 30 días sin que se modifiquen los presupuestos asociados a la oportunidad, se cambia el estado de la oportunidad a &quot;Caducada&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Cambiar_Estado_a_Caducada</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.Fecha_ultima_modificacion_presupuestos__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Completar %22días en pasar a estado negociación%22 de oportunidad</fullName>
+        <actions>
+            <name>Rellenar_tiempo_en_pasar_a_negociacion</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Cuando una oportunidad pasa al estado &quot;Negociación / Revisión&quot;, se rellena su campo &quot;Días en pasar a estado Negociación / Revisión&quot; con la resta del momento en que se creó y ahora.</description>
+        <formula>AND(  NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Negociación / Revisión&quot;)),  ISPICKVAL(StageName, &quot;Negociación / Revisión&quot;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CompletarFechaCierre</fullName>
+        <actions>
+            <name>Rellenar_fecha_cierre_con_fecha_actual</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna el valor de la fecha actual cuando la etapa es &quot;Cerrada Ganada&quot; o &quot;Cerrada Perdida&quot;.</description>
+        <formula>AND(  NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Cerrada Ganada&quot;)),  NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Cerrada Perdida&quot;)), OR(ISPICKVAL(StageName, &quot;Cerrada Ganada&quot;), ISPICKVAL(StageName, &quot;Cerrada Perdida&quot;))  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Estandarizar Fecha de cierre</fullName>
+        <actions>
+            <name>Actualizar_Fecha_de_Cierre</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Si una oportunidad en etapa  Aplazada, Caducada, Cerrada Perdida o Negociación/Revisión pasa a etapa  Identificada, se actualiza la fecha de cierre a Hoy + 14 dias</description>
+        <formula>AND(  	ISPICKVAL(StageName, &quot;Identificada&quot;) ,  	OR(  		ISPICKVAL(PRIORVALUE(StageName), &quot;Aplazada/Ahora No&quot;) , ISPICKVAL(PRIORVALUE(StageName), &quot;Caducada&quot;), ISPICKVAL(PRIORVALUE(StageName), &quot;Cerrada perdida&quot;),	ISPICKVAL(PRIORVALUE(StageName), &quot;Negociación / Revisión&quot;) 	) 	)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Estandarizar Fecha de cierre para conversion de candidato</fullName>
+        <actions>
+            <name>Actualizacion_Fecha_de_Cierre</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Identificada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Procede_de_conversion__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Si al convertir un candidato se crea una oportunidad con etapa Identificada, se actualiza la fecha de cierre a Hoy + 14 dias</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reactivar oportunidades perdidas y aplazadas con fecha de reactivación</fullName>
+        <active>true</active>
+        <booleanFilter>3 AND (1 OR 2)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Cerrada perdida</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Aplazada/Ahora No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Fecha_aconsejada_de_re_activaci_n__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Si la etapa pasa a Cerrada Perdida o Aplazada/ahora y la fecha de reactivación es hoy
+Entonces
+   Etapa pasa a Identificada
+   Fecha de cierre pasa a hoy+14 Días
+   Mail a propietario de la oportunidad “esta oportunidad ha sido reactivada link SF”</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Reactivacion_de_oportunidades_perdidas_y_aplazadas_con_fecha_de_reactivacion</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Actualiacion_de_etapa_a_Identificada</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Actualizacion_de_fecha_de_cierre</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.Fecha_aconsejada_de_re_activaci_n__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

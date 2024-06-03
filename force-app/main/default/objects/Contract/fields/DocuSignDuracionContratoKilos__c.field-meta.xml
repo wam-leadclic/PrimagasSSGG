@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignDuracionContratoKilos__c</fullName>
+    <description>Campo creado para el mapeo de DocuSign</description>
+    <externalId>false</externalId>
+    <formula>Duracion_contrato_en_toneladas__c  * 1000</formula>
+    <label>Duracion contrato en kilos (DocuSign)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

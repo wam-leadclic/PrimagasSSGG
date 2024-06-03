@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SADA</fullName>
+    <columns>NAME</columns>
+    <columns>Activo__c</columns>
+    <columns>Oferta__c</columns>
+    <columns>TextoOferta__c</columns>
+    <columns>Tipo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oferta__c</field>
+        <operation>contains</operation>
+        <value>SADA</value>
+    </filters>
+    <label>AGRI</label>
+    <language>es</language>
+</ListView>

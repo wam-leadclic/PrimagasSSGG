@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claridad_y_comprensi_n_de_las_facturas__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>2. Claridad y comprensión de las facturas</inlineHelpText>
+    <label>Claridad y comprensión de las facturas</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Satisfacci_n_global</valueSetName>
+    </valueSet>
+</CustomField>

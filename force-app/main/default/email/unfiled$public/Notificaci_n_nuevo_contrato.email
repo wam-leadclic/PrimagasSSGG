@@ -1,0 +1,6 @@
+{!Contract.OwnerFirstName} ha camabiado el estado del contrato {!Contract.ContractNumber} a PENDIENTE DE APROBACIÓN.
+
+{!Contract.Link}
+Saludos,
+
+El Administrador

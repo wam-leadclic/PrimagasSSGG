@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Error_consulta_precio_deposito</label>
+    <protected>false</protected>
+    <values>
+        <field>Castellano__c</field>
+        <value xsi:type="xsd:string">No se ha podido recuperar la información del depósito.</value>
+    </values>
+    <values>
+        <field>Catalan__c</field>
+        <value xsi:type="xsd:string">No s&apos;ha pogut recuperar la informació del dipòsit.</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SkipApprovalProcessAction</name>
+        <label>Skip Approval Process</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <actionName>ApprovalProcessSkipManager</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>OkAutoaprobacion</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>KOAutoaprobacionOferta</targetReference>
+        </faultConnector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>quoteIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ApprovalProcessSkipManager</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Flujo que hace que se salte el proceso de aprobación</description>
+    <environments>Default</environments>
+    <interviewLabel>Auto aprobación Oferta CPQ {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Auto aprobación Oferta CPQ</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>KOAutoaprobacionOferta</name>
+        <label>KOAutoaprobacionOferta</label>
+        <locationX>440</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>KOAutoaprobacionTex</name>
+            <fieldText>&lt;p&gt;Se ha producido el siguiente error: {!$Flow.FaultMessage}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Por favor, contacte con su Administrador o inténtelo de nuevo más tarde&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>OkAutoaprobacion</name>
+        <label>OkAutoaprobacion</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>OkAutoaprobacionText</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Su oferta se ha auto-aprobado correctamente&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Pantalla_Confirmaci_n_Autoaprobaci_n_Ofertas_CPQ</name>
+        <label>Pantalla Confirmación Autoaprobación Ofertas CPQ</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>SkipApprovalProcessAction</targetReference>
+        </connector>
+        <fields>
+            <name>ConfirmacionAprobacion</name>
+            <fieldText>&lt;p&gt;¿Está seguro que quiere que la oferta se apruebe automáticamente sin pasar por el proceso de aprobación?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Pulse Siguiente si quiere Continuar&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Pantalla_Confirmaci_n_Autoaprobaci_n_Ofertas_CPQ</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

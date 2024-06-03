@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Acepta_Contrato</fullName>
+        <field>Status</field>
+        <literalValue>Aceptado</literalValue>
+        <name>Acepta Contrato</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_estado_oferta_a_Aprobada</fullName>
+        <field>Status</field>
+        <literalValue>Aprobada</literalValue>
+        <name>Cambiar estado oferta a &quot;Aprobada&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_estado_oferta_a_No_aprobada</fullName>
+        <field>Status</field>
+        <literalValue>No aprobada</literalValue>
+        <name>Cambiar estado oferta a &quot;No aprobada&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_estado_presup_a_permitido_firmar</fullName>
+        <field>Status</field>
+        <literalValue>Pendiente aprobación (permitido firmar)</literalValue>
+        <name>Cambiar estado presup a permitido firmar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cerrar_Contrato</fullName>
+        <field>Status</field>
+        <literalValue>Aceptado</literalValue>
+        <name>Cerrar Contrato como vendido</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_Max_pb_de_tramos_en_pb</fullName>
+        <field>PB__c</field>
+        <formula>Max_PB_de_tramos__c</formula>
+        <name>Copiar &quot;Max pb de tramos&quot; en &quot;pb&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_cp_envio_a_facturaci_n</fullName>
+        <field>CP_facturaci_n__c</field>
+        <formula>CP_Env_o__c</formula>
+        <name>Copiar cp envio a facturación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_direccion_envio_a_fact</fullName>
+        <description>Copiar dirección de envío a facturación</description>
+        <field>Direcci_n_facturaci_n__c</field>
+        <formula>Direcci_n_env_o__c</formula>
+        <name>Copiar direccion envio a fact</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_nombre_de_env_o_a_facturacion</fullName>
+        <field>QuoteToName</field>
+        <formula>ShippingName</formula>
+        <name>Copiar nombre de envío a facturacion</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_poblaci_n_de_envio_a_facturacion</fullName>
+        <field>Poblaci_n_facturaci_n__c</field>
+        <formula>Poblaci_n_env_o__c</formula>
+        <name>Copiar población de envio a facturacion</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Marcar_zona_este</fullName>
+        <field>Zona_este__c</field>
+        <literalValue>1</literalValue>
+        <name>Marcar zona este</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rechaza_Contrato</fullName>
+        <field>Status</field>
+        <literalValue>Rechazado</literalValue>
+        <name>Rechaza Contrato</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Cerrar venta y contrato como ganadas</fullName>
+        <actions>
+            <name>Cerrar_Contrato</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Quote.IsSyncing</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copiar direccion envio a fact</fullName>
+        <actions>
+            <name>Copiar_cp_envio_a_facturaci_n</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copiar_direccion_envio_a_fact</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copiar_nombre_de_env_o_a_facturacion</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copiar_poblaci_n_de_envio_a_facturacion</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Quote.Copiar_datos_a_direccion_de_facturacion__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Copia la dirección de envío a dirección de facturación cuando el campo Copiar dirección ... está true</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copiar valor %22Max PB de tramos%22 en %22PB%22</fullName>
+        <actions>
+            <name>Copiar_Max_pb_de_tramos_en_pb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Quote.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Oferta personalizada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Credito__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Copiar el valor del pb del tramo con mayor pb en el campo pb de la oferta en el momento en que se envía a aprobación para poder aplicar los criterios de los pasos de aprobación en oferta personalizada.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

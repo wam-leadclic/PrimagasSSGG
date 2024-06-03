@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ganador__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>En el caso de no ganar esta oportunidad, indicar el Ganador si lo sabemos.</inlineHelpText>
+    <label>Ganador</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cepsa</fullName>
+                <default>false</default>
+                <label>Cepsa</label>
+            </value>
+            <value>
+                <fullName>Galp</fullName>
+                <default>false</default>
+                <label>Galp</label>
+            </value>
+            <value>
+                <fullName>Gasindur</fullName>
+                <default>false</default>
+                <label>Gasindur</label>
+            </value>
+            <value>
+                <fullName>Repsol</fullName>
+                <default>false</default>
+                <label>Repsol</label>
+            </value>
+            <value>
+                <fullName>Vitogas</fullName>
+                <default>false</default>
+                <label>Vitogas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

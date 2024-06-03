@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Obligacion_Tipo_Tarea</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(
+OR(
+CONTAINS( Subject , &quot;Credit &amp; Collection&quot;) ,
+CONTAINS( Subject , &quot;Customer Care&quot;) ,
+CONTAINS( Subject , &quot;Equipo Comercial&quot;) ,
+CONTAINS( Subject , &quot;Internal Sales&quot;) ,
+CONTAINS( Subject , &quot;Logistica&quot;) ,
+CONTAINS( Subject , &quot;Operaciones&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Debe seleccionar un Tipo de la lista</errorMessage>
+</ValidationRule>

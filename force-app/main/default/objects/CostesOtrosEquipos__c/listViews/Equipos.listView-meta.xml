@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipos</fullName>
+    <columns>NAME</columns>
+    <columns>Descripcion__c</columns>
+    <columns>Equipos_exterior__c</columns>
+    <columns>Equipos_interior__c</columns>
+    <columns>Instalacion_exterior__c</columns>
+    <columns>Instalacion_interior__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Equipos</label>
+    <language>es</language>
+</ListView>

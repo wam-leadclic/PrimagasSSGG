@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen_baja__c</fullName>
+    <description>SR-2009</description>
+    <externalId>false</externalId>
+    <label>Origen baja</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baja instalación ID</fullName>
+                <default>false</default>
+                <label>Baja instalación ID</label>
+            </value>
+            <value>
+                <fullName>Bajas en bloque</fullName>
+                <default>false</default>
+                <label>Bajas en bloque</label>
+            </value>
+            <value>
+                <fullName>Listado low takers</fullName>
+                <default>false</default>
+                <label>Listado low takers</label>
+            </value>
+            <value>
+                <fullName>Listado no-takers</fullName>
+                <default>false</default>
+                <label>Listado no-takers</label>
+            </value>
+            <value>
+                <fullName>Cliente</fullName>
+                <default>false</default>
+                <label>Cliente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

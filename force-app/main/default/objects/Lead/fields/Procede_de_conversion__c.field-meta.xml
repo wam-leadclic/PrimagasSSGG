@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procede_de_conversion__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checkbox para comprobar en el trigger de oportunidad desde donde se ha creado</description>
+    <externalId>false</externalId>
+    <label>Procede de conversión</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

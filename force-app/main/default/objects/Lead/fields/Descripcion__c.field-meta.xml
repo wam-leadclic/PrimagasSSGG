@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descripcion__c</fullName>
+    <description>Campo creado para poder hacer el mapeo en la conversión de candidato a oportunidad (por defecto el campo estándar Descrption va a la cuenta).</description>
+    <externalId>false</externalId>
+    <label>Descripción</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

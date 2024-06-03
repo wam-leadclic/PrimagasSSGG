@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_perdida_ahora_no_erroneo</fullName>
+    <active>true</active>
+    <description>Se ha introducido un motivo de pérdida que no corresponde a un candidato &quot;Ahora No&quot;</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Motivo_de_Descarte__c),
+ISPICKVAL(Status,&apos;0. Ahora no&apos;),
+OR(
+ISPICKVAL(Motivo_de_Descarte__c, &apos;Causas técnico-legales&apos;),
+ISPICKVAL(Motivo_de_Descarte__c, &apos;No receptivo al cambio (negativo)&apos;),
+ISPICKVAL(Motivo_de_Descarte__c, &apos;Canalizado GLP&apos;),
+ISPICKVAL(Motivo_de_Descarte__c, &apos;Red de gas natural&apos;),
+ISPICKVAL(Motivo_de_Descarte__c, &apos;Fuera zona Primagas&apos;),
+ISPICKVAL(Motivo_de_Descarte__c, &apos;Poco volumen&apos;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>El motivo de pérdida elegido corresponde a un candidato NO VALIDO</errorMessage>
+</ValidationRule>

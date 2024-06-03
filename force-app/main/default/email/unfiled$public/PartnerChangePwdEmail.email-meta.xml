@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación de la nueva contraseña cuando la contraseña del portal de socios se restablezca</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Portal de socios:  Restablecer contraseña (MUESTRA)</name>
+    <style>none</style>
+    <subject>Cuando su nueva contraseña del portal de socios de {!Organization.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

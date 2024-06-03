@@ -1,0 +1,9 @@
+Apreciado/a cliente,
+
+Gracias por ponerse en contacto con Primagas Energía.
+Le informamos que estamos trabajando para resolver su incidencia {!Case.CaseNumber}  en la mayor brevedad posible y le recordamos que estamos a su disposición en www.primagas.es y en el 900878750.
+
+Atentamente,
+
+{!Case.OwnerFullName}
+Atención al cliente

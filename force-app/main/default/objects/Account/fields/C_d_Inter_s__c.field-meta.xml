@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C_d_Inter_s__c</fullName>
+    <externalId>false</externalId>
+    <label>Cód. Interés</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1.5 NAC.</fullName>
+                <default>false</default>
+                <label>1.5 NAC.</label>
+            </value>
+            <value>
+                <fullName>2.0 INTL</fullName>
+                <default>false</default>
+                <label>2.0 INTL</label>
+            </value>
+            <value>
+                <fullName>93002328</fullName>
+                <default>false</default>
+                <label>93002328</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

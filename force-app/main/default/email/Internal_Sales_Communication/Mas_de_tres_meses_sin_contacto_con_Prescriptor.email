@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<div style="text-align: left;"><font size="2">Hola {!Account.OwnerFullName},<br><br>recibes este aviso ya que han pasado más de 3 meses desde tu último contacto con el prescriptor </font><font size="2"><a href="https://eu1.salesforce.com/{!Account.Id}">{!Account.Name}</a></font><font size="2">.<br><br></font><font size="2"><br>Recibe un cordial saludo,<br><br>CRM de Primagas</font></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Tarea_solicitud_duplicado_factura</label>
+    <protected>false</protected>
+    <values>
+        <field>Castellano__c</field>
+        <value xsi:type="xsd:string">Solicitud de duplicado de factura</value>
+    </values>
+    <values>
+        <field>Catalan__c</field>
+        <value xsi:type="xsd:string">Sol·licitud de duplicat de factura.</value>
+    </values>
+</CustomMetadata>

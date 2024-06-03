@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Producto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GLP1</fullName>
+                <default>true</default>
+                <label>GLP1</label>
+            </value>
+            <value>
+                <fullName>GLP2</fullName>
+                <default>false</default>
+                <label>GLP2</label>
+            </value>
+            <value>
+                <fullName>GLP3</fullName>
+                <default>false</default>
+                <label>GLP3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

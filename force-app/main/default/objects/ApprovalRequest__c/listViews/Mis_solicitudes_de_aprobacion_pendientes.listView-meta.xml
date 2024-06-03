@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_solicitudes_de_aprobacion_pendientes</fullName>
+    <columns>Quote__c</columns>
+    <columns>NAME</columns>
+    <columns>Approver__c</columns>
+    <columns>Status__c</columns>
+    <columns>CheckCredit__c</columns>
+    <columns>CheckInvestment__c</columns>
+    <columns>CheckNonRecoveryInvestment__c</columns>
+    <columns>CheckGasPriceRange__c</columns>
+    <columns>CheckPBA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>En revisión</value>
+    </filters>
+    <filters>
+        <field>ApproverCurrentUser__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Solicitudes de aprobación En revisión</label>
+</ListView>

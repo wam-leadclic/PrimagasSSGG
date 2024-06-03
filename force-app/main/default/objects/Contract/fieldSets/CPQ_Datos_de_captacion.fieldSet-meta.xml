@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Datos_de_captacion</fullName>
+    <description>CPQ - Datos de captación</description>
+    <displayedFields>
+        <field>Origen__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Origen_tipo_de_cliente__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>CPQ Datos de captación</label>
+</FieldSet>

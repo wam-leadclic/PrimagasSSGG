@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zona_este__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo utilizado para el proceso de aprobación de ofertas de NewSales, para que entre en el paso de la zona oeste si no ha entrado en el de la este.</description>
+    <externalId>false</externalId>
+    <label>Zona este</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

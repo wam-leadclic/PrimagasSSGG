@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asunto__c</fullName>
+    <description>Sustituye al campo estándar asunto, solo se habilita cuando para tipo consulta</description>
+    <externalId>false</externalId>
+    <label>Asunto</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Tema__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Aclaración cuota GPO</fullName>
+                <default>false</default>
+                <label>Aclaración cuota GPO</label>
+            </value>
+            <value>
+                <fullName>Aclaración facturas</fullName>
+                <default>false</default>
+                <label>Aclaración facturas</label>
+            </value>
+            <value>
+                <fullName>Alta contador</fullName>
+                <default>false</default>
+                <label>Alta contador</label>
+            </value>
+            <value>
+                <fullName>Anulación pedido gas</fullName>
+                <default>false</default>
+                <label>Anulación pedido gas</label>
+            </value>
+            <value>
+                <fullName>Atención usuario</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Atención usuario</label>
+            </value>
+            <value>
+                <fullName>Baja contrato</fullName>
+                <default>false</default>
+                <label>Baja contrato</label>
+            </value>
+            <value>
+                <fullName>Baja instalación</fullName>
+                <default>false</default>
+                <label>Baja instalación</label>
+            </value>
+            <value>
+                <fullName>Bloqueo instalación</fullName>
+                <default>false</default>
+                <label>Bloqueo instalación</label>
+            </value>
+            <value>
+                <fullName>Cambio detalles cuenta cliente</fullName>
+                <default>false</default>
+                <label>Cambio detalles cuenta cliente</label>
+            </value>
+            <value>
+                <fullName>Cambio titularidad</fullName>
+                <default>false</default>
+                <label>Cambio titularidad</label>
+            </value>
+            <value>
+                <fullName>Camión suministro</fullName>
+                <default>false</default>
+                <label>Camión suministro</label>
+            </value>
+            <value>
+                <fullName>Campaña solidaria</fullName>
+                <default>false</default>
+                <label>Campaña solidaria</label>
+            </value>
+            <value>
+                <fullName>Cancelación automáticos Covid-19</fullName>
+                <default>false</default>
+                <label>Cancelación automáticos Covid-19</label>
+            </value>
+            <value>
+                <fullName>Carga no completada</fullName>
+                <default>false</default>
+                <label>Carga no completada</label>
+            </value>
+            <value>
+                <fullName>Carga parcial</fullName>
+                <default>false</default>
+                <label>Carga parcial</label>
+            </value>
+            <value>
+                <fullName>Cliente con dos cuentas web</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cliente con dos cuentas web</label>
+            </value>
+            <value>
+                <fullName>Condiciones contrato</fullName>
+                <default>false</default>
+                <label>Condiciones contrato</label>
+            </value>
+            <value>
+                <fullName>Consulta entrega suministro</fullName>
+                <default>false</default>
+                <label>Consulta entrega suministro</label>
+            </value>
+            <value>
+                <fullName>Consulta nueva web</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consulta nueva web</label>
+            </value>
+            <value>
+                <fullName>Consulta técnica</fullName>
+                <default>false</default>
+                <label>Consulta técnica</label>
+            </value>
+            <value>
+                <fullName>Consulta vencimientos</fullName>
+                <default>false</default>
+                <label>Consulta vencimientos</label>
+            </value>
+            <value>
+                <fullName>Copia Albarán</fullName>
+                <default>false</default>
+                <label>Copia Albarán</label>
+            </value>
+            <value>
+                <fullName>Copia documentación Instalación depósito</fullName>
+                <default>false</default>
+                <label>Copia documentación Instalación depósito</label>
+            </value>
+            <value>
+                <fullName>Duplicado factura</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicado factura</label>
+            </value>
+            <value>
+                <fullName>Facturación real canalizado</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Facturación real canalizado</label>
+            </value>
+            <value>
+                <fullName>Fraccionar factura</fullName>
+                <default>false</default>
+                <label>Fraccionar factura</label>
+            </value>
+            <value>
+                <fullName>Fraccionar factura impagada</fullName>
+                <default>false</default>
+                <label>Fraccionar factura impagada</label>
+            </value>
+            <value>
+                <fullName>Gestión contrato</fullName>
+                <default>false</default>
+                <label>Gestión contrato</label>
+            </value>
+            <value>
+                <fullName>Impago factura</fullName>
+                <default>false</default>
+                <label>Impago factura</label>
+            </value>
+            <value>
+                <fullName>INCIDENCIA PAGO Covid-19</fullName>
+                <default>false</default>
+                <label>INCIDENCIA PAGO Covid-19</label>
+            </value>
+            <value>
+                <fullName>Lectura contador</fullName>
+                <default>false</default>
+                <label>Lectura contador</label>
+            </value>
+            <value>
+                <fullName>Lectura facturada</fullName>
+                <default>false</default>
+                <label>Lectura facturada</label>
+            </value>
+            <value>
+                <fullName>Lecturas estimadas</fullName>
+                <default>false</default>
+                <label>Lecturas estimadas</label>
+            </value>
+            <value>
+                <fullName>Llamar antes de suministrar</fullName>
+                <default>false</default>
+                <label>Llamar antes de suministrar</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento instalación</fullName>
+                <default>false</default>
+                <label>Mantenimiento instalación</label>
+            </value>
+            <value>
+                <fullName>Modelo 347</fullName>
+                <default>false</default>
+                <label>Modelo 347</label>
+            </value>
+            <value>
+                <fullName>No llega el gas</fullName>
+                <default>false</default>
+                <label>No llega el gas</label>
+            </value>
+            <value>
+                <fullName>No puede acceder a la web</fullName>
+                <default>false</default>
+                <label>No puede acceder a la web</label>
+            </value>
+            <value>
+                <fullName>No puede facilitar lectura por la web</fullName>
+                <default>false</default>
+                <label>No puede facilitar lectura por la web</label>
+            </value>
+            <value>
+                <fullName>No puede facilitar nivel por la web</fullName>
+                <default>false</default>
+                <label>No puede facilitar nivel por la web</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Pago anticipado</fullName>
+                <default>false</default>
+                <label>Pago anticipado</label>
+            </value>
+            <value>
+                <fullName>Pago Real decreto Covid-19 DOM</fullName>
+                <default>false</default>
+                <label>Pago Real decreto Covid-19 DOM</label>
+            </value>
+            <value>
+                <fullName>Pago Real decreto Covid-19 PROF</fullName>
+                <default>false</default>
+                <label>Pago Real decreto Covid-19 PROF</label>
+            </value>
+            <value>
+                <fullName>Posible fuga</fullName>
+                <default>false</default>
+                <label>Posible fuga</label>
+            </value>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Precio</label>
+            </value>
+            <value>
+                <fullName>Registro web</fullName>
+                <default>false</default>
+                <label>Registro web</label>
+            </value>
+            <value>
+                <fullName>Reparación técnica</fullName>
+                <default>false</default>
+                <label>Reparación técnica</label>
+            </value>
+            <value>
+                <fullName>Revisión / Inspección instalación</fullName>
+                <default>false</default>
+                <label>Revisión / Inspección instalación</label>
+            </value>
+            <value>
+                <fullName>Solicita factura</fullName>
+                <default>false</default>
+                <label>Solicita factura</label>
+            </value>
+            <value>
+                <fullName>Suministro carga parcial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suministro carga parcial</label>
+            </value>
+            <value>
+                <fullName>Suministro día festivo</fullName>
+                <default>false</default>
+                <label>Suministro día festivo</label>
+            </value>
+            <value>
+                <fullName>Tarifa producto</fullName>
+                <default>false</default>
+                <label>Tarifa producto</label>
+            </value>
+            <value>
+                <fullName>Técnico Contador precintado</fullName>
+                <default>false</default>
+                <label>Técnico Contador precintado</label>
+            </value>
+            <value>
+                <fullName>Transferencia abono</fullName>
+                <default>false</default>
+                <label>Transferencia abono</label>
+            </value>
+            <value>
+                <fullName>Vencimiento factura</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vencimiento factura</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Acceso Web</controllingFieldValue>
+            <valueName>No puede acceder a la web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Acceso Web</controllingFieldValue>
+            <valueName>No puede facilitar lectura por la web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Acceso Web</controllingFieldValue>
+            <valueName>No puede facilitar nivel por la web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Acceso Web</controllingFieldValue>
+            <valueName>Registro web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adm. Comercial</controllingFieldValue>
+            <valueName>Alta contador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adm. Comercial</controllingFieldValue>
+            <valueName>Cambio detalles cuenta cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adm. Comercial</controllingFieldValue>
+            <valueName>Cambio titularidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adm. Comercial</controllingFieldValue>
+            <valueName>Gestión contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Aclaración facturas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Consulta vencimientos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Fraccionar factura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>INCIDENCIA PAGO Covid-19</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Modelo 347</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Pago Real decreto Covid-19 DOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Pago Real decreto Covid-19 PROF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Solicita factura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Factura / Abono</controllingFieldValue>
+            <valueName>Transferencia abono</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Aclaración cuota GPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Baja contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Carga parcial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Condiciones contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Pago anticipado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gestión comercial clientes</controllingFieldValue>
+            <valueName>Tarifa producto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impago / Pagos</controllingFieldValue>
+            <valueName>Fraccionar factura impagada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impago / Pagos</controllingFieldValue>
+            <valueName>Impago factura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lectura</controllingFieldValue>
+            <valueName>Lectura contador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lectura</controllingFieldValue>
+            <valueName>Lectura facturada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lectura</controllingFieldValue>
+            <valueName>Lecturas estimadas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Anulación pedido gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Camión suministro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Carga no completada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Consulta entrega suministro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Copia Albarán</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Llamar antes de suministrar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Suministro</controllingFieldValue>
+            <valueName>Suministro día festivo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Baja instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Bloqueo instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Consulta técnica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Copia documentación Instalación depósito</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Mantenimiento instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>No llega el gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Posible fuga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Reparación técnica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Revisión / Inspección instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico / Post venta</controllingFieldValue>
+            <valueName>Técnico Contador precintado</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Actividad_Asignacion__c</fullName>
+    <description>Fecha de la primera actividad completada una vez que el candidato a sido asignado a un Comercial</description>
+    <externalId>false</externalId>
+    <label>Fecha Actividad Asignación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

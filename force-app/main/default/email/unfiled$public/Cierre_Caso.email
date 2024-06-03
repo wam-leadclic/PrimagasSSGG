@@ -1,0 +1,10 @@
+Apreciado cliente,
+
+Le informamos su incidencia {!Case.CaseNumber}  ha sido solucionada y esperamos haberle atendido satisfactoriamente.
+
+Le agradecemos la confianza depositada en Primagas
+
+Atentamente,
+
+{!Case.OwnerFullName}
+Atención al cliente

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clientes_existentes_sb</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>IBAN__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Cliente_existente</value>
+    </filters>
+    <filters>
+        <field>IBAN__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status_baja__c</field>
+        <operation>notEqual</operation>
+        <value>Anulado</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2016 12:00 AM</value>
+    </filters>
+    <label>Clientes existentes SIN BANCO</label>
+    <language>es</language>
+</ListView>

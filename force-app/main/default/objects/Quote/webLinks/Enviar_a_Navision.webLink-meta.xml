@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enviar_a_Navision</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Enviar a Navision</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* {!Quote.Enviado_a_Navision__c} = true */
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+/* Localizar datos de la oportunidad */
+var myqueryQ = &quot;SELECT OpportunityId FROM Quote WHERE Id = &apos;{!Quote.Id}&apos; limit 1&quot;;
+result = sforce.connection.query(myqueryQ);
+records = result.getArray(&quot;records&quot;);
+if(records[0])
+{
+    var regQuote = records[0];
+    var OppId = regQuote.OpportunityId;
+ /*   alert(regQuote.OpportunityId);  */
+
+    var myqueryO = &quot;SELECT Name, OwnerId FROM Opportunity WHERE Id = &apos;&quot; + regQuote.OpportunityId + &quot;&apos; limit 1&quot;;
+    result = sforce.connection.query(myqueryO);
+    records = result.getArray(&quot;records&quot;);
+    if(records[0])
+    {
+        var regOpp = records[0];
+        var OppName = regOpp.Name;
+        /* Búsqueda de nombre de propietario */
+        var myqueryU = &quot;SELECT Name FROM User WHERE Id = &apos;&quot; + regOpp.OwnerId + &quot;&apos; limit 1&quot;;
+        result = sforce.connection.query(myqueryU);
+        records = result.getArray(&quot;records&quot;);
+        if(records[0])
+        {
+            var regUser = records[0];
+            var UserName = regUser.Name;
+        }
+
+
+    }
+}
+
+/* Enviar email */
+var singleRequest = new sforce.SingleEmailMessage();
+/*singleRequest.replyTo = &quot;tecnico@ndtrace.com&quot;;*/
+singleRequest.subject = &quot;Contracte a introduir a Navision&quot;;
+var QuoteName = &quot;{!Quote.Name}&quot;;
+singleRequest.plainTextBody =  &quot;Donar d&apos;alta un contracte a Navision \r\n - Oportunitat: &quot; + OppName + &quot;\r\n - Oferta: &quot; +  QuoteName + &quot;\r\n - Resp: &quot; + UserName; 
+var myemal = &quot;joan.company@primagas.es&quot;;
+singleRequest.toAddresses = [myemal];
+var sendMailRes = sforce.connection.sendEmail([singleRequest]);
+/* alert(singleRequest);  */
+
+
+/* Activar campo de Enviado_a_Navision__c */
+var checktoUpdate = new sforce.SObject(&quot;Quote&quot;);
+checktoUpdate.Id = &quot;{!Quote.Id}&quot;;
+checktoUpdate.Enviado_a_Navision__c=&quot;true&quot;;
+var result = sforce.connection.update([checktoUpdate]);
+window.location.reload();</url>
+</WebLink>

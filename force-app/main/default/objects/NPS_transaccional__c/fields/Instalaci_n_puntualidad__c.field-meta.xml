@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instalaci_n_puntualidad__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1. Mantenimiento de  instalación: puntualidad y profesionalidad del personal involucrado</inlineHelpText>
+    <label>Instalación : puntualidad y profesionali</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Satisfacci_n_global</valueSetName>
+    </valueSet>
+</CustomField>

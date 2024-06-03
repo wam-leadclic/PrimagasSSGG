@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento1__c</fullName>
+    <defaultValue>&quot;Depósito&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Segmento1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AUTOGAS - Autogas</fullName>
+                <default>false</default>
+                <label>AUTOGAS - Autogas</label>
+            </value>
+            <value>
+                <fullName>CAP - Canalizado Publico</fullName>
+                <default>false</default>
+                <label>CAP - Canalizado Publico</label>
+            </value>
+            <value>
+                <fullName>DIGR - Distribuidor al por menor GLP a granel</fullName>
+                <default>false</default>
+                <label>DIGR - Distribuidor al por menor GLP a granel</label>
+            </value>
+            <value>
+                <fullName>DIPC - Distribuidor por menor GLP canalizado</fullName>
+                <default>false</default>
+                <label>DIPC - Distribuidor por menor GLP canalizado</label>
+            </value>
+            <value>
+                <fullName>DOM - Doméstico</fullName>
+                <default>false</default>
+                <label>DOM - Doméstico</label>
+            </value>
+            <value>
+                <fullName>GENERAL - Cliente NO GAS</fullName>
+                <default>false</default>
+                <label>GENERAL - Cliente NO GAS</label>
+            </value>
+            <value>
+                <fullName>PC - Canalizado</fullName>
+                <default>false</default>
+                <label>PC - Canalizado</label>
+            </value>
+            <value>
+                <fullName>PLATINO - Tanque PZ</fullName>
+                <default>false</default>
+                <label>PLATINO - Tanque PZ</label>
+            </value>
+            <value>
+                <fullName>PROF - Profesional</fullName>
+                <default>false</default>
+                <label>PROF - Profesional</label>
+            </value>
+            <value>
+                <fullName>SPOT - Tanque propio</fullName>
+                <default>false</default>
+                <label>SPOT - Tanque propio</label>
+            </value>
+            <value>
+                <fullName>Canalizado</fullName>
+                <default>false</default>
+                <label>Canalizado</label>
+            </value>
+            <value>
+                <fullName>Depósito</fullName>
+                <default>true</default>
+                <label>Depósito</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

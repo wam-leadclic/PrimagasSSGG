@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listas_de_seleccion</fullName>
+    <columns>NAME</columns>
+    <columns>Activo__c</columns>
+    <columns>Identificador__c</columns>
+    <columns>Idioma__c</columns>
+    <columns>Valor__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Listas de selección</label>
+    <language>es</language>
+</ListView>

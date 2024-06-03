@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Lecturas de contador" icon-name="custom:custom29" >
+        <lightning-spinner alternative-text="Loading" size="small" if:true={isLoading}></lightning-spinner>
+        <lightning-button-icon 
+            icon-name="utility:refresh" 
+            variant="border-filled" 
+            alternative-text="Show More" 
+            slot="actions" 
+            onclick={handleRefresh}>
+        </lightning-button-icon>
+        <div class="slds-card__body slds-card__body_inner slds-p-vertical_medium slds-p-horizontal_xx-small">
+            <lightning-datatable
+                    if:false={isEmpty}
+                    show-row-number-column
+                    key-field="id"
+                    columns={columns}
+                    data={data}
+                    hide-checkbox-column
+                    default-sort-direction={defaultSortDirection}
+                    sorted-direction={sortDirection}
+                    sorted-by={sortedBy}
+                    onsort={onHandleSort}>
+            </lightning-datatable>
+            <c-illustration if:true={isEmpty} title={message}></c-illustration>
+        </div>
+    </lightning-card>
+</template>

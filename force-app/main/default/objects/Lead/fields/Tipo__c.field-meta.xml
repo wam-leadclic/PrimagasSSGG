@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(RecordTypeId = &apos;012D0000000BOF3&apos;,   Company = &apos;&apos; ), &apos;Cliente Particular&apos;,
+  IF( AND(RecordTypeId = &apos;012D0000000BOF3&apos;,  Company &lt;&gt; &apos;&apos; ), &apos;Cliente Empresa&apos;,
+    IF( RecordTypeId = &apos;012D0000000BOF8&apos;, &apos;Colaborador&apos;, &apos;-&apos; 
+       )))</formula>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

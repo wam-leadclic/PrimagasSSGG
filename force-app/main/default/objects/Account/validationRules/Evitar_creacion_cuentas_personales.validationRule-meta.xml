@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evitar_creacion_cuentas_personales</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR($User.ProfileId = &apos;00eD00000012rRb&apos;,$User.ProfileId = &apos;00eD000000166N6&apos;), RecordType.Id = &apos;01257000000kgIr&apos;)</errorConditionFormula>
+    <errorMessage>Ya no se pueden crear cuentas personales</errorMessage>
+</ValidationRule>

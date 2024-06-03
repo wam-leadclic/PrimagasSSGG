@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ultima_sync_detalle_clientes__c</fullName>
+    <description>Indica la ultima fecha en la que el cliente o algúna dirección de entrega ha sido modificada mediante Nav2sfdc_ActualizacionDiariaClientes</description>
+    <externalId>false</externalId>
+    <label>Última sync. detalle clientes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unidad_consumo__c</fullName>
+    <externalId>false</externalId>
+    <label>Unidad consumo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Botellas 11 kg / año</fullName>
+                <default>false</default>
+                <label>Botellas 11 kg / año</label>
+            </value>
+            <value>
+                <fullName>Botellas 12,5 kg / año</fullName>
+                <default>false</default>
+                <label>Botellas 12,5 kg / año</label>
+            </value>
+            <value>
+                <fullName>Botellas 35 kg / año</fullName>
+                <default>false</default>
+                <label>Botellas 35 kg / año</label>
+            </value>
+            <value>
+                <fullName>Botellas 6 kg / año</fullName>
+                <default>false</default>
+                <label>Botellas 6 kg / año</label>
+            </value>
+            <value>
+                <fullName>Kg / año</fullName>
+                <default>false</default>
+                <label>Kg / año</label>
+            </value>
+            <value>
+                <fullName>kWh / año</fullName>
+                <default>false</default>
+                <label>kWh / año</label>
+            </value>
+            <value>
+                <fullName>Litros / año</fullName>
+                <default>false</default>
+                <label>Litros / año</label>
+            </value>
+            <value>
+                <fullName>MWh / año</fullName>
+                <default>false</default>
+                <label>MWh / año</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

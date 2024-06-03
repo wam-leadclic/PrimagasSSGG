@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notificar_a_comercial_de_nuevo_Prospecto_asignado</fullName>
+        <description>Notificar a comercial de nuevo Prospecto asignado</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internal_Sales_Communication/Nuevo_Prospecto_Asignado</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>EstableceCalleContacto</fullName>
+        <field>Street</field>
+        <formula>Contact_Address__c</formula>
+        <name>Establece Calle Contacto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Ciudad_Contacto</fullName>
+        <field>City</field>
+        <formula>Contact_City__c</formula>
+        <name>Establece Ciudad Contacto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Pais_Contacto</fullName>
+        <field>Country</field>
+        <formula>PaisContacto__c</formula>
+        <name>Establece Pais Contacto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Provincia_Contacto</fullName>
+        <field>State</field>
+        <formula>TEXT(Contact_State__c)</formula>
+        <name>Establece Provincia Contacto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_estado_a_Contactado</fullName>
+        <field>Status</field>
+        <literalValue>Contactado</literalValue>
+        <name>Establece estado a Contactado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Estado_webtolead</fullName>
+        <description>Cuando el leadsource es Presciptor Online poner estado hotlead</description>
+        <field>Status</field>
+        <literalValue>1. Candidato</literalValue>
+        <name>Estado webtolead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fecha_detecci_n_webtolead</fullName>
+        <description>Si LeadSource = Prescriptor Online , fecha detección = fecha creación</description>
+        <field>Fecha_deteccion__c</field>
+        <formula>CreatedDate</formula>
+        <name>Fecha detección webtolead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>webtolead</fullName>
+        <description>Si viene de webtolead pone en true el campo procede_de_conversion__c</description>
+        <field>Procede_de_conversion__c</field>
+        <literalValue>1</literalValue>
+        <name>webtolead procedente de conversión</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Asignado a Comercial</fullName>
+        <active>false</active>
+        <description>Cuando un lead se asigna a un Comercial se cambia el estado del candidato a Asignado a Comercial</description>
+        <formula>Owner:User.Profile.Id = &apos;00eD000000166N6&apos; &amp;&amp; ISCHANGED(OwnerId)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Completar %22días en pasar a estado cualificado%22 de candidato</fullName>
+        <active>true</active>
+        <description>Cuando un candidato pasa al estado &quot;Cualificado&quot;, se rellena su campo &quot;Días en pasar a estado cualificado&quot; con la resta del momento en que se creó y ahora.</description>
+        <formula>AND( NOT(ISPICKVAL(PRIORVALUE(Status), &quot;2. Cualificado&quot;)), ISPICKVAL(Status, &quot;2. Cualificado&quot;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Completar asignación de Prospecto a Comercial</fullName>
+        <actions>
+            <name>Notificar_a_comercial_de_nuevo_Prospecto_asignado</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Llamada_Primer_contacto</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Asignado_a_comercial__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>notEqual</operation>
+            <value>Selectra</value>
+        </criteriaItems>
+        <description>Una vez asignado un Prospecto a un comercial a través de las reglas de asignación, establece en el campo Fecha Asignado Comercial, genera una nueva tarea de llamada</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Estado webtolead</fullName>
+        <actions>
+            <name>Estado_webtolead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Prescriptor Online</value>
+        </criteriaItems>
+        <description>Cuando el leadsource es prescriptor online es estado tiene que ser 1. Candidato</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fecha detección webtolead</fullName>
+        <actions>
+            <name>Fecha_detecci_n_webtolead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Prescriptor Online</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Teleprospección</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Online Primagas</value>
+        </criteriaItems>
+        <description>Si LeadSource = Prescriptor Online , fecha detección = fecha creación</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Selectra</fullName>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Origen_del_prospecto__c</field>
+            <operation>equals</operation>
+            <value>Selectra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Selectra</value>
+        </criteriaItems>
+        <description>Cambia el estado a hotlead cuando el orgien es selectra</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>update proviene de conversión</fullName>
+        <actions>
+            <name>webtolead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9</booleanFilter>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>Selectra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>GasoleoAD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>PropanoAD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>BotellasAD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>OtrosAD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>GasoleoFB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>PropanoFB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>BotellasFB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.webtolead__c</field>
+            <operation>equals</operation>
+            <value>OtrosFB</value>
+        </criteriaItems>
+        <description>Actualiza el campo proviene de conversión para los candidatos que vienen de webtolead</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Llamada_Primer_contacto</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>No iniciada</status>
+        <subject>Llamada: Primer contacto</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Primagas Facturas Cliente</name>
+    <queueMembers>
+        <roles>
+            <role>Atenci_n_al_cliente</role>
+        </roles>
+        <users>
+            <user>claudia.feo@primagas.es</user>
+            <user>montse.otero@primagas.es</user>
+            <user>nuria.yebra@primagas.es</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Comentarios__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

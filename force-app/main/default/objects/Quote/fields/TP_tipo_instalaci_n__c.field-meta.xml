@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TP_tipo_instalaci_n__c</fullName>
+    <externalId>false</externalId>
+    <label>TP tipo instalación</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A recepción factura</fullName>
+                <default>false</default>
+                <label>A recepción factura</label>
+            </value>
+            <value>
+                <fullName>3 mensualidades</fullName>
+                <default>false</default>
+                <label>3 mensualidades</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Hash Id</label>
+    <protected>false</protected>
+    <values>
+        <field>Valor__c</field>
+        <value xsi:type="xsd:string">x5ut7kw0sswi75evnr5bp08gor8ood30hqlfe720jxsrx5x7icig</value>
+    </values>
+</CustomMetadata>

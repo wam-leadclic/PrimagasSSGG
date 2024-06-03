@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prioridad__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( 
+CASE( Tipo_de_cliente__c , 
+&quot;CLIENTE VIP&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006Qtsc&quot;, 
+&quot;A&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006Qtsc&quot;,
+&quot;B&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006QttB&quot;,
+&quot;C&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006QttG&quot;,
+&quot;D&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006QttL&quot;,
+&quot;E&quot;, &quot;/servlet/servlet.FileDownload?file=0152p000006QttQ&quot;,
+&quot;/s.gif&quot;), 
+&quot;Priority Flag&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prioridad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

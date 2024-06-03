@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Usuario_web_cifrado__c</fullName>
+    <description>copia de usuario web y copiados los mismos datos a fecha 27/03/2024</description>
+    <externalId>false</externalId>
+    <label>Usuario web cifrado</label>
+    <length>50</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>all</maskType>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>EncryptedText</type>
+</CustomField>

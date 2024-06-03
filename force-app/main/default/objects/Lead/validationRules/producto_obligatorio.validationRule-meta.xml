@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>producto_obligatorio</fullName>
+    <active>true</active>
+    <description>producto obligatorio al convertir</description>
+    <errorConditionFormula>IsConverted = TRUE
+&amp;&amp;
+OR(
+ISBLANK(  Producto__c  )
+)</errorConditionFormula>
+    <errorMessage>Debes introducir un producto para convertir el prospecto a cuenta</errorMessage>
+</ValidationRule>

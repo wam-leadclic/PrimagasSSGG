@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignPagoDiferido__c</fullName>
+    <description>Si el la forma de pago de forfait es 3, se informa el importe del forfait</description>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(Forma_de_pago_forfait__c )=&apos;3&apos;, Importe_forfait__c ,NULL)</formula>
+    <label>Pago diferido DocuSign</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

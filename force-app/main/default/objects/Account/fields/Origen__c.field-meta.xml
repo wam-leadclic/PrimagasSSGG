@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen__c</fullName>
+    <externalId>false</externalId>
+    <label>Origen</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Llamada entrante</fullName>
+                <default>false</default>
+                <label>Llamada entrante</label>
+            </value>
+            <value>
+                <fullName>Online Primagas</fullName>
+                <default>false</default>
+                <label>Online Primagas</label>
+            </value>
+            <value>
+                <fullName>Prescriptor</fullName>
+                <default>false</default>
+                <label>Prescriptor</label>
+            </value>
+            <value>
+                <fullName>Instalador</fullName>
+                <default>false</default>
+                <label>Instalador</label>
+            </value>
+            <value>
+                <fullName>Prospección directa</fullName>
+                <default>false</default>
+                <label>Prospección directa</label>
+            </value>
+            <value>
+                <fullName>Teleprospección</fullName>
+                <default>false</default>
+                <label>Teleprospección</label>
+            </value>
+            <value>
+                <fullName>Gasindur</fullName>
+                <default>false</default>
+                <label>Gasindur</label>
+            </value>
+            <value>
+                <fullName>GALP</fullName>
+                <default>false</default>
+                <label>GALP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

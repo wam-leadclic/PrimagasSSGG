@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado 2</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Cambio titular</fullName>
+                <default>false</default>
+                <label>Cambio titular</label>
+            </value>
+            <value>
+                <fullName>Cambio titular-renovación</fullName>
+                <default>false</default>
+                <label>Cambio titular-renovación</label>
+            </value>
+            <value>
+                <fullName>Nuevo</fullName>
+                <default>false</default>
+                <label>Nuevo</label>
+            </value>
+            <value>
+                <fullName>Reactivación</fullName>
+                <default>false</default>
+                <label>Reactivación</label>
+            </value>
+            <value>
+                <fullName>Renovación automática</fullName>
+                <default>false</default>
+                <label>Renovación automática</label>
+            </value>
+            <value>
+                <fullName>Renovado</fullName>
+                <default>false</default>
+                <label>Renovado</label>
+            </value>
+            <value>
+                <fullName>Renovado-ampliación</fullName>
+                <default>false</default>
+                <label>Renovado-ampliación</label>
+            </value>
+            <value>
+                <fullName>Renovado-Depósito propio</fullName>
+                <default>false</default>
+                <label>Renovado-Depósito propio</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <controllingFieldValue>Anulado</controllingFieldValue>
+            <valueName>Cambio titular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Cambio titular-renovación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Nuevo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Reactivación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Renovación automática</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Renovado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Renovado-ampliación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Activado</controllingFieldValue>
+            <valueName>Renovado-Depósito propio</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

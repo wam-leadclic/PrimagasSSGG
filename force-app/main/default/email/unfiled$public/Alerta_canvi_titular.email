@@ -1,0 +1,6 @@
+Con fecha : {!Contract.CustomerSignedDate}
+Se ha producido un cambio de titular.
+Nuevo estado : {!Contract.Estado_2__c}
+Titular nuevo : {!Contract.Account}
+
+Nº cliente anterior : {!Contract.N_Cliente_anterior__c}

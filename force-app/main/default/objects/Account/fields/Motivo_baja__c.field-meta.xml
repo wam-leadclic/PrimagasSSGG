@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_baja__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo baja</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resolución por incumplimiento</fullName>
+                <default>false</default>
+                <label>Resolución por incumplimiento cliente</label>
+            </value>
+            <value>
+                <fullName>Desconocido</fullName>
+                <default>false</default>
+                <label>Desconocido</label>
+            </value>
+            <value>
+                <fullName>Cese actividad</fullName>
+                <default>false</default>
+                <label>Cese actividad / venta vivienda</label>
+            </value>
+            <value>
+                <fullName>Condiciones contractuales</fullName>
+                <default>false</default>
+                <label>Condiciones contractuales</label>
+            </value>
+            <value>
+                <fullName>Insatisfecho servicio ofrecido</fullName>
+                <default>false</default>
+                <label>Insatisfecho servicio ofrecido</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Cambio de titular</fullName>
+                <default>false</default>
+                <label>Cambio de titular</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Acceso Web</fullName>
+        <default>false</default>
+        <label>Acceso Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alta contador</fullName>
+        <default>false</default>
+        <label>Alta contador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ampliación (AFI)</fullName>
+        <default>false</default>
+        <label>Ampliación (AFI)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automáticos que rechazan suministro</fullName>
+        <default>false</default>
+        <label>Automáticos que rechazan suministro</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Baja cliente Granel</fullName>
+        <default>false</default>
+        <label>Baja cliente Granel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Baja cliente PC</fullName>
+        <default>false</default>
+        <label>Baja cliente PC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Baja instalación Granel</fullName>
+        <default>false</default>
+        <label>Baja instalación Granel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Baja instalación PC</fullName>
+        <default>false</default>
+        <label>Baja instalación PC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Baja - Renegociable</fullName>
+        <default>false</default>
+        <label>Baja - Renegociable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bloqueo por impago</fullName>
+        <default>false</default>
+        <label>Bloqueo por impago</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio CONTADOR</fullName>
+        <default>false</default>
+        <label>Cambio CONTADOR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio cuenta bancaria</fullName>
+        <default>false</default>
+        <label>Cambio cuenta bancaria</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio de titular Granel</fullName>
+        <default>false</default>
+        <label>Cambio de titular Granel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio de titular PC</fullName>
+        <default>false</default>
+        <label>Cambio de titular PC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio titular pte. por DEUDA granel</fullName>
+        <default>false</default>
+        <label>Cambio titular pte. por DEUDA granel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio titular pte. por DEUDA PC</fullName>
+        <default>false</default>
+        <label>Cambio titular pte. por DEUDA PC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Campaña Verano 24</fullName>
+        <default>false</default>
+        <label>Campaña Verano 24</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CC1 - Registro pedido</fullName>
+        <default>false</default>
+        <label>CC1 - Registro pedido</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CC2 - Registro lectura</fullName>
+        <default>false</default>
+        <label>CC2 - Registro lectura</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cliente automatico sin gas</fullName>
+        <default>false</default>
+        <label>Cliente automatico sin gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cliente no automatico sin gas</fullName>
+        <default>false</default>
+        <label>Cliente no automatico sin gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Condiciones generales contrato</fullName>
+        <default>false</default>
+        <label>Condiciones generales contrato</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consulta 1er Llenado</fullName>
+        <default>false</default>
+        <label>Consulta 1er Llenado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contratación revisión/inspección</fullName>
+        <default>false</default>
+        <label>Contratación revisión/inspección</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contrato nuevo en proceso ID</fullName>
+        <default>false</default>
+        <label>Contrato nuevo en proceso ID</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Copia Albarán</fullName>
+        <default>false</default>
+        <label>Copia Albarán</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Copia de contrato</fullName>
+        <default>false</default>
+        <label>Copia de contrato</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Copia factura</fullName>
+        <default>false</default>
+        <label>Copia factura</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Documentación técnica</fullName>
+        <default>false</default>
+        <label>Documentación técnica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Estado pedido de gas</fullName>
+        <default>false</default>
+        <label>Estado pedido de gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facturación Depósito</fullName>
+        <default>false</default>
+        <label>Facturación Depósito</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Factura electrónica</fullName>
+        <default>false</default>
+        <label>Factura electrónica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fallo telemedida</fullName>
+        <default>false</default>
+        <label>Fallo telemedida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fraccionar factura</fullName>
+        <default>false</default>
+        <label>Fraccionar factura</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fuga en la instalación</fullName>
+        <default>false</default>
+        <label>Fuga en la instalación</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gestión deuda Partner</fullName>
+        <default>false</default>
+        <label>Gestión deuda Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GPO facturado</fullName>
+        <default>false</default>
+        <label>GPO facturado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incidencia suministro</fullName>
+        <default>false</default>
+        <label>Incidencia suministro</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incidencia Técnica</fullName>
+        <default>false</default>
+        <label>Incidencia Técnica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instalar Telemedida</fullName>
+        <default>false</default>
+        <label>Instalar Telemedida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lectura facturada</fullName>
+        <default>false</default>
+        <label>Lectura facturada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mantenimiento/revisión/inspección</fullName>
+        <default>false</default>
+        <label>Mantenimiento/revisión/inspección</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Material roto</fullName>
+        <default>false</default>
+        <label>Material roto</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No consumo</fullName>
+        <default>false</default>
+        <label>No consumo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Consumo TP LT</fullName>
+        <default>false</default>
+        <label>No Consumo TP LT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Consumo TP NT</fullName>
+        <default>false</default>
+        <label>No Consumo TP NT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No traspasar deuda</fullName>
+        <default>false</default>
+        <label>No traspasar deuda</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pago anticipado</fullName>
+        <default>false</default>
+        <label>Pago anticipado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pago anticipado con deuda</fullName>
+        <default>false</default>
+        <label>Pago anticipado con deuda</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pdte recibir contrato firmado</fullName>
+        <default>false</default>
+        <label>Pdte recibir contrato firmado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pedido cliente automático</fullName>
+        <default>false</default>
+        <label>Pedido cliente automático</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pérdidas/Ganancias - WriteOff</fullName>
+        <default>false</default>
+        <label>Pérdidas/Ganancias - WriteOff</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Perfil 97</fullName>
+        <default>false</default>
+        <label>Perfil 97</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rappel</fullName>
+        <default>false</default>
+        <label>Rappel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recircular recibo</fullName>
+        <default>false</default>
+        <label>Recircular recibo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reclamación Consumo</fullName>
+        <default>false</default>
+        <label>Reclamación Consumo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reemplazar Telemedida</fullName>
+        <default>false</default>
+        <label>Reemplazar Telemedida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renegociar condiciones</fullName>
+        <default>false</default>
+        <label>Renegociar condiciones</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retirada contador</fullName>
+        <default>false</default>
+        <label>Retirada contador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retraso en la baja</fullName>
+        <default>false</default>
+        <label>Retraso en la baja</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Revision comercial</fullName>
+        <default>false</default>
+        <label>Revision comercial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud abono</fullName>
+        <default>false</default>
+        <label>Solicitud abono</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud de revisión interior</fullName>
+        <default>false</default>
+        <label>Solicitud de revisión interior</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suma consumo Gas</fullName>
+        <default>false</default>
+        <label>Suma consumo Gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suma consumo GPO</fullName>
+        <default>false</default>
+        <label>Suma consumo GPO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suministro facturado</fullName>
+        <default>false</default>
+        <label>Suministro facturado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suministro inseguro</fullName>
+        <default>false</default>
+        <label>Suministro inseguro</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tarifa a facturar</fullName>
+        <default>false</default>
+        <label>Tarifa a facturar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tarifa cliente TP</fullName>
+        <default>false</default>
+        <label>Tarifa cliente TP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transferencia</fullName>
+        <default>false</default>
+        <label>Transferencia</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upselling BioPropane</fullName>
+        <default>false</default>
+        <label>Upselling BioPropane</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgencia (no valida) cliente automático</fullName>
+        <default>false</default>
+        <label>Urgencia (no valida) cliente automático</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vaciado por baja</fullName>
+        <default>false</default>
+        <label>Vaciado por baja</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vaciado por reparación/fuga</fullName>
+        <default>false</default>
+        <label>Vaciado por reparación/fuga</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Viabilidad judicial</fullName>
+        <default>false</default>
+        <label>Viabilidad judicial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visita</fullName>
+        <default>false</default>
+        <label>Visita</label>
+    </standardValue>
+</StandardValueSet>

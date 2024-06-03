@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_perdida_erroneo_ahora_no</fullName>
+    <active>true</active>
+    <description>Este motivo de pérdida corresponde a una oportunidad &quot;Cerrada Perdida&quot;.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Motivos_de_P_rdida__c),
+ISPICKVAL(StageName,&apos;Aplazada/Ahora No&apos;),
+OR(
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Causas técnico-legales&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;No receptivo al cambio (negativo)&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Canalizado GLP&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Red de gas natural&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Fuera zona Primagas&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Me quedo con mi energía actual (precio)&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Compromiso permanencia competencia&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Elige competencia (precio)&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Riesgo alto de crédito&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Otra energía: gasóleo&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Otra energía: electricidad&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Otra energía: biomasa&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Otra energía: renovables&apos;),
+ISPICKVAL(Motivos_de_P_rdida__c, &apos;Poco volumen&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>El motivo de pérdida introducido corresponde a la etapa &quot;CERRADA PERDIDA&quot;.</errorMessage>
+</ValidationRule>

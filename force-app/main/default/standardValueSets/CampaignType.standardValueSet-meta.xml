@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Publicidad</fullName>
+        <default>true</default>
+        <label>Publicidad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Correo electrónico</fullName>
+        <default>false</default>
+        <label>Correo electrónico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Publicidad en forma de anuncios</fullName>
+        <default>false</default>
+        <label>Publicidad en forma de anuncios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminario / Congreso</fullName>
+        <default>false</default>
+        <label>Seminario / Congreso</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relaciones públicas</fullName>
+        <default>false</default>
+        <label>Relaciones públicas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Socios</fullName>
+        <default>false</default>
+        <label>Socios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Programa de referencias</fullName>
+        <default>false</default>
+        <label>Programa de referencias</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Adwords</fullName>
+        <default>false</default>
+        <label>Adwords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FB Lead Ads</fullName>
+        <default>false</default>
+        <label>FB Lead Ads</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Display</fullName>
+        <default>false</default>
+        <label>Display</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound email</fullName>
+        <default>false</default>
+        <label>Outbound email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound online</fullName>
+        <default>false</default>
+        <label>Inbound online</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medios (tv, radio, prensa)</fullName>
+        <default>false</default>
+        <label>Medios (tv, radio, prensa)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evento local</fullName>
+        <default>false</default>
+        <label>Evento local</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminario/Congreso</fullName>
+        <default>false</default>
+        <label>Seminario/Congreso</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promoción</fullName>
+        <default>false</default>
+        <label>Promoción</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>detalle_cambio_otros</fullName>
+    <active>true</active>
+    <description>Si detalle cambio  = otros hacer obligatorio el campo observaciones baja</description>
+    <errorConditionFormula>AND (ISPICKVAL( Detalle_cambio__c,&quot;Otros&quot;),ISBLANK( Observaciones_baja__c))</errorConditionFormula>
+    <errorDisplayField>Observaciones_baja__c</errorDisplayField>
+    <errorMessage>Debes rellenar el campo Observaciones baja</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rango_nivel_de_deposito</fullName>
+    <active>true</active>
+    <description>Limita el nivel de depósito que se puede introducir de 0-85</description>
+    <errorConditionFormula>OR( Nivel_del_deposito__c &lt; 0, Nivel_del_deposito__c &gt; 85)</errorConditionFormula>
+    <errorDisplayField>Nivel_del_deposito__c</errorDisplayField>
+    <errorMessage>El nivel del depósito debe estar entre 0 y 85</errorMessage>
+</ValidationRule>

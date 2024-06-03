@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SM1000A</fullName>
+    <columns>NAME</columns>
+    <columns>Coste__c</columns>
+    <columns>Deposito__c</columns>
+    <columns>Provincia__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Deposito__c</field>
+        <operation>equals</operation>
+        <value>SM1000A</value>
+    </filters>
+    <label>SM1000A</label>
+    <language>es</language>
+</ListView>

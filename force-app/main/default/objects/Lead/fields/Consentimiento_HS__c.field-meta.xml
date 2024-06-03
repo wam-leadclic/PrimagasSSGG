@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consentimiento_HS__c</fullName>
+    <description>Base legal a partir de la cual se ha obtenido el consentimiento del contacto.</description>
+    <externalId>false</externalId>
+    <label>Consentimiento HS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freely given consent from contact</fullName>
+                <default>false</default>
+                <label>Freely given consent from contact</label>
+            </value>
+            <value>
+                <fullName>Legitimate interest – prospect/lead</fullName>
+                <default>false</default>
+                <label>Legitimate interest – prospect/lead</label>
+            </value>
+            <value>
+                <fullName>Legitimate interest – existing customer</fullName>
+                <default>false</default>
+                <label>Legitimate interest – existing customer</label>
+            </value>
+            <value>
+                <fullName>Legitimate interest - other</fullName>
+                <default>false</default>
+                <label>Legitimate interest - other</label>
+            </value>
+            <value>
+                <fullName>Performance of a contract</fullName>
+                <default>false</default>
+                <label>Performance of a contract</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

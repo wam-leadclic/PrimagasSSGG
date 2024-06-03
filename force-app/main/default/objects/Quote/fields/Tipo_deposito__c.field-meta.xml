@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_deposito__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo depósito</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aéreo</fullName>
+                <default>false</default>
+                <label>Aéreo</label>
+            </value>
+            <value>
+                <fullName>Enterrado</fullName>
+                <default>false</default>
+                <label>Enterrado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

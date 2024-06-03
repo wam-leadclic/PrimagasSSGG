@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ganado_por_competencia__c</fullName>
+    <externalId>false</externalId>
+    <label>Ganado por competencia</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Repsol</fullName>
+                <default>false</default>
+                <label>Repsol</label>
+            </value>
+            <value>
+                <fullName>Vitogas</fullName>
+                <default>false</default>
+                <label>Vitogas</label>
+            </value>
+            <value>
+                <fullName>Cepsa</fullName>
+                <default>false</default>
+                <label>Cepsa</label>
+            </value>
+            <value>
+                <fullName>Galp</fullName>
+                <default>false</default>
+                <label>Galp</label>
+            </value>
+            <value>
+                <fullName>Unión Fenosa</fullName>
+                <default>false</default>
+                <label>Unión Fenosa</label>
+            </value>
+            <value>
+                <fullName>Gas Natural</fullName>
+                <default>false</default>
+                <label>Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Ham</fullName>
+                <default>false</default>
+                <label>Ham</label>
+            </value>
+            <value>
+                <fullName>Molgas</fullName>
+                <default>false</default>
+                <label>Molgas</label>
+            </value>
+            <value>
+                <fullName>Crisergas</fullName>
+                <default>false</default>
+                <label>Crisergas</label>
+            </value>
+            <value>
+                <fullName>Endesa</fullName>
+                <default>false</default>
+                <label>Endesa</label>
+            </value>
+            <value>
+                <fullName>Primagas</fullName>
+                <default>false</default>
+                <label>Primagas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

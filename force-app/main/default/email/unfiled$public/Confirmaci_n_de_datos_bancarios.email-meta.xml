@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Confirmación de datos bancarios</name>
+    <style>none</style>
+    <subject>Primagas - Confirmación de datos bancarios</subject>
+    <textOnly>Confirmación de datos bancarios
+
+Se requiere actualización y confirmación de los datos bancarios a través del cumplimentado del documento SEPA.
+
+Estimado Sr./ Sra. {!Contact.Name} X
+
+Nos ponemos en contacto contigo en referencia al suministro de gas propano sito en {!Direcci_n_de_entrega__c.Direccion__c}{!Direcci_n_de_entrega__c.Direccion_2__c}XXXXXXXXXXX.
+
+El motivo de la presente es para informarte de que ha debido de haber algún error respecto a tus datos bancarios que nos constan actualmente. Por este motivo, no podemos presentar las facturas a su entidad bancaria.
+
+Con el fin de regularizar esta situación en la mayor brevedad posible, agradeceríamos que nos devolvieses debidamente cumplimentado el documento SEPA (adjunto a este email). Te informamos igualmente de que los suministros permanecerán bloqueados hasta que se actualicen los datos bancarios.
+
+Además, debido a lo indicado anteriormente, te informamos de que la factura XXXX se encuentra pendiente de pago, por lo que en el momento que nos facilites los nuevos datos bancarios procederemos a presentar la factura a su banco.
+
+Quedando a la espera de la recepción de este documento.
+
+Un saludo,
+
+
+
+629 313 567
+
+
+hola@primagas.es
+
+
+900 878 750
+
+Todos los derechos reservados
+Copyright © 2019 Primagas Energía SAU,
+
+www.primagas.es</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla para el aprobador de la Oferta de CPQ</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>CPQMembreteSolicitudAprobaciOn</letterhead>
+    <name>Solicitud aprobación Oferta CPQ</name>
+    <style>formalLetter</style>
+    <subject>Solicitud Aprobación Oferta {!SBQQ__Quote__c.Name}</subject>
+    <textOnly>Hola {!ApprovalRequest__c.Approver__c},
+
+Tiene la siguiente solicitud pendiente de aprobar: {!ApprovalRequest__c.Link}.
+
+A continuación se muestran las métricas que debe aprobar:
+
+Crédito ({!ApprovalRequest__c.CheckCredit__c}): {!ApprovalRequest__c.Credit__c}
+Inversión ({!ApprovalRequest__c.CheckInvestment__c}): {!ApprovalRequest__c.Investment__c}
+PBA ({!ApprovalRequest__c.CheckPBA__c}): {!ApprovalRequest__c.PBA__c}
+Margen Gas ({!ApprovalRequest__c.CheckGasPriceRange__c}): {!ApprovalRequest__c.GasPriceRange__c}
+Inversión no recuperable ({!ApprovalRequest__c.CheckNonRecoveryInvestment__c}): {!ApprovalRequest__c.NonRecoveryInvestment__c}
+
+Por favor, proceda a su revisión</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

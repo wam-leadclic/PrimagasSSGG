@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enviar_a_docusing</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Enviar a docusign++</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(&apos;/apex/dsfs__DocuSign_CreateEnvelope&apos;, null, [
+
+SourceID = Opportunity.Id,
+CCRM = &apos;Signer 1~Signer 1;Signer 2~Signer 2&apos;,
+CCTM = &apos;Signer 1~Signer;Signer 2~Signer&apos;,
+CRL = &apos;Email~&apos; + User.Email+ &apos;;FirstName~&apos; + User.FirstName + &apos;;LastName~&apos; + User.LastName + &apos;;Role~Signer 1;RoutingOrder~1, Email~&apos; + Contact.Email+ &apos;;FirstName~&apos; + Contact.FirstName + &apos;;LastName~&apos; + Contact.LastName+ &apos;;Role~Signer 2;RoutingOrder~2&apos;
+])}</url>
+</WebLink>

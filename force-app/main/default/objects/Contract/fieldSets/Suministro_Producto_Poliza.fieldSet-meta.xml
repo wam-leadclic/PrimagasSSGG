@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suministro_Producto_Poliza</fullName>
+    <description>Suministros Producto a utilizar en nuevos contratos de tipo póliza.</description>
+    <displayedFields>
+        <field>Perfil_de_consumo__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Tipo_residencia__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Suministro Producto Póliza</label>
+</FieldSet>

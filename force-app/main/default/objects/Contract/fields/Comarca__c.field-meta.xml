@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comarca__c</fullName>
+    <externalId>false</externalId>
+    <label>Comarca</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>l’Alt Camp</fullName>
+                <default>false</default>
+                <label>l’Alt Camp</label>
+            </value>
+            <value>
+                <fullName>l’Alt Empordà</fullName>
+                <default>false</default>
+                <label>l’Alt Empordà</label>
+            </value>
+            <value>
+                <fullName>l’Alt Penedès</fullName>
+                <default>false</default>
+                <label>l’Alt Penedès</label>
+            </value>
+            <value>
+                <fullName>l’Alt Urgell</fullName>
+                <default>false</default>
+                <label>l’Alt Urgell</label>
+            </value>
+            <value>
+                <fullName>l’Alta Ribagorça</fullName>
+                <default>false</default>
+                <label>l’Alta Ribagorça</label>
+            </value>
+            <value>
+                <fullName>l’Anoia</fullName>
+                <default>false</default>
+                <label>l’Anoia</label>
+            </value>
+            <value>
+                <fullName>el Bages</fullName>
+                <default>false</default>
+                <label>el Bages</label>
+            </value>
+            <value>
+                <fullName>el Baix Camp</fullName>
+                <default>false</default>
+                <label>el Baix Camp</label>
+            </value>
+            <value>
+                <fullName>el Baix Ebre</fullName>
+                <default>false</default>
+                <label>el Baix Ebre</label>
+            </value>
+            <value>
+                <fullName>el Baix Empordà</fullName>
+                <default>false</default>
+                <label>el Baix Empordà</label>
+            </value>
+            <value>
+                <fullName>el Baix Llobregat</fullName>
+                <default>false</default>
+                <label>el Baix Llobregat</label>
+            </value>
+            <value>
+                <fullName>el Baix Penedès</fullName>
+                <default>false</default>
+                <label>el Baix Penedès</label>
+            </value>
+            <value>
+                <fullName>el Barcelonès</fullName>
+                <default>false</default>
+                <label>el Barcelonès</label>
+            </value>
+            <value>
+                <fullName>el Berguedà</fullName>
+                <default>false</default>
+                <label>el Berguedà</label>
+            </value>
+            <value>
+                <fullName>la Cerdanya</fullName>
+                <default>false</default>
+                <label>la Cerdanya</label>
+            </value>
+            <value>
+                <fullName>la Conca de Barberà</fullName>
+                <default>false</default>
+                <label>la Conca de Barberà</label>
+            </value>
+            <value>
+                <fullName>el Garraf</fullName>
+                <default>false</default>
+                <label>el Garraf</label>
+            </value>
+            <value>
+                <fullName>les Garrigues</fullName>
+                <default>false</default>
+                <label>les Garrigues</label>
+            </value>
+            <value>
+                <fullName>la Garrotxa</fullName>
+                <default>false</default>
+                <label>la Garrotxa</label>
+            </value>
+            <value>
+                <fullName>el Gironès</fullName>
+                <default>false</default>
+                <label>el Gironès</label>
+            </value>
+            <value>
+                <fullName>el Maresme</fullName>
+                <default>false</default>
+                <label>el Maresme</label>
+            </value>
+            <value>
+                <fullName>el Montsià</fullName>
+                <default>false</default>
+                <label>el Montsià</label>
+            </value>
+            <value>
+                <fullName>la Noguera</fullName>
+                <default>false</default>
+                <label>la Noguera</label>
+            </value>
+            <value>
+                <fullName>Osona</fullName>
+                <default>false</default>
+                <label>Osona</label>
+            </value>
+            <value>
+                <fullName>el Pallars Jussà</fullName>
+                <default>false</default>
+                <label>el Pallars Jussà</label>
+            </value>
+            <value>
+                <fullName>el Pallars Sobirà</fullName>
+                <default>false</default>
+                <label>el Pallars Sobirà</label>
+            </value>
+            <value>
+                <fullName>el Pla de l’Estany</fullName>
+                <default>false</default>
+                <label>el Pla de l’Estany</label>
+            </value>
+            <value>
+                <fullName>el Pla d’Urgell</fullName>
+                <default>false</default>
+                <label>el Pla d’Urgell</label>
+            </value>
+            <value>
+                <fullName>el Priorat</fullName>
+                <default>false</default>
+                <label>el Priorat</label>
+            </value>
+            <value>
+                <fullName>la Ribera d’Ebre</fullName>
+                <default>false</default>
+                <label>la Ribera d’Ebre</label>
+            </value>
+            <value>
+                <fullName>el Ripollès</fullName>
+                <default>false</default>
+                <label>el Ripollès</label>
+            </value>
+            <value>
+                <fullName>la Segarra</fullName>
+                <default>false</default>
+                <label>la Segarra</label>
+            </value>
+            <value>
+                <fullName>el Segrià</fullName>
+                <default>false</default>
+                <label>el Segrià</label>
+            </value>
+            <value>
+                <fullName>la Selva</fullName>
+                <default>false</default>
+                <label>la Selva</label>
+            </value>
+            <value>
+                <fullName>el Solosonès</fullName>
+                <default>false</default>
+                <label>el Solosonès</label>
+            </value>
+            <value>
+                <fullName>el Tarragonès</fullName>
+                <default>false</default>
+                <label>el Tarragonès</label>
+            </value>
+            <value>
+                <fullName>la Terra Alta</fullName>
+                <default>false</default>
+                <label>la Terra Alta</label>
+            </value>
+            <value>
+                <fullName>l’Urgell</fullName>
+                <default>false</default>
+                <label>l’Urgell</label>
+            </value>
+            <value>
+                <fullName>la Vall d’Aran</fullName>
+                <default>false</default>
+                <label>la Vall d’Aran</label>
+            </value>
+            <value>
+                <fullName>el Vallès Occidental</fullName>
+                <default>false</default>
+                <label>el Vallès Occidental</label>
+            </value>
+            <value>
+                <fullName>el Vallès Oriental</fullName>
+                <default>false</default>
+                <label>el Vallès Oriental</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

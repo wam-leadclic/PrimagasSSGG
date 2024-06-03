@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conversion_Cliente_genera_oportunidad</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ConvertedOpportunityId &lt;&gt; &apos;&apos;, RecordTypeId = &apos;012D0000000BOF8&apos;)</errorConditionFormula>
+    <errorMessage>Debes marcar la casilla de &quot;No crear una oportunidad nueva tras la conversión&quot;</errorMessage>
+</ValidationRule>

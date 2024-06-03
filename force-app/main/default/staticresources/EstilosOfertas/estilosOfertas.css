@@ -1,0 +1,24 @@
+.fondoCirculoRojo
+{
+	background-image: url("images/circulo_rojo.jpg");
+}
+
+.circuloRojo {
+        background-image: url(images/circulo_rojo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding:15px;
+        margin: auto;
+        color: white; 
+        }
+
+  .graficoFinal{
+  	 	background-image: url(images/graficoFinal.jpg);
+  	 	width:400px;
+  	 	height:221px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 15px;
+		position:relative;
+	padding-left:20px;
+  }

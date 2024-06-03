@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tanque_propio__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Creado para la funcionalidad de cambio de titular.</description>
+    <externalId>false</externalId>
+    <label>Tanque propio</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

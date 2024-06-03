@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>C_digo__c</columns>
+    <columns>Poblaci_n__c</columns>
+    <columns>CIF__c</columns>
+    <columns>Proveedor_b_squeda__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos</label>
+    <language>es</language>
+</ListView>

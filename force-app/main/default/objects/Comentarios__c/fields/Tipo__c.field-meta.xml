@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bajas</fullName>
+                <default>false</default>
+                <label>Bajas</label>
+            </value>
+            <value>
+                <fullName>Cambio cuenta</fullName>
+                <default>false</default>
+                <label>Cambio cuenta</label>
+            </value>
+            <value>
+                <fullName>Contrato</fullName>
+                <default>false</default>
+                <label>Contrato</label>
+            </value>
+            <value>
+                <fullName>Expediente Abierto</fullName>
+                <default>false</default>
+                <label>Expediente Abierto</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Pago anticipado</fullName>
+                <default>false</default>
+                <label>Pago anticipado</label>
+            </value>
+            <value>
+                <fullName>Pago cliente</fullName>
+                <default>false</default>
+                <label>Pago cliente</label>
+            </value>
+            <value>
+                <fullName>Post-venta</fullName>
+                <default>false</default>
+                <label>Post-venta</label>
+            </value>
+            <value>
+                <fullName>Precio SPOT</fullName>
+                <default>false</default>
+                <label>Precio SPOT</label>
+            </value>
+            <value>
+                <fullName>Suministro</fullName>
+                <default>false</default>
+                <label>Suministro</label>
+            </value>
+            <value>
+                <fullName>Zona almacenamiento</fullName>
+                <default>false</default>
+                <label>Zona almacenamiento</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

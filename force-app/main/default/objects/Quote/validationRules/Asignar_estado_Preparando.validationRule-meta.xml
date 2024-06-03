@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asignar_estado_Preparando</fullName>
+    <active>true</active>
+    <description>Cuando se crea un presupuesto se debe asignar el estado &quot;Preparando&quot;. Por tanto, el campo &quot;Etapa&quot; deberá tener como valor por defecto “Preparando” y en caso de que el usuario seleccione otro valor se le mostrará el mensaje de error.</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+NOT(ISPICKVAL(Status, &quot;Preparando&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Cuando se crea un presupuesto el campo “Etapa” debe ser “Preparando”.</errorMessage>
+</ValidationRule>

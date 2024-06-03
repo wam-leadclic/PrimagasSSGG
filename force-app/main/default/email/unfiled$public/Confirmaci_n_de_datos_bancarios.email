@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0110)https://email.primagas.es/-temporary-slug-33948869-4e31-494e-9391-ebca3afe9dcc?hs_preview=rOwZkodv-11344887626 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Confirmación de datos bancarios</title>
+        <meta property="og:title" content="Confirmación de datos bancarios">
+        <meta name="twitter:title" content="Confirmación de datos bancarios">
+        
+        
+        <style type="text/css" id="hs-inline-css">
+/*<![CDATA[*/
+  /* everything in this node will be inlined */
+
+  /* ==== Page Styles ==== */
+
+  body, #backgroundTable {
+      background-color: #f2f2f2; /* Use body to determine background color */
+      font-family: sans-serif;
+  }
+
+  #templateTable {
+      width: 600px;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+      display:block;
+      font-weight:bold;
+      line-height:100%;
+      margin-top:0;
+      margin-right:0;
+      margin-bottom:10px;
+      margin-left:0;
+  }
+
+  h1, .h1 {
+      font-size:26px;
+  }
+
+  h2, .h2 {
+      font-size:20px;
+  }
+
+  h3, .h3 {
+      font-size:15px;
+  }
+
+  h4, .h4 {
+      font-size:13px;
+  }
+
+  h5, .h5 {
+      font-size:11px;
+  }
+
+  h6, .h6 {
+      font-size:10px;
+  }
+
+  /* ==== Header Styles ==== */
+
+  #headerTable {
+      background-color: #f2f2f2;
+      color:#444444;
+      font-family:sans-serif;
+      font-size:10px;
+      line-height:120%;
+      text-align:right;
+      border-collapse: separate !important;
+      padding-right: 30px;
+  }
+
+  #headerTable a:link, #headerTable a:visited, /*Y*/ #headerTable a .yshortcuts /*Y*/{
+      font-weight:normal;
+      text-decoration:underline;
+  }
+
+  /* ==== Template Wrapper Styles ==== */
+
+  #contentCell {
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+  }
+
+  #contentTableOuter {
+      border-collapse: separate !important;
+
+      background-color: #ffffff;
+      
+      box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+      
+
+      padding: 30px;
+  }
+
+  #contentTableInner {
+      width: 600px;
+  }
+
+  /* ==== Body Styles ==== */
+
+  .bodyContent {
+      color:#444444;
+      font-family:sans-serif;
+      font-size: 15px;
+      line-height:150%;
+      text-align:left;
+  }
+
+  /* ==== Column Styles ==== */
+
+  table.columnContentTable {
+      border-collapse:separate !important;
+      border-spacing:0;
+
+      background-color: #ffffff;
+  }
+
+  td.columnContent {
+      color:#444444;
+      font-family:sans-serif;
+      font-size:15px;
+      line-height:120%;
+      padding-top:20px;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+  }
+
+  /* ==== Footer Styles ==== */
+
+  #footerTable {
+      background-color: #f2f2f2;
+  }
+
+  #footerTable a {
+      color: #999999;
+  }
+
+  #footerTable {
+      color:#999999;
+      font-family:sans-serif;
+      font-size:12px;
+      line-height:120%;
+      padding-top:20px;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+      text-align:center;
+  }
+
+  #footerTable a:link, #footerTable a:visited, /*Y*/ #footerTable a .yshortcuts /*Y*/{
+      font-weight:normal;
+      text-decoration:underline;
+  }
+
+  .hs-image-social-sharing-24 {
+      max-width: 24px;
+      max-height: 24px;
+  }
+
+  /* ==== Standard Resets ==== */
+  .ExternalClass{
+      width:100%;
+  } /* Force HM to display emails at full width */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
+  } /* Force HM to display normal line spacing */
+  body, table, td, p, a, li, blockquote{
+      -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%;
+  } /* Prevent WebKit and Windows mobile changing default text sizes */
+  table, td {
+      mso-table-lspace:0pt;
+      mso-table-rspace:0pt;
+  } /* Remove spacing between tables in Outlook 2007 and up */
+  img {
+      vertical-align: bottom;
+      -ms-interpolation-mode:bicubic;
+  } /* Allow smoother rendering of resized image in Internet Explorer */
+
+  /* Reset Styles */
+  body {
+      margin:0;
+      padding:0;
+  }
+  table {
+      border-collapse:collapse !important;
+  }
+  body, #backgroundTable, #bodyCell{
+      height:100% !important;
+      margin:0;
+      padding:0;
+      width:100% !important;
+  }
+  a:link, a:visited {
+      border-bottom: none;
+  }
+
+  /* iOS automatically adds a link to addresses */
+  /* Style the footer with the same color as the footer text */
+  #footer a {
+      color: #999999;;
+      -webkit-text-size-adjust: none;
+      text-decoration: underline;
+      font-weight: normal
+  }
+/*]]>*/
+</style>
+
+        <!--[if !mso]><!-- -->
+<style type="text/css">
+/*<![CDATA[*/
+  /* ==== Mobile Styles ==== */
+
+  /* Constrain email width for small screens */
+  @media screen and (max-width: 650px) {
+      table#backgroundTable {
+          width: 95% !important;
+      }
+
+      table#templateTable {
+          max-width:600px !important;
+          width:100% !important;
+      }
+
+      table#contentTableInner {
+          max-width:600px !important;
+          width:100% !important;
+      }
+
+      /* Makes image expand to take 100% of width*/
+      img {
+          width: 100% !important;
+          height: auto !important;
+      }
+
+      #contentCell {
+          padding: 10px 10px !important;
+      }
+
+      #headerTable {
+          padding-right: 15.0px !important;
+      }
+
+      #contentTableOuter {
+          padding: 15.0px !important;
+      }
+  }
+
+  @media only screen and (max-width: 480px) {
+      /* ==== Client-Specific Mobile Styles ==== */
+      body, table, td, p, a, li, blockquote{
+          -webkit-text-size-adjust:none !important;
+      } /* Prevent Webkit platforms from changing default text sizes */
+      body{
+          width:100% !important;
+          min-width:100% !important;
+      } /* Prevent iOS Mail from adding padding to the body */
+
+      /* ==== Mobile Reset Styles ==== */
+      td#bodyCell {
+          padding:10px !important;
+      }
+
+      /* ==== Mobile Template Styles ==== */
+
+      table#templateTable {
+          max-width:600px !important;
+          width:100% !important;
+      }
+
+      table#contentTableInner {
+          max-width:600px !important;
+          width:100% !important;
+      }
+
+      /* ==== Image Alignment Styles ==== */
+
+      h1, .h1 {
+          font-size:26px !important;
+          line-height:125% !important;
+      }
+
+      h2, .h2 {
+          font-size:20px !important;
+          line-height:125% !important;
+      }
+
+      h3, .h3 {
+          font-size:15px !important;
+          line-height:125% !important;
+      }
+
+      h4, .h4 {
+          font-size:13px !important;
+          line-height:125% !important;
+      }
+
+      h5, .h5 {
+          font-size:11px !important;
+          line-height:125% !important;
+      }
+
+      h6, .h6 {
+          font-size:10px !important;
+          line-height:125% !important;
+      }
+
+      .hide {
+          display:none !important;
+      } /* Hide to save space */
+
+      /* ==== Body Styles ==== */
+
+      td.bodyContent {
+          font-size:16px !important;
+          line-height:145% !important;
+      }
+
+      /* ==== Footer Styles ==== */
+
+      td#footerTable {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          font-size:12px !important;
+          line-height:145% !important;
+      }
+
+      /* ==== Image Alignment Styles ==== */
+
+      table.alignImageTable {
+          width: 100% !important;
+      }
+
+      td.imageTableTop {
+          display: none !important;
+          /*padding-top: 10px !important;*/
+      }
+      td.imageTableRight {
+          display: none !important;
+      }
+      td.imageTableBottom {
+          padding-bottom: 10px !important;
+      }
+      td.imageTableLeft {
+          display: none !important;
+      }
+
+      /* ==== Column Styles ==== */
+
+      td.column {
+          display: block !important;
+          width: 100% !important;
+          padding-top: 0 !important;
+          padding-right: 0 !important;
+          padding-bottom: 0 !important;
+          padding-left: 0 !important;
+      }
+
+      td.columnContent {
+          font-size:14px !important;
+          line-height:145% !important;
+
+          padding-top: 10px !important;
+          padding-right: 10px !important;
+          padding-bottom: 10px !important;
+          padding-left: 10px !important;
+      }
+
+      #contentCell {
+          padding: 10px 0px !important;
+      }
+
+      #headerTable {
+          padding-right: 15.0px !important;
+      }
+
+      #contentTableOuter {
+          padding: 15.0px !important;
+      }
+  }
+/*]]>*/
+</style>
+<!--<![endif]-->
+
+        
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i,800,800i');
+    [style*="sans-serif"] {
+        font-family: 'Raleway', Helvetica, Arial, Verdana, Trebuchet MS !important;
+    }
+    h3 {
+       font-family: Georgia, Palatino, Times New Roman, Courier;
+       font-size: 18px;
+       font-weight: bold; 
+    }
+    p {
+        font-size: 12px;
+    }
+    body, body > table, #contentCell, .widget-type-email_view_as_web_page {
+        background-color: #efefef !important;
+    }
+    body #headerTable {
+        padding-right: 0px !important;
+    }
+    body #contentTableOuter {
+        box-shadow: none !important;
+        border: none !important;
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+    .widget-type-email_view_as_web_page {
+        padding-right: 20px;
+    }
+    .cta_button img {
+        font-size: 30px;
+        color: #fff;
+        background-color: #f06362;
+    }
+    .address a {
+        color: #a1aeac;
+    }
+    @media only screen and (max-width: 650px) {
+        #social-header {
+            margin: 0 auto;
+            float: none;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .social-media, .logo {
+            text-align: center !important;
+            padding-bottom: 10px !important;
+        }
+        td.mobile-padding {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+        body, body > table, #contentCell, .widget-type-email_view_as_web_page {
+            background-color: #ffffff !important;
+        }
+        td.header-content {
+            padding-top: 30px !important;
+        }
+	}
+</style>
+        <!--[if gte mso 9]>
+          <xml>
+            <o:OfficeDocumentSettings>
+              <o:AllowPNG/>
+              <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+          </xml>
+        <![endif]-->
+    <meta name="generator" content="HubSpot"><meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:url" content="https://email.primagas.es/-temporary-slug-33948869-4e31-494e-9391-ebca3afe9dcc?hs_preview=rOwZkodv-11344887626"><meta name="x-apple-disable-message-reformatting"><meta name="robots" content="noindex,follow"></head>
+    <body class="" style="background-color:#f2f2f2; font-family:sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100% !important; margin:0; padding:0; width:100% !important" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#f2f2f2">
+        <!-- Preview text (text which appears right after subject) -->
+        <div id="preview_text" style="display:none;font-size:1px;color:#f2f2f2;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+            Se requiere actualización y confirmación de los datos bancarios a través del cumplimentado del documento SEPA.
+        </div>
+
+        <!--  The  backgroundTable table manages the color of the background and then the templateTable maintains the body of 
+        the email template, including preheader & footer. This is the only table you set the width of to, everything else is set to 
+        100% and in the CSS above. Having the width here within the table is just a small win for Lotus Notes. -->
+
+        <!-- Begin backgroundTable -->  
+        <table align="center" bgcolor="#f2f2f2" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; background-color:#f2f2f2; font-family:sans-serif; height:100% !important; margin:0; padding:0; width:100% !important">
+            <tbody><tr>
+                <td align="center" valign="top" id="bodyCell" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; height:100% !important; margin:0; padding:0; width:100% !important" height="100%" width="100%"> <!-- When nesting tables within a TD, align center keeps it well, centered. -->
+                    <!-- Begin Template Container -->
+                    <!-- This holds everything together in a nice container -->
+                    <table border="0" cellpadding="0" cellspacing="0" id="templateTable" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; width:600px; background-color:#ffffff; -webkit-font-smoothing:antialiased" width="600" bgcolor="#ffffff">
+                        <tbody><tr>
+                            <td align="center" valign="top" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                                <!-- Begin Template Preheader -->
+                                <div class="header-container-wrapper">
+</div><table border="0" cellpadding="0" cellspacing="0" width="100%" id="headerTable" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#f2f2f2; color:#444444; font-family:sans-serif; font-size:10px; line-height:120%; text-align:right; border-collapse:separate !important; padding-right:30px" bgcolor="#f2f2f2" align="right">
+                                    <tbody><tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+            <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class=" column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444" align="left">
+
+<div class="widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget">
+<div class="layout-widget-wrapper">
+<div id="hs_cos_wrapper_email_view_as_web_page" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-email_view_as_web_page" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"></div>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+   </td>
+           </tr>
+    </tbody></table>
+   </td>
+</tr>
+<!--end header wrapper -->
+                                </tbody></table>
+                                <!-- End Template Preheader -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" id="contentCell" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:10px 20px; background-color:#f2f2f2" bgcolor="#f2f2f2">
+                                <!-- Begin Template Wrapper -->
+                                <!-- This separates the preheader which usually contains the "open in browser, etc" content
+                                from the actual body of the email. Can alternatively contain the footer too, but I choose not
+                                to so that it stays outside of the border. -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="contentTableOuter" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:separate !important; background-color:#ffffff; box-shadow:0px 1px rgba(0, 0, 0, 0.1); padding:30px; border:1px solid #cccccc; border-bottom:1px solid #acacac" bgcolor="#ffffff">
+                                    <tbody><tr>
+                                        <td align="center" valign="top" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                                            <div class="body-container-wrapper">
+</div><table border="0" cellpadding="0" cellspacing="0" id="contentTableInner" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; width:600px" width="600">
+                                                <tbody><tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+            <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class=" column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444" align="left">
+
+<div class="widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget">
+<div class="layout-widget-wrapper">
+<div id="hs_cos_wrapper_module_149816078960036" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"><table cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; min-width:100%; width:100%" width="100%">
+  <tbody><tr>
+    <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#f06362; background:linear-gradient(135deg, #f06362 0%,#fb8c74 100%); background-size:cover; background-image:url(&#39;https://email.primagas.es/hubfs/adult-asian-banking-733856.jpg&#39;)" bgcolor="#f06362" background="./Confirmación de datos bancarios_files/adult-asian-banking-733856.jpg" valign="top">
+      <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px;">
+      <v:fill type="tile" src="https://cdn2.hubspot.net/hubfs/5603597/adult-asian-banking-733856.jpg" color="#eeeeee" />
+      <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <![endif]-->
+            <div>           
+              <table width="100%" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; min-width:100%; width:100%">
+                <tbody><tr>
+                  <td colspan="3" height="10" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt"></td>
+                </tr>
+                <tr>
+                  <td width="208" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:15px">
+                    
+                    <img src="./Confirmación de datos bancarios_files/PGS-H-RGB-72-on-black.png" width="208" height="69" alt="PGS-H-RGB-72-on-black" srcset="https://email.primagas.es/hs-fs/hubfs/PGS-H-RGB-72-on-black.png?upscale=true&amp;width=416&amp;height=138&amp;upscale=true&amp;name=PGS-H-RGB-72-on-black.png 208w, https://email.primagas.es/hs-fs/hubfs/PGS-H-RGB-72-on-black.png?upscale=true&amp;width=832&amp;height=276&amp;upscale=true&amp;name=PGS-H-RGB-72-on-black.png 416w" sizes="(max-width: 208px) 100vw, 208px" style="vertical-align:bottom; -ms-interpolation-mode:bicubic">
+                    
+                  </td>
+                  <td width="auto" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">&nbsp;</td>                  
+                </tr>
+                <tr>
+                  <td colspan="3" height="50" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="3" valign="middle" align="center" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Georgia, Palatino, Times New Roman, Courier, serif; font-weight:900; font-size:30px; color:#ffffff"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" height="15" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:0px"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" valign="middle" align="center" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Helvetica, Arial, Verdana, Trebuchet MS, sans-serif; text-align:center; font-weight:900; font-size:14px; color:#ffffff"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" height="20" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:0px"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" valign="middle" align="center" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; font-size:14px; color:#ffffff"><div style="text-align: center;"></div></td>
+                </tr>
+                <tr>
+                  <td colspan="3" height="50" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">&nbsp;</td>
+                </tr>
+              </tbody></table>
+            </div>
+            <!--[if gte mso 9]>
+      <p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+      </v:textbox>
+      </v:rect>
+
+      <xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+      </xml>
+
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table>
+</div>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+   </td>
+           </tr>
+    </tbody></table>
+   </td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+            <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class="mobile-padding column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444; padding:20px" align="left">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+    <tbody><tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+                <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class=" column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444; padding-top:10px" align="left">
+
+<div class="widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget">
+<div class="layout-widget-wrapper">
+<div id="hs_cos_wrapper_hs_email_body" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div style="text-align: justify;">
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Estimado Sr./ Sra. XXX</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Nos ponemos en contacto contigo en referencia al suministro de gas propano sito en XXXXXXXXXXX.</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">El motivo de la presente es para informarte de que ha debido de haber algún error respecto a tus datos bancarios que nos constan actualmente. Por este motivo, no podemos presentar las facturas a su entidad bancaria.</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Con el fin de regularizar esta situación en la mayor brevedad posible, agradeceríamos que nos devolvieses debidamente cumplimentado el documento SEPA (adjunto a este email). Te informamos igualmente de que los suministros permanecerán bloqueados hasta que se actualicen los datos bancarios.</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Además, debido a lo indicado anteriormente, te informamos de que la factura XXXX se encuentra pendiente de pago, por lo que en el momento que nos facilites los nuevos datos bancarios procederemos a presentar la factura a su banco.</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Quedando a la espera de la recepción de este documento.</span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; font-size:14px"><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Un saludo,</span></p>
+</div>
+<div style="text-align: justify;">&nbsp;</div>
+<center><img src="./Confirmación de datos bancarios_files/logo_primagas.png" alt="logo_primagas" width="260" style="vertical-align:bottom; -ms-interpolation-mode:bicubic; width:260px; max-width:260px; display:block; margin:0px auto" align="center" srcset="https://email.primagas.es/hs-fs/hubfs/Primagas_April2019%20Theme/Images/logo_primagas.png?upscale=true&amp;width=520&amp;upscale=true&amp;name=logo_primagas.png 260w, https://email.primagas.es/hs-fs/hubfs/Primagas_April2019%20Theme/Images/logo_primagas.png?upscale=true&amp;width=1040&amp;upscale=true&amp;name=logo_primagas.png 520w" sizes="(max-width: 260px) 100vw, 260px"></center></div>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+       </td>
+               </tr>
+        </tbody></table>
+       </td>
+   </tr>
+    <tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+                <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class=" column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444; padding-top:20px" align="left">
+
+<div class="widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget">
+<div class="layout-widget-wrapper">
+<div id="hs_cos_wrapper_email_can_spam" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div id="hs_cos_wrapper_email_can_spam_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center">&nbsp;</p>
+<table border="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; width:100%; height:74px" width="100%" height="74">
+<tbody>
+<tr style="height: 74px;">
+<td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:33.3333%; height:74px" width="33.3333%" height="74">
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center"><strong><img src="./Confirmación de datos bancarios_files/whatapp.jpg" alt="whatapp" width="55" style="vertical-align:bottom; -ms-interpolation-mode:bicubic; width:55px; max-width:55px" srcset="https://email.primagas.es/hs-fs/hubfs/whatapp.jpg?upscale=true&amp;width=110&amp;upscale=true&amp;name=whatapp.jpg 55w, https://email.primagas.es/hs-fs/hubfs/whatapp.jpg?upscale=true&amp;width=220&amp;upscale=true&amp;name=whatapp.jpg 110w" sizes="(max-width: 55px) 100vw, 55px"></strong></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center; font-size:13px" align="center"><span style="font-family: arial, helvetica, sans-serif;">629 313 567</span></p>
+</td>
+<td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:33.3333%; height:74px" width="33.3333%" height="74">
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center"><strong><img src="./Confirmación de datos bancarios_files/mail.jpg" alt="mail" width="55" style="vertical-align:bottom; -ms-interpolation-mode:bicubic; width:55px; max-width:55px" srcset="https://email.primagas.es/hs-fs/hubfs/mail.jpg?upscale=true&amp;width=110&amp;upscale=true&amp;name=mail.jpg 55w, https://email.primagas.es/hs-fs/hubfs/mail.jpg?upscale=true&amp;width=220&amp;upscale=true&amp;name=mail.jpg 110w" sizes="(max-width: 55px) 100vw, 55px"></strong></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center; font-size:13px" align="center"><span style="font-family: arial, helvetica, sans-serif;">hola@primagas.es</span></p>
+</td>
+<td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:33.3333%; height:74px" width="33.3333%" height="74">
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center"><strong><img src="./Confirmación de datos bancarios_files/tlf.jpg" alt="tlf" width="55" style="vertical-align:bottom; -ms-interpolation-mode:bicubic; width:55px; max-width:55px" srcset="https://email.primagas.es/hs-fs/hubfs/tlf.jpg?upscale=true&amp;width=110&amp;upscale=true&amp;name=tlf.jpg 55w, https://email.primagas.es/hs-fs/hubfs/tlf.jpg?upscale=true&amp;width=220&amp;upscale=true&amp;name=tlf.jpg 110w" sizes="(max-width: 55px) 100vw, 55px"></strong></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center; font-size:13px" align="center"><span style="font-family: arial, helvetica, sans-serif;">900 878 750</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center"><span style="color: #999999;"><em>Todos los derechos reservados</em><em><br>Copyright © 2019 Primagas Energía SAU, </em></span></p>
+<p style="margin-bottom: 1em; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-align:center" align="center"><strong><span style="color: #ff0201;"><a href="http://www.primagas.es/" rel=" noopener" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; color:#ff0201" data-hs-link-id="0" target="_blank">www.primagas.es</a></span></strong></p></div></div>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+       </td>
+               </tr>
+        </tbody></table>
+       </td>
+   </tr>
+</tbody></table>
+</td>
+           </tr>
+    </tbody></table>
+   </td>
+</tr>
+<tr>
+<td align="left" valign="top" class="bodyContent" width="100%" colspan="12" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#444444; font-family:sans-serif; font-size:15px; line-height:150%; text-align:left">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important">
+            <tbody><tr>
+<td valign="top" colspan="12" width="100.0%" class=" column" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100.0%; text-align:left; padding:0; font-family:sans-serif; font-size:15px; line-height:1.5em; color:#444444" align="left">
+
+<div class="widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget">
+<div class="layout-widget-wrapper">
+<div id="hs_cos_wrapper_module_1559673454024168" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget" data-hs-cos-type="module"><table style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; width:100%; background-color:#df2b2a; background:linear-gradient(135deg, #df2b2a 0%,#FFFFFF 100%)" width="100%" bgcolor="#df2b2a">
+  <tbody><tr>
+    <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:20px 0">
+      <table align="center" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; table-layout:fixed; background-color:transparent; min-width:280px !important" bgcolor="transparent">
+        <tbody><tr>
+          
+          <td width="auto" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          <td width="19" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <a href="https://email.primagas.es/-temporary-slug-33948869-4e31-494e-9391-ebca3afe9dcc?hs_preview=rOwZkodv-11344887626#https://www.facebook.com/PrimagasLaBuenaEnergia/" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%" data-hs-link-id="0" target="_blank">
+              <img src="./Confirmación de datos bancarios_files/facebook_white.webp" height="19" width="19" alt="Facebook Link" border="0" srcset="//cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/facebook_white.png?upscale=true&amp;width=38&amp;height=38&amp;upscale=true&amp;name=facebook_white.png 19w, //cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/facebook_white.png?upscale=true&amp;width=76&amp;height=76&amp;upscale=true&amp;name=facebook_white.png 38w" sizes="(max-width: 19px) 100vw, 19px" style="vertical-align:bottom; -ms-interpolation-mode:bicubic">
+            </a>
+          </td>
+          <td width="5" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          
+          
+          <td width="5" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          <td width="21" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <a href="https://email.primagas.es/-temporary-slug-33948869-4e31-494e-9391-ebca3afe9dcc?hs_preview=rOwZkodv-11344887626#https://twitter.com/PrimagasE" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%" data-hs-link-id="0" target="_blank">
+              <img src="./Confirmación de datos bancarios_files/twitter_white.webp" height="19" width="21" alt="Twitter Link" border="0" srcset="//cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/twitter_white.png?upscale=true&amp;width=42&amp;height=38&amp;upscale=true&amp;name=twitter_white.png 21w, //cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/twitter_white.png?upscale=true&amp;width=84&amp;height=76&amp;upscale=true&amp;name=twitter_white.png 42w" sizes="(max-width: 21px) 100vw, 21px" style="vertical-align:bottom; -ms-interpolation-mode:bicubic">
+            </a>
+          </td>
+          <td width="5" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          
+          
+          <td width="5" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          <td width="22" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            <a href="https://email.primagas.es/-temporary-slug-33948869-4e31-494e-9391-ebca3afe9dcc?hs_preview=rOwZkodv-11344887626#https://www.linkedin.com/company/primagas-energia-sau/" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%" data-hs-link-id="0" target="_blank">
+              <img src="./Confirmación de datos bancarios_files/linkedin_white.webp" height="19" width="22" alt="LinkedIn Link" border="0" srcset="//cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/linkedin_white.png?upscale=true&amp;width=44&amp;height=38&amp;upscale=true&amp;name=linkedin_white.png 22w, //cdn2.hubspot.net/hub/762525/hubfs/Ridge_Campaign_Pack/linkedin_white.png?upscale=true&amp;width=88&amp;height=76&amp;upscale=true&amp;name=linkedin_white.png 44w" sizes="(max-width: 22px) 100vw, 22px" style="vertical-align:bottom; -ms-interpolation-mode:bicubic">
+            </a>
+          </td>
+          <td width="5" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>
+          
+          
+          <td width="auto" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+            &nbsp;
+          </td>        
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table></div>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+   </td>
+           </tr>
+    </tbody></table>
+   </td>
+</tr>
+<!--end body wrapper -->
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <!-- End Template Wrapper -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt">
+                                <!-- Begin Template Footer -->
+                                <div class="footer-container-wrapper">
+
+</div><table border="0" cellpadding="0" cellspacing="0" width="100%" id="footerTable" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse !important; background-color:#f2f2f2; color:#999999; font-family:sans-serif; font-size:12px; line-height:120%; padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px; text-align:center" bgcolor="#f2f2f2" align="center">
+                                    <!--end footer wrapper -->
+                                    <tbody><tr>
+                                        <td style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt"></td>
+                                    </tr>
+                                </tbody></table>
+                                <!-- End Template Footer -->
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <!-- End Template Container -->
+                </td>
+            </tr>
+        </tbody></table>
+    
+
+<!-- end coded_template: id:10820757677 path:generated_layouts/10820757676.html -->
+</body></html>

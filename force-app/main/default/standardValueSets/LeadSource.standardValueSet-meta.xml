@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Instalador</fullName>
+        <default>false</default>
+        <label>Instalador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prescriptor</fullName>
+        <default>false</default>
+        <label>Prescriptor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospección directa</fullName>
+        <default>false</default>
+        <label>Prospección directa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Llamada entrante</fullName>
+        <default>false</default>
+        <label>Llamada entrante</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Primagas</fullName>
+        <default>false</default>
+        <label>Online Primagas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prescriptor Online</fullName>
+        <default>false</default>
+        <label>Prescriptor Online</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partnership</fullName>
+        <default>false</default>
+        <label>Partnership</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Licitaciones Públicas</fullName>
+        <default>false</default>
+        <label>Licitaciones Públicas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Galp</fullName>
+        <default>false</default>
+        <label>Galp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gasindur</fullName>
+        <default>false</default>
+        <label>Gasindur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Negociación cliente existente</fullName>
+        <default>false</default>
+        <label>Negociación cliente existente</label>
+    </standardValue>
+</StandardValueSet>

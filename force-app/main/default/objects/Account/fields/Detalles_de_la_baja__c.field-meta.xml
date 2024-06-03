@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detalles_de_la_baja__c</fullName>
+    <externalId>false</externalId>
+    <label>Detalles de la baja</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Motivo_baja__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consumo</fullName>
+                <default>false</default>
+                <label>Consumo</label>
+            </value>
+            <value>
+                <fullName>Pagos</fullName>
+                <default>false</default>
+                <label>Pagos</label>
+            </value>
+            <value>
+                <fullName>Técnico/Seguridad</fullName>
+                <default>false</default>
+                <label>Técnico/Seguridad</label>
+            </value>
+            <value>
+                <fullName>Precio Gas</fullName>
+                <default>false</default>
+                <label>Precio Gas</label>
+            </value>
+            <value>
+                <fullName>Precio Servicios</fullName>
+                <default>false</default>
+                <label>Precio Servicios</label>
+            </value>
+            <value>
+                <fullName>Imposibilidad de mantener servicios PS</fullName>
+                <default>false</default>
+                <label>Imposibilidad de mantener servicios PS</label>
+            </value>
+            <value>
+                <fullName>Otras condiciones</fullName>
+                <default>false</default>
+                <label>Otras condiciones</label>
+            </value>
+            <value>
+                <fullName>Servicio Entrega</fullName>
+                <default>false</default>
+                <label>Servicio Entrega</label>
+            </value>
+            <value>
+                <fullName>Servicio técnico</fullName>
+                <default>false</default>
+                <label>Servicio técnico</label>
+            </value>
+            <value>
+                <fullName>Servicio Facturación</fullName>
+                <default>false</default>
+                <label>Servicio Facturación</label>
+            </value>
+            <value>
+                <fullName>Atención recibida</fullName>
+                <default>false</default>
+                <label>Atención recibida</label>
+            </value>
+            <value>
+                <fullName>Otros (especificar en observaciones)</fullName>
+                <default>false</default>
+                <label>Otros (especificar en observaciones)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Resolución por incumplimiento</controllingFieldValue>
+            <valueName>Consumo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolución por incumplimiento</controllingFieldValue>
+            <valueName>Pagos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolución por incumplimiento</controllingFieldValue>
+            <valueName>Técnico/Seguridad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Precio Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Precio Servicios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Imposibilidad de mantener servicios PS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Otras condiciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insatisfecho servicio ofrecido</controllingFieldValue>
+            <valueName>Servicio Entrega</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insatisfecho servicio ofrecido</controllingFieldValue>
+            <valueName>Servicio técnico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insatisfecho servicio ofrecido</controllingFieldValue>
+            <valueName>Servicio Facturación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insatisfecho servicio ofrecido</controllingFieldValue>
+            <valueName>Atención recibida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insatisfecho servicio ofrecido</controllingFieldValue>
+            <valueName>Otros (especificar en observaciones)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

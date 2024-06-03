@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cod_forma_pago__c</fullName>
+    <externalId>false</externalId>
+    <label>Cód. forma pago</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>12 BONOS</fullName>
+                <default>false</default>
+                <label>12 BONOS</label>
+            </value>
+            <value>
+                <fullName>ANTICIPAR</fullName>
+                <default>false</default>
+                <label>ANTICIPAR</label>
+            </value>
+            <value>
+                <fullName>APLAZAM</fullName>
+                <default>false</default>
+                <label>APLAZAM</label>
+            </value>
+            <value>
+                <fullName>BANKINTER</fullName>
+                <default>false</default>
+                <label>BANKINTER</label>
+            </value>
+            <value>
+                <fullName>CHEQUE</fullName>
+                <default>false</default>
+                <label>CHEQUE</label>
+            </value>
+            <value>
+                <fullName>CONF CHEQ</fullName>
+                <default>false</default>
+                <label>CONF CHEQ</label>
+            </value>
+            <value>
+                <fullName>CONF TRANS</fullName>
+                <default>false</default>
+                <label>CONF TRANS</label>
+            </value>
+            <value>
+                <fullName>CUOTA</fullName>
+                <default>false</default>
+                <label>CUOTA</label>
+            </value>
+            <value>
+                <fullName>DEVOLUCION</fullName>
+                <default>false</default>
+                <label>DEVOLUCION</label>
+            </value>
+            <value>
+                <fullName>DIA 20</fullName>
+                <default>false</default>
+                <label>DIA 20</label>
+            </value>
+            <value>
+                <fullName>DOMI</fullName>
+                <default>false</default>
+                <label>DOMI</label>
+            </value>
+            <value>
+                <fullName>EFECTIVO</fullName>
+                <default>false</default>
+                <label>EFECTIVO</label>
+            </value>
+            <value>
+                <fullName>GASTOS</fullName>
+                <default>false</default>
+                <label>GASTOS</label>
+            </value>
+            <value>
+                <fullName>LA CAIXA</fullName>
+                <default>false</default>
+                <label>LA CAIXA</label>
+            </value>
+            <value>
+                <fullName>PAGARÉ</fullName>
+                <default>false</default>
+                <label>PAGARÉ</label>
+            </value>
+            <value>
+                <fullName>PAGO CERTI</fullName>
+                <default>false</default>
+                <label>PAGO CERTI</label>
+            </value>
+            <value>
+                <fullName>RECIBO</fullName>
+                <default>false</default>
+                <label>RECIBO</label>
+            </value>
+            <value>
+                <fullName>SANTANDER</fullName>
+                <default>false</default>
+                <label>SANTANDER</label>
+            </value>
+            <value>
+                <fullName>TRANSF-DIV</fullName>
+                <default>false</default>
+                <label>TRANSF-DIV</label>
+            </value>
+            <value>
+                <fullName>TRANSFER</fullName>
+                <default>false</default>
+                <label>TRANSFER</label>
+            </value>
+            <value>
+                <fullName>VISA</fullName>
+                <default>false</default>
+                <label>VISA</label>
+            </value>
+            <value>
+                <fullName>PRIMAFACIL</fullName>
+                <default>false</default>
+                <label>PRIMAFACIL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

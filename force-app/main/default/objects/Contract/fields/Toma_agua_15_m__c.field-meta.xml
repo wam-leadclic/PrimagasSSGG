@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toma_agua_15_m__c</fullName>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <label>Toma agua &lt; 15 m.</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

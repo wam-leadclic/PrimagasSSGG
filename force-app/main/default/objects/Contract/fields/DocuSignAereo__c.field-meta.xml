@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignAereo__c</fullName>
+    <description>Marca para mapear en docusign cuando el tipo de tanque es Aéreo</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT( Tipo_de_tanque__c )= &apos;Aereo&apos;, TRUE, FALSE)</formula>
+    <label>Aéreo DocuSign</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

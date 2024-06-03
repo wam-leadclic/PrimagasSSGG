@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivos_de_P_rdida__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivos de Pérdida</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Canalizado GLP</fullName>
+                <default>false</default>
+                <label>Canalizado GLP</label>
+            </value>
+            <value>
+                <fullName>Causas técnico-legales</fullName>
+                <default>false</default>
+                <label>Causas técnico-legales</label>
+            </value>
+            <value>
+                <fullName>Compromiso permanencia competencia</fullName>
+                <default>false</default>
+                <label>Compromiso permanencia competencia</label>
+            </value>
+            <value>
+                <fullName>Elige competencia (precio)</fullName>
+                <default>false</default>
+                <label>Elige competencia (precio)</label>
+            </value>
+            <value>
+                <fullName>Fuera zona Primagas</fullName>
+                <default>false</default>
+                <label>Fuera zona Primagas</label>
+            </value>
+            <value>
+                <fullName>Me lo estoy pensando</fullName>
+                <default>false</default>
+                <label>Me lo estoy pensando</label>
+            </value>
+            <value>
+                <fullName>Me quedo con mi energía actual (precio)</fullName>
+                <default>false</default>
+                <label>Me quedo con mi energía actual (precio)</label>
+            </value>
+            <value>
+                <fullName>No contesta</fullName>
+                <default>false</default>
+                <label>No contesta</label>
+            </value>
+            <value>
+                <fullName>No dispuesto a realizar inversión inicial</fullName>
+                <default>false</default>
+                <label>No dispuesto a realizar inversión inicial</label>
+            </value>
+            <value>
+                <fullName>No receptivo al cambio (negativo)</fullName>
+                <default>false</default>
+                <label>No receptivo al cambio (negativo)</label>
+            </value>
+            <value>
+                <fullName>Otra energía: biomasa</fullName>
+                <default>false</default>
+                <label>Otra energía: biomasa</label>
+            </value>
+            <value>
+                <fullName>Otra energía: electricidad</fullName>
+                <default>false</default>
+                <label>Otra energía: electricidad</label>
+            </value>
+            <value>
+                <fullName>Otra energía: gasóleo</fullName>
+                <default>false</default>
+                <label>Otra energía: gasóleo</label>
+            </value>
+            <value>
+                <fullName>Otra energía: renovables</fullName>
+                <default>false</default>
+                <label>Otra energía: renovables</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Poco volumen</fullName>
+                <default>false</default>
+                <label>Poco volumen</label>
+            </value>
+            <value>
+                <fullName>Red de gas natural</fullName>
+                <default>false</default>
+                <label>Red de gas natural</label>
+            </value>
+            <value>
+                <fullName>Riesgo alto de crédito</fullName>
+                <default>false</default>
+                <label>Riesgo alto de crédito</label>
+            </value>
+            <value>
+                <fullName>Visita Técnica- No viable</fullName>
+                <default>false</default>
+                <label>Visita Técnica- No viable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
