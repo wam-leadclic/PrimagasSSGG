@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>motivo_perdida_mandatory_if_lost</fullName>
+    <active>true</active>
+    <description>motivo pérdida obligatori si el prospecte està perdut</description>
+    <errorConditionFormula>AND(ISPICKVAL( Status ,&quot;0.- Lost&quot;), ISBLANK(TEXT( Motivo_de_Descarte__c )))</errorConditionFormula>
+    <errorDisplayField>Motivo_de_Descarte__c</errorDisplayField>
+    <errorMessage>Si el prospecto está Perdido (Lost) tienes que indicar el motivo de la pérdida</errorMessage>
+</ValidationRule>

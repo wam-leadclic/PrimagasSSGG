@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Primagas Cobros</name>
+    <queueMembers>
+        <roles>
+            <role>CreditCoordinator</role>
+            <role>CreditManager</role>
+            <role>CreditSpecialist</role>
+            <role>Gesti_n_cobros</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Comentarios__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

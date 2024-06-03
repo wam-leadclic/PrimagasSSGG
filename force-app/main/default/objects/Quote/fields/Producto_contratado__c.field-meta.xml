@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Producto_contratado__c</fullName>
+    <description>Este campo es el que pasa a la tabla de contratos de Navision</description>
+    <externalId>false</externalId>
+    <label>Producto contratado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACONDICIONAMIENTO</fullName>
+                <default>false</default>
+                <label>ACONDICIONAMIENTO</label>
+            </value>
+            <value>
+                <fullName>ALQUILER</fullName>
+                <default>false</default>
+                <label>ALQUILER</label>
+            </value>
+            <value>
+                <fullName>ALTA PC</fullName>
+                <default>false</default>
+                <label>ALTA PC</label>
+            </value>
+            <value>
+                <fullName>AMO-AGRICOLA</fullName>
+                <default>false</default>
+                <label>AMO-AGRICOLA</label>
+            </value>
+            <value>
+                <fullName>AMO-INCAEX</fullName>
+                <default>false</default>
+                <label>AMO-INCAEX</label>
+            </value>
+            <value>
+                <fullName>AMO-PERLIT</fullName>
+                <default>false</default>
+                <label>AMO-PERLIT</label>
+            </value>
+            <value>
+                <fullName>AMO-PUIGNE</fullName>
+                <default>false</default>
+                <label>AMO-PUIGNE</label>
+            </value>
+            <value>
+                <fullName>AMO-SAUC-A</fullName>
+                <default>false</default>
+                <label>AMO-SAUC-A</label>
+            </value>
+            <value>
+                <fullName>AMO-SAUC-B</fullName>
+                <default>false</default>
+                <label>AMO-SAUC-B</label>
+            </value>
+            <value>
+                <fullName>AMO-SAULED</fullName>
+                <default>false</default>
+                <label>AMO-SAULED</label>
+            </value>
+            <value>
+                <fullName>ANTICIPO</fullName>
+                <default>false</default>
+                <label>ANTICIPO</label>
+            </value>
+            <value>
+                <fullName>CAMBIO TITULAR</fullName>
+                <default>false</default>
+                <label>CAMBIO TITULAR</label>
+            </value>
+            <value>
+                <fullName>CANCEL</fullName>
+                <default>false</default>
+                <label>CANCEL</label>
+            </value>
+            <value>
+                <fullName>COLOCACIÓN TELEM</fullName>
+                <default>false</default>
+                <label>COLOCACIÓN TELEM</label>
+            </value>
+            <value>
+                <fullName>CONEXION CONT</fullName>
+                <default>false</default>
+                <label>CONEXION CONT</label>
+            </value>
+            <value>
+                <fullName>CONSIGNACION</fullName>
+                <default>false</default>
+                <label>CONSIGNACION</label>
+            </value>
+            <value>
+                <fullName>COPIADOCS</fullName>
+                <default>false</default>
+                <label>COPIADOCS</label>
+            </value>
+            <value>
+                <fullName>DESMONTAJE</fullName>
+                <default>false</default>
+                <label>DESMONTAJE</label>
+            </value>
+            <value>
+                <fullName>Dº ACOMETIDA</fullName>
+                <default>false</default>
+                <label>Dº ACOMETIDA</label>
+            </value>
+            <value>
+                <fullName>DPV ALQUILER</fullName>
+                <default>false</default>
+                <label>DPV ALQUILER</label>
+            </value>
+            <value>
+                <fullName>DPV BUTANO</fullName>
+                <default>false</default>
+                <label>DPV BUTANO</label>
+            </value>
+            <value>
+                <fullName>DPV GLP-C</fullName>
+                <default>false</default>
+                <label>DPV GLP-C</label>
+            </value>
+            <value>
+                <fullName>DPV MANTENIMIENTO</fullName>
+                <default>false</default>
+                <label>DPV MANTENIMIENTO</label>
+            </value>
+            <value>
+                <fullName>DPV PROPANO</fullName>
+                <default>false</default>
+                <label>DPV PROPANO</label>
+            </value>
+            <value>
+                <fullName>DSCTO COMERCIAL</fullName>
+                <default>false</default>
+                <label>DSCTO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>FEE-FIJO</fullName>
+                <default>false</default>
+                <label>FEE-FIJO</label>
+            </value>
+            <value>
+                <fullName>FORFAIT</fullName>
+                <default>false</default>
+                <label>FORFAIT</label>
+            </value>
+            <value>
+                <fullName>GLP1</fullName>
+                <default>false</default>
+                <label>GLP1</label>
+            </value>
+            <value>
+                <fullName>GLP1 - NO STOCK</fullName>
+                <default>false</default>
+                <label>GLP1 - NO STOCK</label>
+            </value>
+            <value>
+                <fullName>GLP1-FUND</fullName>
+                <default>false</default>
+                <label>GLP1-FUND</label>
+            </value>
+            <value>
+                <fullName>GLP2</fullName>
+                <default>false</default>
+                <label>GLP2</label>
+            </value>
+            <value>
+                <fullName>GLP3</fullName>
+                <default>false</default>
+                <label>GLP3</label>
+            </value>
+            <value>
+                <fullName>IIEE CARBURANTE</fullName>
+                <default>false</default>
+                <label>IIEE CARBURANTE</label>
+            </value>
+            <value>
+                <fullName>IIEE CARRETILLAS</fullName>
+                <default>false</default>
+                <label>IIEE CARRETILLAS</label>
+            </value>
+            <value>
+                <fullName>IIEE EXENTO</fullName>
+                <default>false</default>
+                <label>IIEE EXENTO</label>
+            </value>
+            <value>
+                <fullName>IIEE GLP</fullName>
+                <default>false</default>
+                <label>IIEE GLP</label>
+            </value>
+            <value>
+                <fullName>INERTIZACION</fullName>
+                <default>false</default>
+                <label>INERTIZACION</label>
+            </value>
+            <value>
+                <fullName>LECTURA CONT</fullName>
+                <default>false</default>
+                <label>LECTURA CONT</label>
+            </value>
+            <value>
+                <fullName>MANTENIMIENTO</fullName>
+                <default>false</default>
+                <label>MANTENIMIENTO</label>
+            </value>
+            <value>
+                <fullName>MTO TELEMEDIDA</fullName>
+                <default>false</default>
+                <label>MTO TELEMEDIDA</label>
+            </value>
+            <value>
+                <fullName>NIVELDIST</fullName>
+                <default>false</default>
+                <label>NIVELDIST</label>
+            </value>
+            <value>
+                <fullName>NIVELDISTINST</fullName>
+                <default>false</default>
+                <label>NIVELDISTINST</label>
+            </value>
+            <value>
+                <fullName>NIVELDISTMANT</fullName>
+                <default>false</default>
+                <label>NIVELDISTMANT</label>
+            </value>
+            <value>
+                <fullName>NO CONSUMO</fullName>
+                <default>false</default>
+                <label>NO CONSUMO</label>
+            </value>
+            <value>
+                <fullName>NUEVOS PRODUCTOS</fullName>
+                <default>false</default>
+                <label>NUEVOS PRODUCTOS</label>
+            </value>
+            <value>
+                <fullName>OPTIONS</fullName>
+                <default>false</default>
+                <label>OPTIONS</label>
+            </value>
+            <value>
+                <fullName>PRECINTO CONT</fullName>
+                <default>false</default>
+                <label>PRECINTO CONT</label>
+            </value>
+            <value>
+                <fullName>PRIMACONFORT</fullName>
+                <default>false</default>
+                <label>PRIMACONFORT</label>
+            </value>
+            <value>
+                <fullName>PROMOCIONES</fullName>
+                <default>false</default>
+                <label>PROMOCIONES</label>
+            </value>
+            <value>
+                <fullName>PZ INSP EXT</fullName>
+                <default>false</default>
+                <label>PZ INSP EXT</label>
+            </value>
+            <value>
+                <fullName>PZ INSP INT</fullName>
+                <default>false</default>
+                <label>PZ INSP INT</label>
+            </value>
+            <value>
+                <fullName>PZ MTO DEP</fullName>
+                <default>false</default>
+                <label>PZ MTO DEP</label>
+            </value>
+            <value>
+                <fullName>PZ MTO EXTINTOR</fullName>
+                <default>false</default>
+                <label>PZ MTO EXTINTOR</label>
+            </value>
+            <value>
+                <fullName>PZ MTO KIT</fullName>
+                <default>false</default>
+                <label>PZ MTO KIT</label>
+            </value>
+            <value>
+                <fullName>PZ MTO METANOL</fullName>
+                <default>false</default>
+                <label>PZ MTO METANOL</label>
+            </value>
+            <value>
+                <fullName>PZ MTO NIVEL</fullName>
+                <default>false</default>
+                <label>PZ MTO NIVEL</label>
+            </value>
+            <value>
+                <fullName>PZ MTO RED</fullName>
+                <default>false</default>
+                <label>PZ MTO RED</label>
+            </value>
+            <value>
+                <fullName>PZ MTO VAPO</fullName>
+                <default>false</default>
+                <label>PZ MTO VAPO</label>
+            </value>
+            <value>
+                <fullName>PZ OC</fullName>
+                <default>false</default>
+                <label>PZ OC</label>
+            </value>
+            <value>
+                <fullName>PZ REPARACIONES</fullName>
+                <default>false</default>
+                <label>PZ REPARACIONES</label>
+            </value>
+            <value>
+                <fullName>PZ RET EXTINTOR</fullName>
+                <default>false</default>
+                <label>PZ RET EXTINTOR</label>
+            </value>
+            <value>
+                <fullName>PZ RET OCA</fullName>
+                <default>false</default>
+                <label>PZ RET OCA</label>
+            </value>
+            <value>
+                <fullName>PZ RETIMBRADO</fullName>
+                <default>false</default>
+                <label>PZ RETIMBRADO</label>
+            </value>
+            <value>
+                <fullName>PZ REV EXT</fullName>
+                <default>false</default>
+                <label>PZ REV EXT</label>
+            </value>
+            <value>
+                <fullName>PZ REV INT</fullName>
+                <default>false</default>
+                <label>PZ REV INT</label>
+            </value>
+            <value>
+                <fullName>PZ REV OCA</fullName>
+                <default>false</default>
+                <label>PZ REV OCA</label>
+            </value>
+            <value>
+                <fullName>PZ S24H</fullName>
+                <default>false</default>
+                <label>PZ S24H</label>
+            </value>
+            <value>
+                <fullName>RAPPEL PROPANO</fullName>
+                <default>false</default>
+                <label>RAPPEL PROPANO</label>
+            </value>
+            <value>
+                <fullName>RAPPEL SOBRE VENTA</fullName>
+                <default>false</default>
+                <label>RAPPEL SOBRE VENTA</label>
+            </value>
+            <value>
+                <fullName>RECLM.SEGURO</fullName>
+                <default>false</default>
+                <label>RECLM.SEGURO</label>
+            </value>
+            <value>
+                <fullName>RECOL.CONTADOR</fullName>
+                <default>false</default>
+                <label>RECOL.CONTADOR</label>
+            </value>
+            <value>
+                <fullName>REF-BUROFAX</fullName>
+                <default>false</default>
+                <label>REF-BUROFAX</label>
+            </value>
+            <value>
+                <fullName>REF-CONT.URGENTE</fullName>
+                <default>false</default>
+                <label>REF-CONT.URGENTE</label>
+            </value>
+            <value>
+                <fullName>REF-DEVOL-RECIBOS</fullName>
+                <default>false</default>
+                <label>REF-DEVOL-RECIBOS</label>
+            </value>
+            <value>
+                <fullName>REF-INMOV</fullName>
+                <default>false</default>
+                <label>REF-INMOV</label>
+            </value>
+            <value>
+                <fullName>REF-INTERESES</fullName>
+                <default>false</default>
+                <label>REF-INTERESES</label>
+            </value>
+            <value>
+                <fullName>REF-LOG-FS</fullName>
+                <default>false</default>
+                <label>REF-LOG-FS</label>
+            </value>
+            <value>
+                <fullName>REF-LOG-SP</fullName>
+                <default>false</default>
+                <label>REF-LOG-SP</label>
+            </value>
+            <value>
+                <fullName>REF-RK</fullName>
+                <default>false</default>
+                <label>REF-RK</label>
+            </value>
+            <value>
+                <fullName>REF-SEGUROS</fullName>
+                <default>false</default>
+                <label>REF-SEGUROS</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-01</fullName>
+                <default>false</default>
+                <label>REF-TEC-01</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-02</fullName>
+                <default>false</default>
+                <label>REF-TEC-02</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-03</fullName>
+                <default>false</default>
+                <label>REF-TEC-03</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-04</fullName>
+                <default>false</default>
+                <label>REF-TEC-04</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-05</fullName>
+                <default>false</default>
+                <label>REF-TEC-05</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-06</fullName>
+                <default>false</default>
+                <label>REF-TEC-06</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-07</fullName>
+                <default>false</default>
+                <label>REF-TEC-07</label>
+            </value>
+            <value>
+                <fullName>REF-TEC-08</fullName>
+                <default>false</default>
+                <label>REF-TEC-08</label>
+            </value>
+            <value>
+                <fullName>REF-VARIOS</fullName>
+                <default>false</default>
+                <label>REF-VARIOS</label>
+            </value>
+            <value>
+                <fullName>RET ETERNELLA</fullName>
+                <default>false</default>
+                <label>RET ETERNELLA</label>
+            </value>
+            <value>
+                <fullName>RETIRADA CONT</fullName>
+                <default>false</default>
+                <label>RETIRADA CONT</label>
+            </value>
+            <value>
+                <fullName>RETIRADA DEP</fullName>
+                <default>false</default>
+                <label>RETIRADA DEP</label>
+            </value>
+            <value>
+                <fullName>SAU</fullName>
+                <default>false</default>
+                <label>SAU</label>
+            </value>
+            <value>
+                <fullName>SIMCC</fullName>
+                <default>false</default>
+                <label>SIMCC</label>
+            </value>
+            <value>
+                <fullName>SIMSC</fullName>
+                <default>false</default>
+                <label>SIMSC</label>
+            </value>
+            <value>
+                <fullName>SUSTIT CONT</fullName>
+                <default>false</default>
+                <label>SUSTIT CONT</label>
+            </value>
+            <value>
+                <fullName>SWAP</fullName>
+                <default>false</default>
+                <label>SWAP</label>
+            </value>
+            <value>
+                <fullName>TAC</fullName>
+                <default>false</default>
+                <label>TAC</label>
+            </value>
+            <value>
+                <fullName>TASA REV EXT</fullName>
+                <default>false</default>
+                <label>TASA REV EXT</label>
+            </value>
+            <value>
+                <fullName>TELEMEDIDA - EQUIPO</fullName>
+                <default>false</default>
+                <label>TELEMEDIDA - EQUIPO</label>
+            </value>
+            <value>
+                <fullName>TELEMEDIDA - SERVTOT</fullName>
+                <default>false</default>
+                <label>TELEMEDIDA - SERVTOT</label>
+            </value>
+            <value>
+                <fullName>TFC</fullName>
+                <default>false</default>
+                <label>TFC</label>
+            </value>
+            <value>
+                <fullName>TP INSP EXT</fullName>
+                <default>false</default>
+                <label>TP INSP EXT</label>
+            </value>
+            <value>
+                <fullName>TP MTO</fullName>
+                <default>false</default>
+                <label>TP MTO</label>
+            </value>
+            <value>
+                <fullName>TP MTO EXT</fullName>
+                <default>false</default>
+                <label>TP MTO EXT</label>
+            </value>
+            <value>
+                <fullName>TP MTO METANOL</fullName>
+                <default>false</default>
+                <label>TP MTO METANOL</label>
+            </value>
+            <value>
+                <fullName>TP MTO RED</fullName>
+                <default>false</default>
+                <label>TP MTO RED</label>
+            </value>
+            <value>
+                <fullName>TP OC</fullName>
+                <default>false</default>
+                <label>TP OC</label>
+            </value>
+            <value>
+                <fullName>TP REPARACIONES</fullName>
+                <default>false</default>
+                <label>TP REPARACIONES</label>
+            </value>
+            <value>
+                <fullName>TP RET</fullName>
+                <default>false</default>
+                <label>TP RET</label>
+            </value>
+            <value>
+                <fullName>TP RET EXT</fullName>
+                <default>false</default>
+                <label>TP RET EXT</label>
+            </value>
+            <value>
+                <fullName>TP RET OCA</fullName>
+                <default>false</default>
+                <label>TP RET OCA</label>
+            </value>
+            <value>
+                <fullName>TP REV EXT</fullName>
+                <default>false</default>
+                <label>TP REV EXT</label>
+            </value>
+            <value>
+                <fullName>TP REV INT</fullName>
+                <default>false</default>
+                <label>TP REV INT</label>
+            </value>
+            <value>
+                <fullName>TP REV OCA</fullName>
+                <default>false</default>
+                <label>TP REV OCA</label>
+            </value>
+            <value>
+                <fullName>TP S24H</fullName>
+                <default>false</default>
+                <label>TP S24H</label>
+            </value>
+            <value>
+                <fullName>VACIADO</fullName>
+                <default>false</default>
+                <label>VACIADO</label>
+            </value>
+            <value>
+                <fullName>VARIOS CON IVA</fullName>
+                <default>false</default>
+                <label>VARIOS CON IVA</label>
+            </value>
+            <value>
+                <fullName>VARIOS SIN IVA</fullName>
+                <default>false</default>
+                <label>VARIOS SIN IVA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

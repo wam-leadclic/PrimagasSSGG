@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_Importe_Vaporizador</fullName>
+    <active>true</active>
+    <description>Valida que se introduce un importe en el campo &quot;Importe Vaporizador&quot; si se ha selecciona Sí en el campo &quot;Vaporizador&quot;</description>
+    <errorConditionFormula>AND(ISPICKVAL( Vaporizador__c,&quot;Sí&quot; ), ISNULL(Importe_vaporizador__c))</errorConditionFormula>
+    <errorDisplayField>Importe_vaporizador__c</errorDisplayField>
+    <errorMessage>Debe introducir un valor</errorMessage>
+</ValidationRule>

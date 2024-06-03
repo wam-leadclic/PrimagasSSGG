@@ -1,0 +1,13 @@
+"Cost__c","Installation__c","IsIndoor__c","Name","SBQQProductCode__c",IsRecoverable__c
+"120.0","80.0","true","Nivel a distancia","NIVELADISTANCIA",false
+"1000.0","50.0","false","Contador","EQUIPOCONTADOR",false
+"200.0","100.0","false","Telemedida","TELEMEDIDA",false
+"1300.0","300.0","true","Caldera <25kW","CALDERA<25KW",false
+"1600.0","400.0","true","Caldera 25-35kW","CALDERA25KW",false
+"3000.0","500.0","true","Caldera 36-45kW","CALDERA36KW",false
+"3500.0","500.0","true","Caldera 46-69kW","CALDERA46KW",false
+"4000.0","600.0","true","Caldera >70kW","CALDERA>70KW",false
+"1000.0","200.0","true","Quemador","QUEMADOR",false
+"800.0","800.0","false","Vaporizador","VAPORIZADOR",true
+"500.0","600.0","false","Otros Equipos","OTROSEQUIPOS",false
+,,"false","Sin equipos",,false

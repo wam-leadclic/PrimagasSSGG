@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_perdida_obligatorio</fullName>
+    <active>true</active>
+    <description>El campo “Motivo de pérdida” es obligatorio para modificar el estado del candidato a los valores “0. Ahora no” y “0. No válido”.</description>
+    <errorConditionFormula>AND( 
+OR(ISNEW(), ISCHANGED(Status)), 
+ISBLANK(TEXT(Motivo_de_Descarte__c)),
+OR( ISPICKVAL(Status, &quot;0. Ahora no&quot;), ISPICKVAL(Status, &quot;0. No válido&quot;) ) 
+)</errorConditionFormula>
+    <errorDisplayField>Motivo_de_Descarte__c</errorDisplayField>
+    <errorMessage>El campo “Motivo de pérdida” es obligatorio para modificar el estado del candidato a los valores “0. Ahora no” y “0. No válido&quot;.</errorMessage>
+</ValidationRule>

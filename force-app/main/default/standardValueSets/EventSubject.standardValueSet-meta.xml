@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Firmar contrato</fullName>
+        <default>false</default>
+        <label>Firmar contrato</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ocupado</fullName>
+        <default>false</default>
+        <label>Ocupado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Presentar oferta</fullName>
+        <default>false</default>
+        <label>Presentar oferta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renegociación oferta</fullName>
+        <default>false</default>
+        <label>Renegociación oferta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visita cliente existente</fullName>
+        <default>false</default>
+        <label>Visita cliente existente</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visita colaborador</fullName>
+        <default>false</default>
+        <label>Visita colaborador</label>
+    </standardValue>
+</StandardValueSet>

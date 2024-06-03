@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ver_bien</fullName>
+    <columns>NAME</columns>
+    <columns>Antiguedad_desde__c</columns>
+    <columns>Antiguedad_hasta__c</columns>
+    <columns>Cambio__c</columns>
+    <columns>Energia__c</columns>
+    <columns>Rendimiento__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Ver bien</label>
+    <language>es</language>
+</ListView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_baja__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado baja</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pdte. Contacto</fullName>
+                <default>false</default>
+                <label>Pdte. Contacto</label>
+            </value>
+            <value>
+                <fullName>Pdte. Acuerdo</fullName>
+                <default>false</default>
+                <label>Pdte. Acuerdo</label>
+            </value>
+            <value>
+                <fullName>Pdte. Informe Visita</fullName>
+                <default>false</default>
+                <label>Pdte. Informe Visita</label>
+            </value>
+            <value>
+                <fullName>Pdte. Decisión</fullName>
+                <default>false</default>
+                <label>Pdte. Decisión</label>
+            </value>
+            <value>
+                <fullName>Pdte. Abogados</fullName>
+                <default>false</default>
+                <label>Pdte. Abogados</label>
+            </value>
+            <value>
+                <fullName>Pdte. Gestión Backoffice</fullName>
+                <default>false</default>
+                <label>Pdte. Gestión Backoffice</label>
+            </value>
+            <value>
+                <fullName>Pdte. Cobro</fullName>
+                <default>false</default>
+                <label>Pdte. Cobro</label>
+            </value>
+            <value>
+                <fullName>Cerrado</fullName>
+                <default>false</default>
+                <label>Cerrado</label>
+            </value>
+            <value>
+                <fullName>Cliente sin viabilidad</fullName>
+                <default>false</default>
+                <label>Cliente sin viabilidad</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

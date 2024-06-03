@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Si_welcome_pack_true_fecha_envio_obligat</fullName>
+    <active>true</active>
+    <description>Si el campo welcome pack true fecha envío welcome pack obligatorio</description>
+    <errorConditionFormula>AND(
+Enviado_welcome_pack__c ,
+ISBLANK( Fecha_env_o_pack__c ))</errorConditionFormula>
+    <errorMessage>Si has marcado como enviado el welcome pack, debes especificar una fecha de envío.</errorMessage>
+</ValidationRule>

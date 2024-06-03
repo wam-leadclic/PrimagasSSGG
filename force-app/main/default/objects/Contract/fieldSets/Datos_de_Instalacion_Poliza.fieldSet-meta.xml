@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Datos_de_Instalacion_Poliza</fullName>
+    <description>Datos de Instalación Póliza</description>
+    <displayedFields>
+        <field>Modalidad_de_instalaci_n__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Capacidad_tanque__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Fecha_prevista_obra_civil__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Tipo_de_tanque__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Fecha_prevista_1er_llenado__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Datos de Instalación Póliza</label>
+</FieldSet>

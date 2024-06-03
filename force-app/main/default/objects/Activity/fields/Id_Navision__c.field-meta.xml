@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Id_Navision__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Deberá indicarse el Código de la dirección de entrega que es el campo Id Navision para crear una tarea de pedido de gas al indicar el nivel del deposito</inlineHelpText>
+    <label>Id Navision</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

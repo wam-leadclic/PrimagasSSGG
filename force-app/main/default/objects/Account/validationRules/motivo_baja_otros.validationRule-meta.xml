@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>motivo_baja_otros</fullName>
+    <active>true</active>
+    <description>Si motivo de baja otros, obligatorio observaciones</description>
+    <errorConditionFormula>AND (ISPICKVAL( Motivo_baja__c,&quot;Otros&quot;),ISBLANK(  Observaciones_baja__c))</errorConditionFormula>
+    <errorDisplayField>Observaciones_baja__c</errorDisplayField>
+    <errorMessage>Si el movitvo de baja es Otros, debes rellenar este campo.</errorMessage>
+</ValidationRule>

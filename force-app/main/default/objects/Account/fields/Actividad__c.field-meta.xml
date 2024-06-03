@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actividad__c</fullName>
+    <externalId>false</externalId>
+    <label>Actividad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultura</fullName>
+                <default>false</default>
+                <label>Agricultura</label>
+            </value>
+            <value>
+                <fullName>Alimentación</fullName>
+                <default>false</default>
+                <label>Alimentación</label>
+            </value>
+            <value>
+                <fullName>Colectividades / Servicios</fullName>
+                <default>false</default>
+                <label>Colectividades / Servicios</label>
+            </value>
+            <value>
+                <fullName>Doméstico Unifamiliar</fullName>
+                <default>false</default>
+                <label>Doméstico Unifamiliar</label>
+            </value>
+            <value>
+                <fullName>HRO (Hotel-Restaurante-Ocio)</fullName>
+                <default>false</default>
+                <label>HRO (Hotel-Restaurante-Ocio)</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pedidos_de_gas</fullName>
+    <availability>online</availability>
+    <description>Muestra los pedidos de gas relacionados con ese cliente</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Pedidos de gas</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+
+if(&apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; != &apos;&apos;)
+{ 
+	if(&apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; == &apos;BULK&apos; || &apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; == &apos;CT&apos; || &apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; == &apos;LNG&apos;)
+	{ 
+		var idAccount = &quot;{!Direcci_n_de_entrega__c.cuentaId__c}&quot;; 
+		var query = &quot;SELECT Id,Id_navision__c from Account where Id = &apos;&quot; + idAccount + &quot;&apos;&quot;; 
+		var result = sforce.connection.query(query); 
+		var records = result.getArray(&quot;records&quot;); 
+
+		var faltanCampos = false; 
+		var idsNecesarios; 
+		if(&apos;{!Direcci_n_de_entrega__c.Id_Navision__c}&apos; == &apos;&apos;)
+		{ 
+			faltanCampos = true; 
+			idsNecesarios = &apos;Dirección de entrega&apos;; 
+		}else if ( records[0] != &apos;undefined&apos; ) 
+		{ 
+			var idNavision = records[0].Id_navision__c; 
+			if ( idNavision == &apos;undefined&apos; ) 
+			{ 
+				faltanCampos = true; 
+				idsNecesarios = &apos;Cuenta&apos;; 
+			} 
+		} 
+
+		if(!faltanCampos)
+		{ 
+			var siteUrl = &quot;{!$Site.BaseUrl}&quot;;
+			var siteUrlName = siteUrl.split(&quot;/&quot;)[3];
+			if(siteUrl == &apos;&apos;)
+			{
+				window.location = &apos;/apex/PedidosDeGasPage?id={!Direcci_n_de_entrega__c.Id}&amp;retURL={!Direcci_n_de_entrega__c.Id}&amp;saveURL={!Direcci_n_de_entrega__c.Id}&apos;;
+			}else{
+				window.location = siteUrl+&apos;/apex/PedidosDeGasPage?id={!Direcci_n_de_entrega__c.Id}&amp;retURL=&apos;+siteUrlName+&apos;/{!Direcci_n_de_entrega__c.Id}&amp;saveURL=&apos;+siteUrlName+&apos;/{!Direcci_n_de_entrega__c.Id}&apos;;
+			}
+			 
+		}else{ 
+			alert(&apos;Falta el siguiente id de Navision: &apos;+idsNecesarios); 
+		}
+	}else{ 
+		alert(&quot;Este tipo de dirección de entrega no puede tener pedidos asociados&quot;); 
+	} 
+}else{ 
+	alert(&quot;Esta dirección de entrega no tiene un tipo asignado&quot;); 
+}</url>
+</WebLink>

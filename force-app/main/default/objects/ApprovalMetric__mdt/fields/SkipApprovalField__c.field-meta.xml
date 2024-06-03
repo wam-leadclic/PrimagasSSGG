@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SkipApprovalField__c</fullName>
+    <description>Checkbox field in SBQQ__Quote__c that, if true, skips the approval request generation.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Campo casilla de Oferta que, en caso de estar seleccionado, se ignorará la creación de solicitudes de aprobación.</inlineHelpText>
+    <label>Campo para Ignorar Aprobación</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_p_rdida__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo pérdida</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disponibilidad</fullName>
+                <default>false</default>
+                <label>Disponibilidad</label>
+            </value>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <label>Precio</label>
+            </value>
+            <value>
+                <fullName>Molgas</fullName>
+                <default>false</default>
+                <label>Molgas</label>
+            </value>
+            <value>
+                <fullName>Crisergas</fullName>
+                <default>false</default>
+                <label>Crisergas</label>
+            </value>
+            <value>
+                <fullName>Vitogas</fullName>
+                <default>false</default>
+                <label>Vitogas</label>
+            </value>
+            <value>
+                <fullName>Endesa</fullName>
+                <default>false</default>
+                <label>Endesa</label>
+            </value>
+            <value>
+                <fullName>Hidrocantábrico</fullName>
+                <default>false</default>
+                <label>Hidrocantábrico</label>
+            </value>
+            <value>
+                <fullName>Cepsa</fullName>
+                <default>false</default>
+                <label>Cepsa</label>
+            </value>
+            <value>
+                <fullName>Gas Natural</fullName>
+                <default>false</default>
+                <label>Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Unión Fenosa</fullName>
+                <default>false</default>
+                <label>Unión Fenosa</label>
+            </value>
+            <value>
+                <fullName>Cierre empresa</fullName>
+                <default>false</default>
+                <label>Cierre empresa</label>
+            </value>
+            <value>
+                <fullName>Otras energías (pellets)</fullName>
+                <default>false</default>
+                <label>Otras energías (pellets)</label>
+            </value>
+            <value>
+                <fullName>Paro oferta</fullName>
+                <default>false</default>
+                <label>Paro oferta</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

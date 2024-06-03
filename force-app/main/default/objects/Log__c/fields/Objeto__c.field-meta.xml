@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objeto__c</fullName>
+    <externalId>false</externalId>
+    <label>Objeto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cliente</fullName>
+                <default>false</default>
+                <label>Cliente</label>
+            </value>
+            <value>
+                <fullName>Contrato</fullName>
+                <default>false</default>
+                <label>Contrato</label>
+            </value>
+            <value>
+                <fullName>Elemento de servicio</fullName>
+                <default>false</default>
+                <label>Elemento de servicio</label>
+            </value>
+            <value>
+                <fullName>Tarifa</fullName>
+                <default>false</default>
+                <label>Tarifa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

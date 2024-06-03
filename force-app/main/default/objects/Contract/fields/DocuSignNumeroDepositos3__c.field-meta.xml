@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignNumeroDepositos3__c</fullName>
+    <description>Campo creado para el mapeo de contrato Depósito propio en DocuSign</description>
+    <externalId>false</externalId>
+    <label>Nº de depósitos 3 (DocuSign)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

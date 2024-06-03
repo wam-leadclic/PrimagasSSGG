@@ -1,0 +1,22 @@
+<table border="0" cellpadding="0" width="650" cellspacing="0" height="400" >
+<tr valign="top" >
+<td width="460" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" >
+<table border="0" cellpadding="5" width="460" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Estimado cliente, {!Contact.FirstName}&nbsp; lalalal lalalal laalalal</span></font><span class="Apple-tab-span" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; white-space: pre;">	</span><font face="arial"><span style="font-size: 12pt;">su opinión nos importa lalalal lalalala</span></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Siga este enlace para acceder a la encuesta</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div><font face="arial">{!01I57000000P14l.00N57000006Qs0m}</font></div><div><font face="arial"><br></font></div><div><font face="arial">Gracias por su colaboración<span class="Apple-tab-span" style="white-space:pre">	</span></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>
+</td>
+<td width="10" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" >
+<![CDATA[]]></td>
+<td width="180" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" >
+<table border="0" cellpadding="5" width="180" cellspacing="5" height="400" >
+<tr valign="top" height="100" >
+<td rowspan="3" width="180" tEditID="c2r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c2r1" locked="0" >
+<![CDATA[No olvide sonarse la nariz se le gotea]]></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>

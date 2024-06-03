@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uso__c</fullName>
+    <externalId>false</externalId>
+    <label>Uso</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Actividad__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Agua caliente sanitaria</fullName>
+                <default>false</default>
+                <label>Agua caliente sanitaria</label>
+            </value>
+            <value>
+                <fullName>Autogas</fullName>
+                <default>false</default>
+                <label>Autogas</label>
+            </value>
+            <value>
+                <fullName>Calefacción</fullName>
+                <default>false</default>
+                <label>Calefacción</label>
+            </value>
+            <value>
+                <fullName>Calefacción aves</fullName>
+                <default>false</default>
+                <label>Calefacción aves</label>
+            </value>
+            <value>
+                <fullName>Climatización invernaderos</fullName>
+                <default>false</default>
+                <label>Climatización invernaderos</label>
+            </value>
+            <value>
+                <fullName>Cocción</fullName>
+                <default>false</default>
+                <label>Cocción</label>
+            </value>
+            <value>
+                <fullName>Cocina</fullName>
+                <default>false</default>
+                <label>Cocina</label>
+            </value>
+            <value>
+                <fullName>Fundición</fullName>
+                <default>false</default>
+                <label>Fundición</label>
+            </value>
+            <value>
+                <fullName>Generación de vapor</fullName>
+                <default>false</default>
+                <label>Generación de vapor</label>
+            </value>
+            <value>
+                <fullName>Generadores</fullName>
+                <default>false</default>
+                <label>Generadores</label>
+            </value>
+            <value>
+                <fullName>Lavanderia</fullName>
+                <default>false</default>
+                <label>Lavanderia</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Procesos Industriales</fullName>
+                <default>false</default>
+                <label>Procesos Industriales</label>
+            </value>
+            <value>
+                <fullName>Producción alimentaria secado/cocción</fullName>
+                <default>false</default>
+                <label>Producción alimentaria secado/cocción</label>
+            </value>
+            <value>
+                <fullName>Quema de rastrojos</fullName>
+                <default>false</default>
+                <label>Quema de rastrojos</label>
+            </value>
+            <value>
+                <fullName>Secado</fullName>
+                <default>false</default>
+                <label>Secado</label>
+            </value>
+            <value>
+                <fullName>Secado cereal</fullName>
+                <default>false</default>
+                <label>Secado cereal</label>
+            </value>
+            <value>
+                <fullName>Soldadura</fullName>
+                <default>false</default>
+                <label>Soldadura</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1800-PC</controllingFieldValue>
+            <controllingFieldValue>1850-PM</controllingFieldValue>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <controllingFieldValue>1000-DU</controllingFieldValue>
+            <controllingFieldValue>1100-CV</controllingFieldValue>
+            <controllingFieldValue>1400-HRO</controllingFieldValue>
+            <controllingFieldValue>1500-COL</controllingFieldValue>
+            <valueName>Agua caliente sanitaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1800-PC</controllingFieldValue>
+            <controllingFieldValue>1850-PM</controllingFieldValue>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <controllingFieldValue>1000-DU</controllingFieldValue>
+            <controllingFieldValue>1100-CV</controllingFieldValue>
+            <controllingFieldValue>1400-HRO</controllingFieldValue>
+            <controllingFieldValue>1500-COL</controllingFieldValue>
+            <valueName>Calefacción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1800-PC</controllingFieldValue>
+            <controllingFieldValue>1850-PM</controllingFieldValue>
+            <controllingFieldValue>1000-DU</controllingFieldValue>
+            <controllingFieldValue>1100-CV</controllingFieldValue>
+            <controllingFieldValue>1400-HRO</controllingFieldValue>
+            <controllingFieldValue>1500-COL</controllingFieldValue>
+            <valueName>Cocina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1800-PC</controllingFieldValue>
+            <controllingFieldValue>1850-PM</controllingFieldValue>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <controllingFieldValue>1000-DU</controllingFieldValue>
+            <controllingFieldValue>1100-CV</controllingFieldValue>
+            <controllingFieldValue>1200-AGRI</controllingFieldValue>
+            <controllingFieldValue>1400-HRO</controllingFieldValue>
+            <controllingFieldValue>1500-COL</controllingFieldValue>
+            <valueName>Otros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Cocción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Fundición</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Generación de vapor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Generadores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Producción alimentaria secado/cocción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Secado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1300-IND</controllingFieldValue>
+            <valueName>Soldadura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1200-AGRI</controllingFieldValue>
+            <valueName>Calefacción aves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1200-AGRI</controllingFieldValue>
+            <valueName>Climatización invernaderos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1200-AGRI</controllingFieldValue>
+            <valueName>Quema de rastrojos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1200-AGRI</controllingFieldValue>
+            <valueName>Secado cereal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1400-HRO</controllingFieldValue>
+            <controllingFieldValue>1500-COL</controllingFieldValue>
+            <valueName>Lavanderia</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

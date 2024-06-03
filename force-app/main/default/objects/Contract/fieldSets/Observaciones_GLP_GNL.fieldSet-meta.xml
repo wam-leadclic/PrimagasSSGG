@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Observaciones_GLP_GNL</fullName>
+    <description>Página contrato GLP/GNL</description>
+    <displayedFields>
+        <field>Description</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignDescripcionUbicacionDeposito__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignRespInstalacionOtros__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Observaciones (DocuSign)</label>
+</FieldSet>

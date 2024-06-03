@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tema__c</fullName>
+    <externalId>false</externalId>
+    <label>Tema</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Acceso Web</fullName>
+                <default>false</default>
+                <label>Acceso Web</label>
+            </value>
+            <value>
+                <fullName>Adm. Comercial</fullName>
+                <default>false</default>
+                <label>Adm. Comercial</label>
+            </value>
+            <value>
+                <fullName>Atención recibida por la empresa transportista</fullName>
+                <default>false</default>
+                <label>Atención recibida por la empresa transportista</label>
+            </value>
+            <value>
+                <fullName>Atención recibida telefónicamente</fullName>
+                <default>false</default>
+                <label>Atención recibida telefónicamente</label>
+            </value>
+            <value>
+                <fullName>Canalizado sin gas</fullName>
+                <default>false</default>
+                <label>Canalizado sin gas</label>
+            </value>
+            <value>
+                <fullName>Carga no completada</fullName>
+                <default>false</default>
+                <label>Carga no completada</label>
+            </value>
+            <value>
+                <fullName>Cliente con entrega automática que se ha quedado sin gas (con Telemedida)</fullName>
+                <default>false</default>
+                <label>Cliente con entrega automática que se ha quedado sin gas (con Telemedida)</label>
+            </value>
+            <value>
+                <fullName>Cliente con entrega automática que se ha quedado sin gas (sin Telemedida)</fullName>
+                <default>false</default>
+                <label>Cliente con entrega automática que se ha quedado sin gas (sin Telemedida)</label>
+            </value>
+            <value>
+                <fullName>Cliente con producto Primaconta se queda sin gas</fullName>
+                <default>false</default>
+                <label>Cliente con producto Primaconta se queda sin gas</label>
+            </value>
+            <value>
+                <fullName>Cliente sin gas</fullName>
+                <default>false</default>
+                <label>Cliente sin gas</label>
+            </value>
+            <value>
+                <fullName>Cliente sin gas por estar el nivel depósito clavado</fullName>
+                <default>false</default>
+                <label>Cliente sin gas por estar el nivel depósito clavado</label>
+            </value>
+            <value>
+                <fullName>Competencia</fullName>
+                <default>false</default>
+                <label>Competencia</label>
+            </value>
+            <value>
+                <fullName>Contador producto Primaconta no emite señal</fullName>
+                <default>false</default>
+                <label>Contador producto Primaconta no emite señal</label>
+            </value>
+            <value>
+                <fullName>Contador usuario PC no marca correctamente</fullName>
+                <default>false</default>
+                <label>Contador usuario PC no marca correctamente</label>
+            </value>
+            <value>
+                <fullName>Cuotas GPO</fullName>
+                <default>false</default>
+                <label>Cuotas GPO</label>
+            </value>
+            <value>
+                <fullName>Demora en entrega de producto</fullName>
+                <default>false</default>
+                <label>Demora en entrega de producto</label>
+            </value>
+            <value>
+                <fullName>Demora en entrega de producto 72h. ( cliente se queda sin gas)</fullName>
+                <default>false</default>
+                <label>Demora en entrega de producto 72h. ( cliente se queda sin gas)</label>
+            </value>
+            <value>
+                <fullName>El cliente solicita una cantidad y llenamos el deposito</fullName>
+                <default>false</default>
+                <label>El cliente solicita una cantidad y llenamos el deposito</label>
+            </value>
+            <value>
+                <fullName>Error lecturas lector</fullName>
+                <default>false</default>
+                <label>Error lecturas lector</label>
+            </value>
+            <value>
+                <fullName>Error vencimiento facturas</fullName>
+                <default>false</default>
+                <label>Error vencimiento facturas</label>
+            </value>
+            <value>
+                <fullName>Extintores (revisión y cambio)</fullName>
+                <default>false</default>
+                <label>Extintores (revisión y cambio)</label>
+            </value>
+            <value>
+                <fullName>Factura / Abono</fullName>
+                <default>false</default>
+                <label>Factura / Abono</label>
+            </value>
+            <value>
+                <fullName>Facturación por pesada no realizada</fullName>
+                <default>false</default>
+                <label>Facturación por pesada no realizada</label>
+            </value>
+            <value>
+                <fullName>Fallo de instrumentación</fullName>
+                <default>false</default>
+                <label>Fallo de instrumentación</label>
+            </value>
+            <value>
+                <fullName>Fallo de los reguladores</fullName>
+                <default>false</default>
+                <label>Fallo de los reguladores</label>
+            </value>
+            <value>
+                <fullName>Fallo del PLC</fullName>
+                <default>false</default>
+                <label>Fallo del PLC</label>
+            </value>
+            <value>
+                <fullName>Fallo del SAI</fullName>
+                <default>false</default>
+                <label>Fallo del SAI</label>
+            </value>
+            <value>
+                <fullName>Fallo eléctrico</fullName>
+                <default>false</default>
+                <label>Fallo eléctrico</label>
+            </value>
+            <value>
+                <fullName>Fallos de detectores de gas</fullName>
+                <default>false</default>
+                <label>Fallos de detectores de gas</label>
+            </value>
+            <value>
+                <fullName>Falta de información (precios, cambios facturación…)</fullName>
+                <default>false</default>
+                <label>Falta de información (precios, cambios facturación…)</label>
+            </value>
+            <value>
+                <fullName>Fuga de gas en descarga</fullName>
+                <default>false</default>
+                <label>Fuga de gas en descarga</label>
+            </value>
+            <value>
+                <fullName>Fuga de gas en planta</fullName>
+                <default>false</default>
+                <label>Fuga de gas en planta</label>
+            </value>
+            <value>
+                <fullName>Fuga en la instalación</fullName>
+                <default>false</default>
+                <label>Fuga en la instalación</label>
+            </value>
+            <value>
+                <fullName>Gestión comercial clientes</fullName>
+                <default>false</default>
+                <label>Gestión comercial clientes</label>
+            </value>
+            <value>
+                <fullName>Impago / Pagos</fullName>
+                <default>false</default>
+                <label>Impago / Pagos</label>
+            </value>
+            <value>
+                <fullName>Incidencia con el nivel</fullName>
+                <default>false</default>
+                <label>Incidencia con el nivel</label>
+            </value>
+            <value>
+                <fullName>Incidencia en carretera o inclemencia meteorológica</fullName>
+                <default>false</default>
+                <label>Incidencia en carretera o inclemencia meteorológica</label>
+            </value>
+            <value>
+                <fullName>Incidencia en el camión</fullName>
+                <default>false</default>
+                <label>Incidencia en el camión</label>
+            </value>
+            <value>
+                <fullName>Incidencia en la telegestión</fullName>
+                <default>false</default>
+                <label>Incidencia en la telegestión</label>
+            </value>
+            <value>
+                <fullName>Incidencia web</fullName>
+                <default>false</default>
+                <label>Incidencia web</label>
+            </value>
+            <value>
+                <fullName>Lectura</fullName>
+                <default>false</default>
+                <label>Lectura</label>
+            </value>
+            <value>
+                <fullName>Lecturas estimadas usuarios PC</fullName>
+                <default>false</default>
+                <label>Lecturas estimadas usuarios PC</label>
+            </value>
+            <value>
+                <fullName>Material roto (candado, capota, carteles…)</fullName>
+                <default>false</default>
+                <label>Material roto (candado, capota, carteles…)</label>
+            </value>
+            <value>
+                <fullName>No conforme gastos de gestión</fullName>
+                <default>false</default>
+                <label>No conforme gastos de gestión</label>
+            </value>
+            <value>
+                <fullName>No facturado consumo</fullName>
+                <default>false</default>
+                <label>No facturado consumo</label>
+            </value>
+            <value>
+                <fullName>No informar de cuando suministramos</fullName>
+                <default>false</default>
+                <label>No informar de cuando suministramos</label>
+            </value>
+            <value>
+                <fullName>No suministramos por problemas climatológicos, mal acceso...(avisar cliente)</fullName>
+                <default>false</default>
+                <label>No suministramos por problemas climatológicos, mal acceso...(avisar cliente)</label>
+            </value>
+            <value>
+                <fullName>Notificaciones sobre altas/cambio titular</fullName>
+                <default>false</default>
+                <label>Notificaciones sobre altas/cambio titular</label>
+            </value>
+            <value>
+                <fullName>Notificaciones sobre baja / impago / consumo</fullName>
+                <default>false</default>
+                <label>Notificaciones sobre baja / impago / consumo</label>
+            </value>
+            <value>
+                <fullName>Pendiente abono solicitado</fullName>
+                <default>false</default>
+                <label>Pendiente abono solicitado</label>
+            </value>
+            <value>
+                <fullName>Precio aplicado incorrecto</fullName>
+                <default>false</default>
+                <label>Precio aplicado incorrecto</label>
+            </value>
+            <value>
+                <fullName>Reclamación mantenimiento</fullName>
+                <default>false</default>
+                <label>Reclamación mantenimiento</label>
+            </value>
+            <value>
+                <fullName>Renegociar condiciones</fullName>
+                <default>false</default>
+                <label>Renegociar condiciones</label>
+            </value>
+            <value>
+                <fullName>Retraso en la alta/baja/retirada del depósito</fullName>
+                <default>false</default>
+                <label>Retraso en la alta/baja/retirada del depósito</label>
+            </value>
+            <value>
+                <fullName>Se ha roto la valla / muro / bordillo al suministrar</fullName>
+                <default>false</default>
+                <label>Se ha roto la valla / muro / bordillo al suministrar</label>
+            </value>
+            <value>
+                <fullName>Servicio prestado por el personal 24h</fullName>
+                <default>false</default>
+                <label>Servicio prestado por el personal 24h</label>
+            </value>
+            <value>
+                <fullName>Sobrellenado</fullName>
+                <default>false</default>
+                <label>Sobrellenado</label>
+            </value>
+            <value>
+                <fullName>Suministro</fullName>
+                <default>false</default>
+                <label>Suministro</label>
+            </value>
+            <value>
+                <fullName>Técnico / Post venta</fullName>
+                <default>false</default>
+                <label>Técnico / Post venta</label>
+            </value>
+            <value>
+                <fullName>Varias veces llamando sin recibir contestación</fullName>
+                <default>false</default>
+                <label>Varias veces llamando sin recibir contestación</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Logistico GNL</controllingFieldValue>
+            <valueName>Cliente sin gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistico GNL</controllingFieldValue>
+            <valueName>Incidencia con el nivel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistico GNL</controllingFieldValue>
+            <valueName>Incidencia en carretera o inclemencia meteorológica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistico GNL</controllingFieldValue>
+            <valueName>Incidencia en el camión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistico GNL</controllingFieldValue>
+            <valueName>Incidencia en la telegestión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallo de instrumentación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallo de los reguladores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallo del PLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallo del SAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallo eléctrico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incidencia técnica GNL</controllingFieldValue>
+            <valueName>Fallos de detectores de gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Urgencia GNL</controllingFieldValue>
+            <valueName>Fuga de gas en descarga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Urgencia GNL</controllingFieldValue>
+            <valueName>Fuga de gas en planta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Atención recibida por la empresa transportista</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Canalizado sin gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Carga no completada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Cliente con entrega automática que se ha quedado sin gas (con Telemedida)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Cliente con entrega automática que se ha quedado sin gas (sin Telemedida)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Cliente con producto Primaconta se queda sin gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Cliente sin gas por estar el nivel depósito clavado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Demora en entrega de producto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>El cliente solicita una cantidad y llenamos el deposito</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>No informar de cuando suministramos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>No suministramos por problemas climatológicos, mal acceso...(avisar cliente)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Se ha roto la valla / muro / bordillo al suministrar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrega producto</controllingFieldValue>
+            <valueName>Sobrellenado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Contador producto Primaconta no emite señal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Contador usuario PC no marca correctamente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Extintores (revisión y cambio)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Fuga en la instalación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Material roto (candado, capota, carteles…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Reclamación mantenimiento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Retraso en la alta/baja/retirada del depósito</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zona almacenamiento</controllingFieldValue>
+            <valueName>Servicio prestado por el personal 24h</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atención usuario</controllingFieldValue>
+            <valueName>Atención recibida telefónicamente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atención usuario</controllingFieldValue>
+            <valueName>Falta de información (precios, cambios facturación…)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atención usuario</controllingFieldValue>
+            <valueName>Notificaciones sobre altas/cambio titular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atención usuario</controllingFieldValue>
+            <valueName>Notificaciones sobre baja / impago / consumo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atención usuario</controllingFieldValue>
+            <valueName>Varias veces llamando sin recibir contestación</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Competencia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Cuotas GPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Error lecturas lector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Facturación por pesada no realizada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Lecturas estimadas usuarios PC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>No conforme gastos de gestión</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>No facturado consumo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Pendiente abono solicitado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Precio aplicado incorrecto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condiciones contractuales</controllingFieldValue>
+            <valueName>Renegociar condiciones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Acceso Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Adm. Comercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Factura / Abono</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Gestión comercial clientes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Impago / Pagos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Lectura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Suministro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulta</controllingFieldValue>
+            <valueName>Técnico / Post venta</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

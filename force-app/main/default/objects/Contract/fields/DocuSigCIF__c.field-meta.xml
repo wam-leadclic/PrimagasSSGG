@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSigCIF__c</fullName>
+    <description>Id fiscal si se trata de una empresa</description>
+    <externalId>false</externalId>
+    <formula>IF(DocuSignNombreContacto__c =&quot;&quot;,  Account.Id_Fiscal__c ,&quot;&quot;)</formula>
+    <label>CIF Docusign</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

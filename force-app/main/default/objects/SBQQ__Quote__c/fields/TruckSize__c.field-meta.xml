@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TruckSize__c</fullName>
+    <externalId>false</externalId>
+    <label>Tamaño de camión</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7 Tns</fullName>
+                <default>false</default>
+                <label>7 Tns</label>
+            </value>
+            <value>
+                <fullName>11 Tns</fullName>
+                <default>false</default>
+                <label>11 Tns</label>
+            </value>
+            <value>
+                <fullName>19 Tns</fullName>
+                <default>false</default>
+                <label>19 Tns</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

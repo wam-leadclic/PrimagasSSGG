@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gestor_interno__c</fullName>
+    <description>ara de crear un camp tipus fórmula que mostri el tipus de contracte al compte</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(Provincia__c,&quot;Barcelona&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;A Coruña/La Coruña&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Álava/Araba&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Albacete&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Alicante&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Asturias&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Avila&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Badajoz&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Bizkaia/Vizcaya&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Burgos&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Cádiz&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Cantabria&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Castellón&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Ciudad Real&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(AND(ISPICKVAL(Provincia__c,&quot;Cuenca&quot;),  ( tipus_ocult__c=&quot;GLP&quot;)),&quot;Cristina Vera&quot;,
+IF(tipus_ocult__c&lt;&gt;&quot;GLP&quot;,&quot;Cristina Vera&quot;,
+IF( Id_Navision__c = &quot;94017078&quot;,&quot;Patricia Penya&quot;,&quot;Davinia Vázquez&quot;)))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Gestor interno</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

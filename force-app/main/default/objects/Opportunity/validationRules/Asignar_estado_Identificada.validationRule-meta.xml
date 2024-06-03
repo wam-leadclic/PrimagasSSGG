@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asignar_estado_Identificada</fullName>
+    <active>false</active>
+    <description>Cuando se crea una oportunidad se debe asignar el estado &quot;Identificada&quot;. Por tanto, el campo StageName deberá tener como valor por defecto “Identificada” y en caso de que el usuario seleccione otro valor se le mostrará el mensaje de error.</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+NOT(ISPICKVAL(StageName, &apos;Identificada&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Cuando se crea una oportunidad el campo “Etapa” debe ser “Identificada”.</errorMessage>
+</ValidationRule>

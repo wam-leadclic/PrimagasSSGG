@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Inversion_no__c</fullName>
+    <externalId>false</externalId>
+    <formula>Coste_instalacion_exterior__c + Coste_instalacion_interior__c +  Importe_vaporizador__c + Legalizacion__c+ Instalaci_n_est_ndar__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Inversión no recuperable</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

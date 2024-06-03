@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Muy satisfecho</fullName>
+        <default>false</default>
+        <label>Muy satisfecho</label>
+    </customValue>
+    <customValue>
+        <fullName>Satisfecho</fullName>
+        <default>false</default>
+        <label>Satisfecho</label>
+    </customValue>
+    <customValue>
+        <fullName>Indiferente</fullName>
+        <default>false</default>
+        <label>Indiferente</label>
+    </customValue>
+    <customValue>
+        <fullName>Insatisfecho</fullName>
+        <default>false</default>
+        <label>Insatisfecho</label>
+    </customValue>
+    <customValue>
+        <fullName>Muy insatisfecho</fullName>
+        <default>false</default>
+        <label>Muy insatisfecho</label>
+    </customValue>
+    <description>Valores para encuestas de satisfacción</description>
+    <masterLabel>Satisfacción global</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

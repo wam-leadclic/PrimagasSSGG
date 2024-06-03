@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vista_proviencies</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>tipus_ocult__c</columns>
+    <columns>Gestor_interno__c</columns>
+    <columns>Provincia__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Id_Navision__c</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </filters>
+    <label>Vista gestor interno y provincia</label>
+    <language>es</language>
+</ListView>

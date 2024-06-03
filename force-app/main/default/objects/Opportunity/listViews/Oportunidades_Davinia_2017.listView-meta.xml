@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidades_Davinia_2017</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Motivo_p_rdida__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2017 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Cerrada perdida,Cerrada ganada,Aplazada/Ahora No</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>DV</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.LEAD_SOURCE</field>
+        <operation>notEqual</operation>
+        <value>Prescriptor Online</value>
+    </filters>
+    <label>Oportunidades Davinia 2017</label>
+    <language>es</language>
+    <sharedTo>
+        <group>Atenci_n_al_cliente</group>
+        <group>Marketing</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documentosfirmados__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Se actualiza el campo cuando los documentos han sido firmados por el cliente</description>
+    <externalId>false</externalId>
+    <label>Documentos firmados</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

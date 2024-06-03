@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_perdida_obligatorio</fullName>
+    <active>true</active>
+    <description>El campo “Motivos de pérdida” es obligatorio para modificar el estado de la oportunidad a &quot;Cerrada perdida&quot; o &quot;Aplazada/Ahora No&quot;.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(StageName), 
+ISBLANK(TEXT(Motivos_de_P_rdida__c)),
+OR(ISPICKVAL(StageName, &apos;Cerrada perdida&apos;),
+ISPICKVAL(StageName, &apos;Aplazada/Ahora No&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>Motivos_de_P_rdida__c</errorDisplayField>
+    <errorMessage>El campo “Motivos de pérdida” es obligatorio para modificar el estado de la oportunidad al valor “Cerrada perdida” o &quot;Aplazada/Ahora No&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C_mo_nos_ha_conocido__c</fullName>
+    <externalId>false</externalId>
+    <label>¿Cómo nos ha conocido?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Busqué en Google</fullName>
+                <default>false</default>
+                <label>Busqué en Google</label>
+            </value>
+            <value>
+                <fullName>Eventos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Eventos</label>
+            </value>
+            <value>
+                <fullName>Noticia en prensa online/offline</fullName>
+                <default>false</default>
+                <label>Noticia en prensa online/offline</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Por el instalador de la zona</fullName>
+                <default>false</default>
+                <label>Por el instalador de la zona</label>
+            </value>
+            <value>
+                <fullName>Por un amigo/vecino/familiar</fullName>
+                <default>false</default>
+                <label>Por un amigo/vecino/familiar</label>
+            </value>
+            <value>
+                <fullName>Prensa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prensa</label>
+            </value>
+            <value>
+                <fullName>Publicidad en prensa online/offline</fullName>
+                <default>false</default>
+                <label>Publicidad en prensa online/offline</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Recomendación</fullName>
+                <default>false</default>
+                <label>Recomendación</label>
+            </value>
+            <value>
+                <fullName>Redes sociales (Facebook, LinkedIn, Twitter, YouTube)</fullName>
+                <default>false</default>
+                <label>Redes sociales (Facebook, LinkedIn, Twitter, YouTube)</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

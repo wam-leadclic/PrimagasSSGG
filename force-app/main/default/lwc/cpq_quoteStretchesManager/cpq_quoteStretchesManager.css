@@ -1,0 +1,27 @@
+.editable-column{
+    background-color:rgb(240, 240, 240);
+}
+
+.float-right{
+    text-align:right;
+}
+
+.warning {
+    color:red;
+}
+lightning-input[data-draft="true"]{
+    font-weight: 700;
+}
+
+th, td, td div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-ellipsis {
+    text-overflow: unset;
+}
+
+.table {
+    table-layout: fixed;
+}

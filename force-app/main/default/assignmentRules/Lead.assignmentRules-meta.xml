@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Asignación HS</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>miguelangel.campillo@primagas.es</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Pau Riera</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Contact_State__c</field>
+                <operation>equals</operation>
+                <value>Alava/Araba,Alicante,Almería,Barcelona,Castellón,Córdoba,Girona/Gerona,Granada,Gipuzkoa/Guipuzcoa,Huesca,Jaén,Lleida/Lérida,Murcia,Navarra,La Rioja,Tarragona,Teruel,Valencia,Bizkaia/Vizcaya,Zaragoza</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>miguel.muino@primagas.es</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Pau Riera</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Contact_State__c</field>
+                <operation>notEqual</operation>
+                <value>Alava/Araba,Alicante,Almería,Barcelona,Castellón,Córdoba,Girona/Gerona,Granada,Gipuzkoa/Guipuzcoa,Huesca,Jaén,Lleida/Lérida,Murcia,Navarra,La Rioja,Tarragona,Teruel,Valencia,Bizkaia/Vizcaya,Zaragoza</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Candidatos sin asignar</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Candidatos_sin_asignar</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>ISNEW()</formula>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Online CPs</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>miguel.muino@primagas.es</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Codigo_Postal__c</field>
+                <operation>startsWith</operation>
+                <value>32</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Online Primagas</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Online Muiño %28Galicia%29</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>miguel.muino@primagas.es</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Contact_State__c</field>
+                <operation>equals</operation>
+                <value>A Coruña/La Coruña,Lugo,Orense/Ourense,Pontevedra</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Online Primagas</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignAccountName__c</fullName>
+    <description>Informa del nombre de la cuenta cuando no haya minúsculas</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(CONTAINS( Account.Name , &quot;a&quot;) ||
+CONTAINS(Account.Name, &quot;b&quot;) ||
+CONTAINS(Account.Name, &quot;c&quot;) ||
+CONTAINS(Account.Name, &quot;d&quot;) ||
+CONTAINS(Account.Name, &quot;e&quot;) ||
+CONTAINS(Account.Name, &quot;f&quot;) ||
+CONTAINS(Account.Name, &quot;g&quot;) ||
+CONTAINS(Account.Name, &quot;h&quot;) ||
+CONTAINS(Account.Name, &quot;i&quot;) ||
+CONTAINS(Account.Name, &quot;j&quot;) ||
+CONTAINS(Account.Name, &quot;k&quot;) ||
+CONTAINS(Account.Name, &quot;l&quot;) ||
+CONTAINS(Account.Name, &quot;m&quot;) ||
+CONTAINS(Account.Name, &quot;n&quot;) ||
+CONTAINS(Account.Name, &quot;o&quot;) ||
+CONTAINS(Account.Name, &quot;p&quot;) ||
+CONTAINS(Account.Name, &quot;q&quot;) ||
+CONTAINS(Account.Name, &quot;r&quot;) ||
+CONTAINS(Account.Name, &quot;s&quot;) ||
+CONTAINS(Account.Name, &quot;t&quot;) ||
+CONTAINS(Account.Name, &quot;u&quot;) ||
+CONTAINS(Account.Name, &quot;v&quot;) ||
+CONTAINS(Account.Name, &quot;w&quot;) ||
+CONTAINS(Account.Name, &quot;x&quot;) ||
+CONTAINS(Account.Name, &quot;y&quot;) ||
+CONTAINS(Account.Name, &quot;z&quot;)),
+Account.Name,
+&quot;&quot;)</formula>
+    <label>Nombre empresa DocuSign</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

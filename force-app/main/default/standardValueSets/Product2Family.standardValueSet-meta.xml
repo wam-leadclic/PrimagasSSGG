@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Depósitos</fullName>
+        <default>false</default>
+        <label>Depósitos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transporte</fullName>
+        <default>false</default>
+        <label>Transporte</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalizaciones</fullName>
+        <default>false</default>
+        <label>Legalizaciones</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instalaciones</fullName>
+        <default>false</default>
+        <label>Instalaciones</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Descuentos</fullName>
+        <default>false</default>
+        <label>Descuentos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proyecto/Memoria</fullName>
+        <default>false</default>
+        <label>Proyecto/Memoria</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alquiler</fullName>
+        <default>false</default>
+        <label>Alquiler</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Primaservicios</fullName>
+        <default>false</default>
+        <label>Primaservicios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tarifas</fullName>
+        <default>false</default>
+        <label>Tarifas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Obra civil</fullName>
+        <default>false</default>
+        <label>Obra civil</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vallado</fullName>
+        <default>false</default>
+        <label>Vallado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros Equipos</fullName>
+        <default>false</default>
+        <label>Otros Equipos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inversión</fullName>
+        <default>false</default>
+        <label>Inversión</label>
+    </standardValue>
+</StandardValueSet>

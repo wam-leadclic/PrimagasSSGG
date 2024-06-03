@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <description>Comprueba si el usuario que está pulsando el botón tiene permisos para aprobar el registro</description>
+        <name>PermisionApproverDecision</name>
+        <label>PermisionApproverDecision</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>Mensaje_de_error</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado predeterminado</defaultConnectorLabel>
+        <rules>
+            <name>PermissionYes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GetRequestApproval.ApproverCurrentUser__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Administrador del sistema</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status</targetReference>
+            </connector>
+            <label>Tiene Permiso</label>
+        </rules>
+    </decisions>
+    <description>Flow creado para cambiar el estado a aprobado</description>
+    <environments>Default</environments>
+    <interviewLabel>Aprobación Solicitud {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Aprobación Solicitud</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>GetRequestApproval</name>
+        <label>Busco la solicitud</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>PermisionApproverDecision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ApprovalRequest__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Status</name>
+        <label>Update Status</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <connector>
+            <targetReference>ApprovalRequest</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Resolution__c</field>
+            <value>
+                <stringValue>Aprobado</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Completado</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ApprovalRequest__c</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>ApprovalRequest</name>
+        <label>Aprobación Solitud</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SolicitudAprobada</name>
+            <fieldText>&lt;p&gt;La solicitud ha sido aprobada correctamente&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Finalizar</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Mensaje_de_error</name>
+        <label>Mensaje de error</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MensajedeErrorTexto</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;No tiene permisos para realizar esta acción&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetRequestApproval</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Id de la solicitud de aprobación</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

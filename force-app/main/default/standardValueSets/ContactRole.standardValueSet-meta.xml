@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Usuario empresarial</fullName>
+        <default>false</default>
+        <label>Usuario empresarial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responsable de la decisión</fullName>
+        <default>false</default>
+        <label>Responsable de la decisión</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Comprador económico</fullName>
+        <default>false</default>
+        <label>Comprador económico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responsable de la decisión económica</fullName>
+        <default>false</default>
+        <label>Responsable de la decisión económica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluador</fullName>
+        <default>false</default>
+        <label>Evaluador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ejecutivo de patrocinios</fullName>
+        <default>false</default>
+        <label>Ejecutivo de patrocinios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influyente</fullName>
+        <default>false</default>
+        <label>Influyente</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Comprador técnico</fullName>
+        <default>false</default>
+        <label>Comprador técnico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+</StandardValueSet>

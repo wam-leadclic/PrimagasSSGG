@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_estado_aplazada</fullName>
+    <active>true</active>
+    <description>Solo puede cambiar el estado de la oportunidad a &quot;Aplazada / Ahora No&quot; el propietario o el administrador.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(StageName), 
+ISPICKVAL(StageName, &apos;Aplazada/Ahora No&apos;),
+NOT(OR($User.Id = Owner.Id,  $Profile.Name  = &apos;Administrador del sistema&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Solo puede cambiar el estado de la oportunidad a &quot;Aplazada / Ahora No&quot; el propietario o el administrador.</errorMessage>
+</ValidationRule>

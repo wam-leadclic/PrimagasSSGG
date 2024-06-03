@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmentaci_n__c</fullName>
+    <defaultValue>&quot;Ninguno&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Segmentación</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 estrella (E)</fullName>
+                <default>false</default>
+                <label>1 estrella (E)</label>
+            </value>
+            <value>
+                <fullName>2 estrellas (D)</fullName>
+                <default>false</default>
+                <label>2 estrellas (D)</label>
+            </value>
+            <value>
+                <fullName>3 estrellas (C)</fullName>
+                <default>false</default>
+                <label>3 estrellas (C)</label>
+            </value>
+            <value>
+                <fullName>4 estrellas (B)</fullName>
+                <default>false</default>
+                <label>4 estrellas (B)</label>
+            </value>
+            <value>
+                <fullName>5 estrellas (A)</fullName>
+                <default>false</default>
+                <label>5 estrellas (A)</label>
+            </value>
+            <value>
+                <fullName>Elige una opción</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Elige una opción</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

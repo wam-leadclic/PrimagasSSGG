@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tarifas</fullName>
+    <columns>NAME</columns>
+    <columns>NombreTarifa__c</columns>
+    <columns>Origen__c</columns>
+    <columns>Precio_E_Kg__c</columns>
+    <columns>Precio_E_l__c</columns>
+    <columns>Actividad__c</columns>
+    <columns>Activo__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tarifas</label>
+    <language>es</language>
+</ListView>

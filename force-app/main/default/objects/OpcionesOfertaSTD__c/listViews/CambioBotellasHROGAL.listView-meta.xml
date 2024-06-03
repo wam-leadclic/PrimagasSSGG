@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CambioBotellasHROGAL</fullName>
+    <columns>NAME</columns>
+    <columns>CuotaMensual__c</columns>
+    <columns>Deposito__c</columns>
+    <columns>Desde__c</columns>
+    <columns>Dto_E_Kg__c</columns>
+    <columns>DuracionDto__c</columns>
+    <columns>InversionSinDeposito__c</columns>
+    <columns>Mantenimiento_estandar__c</columns>
+    <columns>Oferta__c</columns>
+    <columns>OpcExterior__c</columns>
+    <columns>OpcInterior__c</columns>
+    <columns>OpcServicio__c</columns>
+    <columns>PagoInicial__c</columns>
+    <columns>Tarifa__c</columns>
+    <columns>Telemedida__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oferta__c</field>
+        <operation>equals</operation>
+        <value>Cambio Botellas HRO GAL</value>
+    </filters>
+    <label>Cambio Botellas HRO GAL</label>
+    <language>es</language>
+</ListView>

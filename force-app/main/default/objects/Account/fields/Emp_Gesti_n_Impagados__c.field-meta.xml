@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emp_Gesti_n_Impagados__c</fullName>
+    <externalId>false</externalId>
+    <label>Emp. Gestión Impagados</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gescobro</fullName>
+                <default>false</default>
+                <label>Gescobro</label>
+            </value>
+            <value>
+                <fullName>Corporación Legal</fullName>
+                <default>false</default>
+                <label>Corporación Legal</label>
+            </value>
+            <value>
+                <fullName>Concurso acreedores</fullName>
+                <default>false</default>
+                <label>Concurso acreedores</label>
+            </value>
+            <value>
+                <fullName>Mazars</fullName>
+                <default>false</default>
+                <label>Mazars</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

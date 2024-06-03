@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importe_en_gas_en_E_Kg_numeric__c</fullName>
+    <description>Campo formula utilzado para mostrar los campos currencies con el formateo de Salesforce [#.##0,00] y sin mostrar la moneda [€]</description>
+    <externalId>false</externalId>
+    <formula>Importe_en_gas_en_E_Kg__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Importe en gas en E Kg numeric</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Atención usuario</fullName>
+        <default>false</default>
+        <label>Atención usuario</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Condiciones contractuales</fullName>
+        <default>false</default>
+        <label>Condiciones contractuales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consulta</fullName>
+        <default>false</default>
+        <label>Consulta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entrega producto</fullName>
+        <default>false</default>
+        <label>Entrega producto</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incidencia técnica GNL</fullName>
+        <default>false</default>
+        <label>Incidencia técnica GNL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistico GNL</fullName>
+        <default>false</default>
+        <label>Logistico GNL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgencia GNL</fullName>
+        <default>false</default>
+        <label>Urgencia GNL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zona almacenamiento</fullName>
+        <default>false</default>
+        <label>Zona almacenamiento</label>
+    </standardValue>
+</StandardValueSet>

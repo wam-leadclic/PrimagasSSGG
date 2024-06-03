@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#FE0106</headerColor>
+        <logo>PMGCPQ</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>CPQ Admin</label>
+    <navType>Standard</navType>
+    <tabs>standard-Product2</tabs>
+    <tabs>TankMasterData__c</tabs>
+    <tabs>EquipmentMasterData__c</tabs>
+    <tabs>TankLegalizationCost__c</tabs>
+    <tabs>TankMaintenanceCost__c</tabs>
+    <tabs>ServiceCost__c</tabs>
+    <tabs>GasCost__c</tabs>
+    <tabs>GPCAPEXRatio__c</tabs>
+    <tabs>RateAssignation__c</tabs>
+    <tabs>GasPriceRange__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>CPQ_Admin_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activas</fullName>
+    <columns>cuenta__c</columns>
+    <columns>NAME</columns>
+    <columns>Tipo_de_direccion_de_envio__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Estado__c</columns>
+    <columns>Bloqueado__c</columns>
+    <columns>Motivo_bloqueo__c</columns>
+    <columns>Id_Navision__c</columns>
+    <columns>Propiedad_del_tanque__c</columns>
+    <columns>Provincia__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Estado__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>Activas</label>
+    <language>es</language>
+</ListView>

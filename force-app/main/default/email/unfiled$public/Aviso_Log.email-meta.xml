@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Cuando se creau un registro en el log de errors de sincronización</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Aviso Log</name>
+    <style>none</style>
+    <subject>Aviso Log sincronización SF NAV</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

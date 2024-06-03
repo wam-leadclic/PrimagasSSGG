@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Telefono_formato_correctlo</fullName>
+    <active>false</active>
+    <description>Comprueba que el teléfono tiene el formato correcto/está en blanco</description>
+    <errorConditionFormula>NOT(
+ OR(
+  LEN (Phone) = 0,
+  REGEX( Phone, &quot;(\\d){9}&quot;)
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Comprueba que el téfono tiene el formato correcto. (9 números sin espacios)</errorMessage>
+</ValidationRule>

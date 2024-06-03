@@ -1,0 +1,471 @@
+<apex:page lightningStyleSheets="true" applyHTmlTag="false" applyBodyTag="false" standardController="Contract" extensions="NuevoContratoController"
+    tabStyle="Contract" showHeader="false" sidebar="true" id="page">
+
+    <script>
+
+        //get account Id from URL
+        var accountId = "{!$CurrentPage.parameters.RecordType}";
+        console.log(accountId);
+
+        function recalcularDirecciones(nombre) {
+            var lkfield = document.getElementById(nombre + '_lkid').value;
+            if (!lkfield.startsWith('000'))
+                jsRecalcularDirecciones(lkfield);
+        }
+
+        function recuperarDatosDeCuenta(nombre) {
+            var lkfield = document.getElementById(nombre + '_lkid').value;
+            if (!lkfield.startsWith('000')) {
+                actualizarDatosCuenta(lkfield);
+            }
+        }
+
+        function marcarDireccion(name) {
+            var inputElem = document.getElementsByClassName("check");
+            for (var i = 0; i < inputElem.length; i++) {
+                var elemName = inputElem[i].name;
+                if (elemName.indexOf(name) == -1) {
+                    inputElem[i].checked = false;
+                }
+                else {
+                    inputElem[i].checked = true;
+                }
+            }
+        }
+
+        //Evitamos que salga el popup del datepicker al abrir la página
+        function setFocusOnLoad() { }
+
+
+        function bloquearBoton() {
+            document.querySelector('[id$="save"]').setAttribute("disabled", "disabled");
+            console.log("deshabilita");
+        }
+    </script>
+
+    <head>
+        <apex:slds />
+    </head>
+
+    <div class="slds-scope">
+        <apex:form id="form">
+
+            <!-- START ACTIONS -->
+            <apex:actionstatus id="genericWaitingStatus">
+                <apex:facet name="start">
+                    <div class="slds-spinner_container slds-is-fixed">
+                        <div role="status" class="slds-spinner slds-spinner_medium">
+                            <span class="slds-assistive-text">Cargando</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionstatus>
+
+            <apex:pageMessages />
+
+            <!-- Se asigna el ID del regitro a la variable accId -->
+            <apex:actionFunction name="jsRecalcularDirecciones" action="{!recalcularDirecciones}" immediate="true" reRender="direccionesEnvio"
+                rendered="{!IF(esCambioTitular , false , true)}">
+                <apex:param assignTo="{!contract.AccountId}" value="accountId" id="accountId" name="accId" />
+            </apex:actionFunction>
+            <apex:actionFunction name="updateStatus" action="{!actualizarEstado}" />
+
+            <!--Este actionFunction se llama desde la funcion js de encima. Si se quisieran pasar mas parámetros se añadirian en orden como apex:param. 
+            El value se deja vacio para que coja el parámetro que se envía en la funcion y se asigna al AccountId del contrato que se esta editando-->
+            <apex:actionFunction name="actualizarDatosCuenta" action="{!recuperarDatosDeCuenta}" immediate="true" reRender="datosContactoCambioTitular"
+                rendered="{!esCambioTitular}">
+                <apex:param assignTo="{!contract.AccountId}" value="" id="idAccount" name="idAcc" />
+            </apex:actionFunction>
+            <!-- END ACTIONS-->
+
+            <!-- START FORM -->
+            <div style="margin-bottom:1.25cm">
+                <apex:pageBlock mode="Edit">
+
+                    <!-- HEADER -->
+                    <div class="slds-box slds-text-heading_medium slds-size_full slds-theme_shade slds-text-align_center">Nuevo contrato</div>
+                    <!-- END HEADER-->
+
+                    <!-- START DATOS DE CONTACTO -->
+                    <apex:pageBlockSection title="Datos de contacto" collapsible="false" id="datosContacto" columns="2" rendered="{! (!isDuplicar) }">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Contacto}" var="fs">
+                            <apex:inputfield id="cuenta" value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" onchange="recalcularDirecciones(this.name)"
+                                rendered="{!IF(CONTAINS(LOWER(fs), 'account') , true , false)}" />
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'account') , false , true)}"
+                            />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de contacto" collapsible="false" id="datosContactoCambioTitular" columns="2" rendered="{!esCambioTitular}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Contacto_Duplicar}" var="fs">
+                            <!--Llamamos a la funcion de javascript pasandole el nombre del campo para buscar su _lkid, en cuyo valor se encontrará el id de la cuenta-->
+                            <apex:inputfield id="cuentaDuplicada" value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" onchange="recuperarDatosDeCuenta(this.name)"
+                                rendered="{!IF(CONTAINS(LOWER(fs), 'account') , true , false)}" />
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'account') , false , true)}"
+                            />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de contacto" collapsible="false" id="datosContactoDuplicado" columns="2" rendered="{!esDuplicarTarifa}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Contacto_Duplicar}" var="fs">
+                            <apex:inputfield id="cuentaDuplicada" value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" onchange="recalcularDirecciones(this.name)"
+                                rendered="{!IF(CONTAINS(LOWER(fs), 'account') , true , false)}" />
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'account') , false , true)}"
+                            />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!-- END DATOS DE CONTACTO -->
+
+                    <!-- Datos de póliza -->
+                    <apex:pageBlockSection title="Datos de póliza" collapsible="false" rendered="{!nombreTipoRegistro == 'Poliza'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Poliza}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de póliza" collapsible="false" rendered="{!nombreTipoRegistro == 'From_Navision'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Poliza_From_Navision}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!-- Datos de póliza -->
+
+                    <!-- Direcciones de entrega del cliente -->
+                    <apex:pageblocksection title="Direcciones de entrega" columns="1" id="direccionesEnvio">
+                        <apex:pageBlockTable value="{!direccionesEnvioCustom}" var="dir" id="dirs" rendered="true">
+                            <apex:column >
+                                <apex:actionRegion >
+                                    <apex:inputCheckbox value="{!dir.selected}" styleClass="check" onchange="marcarDireccion(this.name)">
+                                        <!--<apex:actionSupport event="onchange" action="{!marcarDireccion}" rerender="direccionesEnvio">
+                                <apex:param name="dirID" assignTo="{!direccionSeleccionada}" value="{!dir.dirID}"/>
+                            </apex:actionSupport>-->
+                                    </apex:inputCheckbox>
+                                </apex:actionRegion>
+                            </apex:column>
+
+                            <apex:column headerValue="Dirección">
+                                <apex:outputText value="{!dir.direccion1}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="direccion1" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Direccion__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="direccion1" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="Dirección 2">
+                                <apex:outputText value="{!dir.direccion2}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="direccion2" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Direccion_2__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="direccion2" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="Población" headerClass="headerStyle">
+                                <apex:outputText value="{!dir.poblacion}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="poblacion" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Poblacion__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="poblacion" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="Estado/Provincia" headerClass="headerStyle">
+                                <apex:outputText value="{!dir.provincia}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="provincia" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Provincia__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="provincia" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="Código Postal" headerClass="headerStyle">
+                                <apex:outputText value="{!dir.codigoPostal}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="codigoPostal" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Codigo_Postal__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="codigoPostal" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="País" headerClass="headerStyle">
+                                <apex:outputText value="{!dir.pais}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="pais" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Pais__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="pais" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                            <apex:column headerValue="Tipo de Camión" headerClass="headerStyle">
+                                <apex:outputText value="{!dir.tipoCamion}" rendered="{!!dir.nueva}" />
+                                <apex:outputPanel id="tipoCamion" rendered="{!dir.nueva}">
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!dirp.Tipo_de_camion__c}">
+                                            <apex:actionSupport event="onblur" action="{!setDir}" rerender="tipoCamion" />
+                                        </apex:inputField>
+                                    </apex:actionRegion>
+                                </apex:outputPanel>
+                            </apex:column>
+
+                        </apex:pageBlockTable>
+                    </apex:pageblockSection>
+                    <!-- Direcciones de entrega del cliente -->
+
+                    <!-- Información de dirección -->
+                    <apex:pageBlockSection id="direccionesContrato" title="Información de dirección" collapsible="false">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Informacion_de_direccion}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!-- Información de dirección -->
+
+                    <!-- Consumo y duración -->
+                    <apex:pageBlockSection title="Consumo y duración" collapsible="false" rendered="{!nombreTipoRegistro == 'Deposito_propio'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Consumo_y_duracion_Deposito_Propio}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!--El campo de ultima lectura de contador debe ser obligatorio cuando se hace un cambio de titular para poliza y granel-->
+                    <apex:pageBlockSection title="Consumo y duración" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Consumo_y_duracion_GLP}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'lectura') && esCambioTitular, true , false)}"
+                            />
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'lectura'), false , true)}"
+                            />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Consumo y duración" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Consumo_y_duracion_GNL}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Consumo y duración" collapsible="false" rendered="{!nombreTipoRegistro == 'Poliza'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Consumo_y_duracion_Poliza}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'lectura') && esCambioTitular, true , false)}"
+                            />
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" rendered="{!IF(CONTAINS(LOWER(fs), 'lectura'), false , true)}"
+                            />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Consumo y duración" collapsible="false" rendered="{!nombreTipoRegistro == 'From_Navision'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Consumo_y_duracion_From_Navision}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <!-- Consumo y duración -->
+
+                    <!-- Condiciones de pago -->
+                    <apex:pageBlockSection title="Condiciones de Pago" collapsible="false" rendered="{!nombreTipoRegistro == 'Deposito_propio'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Condiciones_de_Pago_Deposito_propio}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Condiciones de Pago" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Condiciones_de_Pago_GLP}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Condiciones de Pago" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Condiciones_de_Pago_GNL}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Condiciones de Pago" collapsible="false" rendered="{!nombreTipoRegistro == 'Poliza'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Condiciones_de_Pago_Poliza}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+
+                    <!-- Condiciones de pago -->
+
+                    <!-- Datos de instalación -->
+                    <apex:pageBlockSection title="Datos de Instalación" collapsible="false" rendered="{!nombreTipoRegistro == 'Deposito_propio' && esCambioTitular == false }">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Instalacion_Deposito_Propio}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de Instalación" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Instalacion_GLP}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de Instalación" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_Instalacion_GNL}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+
+                    <!-- Datos de instalación -->
+
+                    <!-- Inversión en Instalación -->
+                    <apex:pageBlockSection title="Inversión en Instalación" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Inversion_en_instalacion_GLP}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Inversión en Instalación" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Inversion_en_instalacion_GNL}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+
+                    <!-- Inversión en Instalación -->
+
+                    <!-- Datos de captación -->
+                    <apex:pageBlockSection title="Datos de captación" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_captacion}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+
+                    <apex:pageBlockSection title="Datos de captación" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_captacion}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Datos de captación" collapsible="false" rendered="{!nombreTipoRegistro == 'Deposito_propio' && esCambioTitular == false}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Datos_de_captacion}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <!-- Datos de captación -->
+
+
+
+                    <!-- Tarifas Gas -->
+                    <apex:pageBlockSection title="Tarifas Gas" collapsible="false" rendered="{!nombreTipoRegistro == 'Deposito_propio'}" columns="3">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Tarifas_Gas_Deposito_Propio}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Tarifas Gas" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP'}" columns="3">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Tarifas_Gas_GLP}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Tarifas Gas" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL'}" columns="3">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Tarifas_Gas_GNL}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Tarifas Gas" collapsible="false" rendered="{!nombreTipoRegistro == 'Poliza'}" columns="3">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Tarifas_Gas_Poliza}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <!-- Tarifas Gas -->
+
+                    <!-- Primaservicios -->
+                    <apex:pageBlockSection title="Primaservicios" collapsible="false" rendered="{!nombreTipoRegistro == 'GLP'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Primaservicios}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Primaservicios" collapsible="false" rendered="{!nombreTipoRegistro == 'GNL'}">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Primaservicios}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+
+                    <!-- Primaservicios -->
+
+                    <!-- Suministro Producto -->
+                    <apex:outputPanel id="suministroProducto">
+                        <apex:pageBlockSection title="Suministro Producto" collapsible="false" columns="1" rendered="{!nombreTipoRegistro == 'Deposito_propio'}">
+                            <apex:repeat value="{!$ObjectType.Contract.FieldSets.Suministro_Producto_Deposito_Propio}" var="fs">
+                                <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+                        <apex:pageBlockSection title="Suministro Producto" collapsible="false" columns="1" rendered="{!nombreTipoRegistro == 'GLP'}">
+                            <apex:repeat value="{!$ObjectType.Contract.FieldSets.Suministro_Producto_GLP}" var="fs">
+                                <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+                        <apex:pageBlockSection title="Suministro Producto" collapsible="false" columns="1" rendered="{!nombreTipoRegistro == 'GNL'}">
+                            <apex:repeat value="{!$ObjectType.Contract.FieldSets.Suministro_Producto_GNL}" var="fs">
+                                <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+                        <apex:pageBlockSection title="Suministro Producto" collapsible="false" columns="1" rendered="{!nombreTipoRegistro == 'Poliza' && esCambioTitular == false}">
+                            <apex:repeat value="{!$ObjectType.Contract.FieldSets.Suministro_Producto_Poliza}" var="fs">
+                                <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                            </apex:repeat>
+                        </apex:pageBlockSection>
+
+
+                    </apex:outputPanel>
+                    <!-- Suministro Producto -->
+
+                    <!-- Condiciones especiales -->
+                    <apex:pageBlockSection title="Condiciones especiales" collapsible="false">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Condiciones_especiales}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!-- Condiciones especiales -->
+
+                    <!-- Información del sistema -->
+                    <apex:pageBlockSection title="Información del sistema" collapsible="false">
+                        <apex:repeat value="{!$ObjectType.Contract.FieldSets.Informacion_del_sistema}" var="fs">
+                            <apex:inputfield value="{!Contract[fs]}" required="{!OR(fs.DBRequired, fs.required)}" />
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                    <!-- Información del sistema -->
+                </apex:pageBlock>
+            </div>
+
+            <!-- FOOTER Buttons toolbar -->
+            <div class="slds-docked-form-footer">
+                <apex:commandButton styleClass="slds-button slds-button_neutral buttonclass" style="margin-top: 5px;" value="Cancelar" action="{!cancel}"
+                />
+                <apex:commandButton styleClass="slds-button slds-button_brand buttonclass" style="margin-top: 5px;" id="save" value="Guardar"
+                    onclick="bloquearBoton()" action="{!onSave}" disabled="{!botonGuardarInactivo}" oncomplete="updateStatus()"
+                    status="genericWaitingStatus" />
+            </div>
+
+        </apex:form>
+        <!-- END FORM -->
+
+    </div>
+
+</apex:page>

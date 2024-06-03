@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerta_canvi_de_titular</fullName>
+        <description>Alerta canvi de titular</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jennifer.abad@primagas.es</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Alerta_canvi_titular</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerta_canvi_de_titular_automaticos</fullName>
+        <description>Alerta canvi de titular Automaticos</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lucia.lambruschini@primagas.es</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Alerta_canvi_titular</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Cambiar_estado_a_Activado</fullName>
+        <field>Status</field>
+        <literalValue>Activado</literalValue>
+        <name>Cambiar estado a &quot;Registrado&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_estado_borrador</fullName>
+        <field>Status</field>
+        <literalValue>Borrador</literalValue>
+        <name>Cambiar estado a &quot;Borrador&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambio_estado_pendiente_de_renovar</fullName>
+        <description>Cambiar estado a &quot;Pendiente de renovar&quot;</description>
+        <field>Status</field>
+        <literalValue>Pendiente de renovar</literalValue>
+        <name>Cambio estado pendiente de renovar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Modificar_Estado_2_a_Nuevo</fullName>
+        <description>Cuando el contrato sea validado el campo Estado 2 se pondrá a &quot;Nuevo&quot;</description>
+        <field>Estado_2__c</field>
+        <literalValue>Nuevo</literalValue>
+        <name>Modificar Estado 2 a &quot;Nuevo&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pendiente_de_Registrar</fullName>
+        <description>Se cambiará el estado del contrato a &apos;Pendiente de Registrar&apos;</description>
+        <field>Status</field>
+        <literalValue>Pendiente de registrar</literalValue>
+        <name>Pendiente de Registrar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Registrar_Contrato_Duplicado</fullName>
+        <field>Status</field>
+        <literalValue>Borrador</literalValue>
+        <name>Registrar Contrato Duplicado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Actualizar IBAN Cuenta</fullName>
+        <active>false</active>
+        <description>Cuanto se crea un contrato copie el IBAN del contrato a la Cuenta</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Alerta canvi titular</fullName>
+        <actions>
+            <name>Alerta_canvi_de_titular</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.Estado_2__c</field>
+            <operation>equals</operation>
+            <value>Cambio titular</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Status</field>
+            <operation>equals</operation>
+            <value>Activado</value>
+        </criteriaItems>
+        <description>Alerta canvi titular a J.A.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Alerta canvi titular automatic</fullName>
+        <actions>
+            <name>Alerta_canvi_de_titular_automaticos</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contract.Estado_2__c</field>
+            <operation>equals</operation>
+            <value>Cambio titular</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Status</field>
+            <operation>equals</operation>
+            <value>Activado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contract.Entrega_de_producto__c</field>
+            <operation>equals</operation>
+            <value>Automática</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contrato Pendiente de Renovar</fullName>
+        <actions>
+            <name>Cambio_estado_pendiente_de_renovar</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Cambiar estado a &quot;Pendiente de renovar&quot; cuando el contrato se genera por una renovación automática.</description>
+        <formula>NOT( ISBLANK(Contrato_anterior__c ) ) &amp;&amp;  (  TEXT(Motivo_de_renovacion__c) == &apos;Caducado&apos;   )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Registrar Contrato Duplicado</fullName>
+        <actions>
+            <name>Registrar_Contrato_Duplicado</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Este workflow busca fijar el estado &apos;Registrado&apos; a los contratos generados de manera automática por medio de los botones de duplicar de la página de contrato.</description>
+        <formula>NOT( ISBLANK(Contrato_anterior__c  ) ) &amp;&amp; (  TEXT(Motivo_de_renovacion__c) == &apos;Cambio tarifa&apos; ||  TEXT(Motivo_de_renovacion__c) == &apos;Cambio titular&apos;  )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

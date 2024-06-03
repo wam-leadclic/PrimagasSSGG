@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Credit &amp; Collection</fullName>
+        <default>false</default>
+        <label>Credit &amp; Collection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Care</fullName>
+        <default>false</default>
+        <label>Customer Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Equipo Comercial</fullName>
+        <default>false</default>
+        <label>Equipo Comercial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Sales</fullName>
+        <default>false</default>
+        <label>Internal Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Logistica</fullName>
+        <default>false</default>
+        <label>Logistica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operaciones</fullName>
+        <default>false</default>
+        <label>Operaciones</label>
+    </standardValue>
+</StandardValueSet>

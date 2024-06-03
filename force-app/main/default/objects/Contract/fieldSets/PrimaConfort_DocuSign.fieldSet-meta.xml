@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaConfort_DocuSign</fullName>
+    <description>Página contrato</description>
+    <displayedFields>
+        <field>DocusignAsistencia24H__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignSuministroAutomatico__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignInspeccionInstalacionReceptora__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignLectorNivelDistancia__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignMantenimientoCentroAlmacenamient__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignPuestaDisposicionDeposito__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>DocuSignContador__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>PrimaConfort (DocuSign)</label>
+</FieldSet>

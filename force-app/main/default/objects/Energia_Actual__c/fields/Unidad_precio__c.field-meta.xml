@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unidad_precio__c</fullName>
+    <externalId>false</externalId>
+    <label>Unidad precio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>€ / botella</fullName>
+                <default>false</default>
+                <label>€ / botella</label>
+            </value>
+            <value>
+                <fullName>€ / kg</fullName>
+                <default>false</default>
+                <label>€ / kg</label>
+            </value>
+            <value>
+                <fullName>€ / kWh</fullName>
+                <default>false</default>
+                <label>€ / kWh</label>
+            </value>
+            <value>
+                <fullName>€ / litro</fullName>
+                <default>false</default>
+                <label>€ / litro</label>
+            </value>
+            <value>
+                <fullName>€ / MWh</fullName>
+                <default>false</default>
+                <label>€ / MWh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

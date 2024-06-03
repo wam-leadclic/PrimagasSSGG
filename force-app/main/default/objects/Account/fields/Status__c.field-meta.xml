@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>En gas</fullName>
+                <default>false</default>
+                <label>En gas</label>
+            </value>
+            <value>
+                <fullName>En ID (faltaDatoContrato)</fullName>
+                <default>false</default>
+                <label>En ID (faltaDatoContrato)</label>
+            </value>
+            <value>
+                <fullName>En ID (Instalar)</fullName>
+                <default>false</default>
+                <label>En ID (Instalar)</label>
+            </value>
+            <value>
+                <fullName>pdteConfBaja</fullName>
+                <default>false</default>
+                <label>pdteConfBaja</label>
+            </value>
+            <value>
+                <fullName>Anulado</fullName>
+                <default>false</default>
+                <label>Anulado</label>
+            </value>
+            <value>
+                <fullName>Retirado/Precintado</fullName>
+                <default>false</default>
+                <label>Retirado/Precintado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

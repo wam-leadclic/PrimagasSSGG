@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación de contraseña e inicio de sesión a un nuevo usuario del portal de socios.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Portal de socios:  Información de inicio de sesión de usuario nuevo (MUESTRA)</name>
+    <style>none</style>
+    <subject>Su nombre de usuario y contraseña del portal de socios de {!Organization.Name}.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

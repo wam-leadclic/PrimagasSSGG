@@ -1,0 +1,349 @@
+<apex:page controller="CPQ_QuotePageCtrl" renderAs="PDF" applyBodyTag="false" >
+
+    <head>
+        <style type="text/css"  media="print">
+            @page {
+                margin-top:12%;
+                margin-bottom:0.75in;
+                margin-right:0;
+                margin-left:0;
+                @top-center {
+                    content: element(header);
+                }
+                @bottom-left {
+                    content: element(footer);
+                }
+            }
+            div.header {
+                margin-top: 15px;
+                padding: 5px 5px 5px 0;
+                display:flex;
+                position: running(header);
+                margin-right: 0.5in;
+                margin-left: 0.5in;
+                margin-bottom:1in;
+            }
+            div.footer {
+                display: block;
+                padding: 5px;
+                text-align:right;
+                position: running(footer);
+                margin-right: 0.5in;
+                margin-left: 0.5in;
+            }
+            .pagenumber:before {
+                content: counter(page);
+            }
+            .pagecount:before {
+                content: counter(pages);
+            }
+            .headerTitle{
+                float:right;
+                font-size:0.75em;
+                color:rgb(1, 1, 1);
+                text-align:left;
+                width:350px;
+                display: flex;
+            }
+            .mainTitle{
+                font-weight: bold;
+                color:rgb(255, 255, 255);
+                background-color: rgb(232, 32, 19);
+                padding: 5px;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                margin-top: 20px;
+                width: 120%;
+                height: 30px;
+                margin-left: -60px;
+                padding-left: 60px;
+            }
+            .footerRow{
+                background-color: rgb(232, 32, 19);
+                text-align: left;
+                font-weight: bold;
+                height: 80px;
+                width: 150%;
+                margin-left: -60px;
+                margin-bottom: -50px;
+                padding-top:20px;
+            }
+            .footerContent{
+                margin-left: 60px;
+                color:black;
+                display:flex;
+                font-size: 0.75em
+            }
+            .footerName{
+                color:white;
+            }
+            h1{
+                font-size:3em;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 2em;
+                text-transform: uppercase;
+            }
+            h3 {
+                margin-top:2em;
+                text-transform: uppercase;
+                color:rgb(232, 32, 19);
+                font-size:1.6em;
+            }
+            .content {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.85em;
+                margin-right: 0.5in;
+                margin-left: 0.5in;
+                margin-bottom:1in;
+                margin-top: 130px;
+                position: fixed;
+            }
+            .secondPage{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.85em;
+                margin-right: 0.4in;
+                margin-left: 0.4in;
+                margin-top: 130px;
+                page-break-before: always;
+                margin-bottom:1in;
+                height:300px;
+            }
+            .stretchRow {
+                background-color:white;
+                color:black
+                text-align:center;
+                outline: thin solid;
+                border-color:grey;
+            }
+            .stretchRow.selected  {
+                background-color:rgb(245, 214, 198);
+                border: 1px solid rgb(232, 32, 19);
+                color:black;
+                font-weight: bold;
+                box-shadow: 0 0 4px rgb(232, 32, 19);
+            }
+            dt {
+                color:black;
+                display:inline-block !important;
+                margin: 0;
+                padding:0;
+            }
+            dd {
+                color:rgb(232, 32, 19);
+                display:inline-block !important;
+                font-weight: bold;
+                margin: 0 0 0 10px;
+                padding:0;
+            }
+            dl{
+                margin: 5px 10px 0 0;
+            }
+            dl.dl2 {
+                display: flex;
+                align-items: center;
+            }
+            label{
+                color:rgb(81, 80, 80);
+                display:block;
+                font-size: 0.75em;
+            }
+            th{
+                color:rgb(242, 78, 66);
+                text-align: right;
+            }
+            td.td2{
+                border-bottom: solid 0.5px rgb(236, 223, 223);
+            }
+            td.td3{
+                border-bottom: solid 0.5px rgb(236, 223, 223);
+                text-align: right;
+            }
+            .black{
+                color:black;
+                font-weight: bold;
+            }
+            .thRedBottomBorder{
+                border-bottom: solid 1px red;
+            }
+            .red{
+                color:rgb(232, 32, 19);
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+
+    <div class="header">
+        <apex:image url="{!$Resource.ImgOfertaLogoPrimagasTest}" style="width:120px; heigth: 90px; margin: 15px 0 0 0"/>
+        <div class="headerTitle">
+            <h2>{!q.accountName}</h2>
+            <ul style="margin:0">
+                <li style="list-style-type: none; font-size: 11pt">{!q.county}</li>
+                <li style="list-style-type: none; font-size: 11pt">
+                    <apex:outputText value="{0, date, dd-MM-yyyy}">
+                        <apex:param value="{!q.quoteDate}" /> 
+                    </apex:outputText>
+                </li>
+            </ul>
+        </div>
+        <div class="mainTitle">Estudio de Instalación y Suministro de GLP</div>
+    </div>
+
+    <div class="footer">
+        <div class="footerRow">
+            <div class="footerContent">
+                <span class="footerName">{!userFullName}</span>
+                <apex:outputPanel layout="none" rendered="{!userMobilePhone != null}">
+                    | {!userMobilePhone}
+                </apex:outputPanel>
+                 | {!userEmail} | www.primagas.es
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <apex:form style="width: 100%">
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="2">
+                    <apex:pageBlockSectionItem dataStyle="width:360px; display:inline-block; vertical-align:top">
+                        <apex:outputPanel layout="block">
+                            <apex:outputText >
+                                <h3 style="margin:0; padding-bottom:5px">Instalación</h3>
+                                <apex:outputPanel layout="none" rendered="{!q.tanksToInstall != null && q.SizeOfTanksToInstall > 0}">                         
+                                    <dl style="margin-top: 12px">
+                                        <dt>Depósito/s a instalar:</dt>
+                                        <dd>
+                                            <apex:repeat value="{!q.tanksToInstall}" var="tankName">
+                                                {!q.tanksToInstall[tankName]} x {!tankName}
+                                            </apex:repeat>
+                                        </dd>
+                                    </dl>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!q.otherEquipmentsToInstall != null && q.SizeOfOtherEquipments > 0}"> 
+                                    <dl>
+                                        <dt style="margin-top: 5px">Otros equipos a instalar:</dt>
+                                        <dd style="margin-top: 5px">
+                                            <apex:repeat value="{!q.otherEquipmentsToInstall}" var="productName">
+                                                {!q.otherEquipmentsToInstall[productName]} x {!productName}
+                                            </apex:repeat>
+                                        </dd>
+                                    </dl>
+                                </apex:outputPanel>
+                                <br/>
+                                <apex:outputPanel layout="none" rendered="{!q.areThereOutdoorsInstallation}">
+                                    <dl>
+                                        <dt>Instalaciones:</dt>
+                                        <dd><span class="black">{!q.outdoorsInstallation}</span></dd>
+                                    </dl>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!q.areThereCivilWork}">
+                                    <dl><dt>Obra Civil:</dt><dd><span class="black">{!q.civilWorks}</span></dd></dl>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!q.areThereProjectAndLegalization}">
+                                    <dl><dt>Proyecto y Legalización:</dt><dd><span class="black">{!q.projectAndLegalization}</span></dd></dl>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!q.areThereIndoorsEquipment}">
+                                    <dl><dt>Equipos de interior:</dt><dd><span class="black">{!q.indoorsEquipment}</span></dd></dl>
+                                </apex:outputPanel>
+                                <hr style="background-color: #b5b1b1; border: none; height: 0.5pt; width:80%; margin-left:0"></hr>
+                                <dl><dt>Coste que asume Primagas:</dt><dd><span class="black">{!q.primagasCost}</span></dd></dl>
+                                <dl><dt>Coste que asume el CLIENTE:</dt><dd><span class="black">{!q.customerCost}</span></dd></dl>
+                            </apex:outputText>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem dataStyle="width:350px; display:inline-block; vertical-align:top">
+                        <apex:outputPanel layout="block">
+                            <!-- PRIMASERVICIOS -->
+                            <apex:outputText >
+                                <h3 style="margin:0; padding-bottom:5px">Primaservicios</h3>
+                                <p>El servicio incluye:</p>
+                                <ul style="list-style-type: none; margin:0; padding:0">
+                                    <apex:repeat value="{!q.primaservicios}" var="serviceName">
+                                        <li style="list-style-type: none; margin:0; padding:0"><span class="black">{!serviceName}</span></li>
+                                    </apex:repeat>
+                                </ul>
+                        </apex:outputText>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection >
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock >
+                    <!-- MARKETING CONDITIONS -->
+                    <h3>Condiciones de comercialización</h3>
+
+                    <dl><dt>Consumo anual estimado:</dt><dd>{!q.annualEstimatedConsumption}</dd></dl>
+                    <dl><dt>Tarifa: </dt><dd>{!q.rateName} ({!q.rate} €/kg)</dd></dl>
+                    <dl><dt>Duración del Contrato:</dt><dd>{!q.contractDuration} años</dd></dl>
+                    <dl><dt>Condiciones de pago:</dt><dd>{!q.paymentConditionDays}</dd></dl>
+            </apex:pageBlock>
+            <apex:pageBlock >
+                <!-- STRETCHES -->
+                <p>Durante el primer año se aplicará el tramo destacado:</p>
+                <table style="width:100%; border-collapse: collapse; background-color:white">
+                    <thead>
+                        <th class="thRedBottomBorder"></th>
+                        <th class="thRedBottomBorder">Desde (kg/año)</th>
+                        <th class="thRedBottomBorder">DTO* €/kg</th>
+                        <th class="thRedBottomBorder">Precio €/kg(dto.aplicado)</th>
+                        <th class="thRedBottomBorder">Precio €/MWh</th>
+                        <th class="thRedBottomBorder">Primaservicios €/mes</th>
+                    </thead>
+                    <tbody>
+                        <apex:outputPanel layout="none" rendered="{!q.stretchesByIndex != null && q.SizeOfStretchesByIndex > 0}">
+                            <apex:repeat value="{!q.stretchesByIndex}" var="stretchIndex">
+                                <tr class="{!IF(q.stretchesByIndex[stretchIndex].isSelected,'stretchRow selected', 'stretchRow')}">
+                                    <td class="td2">Tramo {!stretchIndex}</td>
+                                    <td class="td3">{!q.stretchesByIndex[stretchIndex].record.FromConsumptionKG__c}</td>
+                                    <td class="td3">{!q.stretchesByIndex[stretchIndex].record.DiscountKG__c}</td>
+                                    <td class="td3">{!q.stretchesByIndex[stretchIndex].record.PriceTodayKG__c - q.stretchesByIndex[stretchIndex].record.DiscountKG__c }</td>
+                                    <td class="td3">{!ROUND(q.stretchesByIndex[stretchIndex].MWhPrice,2)}</td>
+                                    <td class="td3">{!q.stretchesByIndex[stretchIndex].record.PrimaServiciosA__c}</td>
+                                </tr>
+                            </apex:repeat>
+                        </apex:outputPanel>
+                        <apex:outputPanel layout="none" rendered="{!q.stretchesByIndex == null || q.SizeOfStretchesByIndex == 0}">
+                            <tr class="stretchRow selected">
+                                <td class="td2">Tramo 1</td>
+                                <td class="td3">{!LEFT(q.annualEstimatedConsumption,LEN(q.annualEstimatedConsumption)-3)}</td>
+                                <td class="td3">{!q.totalDiscounts}</td>
+                                <td class="td3">{!q.rate}</td>
+                                <td class="td3">{!ROUND(q.mWhPrice,2)}</td>
+                                <td class="td3">{!q.primaserviciosPrice}</td>
+                            </tr>
+                        </apex:outputPanel>
+                    </tbody>
+                </table>
+                <br/>
+                <label>Oferta válida hasta:
+                    <span class="black">
+                        <apex:outputText value="{0, date,dd'-'MM'-'yyyy.}">
+                            <apex:param value="{!quoteExpiringDate}"/>
+                        </apex:outputText>
+                    </span>
+                </label>
+                <label>Precios vigentes a fecha de hoy:
+                    <span class="black">
+                        <apex:outputText value="{0, date, dd'-'MM'-'yyyy.}">
+                            <apex:param value="{!today}"/>
+                        </apex:outputText>
+                    </span>
+                </label>
+                <label>Las tarifas varían mensualmente sujetas a fluctuaciones en el mercado.</label>
+                <label>Se facturará en €/kg.</label>
+                <label>Impuesto especial de hidrocarburos e IVA no incluidos.</label>
+                <label>*Los descuentos en negativo son incrementos en el precio.</label>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+    <div class="secondPage">
+        <h3>Observaciones</h3>
+        {!q.additionalConditions}
+    </div>
+    <div style="height:340px; border: 1px solid black">
+        <apex:image url="{!$Resource.footerImage}" style="position:absolute; bottom: 0; width:105%; height:100%; margin-left: -10px"/>
+    </div>
+</apex:page>

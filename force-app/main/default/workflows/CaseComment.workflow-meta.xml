@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Comentarios_p_blicos</fullName>
+        <description>Para que todos los comentarios sean públicos</description>
+        <field>IsPublished</field>
+        <literalValue>1</literalValue>
+        <name>Comentarios públicos</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>todos públics</fullName>
+        <actions>
+            <name>Comentarios_p_blicos</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>CaseComment.IsPublished</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cod_terminos_de_pago__c</fullName>
+    <externalId>false</externalId>
+    <label>Cod. terminos de pago</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>005</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <label>300</label>
+            </value>
+            <value>
+                <fullName>30X30X30</fullName>
+                <default>false</default>
+                <label>30X30X30</label>
+            </value>
+            <value>
+                <fullName>5X30X30</fullName>
+                <default>false</default>
+                <label>5X30X30</label>
+            </value>
+            <value>
+                <fullName>CANALIZADO</fullName>
+                <default>false</default>
+                <label>CANALIZADO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

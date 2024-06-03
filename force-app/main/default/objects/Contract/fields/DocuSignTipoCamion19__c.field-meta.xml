@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSignTipoCamion19__c</fullName>
+    <description>Indica que es un tipo de camión Grande</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT( Direccion_de_entrega__r.Tipo_de_camion__c )=&apos;GRANDE&apos;, true, false)</formula>
+    <label>Tipo de Camión DocuSign (19)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

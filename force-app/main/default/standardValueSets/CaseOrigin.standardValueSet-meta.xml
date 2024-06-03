@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Abinitio</fullName>
+        <default>false</default>
+        <label>Abinitio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Carta</fullName>
+        <default>false</default>
+        <label>Carta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chófer</fullName>
+        <default>false</default>
+        <label>Chófer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Comercial</fullName>
+        <default>false</default>
+        <label>Comercial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Correo electrónico</fullName>
+        <default>false</default>
+        <label>Correo electrónico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Encuesta</fullName>
+        <default>false</default>
+        <label>Encuesta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FAX</fullName>
+        <default>false</default>
+        <label>FAX</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hubspot</fullName>
+        <default>false</default>
+        <label>Hubspot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instalador</fullName>
+        <default>false</default>
+        <label>Instalador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Oficina consumidor</fullName>
+        <default>false</default>
+        <label>Oficina consumidor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paymefy</fullName>
+        <default>false</default>
+        <label>Paymefy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Red Social</fullName>
+        <default>false</default>
+        <label>Red Social</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RRSS</fullName>
+        <default>false</default>
+        <label>RRSS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Teléfono</fullName>
+        <default>false</default>
+        <label>Teléfono</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visita oficina</fullName>
+        <default>false</default>
+        <label>Visita oficina</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Whatsapp</fullName>
+        <default>false</default>
+        <label>Whatsapp</label>
+    </standardValue>
+</StandardValueSet>

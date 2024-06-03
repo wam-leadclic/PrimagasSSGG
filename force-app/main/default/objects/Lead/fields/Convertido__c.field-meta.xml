@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Convertido__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Este campo se utiliza para indicar que una cuenta se ha creado por la conversión de un candidato. Siempre se encuentra activo, por lo que al hacer el mapeo con la cuenta en la conversión, se copiará este valor al campo equivalente de Cuenta. (Necesario para el workflow que asigna la cuenta a un usuario dependiendo de la provincia o del código postal.)</description>
+    <externalId>false</externalId>
+    <label>Convertido</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

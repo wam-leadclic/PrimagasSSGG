@@ -1,0 +1,8 @@
+Estimado/a {!Contact.FirstName},
+
+Gracias por ponerse en contacto con el servicio de atención al cliente.  A continuación, puede encontrar su nueva contraseña del portal de socios.
+
+Gracias,
+
+{!User_Name}
+Servicio de atención al cliente de {!Organization.Name}

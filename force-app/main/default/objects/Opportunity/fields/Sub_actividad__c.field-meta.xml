@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_actividad__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-actividad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Actividad__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abonos líquidos</fullName>
+                <default>false</default>
+                <label>Abonos líquidos</label>
+            </value>
+            <value>
+                <fullName>Aerosoles</fullName>
+                <default>false</default>
+                <label>Aerosoles</label>
+            </value>
+            <value>
+                <fullName>Albergue</fullName>
+                <default>false</default>
+                <label>Albergue</label>
+            </value>
+            <value>
+                <fullName>Almacén de distribución</fullName>
+                <default>false</default>
+                <label>Almacén de distribución</label>
+            </value>
+            <value>
+                <fullName>Almacén de materiales</fullName>
+                <default>false</default>
+                <label>Almacén de materiales</label>
+            </value>
+            <value>
+                <fullName>Artes decorativas</fullName>
+                <default>false</default>
+                <label>Artes decorativas</label>
+            </value>
+            <value>
+                <fullName>Artes gráficas</fullName>
+                <default>false</default>
+                <label>Artes gráficas</label>
+            </value>
+            <value>
+                <fullName>Balnearios</fullName>
+                <default>false</default>
+                <label>Balnearios</label>
+            </value>
+            <value>
+                <fullName>Bebidas</fullName>
+                <default>false</default>
+                <label>Bebidas</label>
+            </value>
+            <value>
+                <fullName>Bodegas</fullName>
+                <default>false</default>
+                <label>Bodegas</label>
+            </value>
+            <value>
+                <fullName>Calderería</fullName>
+                <default>false</default>
+                <label>Calderería</label>
+            </value>
+            <value>
+                <fullName>Camping</fullName>
+                <default>false</default>
+                <label>Camping</label>
+            </value>
+            <value>
+                <fullName>Casa de colonias</fullName>
+                <default>false</default>
+                <label>Casa de colonias</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Centro de formación</fullName>
+                <default>false</default>
+                <label>Centro de formación</label>
+            </value>
+            <value>
+                <fullName>Centro de jardinería</fullName>
+                <default>false</default>
+                <label>Centro de jardinería</label>
+            </value>
+            <value>
+                <fullName>Centro de salud</fullName>
+                <default>false</default>
+                <label>Centro de salud</label>
+            </value>
+            <value>
+                <fullName>Centro lavado de coches</fullName>
+                <default>false</default>
+                <label>Centro lavado de coches</label>
+            </value>
+            <value>
+                <fullName>Centro penitenciario</fullName>
+                <default>false</default>
+                <label>Centro penitenciario</label>
+            </value>
+            <value>
+                <fullName>Centro reinserción social</fullName>
+                <default>false</default>
+                <label>Centro reinserción social</label>
+            </value>
+            <value>
+                <fullName>Cerámica</fullName>
+                <default>false</default>
+                <label>Cerámica</label>
+            </value>
+            <value>
+                <fullName>Club de alterne</fullName>
+                <default>false</default>
+                <label>Club de alterne</label>
+            </value>
+            <value>
+                <fullName>Club de golf</fullName>
+                <default>false</default>
+                <label>Club de golf</label>
+            </value>
+            <value>
+                <fullName>Club deportivo</fullName>
+                <default>false</default>
+                <label>Club deportivo</label>
+            </value>
+            <value>
+                <fullName>Club hípica</fullName>
+                <default>false</default>
+                <label>Club hípica</label>
+            </value>
+            <value>
+                <fullName>Colegios</fullName>
+                <default>false</default>
+                <label>Colegios</label>
+            </value>
+            <value>
+                <fullName>Componentes automoción</fullName>
+                <default>false</default>
+                <label>Componentes automoción</label>
+            </value>
+            <value>
+                <fullName>Conservera pescado</fullName>
+                <default>false</default>
+                <label>Conservera pescado</label>
+            </value>
+            <value>
+                <fullName>Conservera vegetales</fullName>
+                <default>false</default>
+                <label>Conservera vegetales</label>
+            </value>
+            <value>
+                <fullName>Cuartel militar</fullName>
+                <default>false</default>
+                <label>Cuartel militar</label>
+            </value>
+            <value>
+                <fullName>Dependencias de AAPP</fullName>
+                <default>false</default>
+                <label>Dependencias de AAPP</label>
+            </value>
+            <value>
+                <fullName>Elaboración ahumados</fullName>
+                <default>false</default>
+                <label>Elaboración ahumados</label>
+            </value>
+            <value>
+                <fullName>Elaboración de piensos</fullName>
+                <default>false</default>
+                <label>Elaboración de piensos</label>
+            </value>
+            <value>
+                <fullName>Elaboración de queso</fullName>
+                <default>false</default>
+                <label>Elaboración de queso</label>
+            </value>
+            <value>
+                <fullName>Elaboración de turrones</fullName>
+                <default>false</default>
+                <label>Elaboración de turrones</label>
+            </value>
+            <value>
+                <fullName>Elaboración embutidos</fullName>
+                <default>false</default>
+                <label>Elaboración embutidos</label>
+            </value>
+            <value>
+                <fullName>Elaboración galletas</fullName>
+                <default>false</default>
+                <label>Elaboración galletas</label>
+            </value>
+            <value>
+                <fullName>Elaboración productos alimenticios</fullName>
+                <default>false</default>
+                <label>Elaboración productos alimenticios</label>
+            </value>
+            <value>
+                <fullName>Elaboración productos cárnicos</fullName>
+                <default>false</default>
+                <label>Elaboración productos cárnicos</label>
+            </value>
+            <value>
+                <fullName>Elementos de construcción</fullName>
+                <default>false</default>
+                <label>Elementos de construcción</label>
+            </value>
+            <value>
+                <fullName>Embotellado</fullName>
+                <default>false</default>
+                <label>Embotellado</label>
+            </value>
+            <value>
+                <fullName>Estación sky</fullName>
+                <default>false</default>
+                <label>Estación sky</label>
+            </value>
+            <value>
+                <fullName>Extracción de aceite</fullName>
+                <default>false</default>
+                <label>Extracción de aceite</label>
+            </value>
+            <value>
+                <fullName>Fábricación de carrocería</fullName>
+                <default>false</default>
+                <label>Fábricación de carrocería</label>
+            </value>
+            <value>
+                <fullName>Fabricación de chimeneas</fullName>
+                <default>false</default>
+                <label>Fabricación de chimeneas</label>
+            </value>
+            <value>
+                <fullName>Fabricación de harinas</fullName>
+                <default>false</default>
+                <label>Fabricación de harinas</label>
+            </value>
+            <value>
+                <fullName>Fabricación envases de vidrio</fullName>
+                <default>false</default>
+                <label>Fabricación envases de vidrio</label>
+            </value>
+            <value>
+                <fullName>Fabricación envases metálicos</fullName>
+                <default>false</default>
+                <label>Fabricación envases metálicos</label>
+            </value>
+            <value>
+                <fullName>Fabricación maquinaria para manipulado</fullName>
+                <default>false</default>
+                <label>Fabricación maquinaria para manipulado</label>
+            </value>
+            <value>
+                <fullName>Fabricación piezas de caucho</fullName>
+                <default>false</default>
+                <label>Fabricación piezas de caucho</label>
+            </value>
+            <value>
+                <fullName>Fabricación señales de tráfico</fullName>
+                <default>false</default>
+                <label>Fabricación señales de tráfico</label>
+            </value>
+            <value>
+                <fullName>Fábrica de paneles</fullName>
+                <default>false</default>
+                <label>Fábrica de paneles</label>
+            </value>
+            <value>
+                <fullName>Fábrica maquinaria agrícola</fullName>
+                <default>false</default>
+                <label>Fábrica maquinaria agrícola</label>
+            </value>
+            <value>
+                <fullName>Fábrica Maquinaria pintura</fullName>
+                <default>false</default>
+                <label>Fábrica Maquinaria pintura</label>
+            </value>
+            <value>
+                <fullName>Fábrica papel</fullName>
+                <default>false</default>
+                <label>Fábrica papel</label>
+            </value>
+            <value>
+                <fullName>Flores</fullName>
+                <default>false</default>
+                <label>Flores</label>
+            </value>
+            <value>
+                <fullName>Fundición aluminio</fullName>
+                <default>false</default>
+                <label>Fundición aluminio</label>
+            </value>
+            <value>
+                <fullName>Fundición metálica</fullName>
+                <default>false</default>
+                <label>Fundición metálica</label>
+            </value>
+            <value>
+                <fullName>Fundición vidrio</fullName>
+                <default>false</default>
+                <label>Fundición vidrio</label>
+            </value>
+            <value>
+                <fullName>Globos aerostáticos</fullName>
+                <default>false</default>
+                <label>Globos aerostáticos</label>
+            </value>
+            <value>
+                <fullName>Granja avestruces</fullName>
+                <default>false</default>
+                <label>Granja avestruces</label>
+            </value>
+            <value>
+                <fullName>Granja avícola</fullName>
+                <default>false</default>
+                <label>Granja avícola</label>
+            </value>
+            <value>
+                <fullName>Granja cunícula</fullName>
+                <default>false</default>
+                <label>Granja cunícula</label>
+            </value>
+            <value>
+                <fullName>Granja patos</fullName>
+                <default>false</default>
+                <label>Granja patos</label>
+            </value>
+            <value>
+                <fullName>Granja perdices</fullName>
+                <default>false</default>
+                <label>Granja perdices</label>
+            </value>
+            <value>
+                <fullName>Granja porcina</fullName>
+                <default>false</default>
+                <label>Granja porcina</label>
+            </value>
+            <value>
+                <fullName>Guardería</fullName>
+                <default>false</default>
+                <label>Guardería</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Industria láctea</fullName>
+                <default>false</default>
+                <label>Industria láctea</label>
+            </value>
+            <value>
+                <fullName>Invernadero</fullName>
+                <default>false</default>
+                <label>Invernadero</label>
+            </value>
+            <value>
+                <fullName>Laboratorio químico</fullName>
+                <default>false</default>
+                <label>Laboratorio químico</label>
+            </value>
+            <value>
+                <fullName>Lavandería industrial</fullName>
+                <default>false</default>
+                <label>Lavandería industrial</label>
+            </value>
+            <value>
+                <fullName>Matadero - sala de despiece</fullName>
+                <default>false</default>
+                <label>Matadero - sala de despiece</label>
+            </value>
+            <value>
+                <fullName>Mecanizados</fullName>
+                <default>false</default>
+                <label>Mecanizados</label>
+            </value>
+            <value>
+                <fullName>Mecheros</fullName>
+                <default>false</default>
+                <label>Mecheros</label>
+            </value>
+            <value>
+                <fullName>Metalurgia</fullName>
+                <default>false</default>
+                <label>Metalurgia</label>
+            </value>
+            <value>
+                <fullName>Monasterio - seminario - orden religiosa</fullName>
+                <default>false</default>
+                <label>Monasterio - seminario - orden religiosa</label>
+            </value>
+            <value>
+                <fullName>Museo</fullName>
+                <default>false</default>
+                <label>Museo</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Oxicorte</fullName>
+                <default>false</default>
+                <label>Oxicorte</label>
+            </value>
+            <value>
+                <fullName>Panadería industrial</fullName>
+                <default>false</default>
+                <label>Panadería industrial</label>
+            </value>
+            <value>
+                <fullName>Parques de bomberos</fullName>
+                <default>false</default>
+                <label>Parques de bomberos</label>
+            </value>
+            <value>
+                <fullName>Parques temáticos</fullName>
+                <default>false</default>
+                <label>Parques temáticos</label>
+            </value>
+            <value>
+                <fullName>Pastelería industrial</fullName>
+                <default>false</default>
+                <label>Pastelería industrial</label>
+            </value>
+            <value>
+                <fullName>Piscifactorías</fullName>
+                <default>false</default>
+                <label>Piscifactorías</label>
+            </value>
+            <value>
+                <fullName>Polideportivo</fullName>
+                <default>false</default>
+                <label>Polideportivo</label>
+            </value>
+            <value>
+                <fullName>Precocinados</fullName>
+                <default>false</default>
+                <label>Precocinados</label>
+            </value>
+            <value>
+                <fullName>Prefabricados de hormigón</fullName>
+                <default>false</default>
+                <label>Prefabricados de hormigón</label>
+            </value>
+            <value>
+                <fullName>Residencia canina</fullName>
+                <default>false</default>
+                <label>Residencia canina</label>
+            </value>
+            <value>
+                <fullName>Residencia geriátrica</fullName>
+                <default>false</default>
+                <label>Residencia geriátrica</label>
+            </value>
+            <value>
+                <fullName>Residencia principal</fullName>
+                <default>false</default>
+                <label>Residencia principal</label>
+            </value>
+            <value>
+                <fullName>Residencia psiquiátrica</fullName>
+                <default>false</default>
+                <label>Residencia psiquiátrica</label>
+            </value>
+            <value>
+                <fullName>Restaurante</fullName>
+                <default>false</default>
+                <label>Restaurante</label>
+            </value>
+            <value>
+                <fullName>Secadero de cereales</fullName>
+                <default>false</default>
+                <label>Secadero de cereales</label>
+            </value>
+            <value>
+                <fullName>Segunda residencia</fullName>
+                <default>false</default>
+                <label>Segunda residencia</label>
+            </value>
+            <value>
+                <fullName>Siderurgia</fullName>
+                <default>false</default>
+                <label>Siderurgia</label>
+            </value>
+            <value>
+                <fullName>Taller</fullName>
+                <default>false</default>
+                <label>Taller</label>
+            </value>
+            <value>
+                <fullName>Tanatorio</fullName>
+                <default>false</default>
+                <label>Tanatorio</label>
+            </value>
+            <value>
+                <fullName>Tapones de corcho</fullName>
+                <default>false</default>
+                <label>Tapones de corcho</label>
+            </value>
+            <value>
+                <fullName>Téxtil</fullName>
+                <default>false</default>
+                <label>Téxtil</label>
+            </value>
+            <value>
+                <fullName>Tornillería</fullName>
+                <default>false</default>
+                <label>Tornillería</label>
+            </value>
+            <value>
+                <fullName>Tratamiento de residuos</fullName>
+                <default>false</default>
+                <label>Tratamiento de residuos</label>
+            </value>
+            <value>
+                <fullName>Tratamiento de superficies</fullName>
+                <default>false</default>
+                <label>Tratamiento de superficies</label>
+            </value>
+            <value>
+                <fullName>Turismo rural</fullName>
+                <default>false</default>
+                <label>Turismo rural</label>
+            </value>
+            <value>
+                <fullName>Vaquerías</fullName>
+                <default>false</default>
+                <label>Vaquerías</label>
+            </value>
+            <value>
+                <fullName>Viveros</fullName>
+                <default>false</default>
+                <label>Viveros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

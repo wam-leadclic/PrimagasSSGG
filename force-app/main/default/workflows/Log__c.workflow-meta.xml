@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Aviso_Log</fullName>
+        <description>Aviso Log, cuando se crea un nuevo resgistro en el log de sincronización SF NAV</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>integrador@nts.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>joan@primagas.es</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Aviso_Log</template>
+    </alerts>
+    <rules>
+        <fullName>Aviso Log</fullName>
+        <actions>
+            <name>Aviso_Log</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Log__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Error</value>
+        </criteriaItems>
+        <description>Envia un mail cada vez que se crea un registro en el log de sincronización SF NAV</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_fin_contrato_competencia_precio</fullName>
+    <active>true</active>
+    <description>Si la oportunidad ha elegido a un competidor por motivo de precio, debe llenarse la
+ &quot;Fecha fin contrato actual&quot; para poder reofertar en el futuro.</description>
+    <errorConditionFormula>AND(
+OR(ISNEW(), ISCHANGED(Motivos_de_P_rdida__c)),
+ISBLANK(TEXT(Fecha_fin_contrato_actual__c )),
+ISPICKVAL(Motivos_de_P_rdida__c, &quot;Elige competencia (precio)&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_fin_contrato_actual__c</errorDisplayField>
+    <errorMessage>Si la oportunidad ha elegido un competidor, debe indicarse la finalización de este nuevo contrato.</errorMessage>
+</ValidationRule>

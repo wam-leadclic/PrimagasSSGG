@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activos</fullName>
+    <columns>PRICEBOOK2.IS_ACTIVE</columns>
+    <columns>PRICEBOOK2.NAME</columns>
+    <columns>PRICEBOOK2.DESCRIPTION</columns>
+    <columns>Id_Navision__c</columns>
+    <columns>Producto__c</columns>
+    <columns>Tipo__c</columns>
+    <columns>V_lido_desde__c</columns>
+    <columns>V_lido_hasta__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>PRICEBOOK2.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRICEBOOK2.IS_ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Activos</label>
+    <language>es</language>
+</ListView>

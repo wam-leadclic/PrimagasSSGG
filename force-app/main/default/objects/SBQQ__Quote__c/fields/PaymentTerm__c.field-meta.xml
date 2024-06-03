@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTerm__c</fullName>
+    <externalId>false</externalId>
+    <label>Plazo de pago</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>005</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200</label>
+            </value>
+            <value>
+                <fullName>30X30X30</fullName>
+                <default>false</default>
+                <label>30X30X30</label>
+            </value>
+            <value>
+                <fullName>CANALIZADO</fullName>
+                <default>false</default>
+                <label>CANALIZADO</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <label>300</label>
+            </value>
+            <value>
+                <fullName>5X30X30</fullName>
+                <default>false</default>
+                <label>5X30X30</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20 Días</label>
+            </value>
+            <value>
+                <fullName>20 días</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20 días</label>
+            </value>
+            <value>
+                <fullName>5 días</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5 días</label>
+            </value>
+            <value>
+                <fullName>Anticipado</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anticipado</label>
+            </value>
+            <value>
+                <fullName>Otros días</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros días</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

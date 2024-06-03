@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consumo_energia_ofertada__c</fullName>
+    <description>Recoge el valor máximo del campo &quot;Consumo contratado kg&quot; de entre todos sus presupuestos asociados.</description>
+    <externalId>false</externalId>
+    <label>Consumo energía ofertada</label>
+    <summarizedField>Quote.Kg__c</summarizedField>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

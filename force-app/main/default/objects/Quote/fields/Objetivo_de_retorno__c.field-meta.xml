@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objetivo_de_retorno__c</fullName>
+    <description>Este campo no se muestra, sirve para calcular el campo objetivo de retorno zona</description>
+    <externalId>false</externalId>
+    <formula>CASE ( Provincia_env_o__c , 
+&quot;Guipúzcoa&quot;, 0.25, 
+&quot;Asturias&quot;, 0.35, 
+&quot;Álava&quot;, 0.25, 
+&quot;Alicante&quot;, 0.100, 
+&quot;Avila&quot;, 25, 
+&quot;Barcelona&quot;, 0.25, 
+&quot;Castellón&quot;, 0.35, 
+&quot;A Coruña&quot;, 0.100, 
+&quot;Girona&quot;, 0.25, 
+&quot;Guadalajara&quot;, 0.100, 
+&quot;Guipúzcoa&quot;, 0.25, 
+&quot;Huesca&quot;, 0.35, 
+&quot;León&quot;, 0.35, 
+&quot;Lleida&quot;, 0.25, 
+&quot;Lleida Vielha&quot;, 0.25, 
+&quot;La Rioja&quot;, 0.25, 
+&quot;Logroño&quot;, 0.100, 
+&quot;Lugo&quot;, 0.82, 
+&quot;Madrid&quot;, 0.25, 
+&quot;Navarra&quot;, 0.25, 
+&quot;Ourense&quot;, 0.100, 
+&quot;Oviedo&quot;, 0.100, 
+&quot;Palencia&quot;, 0.35, 
+&quot;Pontevedra&quot;, 0.100, 
+&quot;Salamanca&quot;, 0.100, 
+&quot;Cantabria&quot;, 0.35, 
+&quot;Segovia&quot;, 0.25, 
+&quot;Soria&quot;, 0.100, 
+&quot;Tarragona&quot;, 0.25, 
+&quot;Teruel&quot;, 0.100, 
+&quot;Toledo&quot;, 0.100,
+&quot;Valencia&quot;, 0.100, 
+&quot;Valladolid&quot;, 0.25, 
+&quot;Vizcaya&quot;, 0.25, 
+&quot;Zamora&quot;, 0.100, 
+&quot;Zaragoza&quot;, 0.25, 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Objetivo de retorno</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

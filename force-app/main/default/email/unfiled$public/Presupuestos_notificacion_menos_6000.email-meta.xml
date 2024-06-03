@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación de solicitud de aprobación &lt;6000</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Presupuestos:  Notificación de solicitud de aprobación</name>
+    <style>none</style>
+    <subject>Se le ha asignado un nuevo candidato:  {!Lead.Name} de {!Lead.Company}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

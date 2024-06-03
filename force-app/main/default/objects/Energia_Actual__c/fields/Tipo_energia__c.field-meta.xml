@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_energia__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo energía</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Biomasa</fullName>
+                <default>false</default>
+                <label>Biomasa</label>
+            </value>
+            <value>
+                <fullName>Butano</fullName>
+                <default>false</default>
+                <label>Butano</label>
+            </value>
+            <value>
+                <fullName>Carbón</fullName>
+                <default>false</default>
+                <label>Carbón</label>
+            </value>
+            <value>
+                <fullName>Electricidad</fullName>
+                <default>false</default>
+                <label>Electricidad</label>
+            </value>
+            <value>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+                <label>Fuel</label>
+            </value>
+            <value>
+                <fullName>Gas Natural</fullName>
+                <default>false</default>
+                <label>Gas Natural</label>
+            </value>
+            <value>
+                <fullName>Gasóleo</fullName>
+                <default>false</default>
+                <label>Gasóleo</label>
+            </value>
+            <value>
+                <fullName>GNL</fullName>
+                <default>false</default>
+                <label>GNL</label>
+            </value>
+            <value>
+                <fullName>Madera / Leña</fullName>
+                <default>false</default>
+                <label>Madera / Leña</label>
+            </value>
+            <value>
+                <fullName>Nuevo</fullName>
+                <default>false</default>
+                <label>Nuevo</label>
+            </value>
+            <value>
+                <fullName>Otra</fullName>
+                <default>false</default>
+                <label>Otra</label>
+            </value>
+            <value>
+                <fullName>Propano Botellas</fullName>
+                <default>false</default>
+                <label>Propano Botellas</label>
+            </value>
+            <value>
+                <fullName>Propano Granel</fullName>
+                <default>false</default>
+                <label>Propano Granel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

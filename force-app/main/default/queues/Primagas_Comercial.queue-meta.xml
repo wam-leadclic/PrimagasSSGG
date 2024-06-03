@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Primagas Comercial</name>
+    <queueMembers>
+        <roles>
+            <role>Supervisado_InsideSales</role>
+        </roles>
+        <users>
+            <user>eva.calabuig@primagas.es</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Comentarios__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mail para solicitud de aprobación de contatos</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Primagas</letterhead>
+    <name>Aprobacion Contratos</name>
+    <style>freeForm</style>
+    <subject>Solicitud Aprobación Contrato {!Quote.Name}</subject>
+    <textOnly>Debe usted aprobar el Contrato {!Quote.Name}
+Cliente: {!Quote.ShippingName}.
+Crédito requerido estimado: {!Quote.Cr_dito_requerido_estimado__c}
+Garantía límite de crédito : {!Quote.Garant_a_l_mite_de_cr_dito__c}
+Diferencia : {!Quote.Diferencia__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

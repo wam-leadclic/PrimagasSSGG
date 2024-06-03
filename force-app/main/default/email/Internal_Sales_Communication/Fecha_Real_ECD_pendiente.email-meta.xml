@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Fecha Real ECD pendiente</name>
+    <style>freeForm</style>
+    <subject>Recordatorio: Contrato {!01ID0000000lwRC.00ND0000004UEKo} de {!Account.Name}. Fecha real de ECD pendiente</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

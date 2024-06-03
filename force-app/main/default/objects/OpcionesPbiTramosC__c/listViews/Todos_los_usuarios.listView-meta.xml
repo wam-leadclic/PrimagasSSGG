@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todos_los_usuarios</fullName>
+    <columns>NAME</columns>
+    <columns>Activo__c</columns>
+    <columns>C__c</columns>
+    <columns>Actividad__c</columns>
+    <columns>PBI__c</columns>
+    <columns>Provincia__c</columns>
+    <columns>T1__c</columns>
+    <columns>T2__c</columns>
+    <columns>T3__c</columns>
+    <columns>Usuarios__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos los usuarios</label>
+    <language>es</language>
+</ListView>

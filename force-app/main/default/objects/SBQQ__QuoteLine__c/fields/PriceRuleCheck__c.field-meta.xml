@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriceRuleCheck__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo creado para que se pueda cambiar el precio resultante de una Price Rule</description>
+    <externalId>false</externalId>
+    <label>Price Rule</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

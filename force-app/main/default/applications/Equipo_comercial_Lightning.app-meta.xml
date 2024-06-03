@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Comercial</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#DF2B2A</headerColor>
+        <logo>equipo_comercial1</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Desarrollo de ofertas con CPQ</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Equipo comercial</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>SBQQ__Quote__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Contract</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>ApprovalRequest__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Equipo_comercial_Lightning_UtilityBar</utilityBar>
+</CustomApplication>

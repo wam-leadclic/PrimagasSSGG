@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nueva_Lectura</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Nueva Lectura</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)}
+
+if(&apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; != &apos;&apos;)
+{
+	if(	&apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; == &apos;BULK METERED&apos; || 
+		&apos;{!Direcci_n_de_entrega__c.Tipo_de_direccion_de_envio__c}&apos; == &apos;METERED&apos;)
+	{
+		var siteUrl = &quot;{!$Site.BaseUrl}&quot;;
+		var siteUrlName = siteUrl.split(&quot;/&quot;)[3];
+		if(siteUrl == &apos;&apos;)
+		{
+			window.location = &apos;/a10/e?CF00N57000006AP6R={!Direcci_n_de_entrega__c.Name}&amp;retURL={!Direcci_n_de_entrega__c.Id}&amp;saveURL={!Direcci_n_de_entrega__c.Id}&apos;
+		}else{
+			window.location = siteUrl+&apos;/a10/e?CF00N57000006AP6R={!Direcci_n_de_entrega__c.Name}&amp;retURL=&apos;+siteUrlName+&apos;/{!Direcci_n_de_entrega__c.Id}&amp;saveURL=&apos;+siteUrlName+&apos;/{!Direcci_n_de_entrega__c.Id}&apos;
+		}		
+	}else
+	{
+		alert(&quot;No se pueden crear lecturas para esta dirección de entrega&quot;);
+	}
+}else
+{
+	alert(&quot;Esta dirección de entrega no tiene un tipo asignado&quot;);
+}
+/*a10 objeto
+CF00N57000006AP6R campo
+*/</url>
+</WebLink>

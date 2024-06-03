@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C_d_cotizaci_n__c</fullName>
+    <externalId>false</externalId>
+    <label>Cód. cotización</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>APLIFUN</fullName>
+                <default>false</default>
+                <label>APLIFUN</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>BOE</fullName>
+                <default>false</default>
+                <label>BOE</label>
+            </value>
+            <value>
+                <fullName>BP</fullName>
+                <default>false</default>
+                <label>BP</label>
+            </value>
+            <value>
+                <fullName>BP + SH</fullName>
+                <default>false</default>
+                <label>BP + SH</label>
+            </value>
+            <value>
+                <fullName>CAN  UF</fullName>
+                <default>false</default>
+                <label>CAN  UF</label>
+            </value>
+            <value>
+                <fullName>CAN UF -1</fullName>
+                <default>false</default>
+                <label>CAN UF -1</label>
+            </value>
+            <value>
+                <fullName>CIF</fullName>
+                <default>false</default>
+                <label>CIF</label>
+            </value>
+            <value>
+                <fullName>CIF BIO</fullName>
+                <default>false</default>
+                <label>CIF BIO</label>
+            </value>
+            <value>
+                <fullName>CP</fullName>
+                <default>false</default>
+                <label>CP</label>
+            </value>
+            <value>
+                <fullName>DIGAL</fullName>
+                <default>false</default>
+                <label>DIGAL</label>
+            </value>
+            <value>
+                <fullName>FASA</fullName>
+                <default>false</default>
+                <label>FASA</label>
+            </value>
+            <value>
+                <fullName>FUND. FATI</fullName>
+                <default>false</default>
+                <label>FUND. FATI</label>
+            </value>
+            <value>
+                <fullName>MIX SH CIF</fullName>
+                <default>false</default>
+                <label>MIX SH CIF</label>
+            </value>
+            <value>
+                <fullName>PIP AMBES</fullName>
+                <default>false</default>
+                <label>PIP AMBES</label>
+            </value>
+            <value>
+                <fullName>PIP GIJON</fullName>
+                <default>false</default>
+                <label>PIP GIJON</label>
+            </value>
+            <value>
+                <fullName>PIP LABENN</fullName>
+                <default>false</default>
+                <label>PIP LABENN</label>
+            </value>
+            <value>
+                <fullName>PIP MED</fullName>
+                <default>false</default>
+                <label>PIP MED</label>
+            </value>
+            <value>
+                <fullName>PIP SANTUR</fullName>
+                <default>false</default>
+                <label>PIP SANTUR</label>
+            </value>
+            <value>
+                <fullName>PIP TARRAG</fullName>
+                <default>false</default>
+                <label>PIP TARRAG</label>
+            </value>
+            <value>
+                <fullName>SH</fullName>
+                <default>false</default>
+                <label>SH</label>
+            </value>
+            <value>
+                <fullName>FOB SG</fullName>
+                <default>false</default>
+                <label>FOB SG</label>
+            </value>
+            <value>
+                <fullName>CIF C3</fullName>
+                <default>false</default>
+                <label>CIF C3</label>
+            </value>
+            <value>
+                <fullName>BRENT</fullName>
+                <default>false</default>
+                <label>BRENT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

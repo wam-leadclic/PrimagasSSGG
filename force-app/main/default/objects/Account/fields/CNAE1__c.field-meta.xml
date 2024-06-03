@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CNAE1__c</fullName>
+    <externalId>false</externalId>
+    <label>CNAE1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A - Agricultura, ganadería, silvicultura y pesca</fullName>
+                <default>false</default>
+                <label>A - Agricultura, ganadería, silvicultura y pesca</label>
+            </value>
+            <value>
+                <fullName>B - Industrias extractivas</fullName>
+                <default>false</default>
+                <label>B - Industrias extractivas</label>
+            </value>
+            <value>
+                <fullName>C - Industria manufacturera</fullName>
+                <default>false</default>
+                <label>C - Industria manufacturera</label>
+            </value>
+            <value>
+                <fullName>D - Suministro de energía eléctrica, gas, vapor y aire acondicionado</fullName>
+                <default>false</default>
+                <label>D - Suministro de energía eléctrica, gas, vapor y aire acondicionado</label>
+            </value>
+            <value>
+                <fullName>E - Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación</fullName>
+                <default>false</default>
+                <label>E - Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación</label>
+            </value>
+            <value>
+                <fullName>F - Construcción</fullName>
+                <default>false</default>
+                <label>F - Construcción</label>
+            </value>
+            <value>
+                <fullName>G - Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas</fullName>
+                <default>false</default>
+                <label>G - Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas</label>
+            </value>
+            <value>
+                <fullName>H - Transporte y almacenamiento</fullName>
+                <default>false</default>
+                <label>H - Transporte y almacenamiento</label>
+            </value>
+            <value>
+                <fullName>I - Hostelería</fullName>
+                <default>false</default>
+                <label>I - Hostelería</label>
+            </value>
+            <value>
+                <fullName>J - Información y comunicaciones</fullName>
+                <default>false</default>
+                <label>J - Información y comunicaciones</label>
+            </value>
+            <value>
+                <fullName>K - Actividades financieras y de seguros</fullName>
+                <default>false</default>
+                <label>K - Actividades financieras y de seguros</label>
+            </value>
+            <value>
+                <fullName>L - Actividades inmobiliarias</fullName>
+                <default>false</default>
+                <label>L - Actividades inmobiliarias</label>
+            </value>
+            <value>
+                <fullName>M - Actividades profesionales, científicas y técnicas</fullName>
+                <default>false</default>
+                <label>M - Actividades profesionales, científicas y técnicas</label>
+            </value>
+            <value>
+                <fullName>N - Actividades administrativas y servicios auxliares</fullName>
+                <default>false</default>
+                <label>N - Actividades administrativas y servicios auxliares</label>
+            </value>
+            <value>
+                <fullName>O - Administración Pública y defensa; Seguridad Social obligatoria</fullName>
+                <default>false</default>
+                <label>O - Administración Pública y defensa; Seguridad Social obligatoria</label>
+            </value>
+            <value>
+                <fullName>P - Educación</fullName>
+                <default>false</default>
+                <label>P - Educación</label>
+            </value>
+            <value>
+                <fullName>Q - Actividades sanitarias y de servicios sociales</fullName>
+                <default>false</default>
+                <label>Q - Actividades sanitarias y de servicios sociales</label>
+            </value>
+            <value>
+                <fullName>R - Actividades artísticas, recreativas y de entrenimiento</fullName>
+                <default>false</default>
+                <label>R - Actividades artísticas, recreativas y de entrenimiento</label>
+            </value>
+            <value>
+                <fullName>S - Otros servicios</fullName>
+                <default>false</default>
+                <label>S - Otros servicios</label>
+            </value>
+            <value>
+                <fullName>T - Actividades de los hogares como empleadores de personal doméstico; actividades de los hogares como productores de bienes y servicios para uso propio</fullName>
+                <default>false</default>
+                <label>T - Actividades de los hogares como empleadores de personal doméstico; actividades de los hogares como productores de bienes y servicios para uso propio</label>
+            </value>
+            <value>
+                <fullName>U - Actividades de organizaciones y organismos extraterritoriales</fullName>
+                <default>false</default>
+                <label>U - Actividades de organizaciones y organismos extraterritoriales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

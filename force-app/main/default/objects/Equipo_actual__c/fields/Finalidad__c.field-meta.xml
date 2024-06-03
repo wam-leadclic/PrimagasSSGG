@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finalidad__c</fullName>
+    <externalId>false</externalId>
+    <label>Finalidad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACS</fullName>
+                <default>false</default>
+                <label>ACS</label>
+            </value>
+            <value>
+                <fullName>Calor</fullName>
+                <default>false</default>
+                <label>Calor</label>
+            </value>
+            <value>
+                <fullName>Frío</fullName>
+                <default>false</default>
+                <label>Frío</label>
+            </value>
+            <value>
+                <fullName>ACS y Calor</fullName>
+                <default>false</default>
+                <label>ACS y Calor</label>
+            </value>
+            <value>
+                <fullName>Calor y Frío</fullName>
+                <default>false</default>
+                <label>Calor y Frío</label>
+            </value>
+            <value>
+                <fullName>ACS, Calor y Frío</fullName>
+                <default>false</default>
+                <label>ACS, Calor y Frío</label>
+            </value>
+            <value>
+                <fullName>Cocina</fullName>
+                <default>false</default>
+                <label>Cocina</label>
+            </value>
+            <value>
+                <fullName>Ropa</fullName>
+                <default>false</default>
+                <label>Ropa</label>
+            </value>
+            <value>
+                <fullName>Lavado</fullName>
+                <default>false</default>
+                <label>Lavado</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

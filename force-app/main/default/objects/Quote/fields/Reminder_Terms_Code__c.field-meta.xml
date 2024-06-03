@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reminder_Terms_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Reminder Terms Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>INSP INT.</fullName>
+                <default>false</default>
+                <label>INSP INT.</label>
+            </value>
+            <value>
+                <fullName>REV. INT.</fullName>
+                <default>false</default>
+                <label>REV. INT.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

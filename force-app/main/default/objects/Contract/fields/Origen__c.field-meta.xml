@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origen__c</fullName>
+    <externalId>false</externalId>
+    <label>Origen</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Instalador</fullName>
+                <default>false</default>
+                <label>Instalador</label>
+            </value>
+            <value>
+                <fullName>Prescriptor</fullName>
+                <default>false</default>
+                <label>Prescriptor</label>
+            </value>
+            <value>
+                <fullName>Prospección directa</fullName>
+                <default>false</default>
+                <label>Prospección directa</label>
+            </value>
+            <value>
+                <fullName>Llamada entrante</fullName>
+                <default>false</default>
+                <label>Llamada entrante</label>
+            </value>
+            <value>
+                <fullName>Online Primagas</fullName>
+                <default>false</default>
+                <label>Online Primagas</label>
+            </value>
+            <value>
+                <fullName>Prescriptor Online</fullName>
+                <default>false</default>
+                <label>Prescriptor Online</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Licitaciones Públicas</fullName>
+                <default>false</default>
+                <label>Licitaciones Públicas</label>
+            </value>
+            <value>
+                <fullName>GALP</fullName>
+                <default>false</default>
+                <label>GALP</label>
+            </value>
+            <value>
+                <fullName>Gasindur</fullName>
+                <default>false</default>
+                <label>Gasindur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

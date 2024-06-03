@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Includes_VAT__c</fullName>
+    <externalId>false</externalId>
+    <label>Price Includes VAT</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

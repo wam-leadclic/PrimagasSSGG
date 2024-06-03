@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Aviso_Prescriptor_sin_contacto_en_3_meses</fullName>
+        <description>Aviso Prescriptor sin contacto en 3 meses</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internal_Sales_Communication/Mas_de_tres_meses_sin_contacto_con_Prescriptor</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Actualiza_tipo_registro_cuenta</fullName>
+        <description>para CTC</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Cambio_de_titular_canalizado</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Actualiza tipo registro cuenta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actualizacion_desde_codigo</fullName>
+        <field>Cuenta_actualizada_desde_codigo__c</field>
+        <literalValue>1</literalValue>
+        <name>Actualización desde código</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_AC</fullName>
+        <field>OwnerId</field>
+        <lookupValue>alicia.cano@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a AC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_FV</fullName>
+        <field>OwnerId</field>
+        <lookupValue>fernando.vallejo@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a FV</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_ID</fullName>
+        <field>OwnerId</field>
+        <lookupValue>iago.dominguez@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_MAC</fullName>
+        <field>OwnerId</field>
+        <lookupValue>miguelangel.campillo@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a MAC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_MM</fullName>
+        <description>CAMBIAR POR Miguel Muiño (No está en sandbox)</description>
+        <field>OwnerId</field>
+        <lookupValue>miguel.muino@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a MM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cambiar_propietario_a_TR</fullName>
+        <field>OwnerId</field>
+        <lookupValue>txema.ramos@primagas.es</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Cambiar propietario a TR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copiar_email_de_candidato_a_E_mail_c</fullName>
+        <field>E_mail__c</field>
+        <formula>PersonEmail</formula>
+        <name>Copiar email de candidato a E_mail__c</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cuenta_no_actualizada_desde_codigo</fullName>
+        <field>Cuenta_actualizada_desde_codigo__c</field>
+        <literalValue>0</literalValue>
+        <name>Cuenta no actualizada desde código</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Desbloqueo_de_actualizacion</fullName>
+        <field>Cuenta_bloqueada_cambio__c</field>
+        <literalValue>0</literalValue>
+        <name>Desbloqueo de actualización</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Calle_de_facturaci_n</fullName>
+        <field>BillingStreet</field>
+        <formula>Calle_Facturacion__c</formula>
+        <name>Establece Calle de facturación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Pa_s_de_facturaci_n</fullName>
+        <field>BillingCountry</field>
+        <formula>Pais_Facturacion__c</formula>
+        <name>Establece País de facturación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Poblaci_n_de_facturaci_n</fullName>
+        <field>BillingCity</field>
+        <formula>Poblacion_Facturacion__c</formula>
+        <name>Establece Población de facturación</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_Provincia_de_envio</fullName>
+        <field>ShippingState</field>
+        <formula>TEXT(Provincia__c)</formula>
+        <name>Establece Provincia de envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_ciudad_de_env_o</fullName>
+        <field>ShippingCity</field>
+        <formula>City__c</formula>
+        <name>Establece Ciudad de envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establece_tipo_de_registro_a_cliente_emp</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Cliente</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Establece tipo de registro a cliente emp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Establecer_calle_de_envio</fullName>
+        <field>ShippingStreet</field>
+        <formula>Calle__c</formula>
+        <name>Establece Calle de envío</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Origen_de_modificacion_Salesforce</fullName>
+        <description>Se asigna al Origen de modificación el valor Salesforce</description>
+        <field>Origen_de_modificacion__c</field>
+        <formula>TRIM(&apos;Salesforce&apos;)</formula>
+        <name>Origen de modificación Salesforce</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AsignaciónAC</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_AC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario AC en función de la provincia/código postal.</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;Cantabria&apos;), ISPICKVAL(Provincia__c, &apos;Asturias&apos;),  Codigo_Postal__c = &apos;09001&apos;, Codigo_Postal__c = &apos;09002&apos;, Codigo_Postal__c = &apos;09003&apos;, Codigo_Postal__c = &apos;09004&apos;, Codigo_Postal__c = &apos;09005&apos;, Codigo_Postal__c = &apos;09006&apos;, Codigo_Postal__c = &apos;09007&apos;, Codigo_Postal__c = &apos;09080&apos;, Codigo_Postal__c = &apos;09120&apos;, Codigo_Postal__c = &apos;09123&apos;, Codigo_Postal__c = &apos;09141&apos;, Codigo_Postal__c = &apos;09197&apos;, Codigo_Postal__c = &apos;09200&apos;, Codigo_Postal__c = &apos;09210&apos;, Codigo_Postal__c = &apos;09215&apos;, Codigo_Postal__c = &apos;09216&apos;, Codigo_Postal__c = &apos;09217&apos;, Codigo_Postal__c = &apos;09219&apos;, Codigo_Postal__c = &apos;09280&apos;, Codigo_Postal__c = &apos;09293&apos;, Codigo_Postal__c = &apos;09294&apos;, Codigo_Postal__c = &apos;09500&apos;, Codigo_Postal__c = &apos;09511&apos;, Codigo_Postal__c = &apos;09550&apos;, Codigo_Postal__c = &apos;09568&apos;, Codigo_Postal__c = &apos;09569&apos;, Codigo_Postal__c = &apos;09580&apos;, Codigo_Postal__c = &apos;09585&apos;, Codigo_Postal__c = &apos;09587&apos;, Codigo_Postal__c = &apos;09592&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónEV</fullName>
+        <active>false</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario EV en función de la provincia/código postal.</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;Teruel&apos;), ISPICKVAL(Provincia__c, &apos;Tarragona&apos;), ISPICKVAL(Provincia__c, &apos;Castellón&apos;), ISPICKVAL(Provincia__c, &apos;Valencia&apos;), Codigo_Postal__c = &apos;08280&apos;, Codigo_Postal__c = &apos;08281&apos;, Codigo_Postal__c = &apos;08289&apos;, Codigo_Postal__c = &apos;08294&apos;, Codigo_Postal__c = &apos;08700&apos;, Codigo_Postal__c = &apos;08710&apos;, Codigo_Postal__c = &apos;08711&apos;, Codigo_Postal__c = &apos;08712&apos;, Codigo_Postal__c = &apos;08718&apos;, Codigo_Postal__c = &apos;08719&apos;, Codigo_Postal__c = &apos;08720&apos;, Codigo_Postal__c = &apos;08729&apos;, Codigo_Postal__c = &apos;08730&apos;, Codigo_Postal__c = &apos;08731&apos;, Codigo_Postal__c = &apos;08732&apos;, Codigo_Postal__c = &apos;08733&apos;, Codigo_Postal__c = &apos;08734&apos;, Codigo_Postal__c = &apos;08735&apos;, Codigo_Postal__c = &apos;08736&apos;, Codigo_Postal__c = &apos;08737&apos;, Codigo_Postal__c = &apos;08738&apos;, Codigo_Postal__c = &apos;08739&apos;, Codigo_Postal__c = &apos;08770&apos;, Codigo_Postal__c = &apos;08775&apos;, Codigo_Postal__c = &apos;08776&apos;, Codigo_Postal__c = &apos;08777&apos;, Codigo_Postal__c = &apos;08779&apos;, Codigo_Postal__c = &apos;08781&apos;, Codigo_Postal__c = &apos;08782&apos;, Codigo_Postal__c = &apos;08783&apos;, Codigo_Postal__c = &apos;08784&apos;, Codigo_Postal__c = &apos;08786&apos;, Codigo_Postal__c = &apos;08787&apos;, Codigo_Postal__c = &apos;08788&apos;, Codigo_Postal__c = &apos;08789&apos;, Codigo_Postal__c = &apos;08790&apos;, Codigo_Postal__c = &apos;08791&apos;, Codigo_Postal__c = &apos;08792&apos;, Codigo_Postal__c = &apos;08793&apos;, Codigo_Postal__c = &apos;08794&apos;, Codigo_Postal__c = &apos;08795&apos;, Codigo_Postal__c = &apos;08796&apos;, Codigo_Postal__c = &apos;08798&apos;, Codigo_Postal__c = &apos;08799&apos;, Codigo_Postal__c = &apos;08800&apos;, Codigo_Postal__c = &apos;08810&apos;, Codigo_Postal__c = &apos;08811&apos;, Codigo_Postal__c = &apos;08818&apos;, Codigo_Postal__c = &apos;08870&apos;, Codigo_Postal__c = &apos;08871&apos;, Codigo_Postal__c = &apos;08880&apos;, Codigo_Postal__c = &apos;08987&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónFV_1</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_FV</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario FV en función de la provincia/código postal. (Primera parte, faltan códigos postales)</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;Huesca&apos;), ISPICKVAL(Provincia__c, &apos;Zaragoza&apos;), ISPICKVAL(Provincia__c, &apos;Lleida&apos;), Codigo_Postal__c = &apos;08178&apos;, Codigo_Postal__c = &apos;08500&apos;, Codigo_Postal__c = &apos;08502&apos;, Codigo_Postal__c = &apos;08503&apos;, Codigo_Postal__c = &apos;08504&apos;, Codigo_Postal__c = &apos;08505&apos;, Codigo_Postal__c = &apos;08506&apos;, Codigo_Postal__c = &apos;08507&apos;, Codigo_Postal__c = &apos;08508&apos;, Codigo_Postal__c = &apos;08509&apos;, Codigo_Postal__c = &apos;08510&apos;, Codigo_Postal__c = &apos;08511&apos;, Codigo_Postal__c = &apos;08513&apos;, Codigo_Postal__c = &apos;08514&apos;, Codigo_Postal__c = &apos;08515&apos;, Codigo_Postal__c = &apos;08516&apos;, Codigo_Postal__c = &apos;08517&apos;, Codigo_Postal__c = &apos;08518&apos;, Codigo_Postal__c = &apos;08519&apos;, Codigo_Postal__c = &apos;08522&apos;, Codigo_Postal__c = &apos;08540&apos;, Codigo_Postal__c = &apos;08550&apos;, Codigo_Postal__c = &apos;08551&apos;, Codigo_Postal__c = &apos;08552&apos;, Codigo_Postal__c = &apos;08553&apos;, Codigo_Postal__c = &apos;08554&apos;, Codigo_Postal__c = &apos;08559&apos;, Codigo_Postal__c = &apos;08560&apos;, Codigo_Postal__c = &apos;08569&apos;, Codigo_Postal__c = &apos;08570&apos;, Codigo_Postal__c = &apos;08571&apos;, Codigo_Postal__c = &apos;08572&apos;, Codigo_Postal__c = &apos;08573&apos;, Codigo_Postal__c = &apos;08580&apos;, Codigo_Postal__c = &apos;08586&apos;, Codigo_Postal__c = &apos;08588&apos;, Codigo_Postal__c = &apos;08589&apos;, Codigo_Postal__c = &apos;08600&apos;, Codigo_Postal__c = &apos;08606&apos;, Codigo_Postal__c = &apos;08610&apos;, Codigo_Postal__c = &apos;08612&apos;, Codigo_Postal__c = &apos;08614&apos;, Codigo_Postal__c = &apos;08618&apos;, Codigo_Postal__c = &apos;08619&apos;, Codigo_Postal__c = &apos;08673&apos;, Codigo_Postal__c = &apos;08692&apos;, Codigo_Postal__c = &apos;08693&apos;, Codigo_Postal__c = &apos;08694&apos;, Codigo_Postal__c = &apos;08696&apos;, Codigo_Postal__c = &apos;08697&apos;, Codigo_Postal__c = &apos;08699&apos;, Codigo_Postal__c = &apos;017130&apos;, Codigo_Postal__c = &apos;017131&apos;, Codigo_Postal__c = &apos;017138&apos;, Codigo_Postal__c = &apos;017140&apos;, Codigo_Postal__c = &apos;017172&apos;, Codigo_Postal__c = &apos;017174&apos;, Codigo_Postal__c = &apos;017176&apos;, Codigo_Postal__c = &apos;017177&apos;, Codigo_Postal__c = &apos;017178&apos;, Codigo_Postal__c = &apos;017179&apos;, Codigo_Postal__c = &apos;017180&apos;, Codigo_Postal__c = &apos;017405&apos;, Codigo_Postal__c = &apos;017406&apos;, Codigo_Postal__c = &apos;017463&apos;, Codigo_Postal__c = &apos;017464&apos;, Codigo_Postal__c = &apos;017465&apos;, Codigo_Postal__c = &apos;017467&apos;, Codigo_Postal__c = &apos;017468&apos;, Codigo_Postal__c = &apos;017469&apos;, Codigo_Postal__c = &apos;017470&apos;, Codigo_Postal__c = &apos;017472&apos;, Codigo_Postal__c = &apos;017473&apos;, Codigo_Postal__c = &apos;017474&apos;, Codigo_Postal__c = &apos;017475&apos;, Codigo_Postal__c = &apos;017476&apos;, Codigo_Postal__c = &apos;017480&apos;, Codigo_Postal__c = &apos;017483&apos;, Codigo_Postal__c = &apos;017486&apos;, Codigo_Postal__c = &apos;017487&apos;, Codigo_Postal__c = &apos;017488&apos;, Codigo_Postal__c = &apos;017489&apos;, Codigo_Postal__c = &apos;017490&apos;, Codigo_Postal__c = &apos;017491&apos;, Codigo_Postal__c = &apos;017492&apos;, Codigo_Postal__c = &apos;017493&apos;, Codigo_Postal__c = &apos;017494&apos;, Codigo_Postal__c = &apos;017495&apos;, Codigo_Postal__c = &apos;017496&apos;, Codigo_Postal__c = &apos;017500&apos;, Codigo_Postal__c = &apos;017520&apos;, Codigo_Postal__c = &apos;017527&apos;, Codigo_Postal__c = &apos;017528&apos;, Codigo_Postal__c = &apos;017530&apos;, Codigo_Postal__c = &apos;017531&apos;, Codigo_Postal__c = &apos;017534&apos;, Codigo_Postal__c = &apos;017535&apos;, Codigo_Postal__c = &apos;017536&apos;, Codigo_Postal__c = &apos;017537&apos;, Codigo_Postal__c = &apos;017538&apos;, Codigo_Postal__c = &apos;017539&apos;, Codigo_Postal__c = &apos;017600&apos;, Codigo_Postal__c = &apos;017700&apos;, Codigo_Postal__c = &apos;017706&apos;, Codigo_Postal__c = &apos;017707&apos;, Codigo_Postal__c = &apos;017708&apos;, Codigo_Postal__c = &apos;017720&apos;, Codigo_Postal__c = &apos;017722&apos;, Codigo_Postal__c = &apos;017723&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónFV_2</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_FV</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario FV en función de la provincia/código postal. (Segunda parte, códigos postales restantes)</description>
+        <formula>AND(AND(Convertido__c = true, OR( Codigo_Postal__c = &apos;017730&apos;, Codigo_Postal__c = &apos;017731&apos;, Codigo_Postal__c = &apos;017732&apos;, Codigo_Postal__c = &apos;017740&apos;, Codigo_Postal__c = &apos;017741&apos;, Codigo_Postal__c = &apos;017742&apos;, Codigo_Postal__c = &apos;017743&apos;, Codigo_Postal__c = &apos;017744&apos;, Codigo_Postal__c = &apos;017745&apos;, Codigo_Postal__c = &apos;017746&apos;, Codigo_Postal__c = &apos;017747&apos;, Codigo_Postal__c = &apos;017750&apos;, Codigo_Postal__c = &apos;017752&apos;, Codigo_Postal__c = &apos;017761&apos;, Codigo_Postal__c = &apos;017770&apos;, Codigo_Postal__c = &apos;017773&apos;, Codigo_Postal__c = &apos;017781&apos;, Codigo_Postal__c = &apos;017800&apos;, Codigo_Postal__c = &apos;017811&apos;, Codigo_Postal__c = &apos;017812&apos;, Codigo_Postal__c = &apos;017813&apos;, Codigo_Postal__c = &apos;017820&apos;, Codigo_Postal__c = &apos;017830&apos;, Codigo_Postal__c = &apos;017831&apos;, Codigo_Postal__c = &apos;017832&apos;, Codigo_Postal__c = &apos;017833&apos;, Codigo_Postal__c = &apos;017834&apos;, Codigo_Postal__c = &apos;017843&apos;, Codigo_Postal__c = &apos;017844&apos;, Codigo_Postal__c = &apos;017845&apos;, Codigo_Postal__c = &apos;017846&apos;, Codigo_Postal__c = &apos;017850&apos;, Codigo_Postal__c = &apos;017851&apos;, Codigo_Postal__c = &apos;017852&apos;, Codigo_Postal__c = &apos;017853&apos;, Codigo_Postal__c = &apos;017854&apos;, Codigo_Postal__c = &apos;017855&apos;, Codigo_Postal__c = &apos;017857&apos;, Codigo_Postal__c = &apos;017858&apos;, Codigo_Postal__c = &apos;017860&apos;, Codigo_Postal__c = &apos;017864&apos;, Codigo_Postal__c = &apos;017867&apos;, Codigo_Postal__c = &apos;017869&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónID</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario ID en función de la provincia/código postal.</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;Orense/Ourense&apos;), ISPICKVAL(Provincia__c, &apos;Pontevedra&apos;) ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónMAC_1</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_MAC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario MAC en función de la provincia/código postal. (Primera parte, faltan códigos postales)</description>
+        <formula>AND(AND(Convertido__c = true, OR( Codigo_Postal__c = &apos;08001&apos;, Codigo_Postal__c = &apos;08002&apos;, Codigo_Postal__c = &apos;08003&apos;, Codigo_Postal__c = &apos;08004&apos;, Codigo_Postal__c = &apos;08005&apos;, Codigo_Postal__c = &apos;08006&apos;, Codigo_Postal__c = &apos;08007&apos;, Codigo_Postal__c = &apos;08008&apos;, Codigo_Postal__c = &apos;08009&apos;, Codigo_Postal__c = &apos;08010&apos;, Codigo_Postal__c = &apos;08011&apos;, Codigo_Postal__c = &apos;08012&apos;, Codigo_Postal__c = &apos;08013&apos;, Codigo_Postal__c = &apos;08014&apos;, Codigo_Postal__c = &apos;08015&apos;, Codigo_Postal__c = &apos;08016&apos;, Codigo_Postal__c = &apos;08017&apos;, Codigo_Postal__c = &apos;08018&apos;, Codigo_Postal__c = &apos;08019&apos;, Codigo_Postal__c = &apos;08020&apos;, Codigo_Postal__c = &apos;08021&apos;, Codigo_Postal__c = &apos;08022&apos;, Codigo_Postal__c = &apos;08023&apos;, Codigo_Postal__c = &apos;08024&apos;, Codigo_Postal__c = &apos;08025&apos;, Codigo_Postal__c = &apos;08026&apos;, Codigo_Postal__c = &apos;08027&apos;, Codigo_Postal__c = &apos;08028&apos;, Codigo_Postal__c = &apos;08029&apos;, Codigo_Postal__c = &apos;08030&apos;, Codigo_Postal__c = &apos;08031&apos;, Codigo_Postal__c = &apos;08032&apos;, Codigo_Postal__c = &apos;08033&apos;, Codigo_Postal__c = &apos;08034&apos;, Codigo_Postal__c = &apos;08035&apos;, Codigo_Postal__c = &apos;08036&apos;, Codigo_Postal__c = &apos;08037&apos;, Codigo_Postal__c = &apos;08038&apos;, Codigo_Postal__c = &apos;08039&apos;, Codigo_Postal__c = &apos;08040&apos;, Codigo_Postal__c = &apos;08041&apos;, Codigo_Postal__c = &apos;08042&apos;, Codigo_Postal__c = &apos;08070&apos;, Codigo_Postal__c = &apos;08080&apos;, Codigo_Postal__c = &apos;08085&apos;, Codigo_Postal__c = &apos;08095&apos;, Codigo_Postal__c = &apos;08100&apos;, Codigo_Postal__c = &apos;08104&apos;, Codigo_Postal__c = &apos;08105&apos;, Codigo_Postal__c = &apos;08106&apos;, Codigo_Postal__c = &apos;08107&apos;, Codigo_Postal__c = &apos;08110&apos;, Codigo_Postal__c = &apos;08120&apos;, Codigo_Postal__c = &apos;08130&apos;, Codigo_Postal__c = &apos;08140&apos;, Codigo_Postal__c = &apos;08147&apos;, Codigo_Postal__c = &apos;08148&apos;, Codigo_Postal__c = &apos;08150&apos;, Codigo_Postal__c = &apos;08160&apos;, Codigo_Postal__c = &apos;08170&apos;, Codigo_Postal__c = &apos;08172&apos;, Codigo_Postal__c = &apos;08173&apos;, Codigo_Postal__c = &apos;08174&apos;, Codigo_Postal__c = &apos;08180&apos;, Codigo_Postal__c = &apos;08181&apos;, Codigo_Postal__c = &apos;08182&apos;, Codigo_Postal__c = &apos;08183&apos;, Codigo_Postal__c = &apos;08184&apos;, Codigo_Postal__c = &apos;08185&apos;, Codigo_Postal__c = &apos;08186&apos;, Codigo_Postal__c = &apos;08187&apos;, Codigo_Postal__c = &apos;08188&apos;, Codigo_Postal__c = &apos;08189&apos;, Codigo_Postal__c = &apos;08190&apos;, Codigo_Postal__c = &apos;08191&apos;, Codigo_Postal__c = &apos;08192&apos;, Codigo_Postal__c = &apos;08193&apos;, Codigo_Postal__c = &apos;08194&apos;, Codigo_Postal__c = &apos;08195&apos;, Codigo_Postal__c = &apos;08196&apos;, Codigo_Postal__c = &apos;08197&apos;, Codigo_Postal__c = &apos;08198&apos;, Codigo_Postal__c = &apos;08199&apos;, Codigo_Postal__c = &apos;08200&apos;, Codigo_Postal__c = &apos;08201&apos;, Codigo_Postal__c = &apos;08202&apos;, Codigo_Postal__c = &apos;08203&apos;, Codigo_Postal__c = &apos;08204&apos;, Codigo_Postal__c = &apos;08205&apos;, Codigo_Postal__c = &apos;08206&apos;, Codigo_Postal__c = &apos;08207&apos;, Codigo_Postal__c = &apos;08208&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónMAC_2</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_MAC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario MAC en función de la provincia/código postal. (Segunda parte, códigos postales restantes)</description>
+        <formula>AND(AND(Convertido__c = true, OR( Codigo_Postal__c = &apos;08210&apos;, Codigo_Postal__c = &apos;08211&apos;, Codigo_Postal__c = &apos;08212&apos;, Codigo_Postal__c = &apos;08213&apos;, Codigo_Postal__c = &apos;08214&apos;, Codigo_Postal__c = &apos;08220&apos;, Codigo_Postal__c = &apos;08221&apos;, Codigo_Postal__c = &apos;08222&apos;, Codigo_Postal__c = &apos;08223&apos;, Codigo_Postal__c = &apos;08224&apos;, Codigo_Postal__c = &apos;08225&apos;, Codigo_Postal__c = &apos;08226&apos;, Codigo_Postal__c = &apos;08227&apos;, Codigo_Postal__c = &apos;08228&apos;, Codigo_Postal__c = &apos;08229&apos;, Codigo_Postal__c = &apos;08230&apos;, Codigo_Postal__c = &apos;08231&apos;, Codigo_Postal__c = &apos;08232&apos;, Codigo_Postal__c = &apos;08233&apos;, Codigo_Postal__c = &apos;08240&apos;, Codigo_Postal__c = &apos;08241&apos;, Codigo_Postal__c = &apos;08242&apos;, Codigo_Postal__c = &apos;08243&apos;, Codigo_Postal__c = &apos;08248&apos;, Codigo_Postal__c = &apos;08250&apos;, Codigo_Postal__c = &apos;08251&apos;, Codigo_Postal__c = &apos;08252&apos;, Codigo_Postal__c = &apos;08253&apos;, Codigo_Postal__c = &apos;08254&apos;, Codigo_Postal__c = &apos;08255&apos;, Codigo_Postal__c = &apos;08256&apos;, Codigo_Postal__c = &apos;08259&apos;, Codigo_Postal__c = &apos;08260&apos;, Codigo_Postal__c = &apos;08261&apos;, Codigo_Postal__c = &apos;08262&apos;, Codigo_Postal__c = &apos;08269&apos;, Codigo_Postal__c = &apos;08270&apos;, Codigo_Postal__c = &apos;08272&apos;, Codigo_Postal__c = &apos;08273&apos;, Codigo_Postal__c = &apos;08275&apos;, Codigo_Postal__c = &apos;08278&apos;, Codigo_Postal__c = &apos;08279&apos;, Codigo_Postal__c = &apos;08284&apos;, Codigo_Postal__c = &apos;08289&apos;, Codigo_Postal__c = &apos;08290&apos;, Codigo_Postal__c = &apos;08291&apos;, Codigo_Postal__c = &apos;08292&apos;, Codigo_Postal__c = &apos;08293&apos;, Codigo_Postal__c = &apos;08295&apos;, Codigo_Postal__c = &apos;08296&apos;, Codigo_Postal__c = &apos;08297&apos;, Codigo_Postal__c = &apos;08298&apos;, Codigo_Postal__c = &apos;08300&apos;, Codigo_Postal__c = &apos;08301&apos;, Codigo_Postal__c = &apos;08302&apos;, Codigo_Postal__c = &apos;08303&apos;, Codigo_Postal__c = &apos;08304&apos;, Codigo_Postal__c = &apos;08310&apos;, Codigo_Postal__c = &apos;08317&apos;, Codigo_Postal__c = &apos;08319&apos;, Codigo_Postal__c = &apos;08320&apos;, Codigo_Postal__c = &apos;08328&apos;, Codigo_Postal__c = &apos;08329&apos;, Codigo_Postal__c = &apos;08330&apos;, Codigo_Postal__c = &apos;08338&apos;, Codigo_Postal__c = &apos;08339&apos;, Codigo_Postal__c = &apos;08340&apos;, Codigo_Postal__c = &apos;08348&apos;, Codigo_Postal__c = &apos;08349&apos;, Codigo_Postal__c = &apos;08350&apos;, Codigo_Postal__c = &apos;08358&apos;, Codigo_Postal__c = &apos;08359&apos;, Codigo_Postal__c = &apos;08360&apos;, Codigo_Postal__c = &apos;08370&apos;, Codigo_Postal__c = &apos;08380&apos;, Codigo_Postal__c = &apos;08389&apos;, Codigo_Postal__c = &apos;08390&apos;, Codigo_Postal__c = &apos;08391&apos;, Codigo_Postal__c = &apos;08392&apos;, Codigo_Postal__c = &apos;08393&apos;, Codigo_Postal__c = &apos;08394&apos;, Codigo_Postal__c = &apos;08395&apos;, Codigo_Postal__c = &apos;08396&apos;, Codigo_Postal__c = &apos;08397&apos;, Codigo_Postal__c = &apos;08398&apos;, Codigo_Postal__c = &apos;08400&apos;, Codigo_Postal__c = &apos;08401&apos;, Codigo_Postal__c = &apos;08402&apos;, Codigo_Postal__c = &apos;08403&apos;, Codigo_Postal__c = &apos;08410&apos;, Codigo_Postal__c = &apos;08415&apos;, Codigo_Postal__c = &apos;08416&apos;, Codigo_Postal__c = &apos;08420&apos;, Codigo_Postal__c = &apos;08430&apos;, Codigo_Postal__c = &apos;08440&apos;, Codigo_Postal__c = &apos;08445&apos;, Codigo_Postal__c = &apos;08450&apos;, Codigo_Postal__c = &apos;08455&apos;, Codigo_Postal__c = &apos;08458&apos;, Codigo_Postal__c = &apos;08459&apos;, Codigo_Postal__c = &apos;08460&apos;, Codigo_Postal__c = &apos;08461&apos;, Codigo_Postal__c = &apos;08469&apos;, Codigo_Postal__c = &apos;08470&apos;, Codigo_Postal__c = &apos;08471&apos;, Codigo_Postal__c = &apos;08474&apos;, Codigo_Postal__c = &apos;08476&apos;, Codigo_Postal__c = &apos;08479&apos;, Codigo_Postal__c = &apos;08480&apos;, Codigo_Postal__c = &apos;08490&apos;, Codigo_Postal__c = &apos;08495&apos;, Codigo_Postal__c = &apos;08520&apos;, Codigo_Postal__c = &apos;08530&apos;, Codigo_Postal__c = &apos;08583&apos;, Codigo_Postal__c = &apos;08590&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónMAC_3</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_MAC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario MAC en función de la provincia/código postal. (Tercera parte, códigos postales restantes)</description>
+        <formula>AND(AND(Convertido__c = true, OR( Codigo_Postal__c = &apos;08591&apos;, Codigo_Postal__c = &apos;08592&apos;, Codigo_Postal__c = &apos;08593&apos;, Codigo_Postal__c = &apos;08595&apos;, Codigo_Postal__c = &apos;08620&apos;, Codigo_Postal__c = &apos;08629&apos;, Codigo_Postal__c = &apos;08630&apos;, Codigo_Postal__c = &apos;08635&apos;, Codigo_Postal__c = &apos;08640&apos;, Codigo_Postal__c = &apos;08650&apos;, Codigo_Postal__c = &apos;08670&apos;, Codigo_Postal__c = &apos;08690&apos;, Codigo_Postal__c = &apos;08691&apos;, Codigo_Postal__c = &apos;08739&apos;, Codigo_Postal__c = &apos;08740&apos;, Codigo_Postal__c = &apos;08750&apos;, Codigo_Postal__c = &apos;08753&apos;, Codigo_Postal__c = &apos;08754&apos;, Codigo_Postal__c = &apos;08755&apos;, Codigo_Postal__c = &apos;08756&apos;, Codigo_Postal__c = &apos;08757&apos;, Codigo_Postal__c = &apos;08758&apos;, Codigo_Postal__c = &apos;08759&apos;, Codigo_Postal__c = &apos;08760&apos;, Codigo_Postal__c = &apos;08769&apos;, Codigo_Postal__c = &apos;08780&apos;, Codigo_Postal__c = &apos;08812&apos;, Codigo_Postal__c = &apos;08820&apos;, Codigo_Postal__c = &apos;08830&apos;, Codigo_Postal__c = &apos;08840&apos;, Codigo_Postal__c = &apos;08850&apos;, Codigo_Postal__c = &apos;08859&apos;, Codigo_Postal__c = &apos;08860&apos;, Codigo_Postal__c = &apos;08870&apos;, Codigo_Postal__c = &apos;08886&apos;, Codigo_Postal__c = &apos;08901&apos;, Codigo_Postal__c = &apos;08902&apos;, Codigo_Postal__c = &apos;08903&apos;, Codigo_Postal__c = &apos;08904&apos;, Codigo_Postal__c = &apos;08905&apos;, Codigo_Postal__c = &apos;08906&apos;, Codigo_Postal__c = &apos;08907&apos;, Codigo_Postal__c = &apos;08908&apos;, Codigo_Postal__c = &apos;08910&apos;, Codigo_Postal__c = &apos;08911&apos;, Codigo_Postal__c = &apos;08912&apos;, Codigo_Postal__c = &apos;08914&apos;, Codigo_Postal__c = &apos;08915&apos;, Codigo_Postal__c = &apos;08916&apos;, Codigo_Postal__c = &apos;08917&apos;, Codigo_Postal__c = &apos;08921&apos;, Codigo_Postal__c = &apos;08922&apos;, Codigo_Postal__c = &apos;08923&apos;, Codigo_Postal__c = &apos;08924&apos;, Codigo_Postal__c = &apos;08930&apos;, Codigo_Postal__c = &apos;08940&apos;, Codigo_Postal__c = &apos;08950&apos;, Codigo_Postal__c = &apos;08960&apos;, Codigo_Postal__c = &apos;08970&apos;, Codigo_Postal__c = &apos;08980&apos;, Codigo_Postal__c = &apos;017001&apos;, Codigo_Postal__c = &apos;017002&apos;, Codigo_Postal__c = &apos;017003&apos;, Codigo_Postal__c = &apos;017005&apos;, Codigo_Postal__c = &apos;017007&apos;, Codigo_Postal__c = &apos;017025&apos;, Codigo_Postal__c = &apos;017100&apos;, Codigo_Postal__c = &apos;017110&apos;, Codigo_Postal__c = &apos;017111&apos;, Codigo_Postal__c = &apos;017113&apos;, Codigo_Postal__c = &apos;017114&apos;, Codigo_Postal__c = &apos;017115&apos;, Codigo_Postal__c = &apos;017116&apos;, Codigo_Postal__c = &apos;017118&apos;, Codigo_Postal__c = &apos;017120&apos;, Codigo_Postal__c = &apos;017121&apos;, Codigo_Postal__c = &apos;017123&apos;, Codigo_Postal__c = &apos;017124&apos;, Codigo_Postal__c = &apos;017132&apos;, Codigo_Postal__c = &apos;017133&apos;, Codigo_Postal__c = &apos;017134&apos;, Codigo_Postal__c = &apos;017136&apos;, Codigo_Postal__c = &apos;017137&apos;, Codigo_Postal__c = &apos;017141&apos;, Codigo_Postal__c = &apos;017142&apos;, Codigo_Postal__c = &apos;017143&apos;, Codigo_Postal__c = &apos;017150&apos;, Codigo_Postal__c = &apos;017152&apos;, Codigo_Postal__c = &apos;017153&apos;, Codigo_Postal__c = &apos;017154&apos;, Codigo_Postal__c = &apos;017160&apos;, Codigo_Postal__c = &apos;017161&apos;, Codigo_Postal__c = &apos;017162&apos;, Codigo_Postal__c = &apos;017164&apos;, Codigo_Postal__c = &apos;017166&apos;, Codigo_Postal__c = &apos;017170&apos;, Codigo_Postal__c = &apos;017174&apos;, Codigo_Postal__c = &apos;017181&apos;, Codigo_Postal__c = &apos;017182&apos;, Codigo_Postal__c = &apos;017183&apos;, Codigo_Postal__c = &apos;017184&apos;, Codigo_Postal__c = &apos;017185&apos;, Codigo_Postal__c = &apos;017190&apos;, Codigo_Postal__c = &apos;017199&apos;, Codigo_Postal__c = &apos;017200&apos;, Codigo_Postal__c = &apos;017210&apos;, Codigo_Postal__c = &apos;017212&apos;, Codigo_Postal__c = &apos;017214&apos;, Codigo_Postal__c = &apos;017220&apos;, Codigo_Postal__c = &apos;017230&apos;, Codigo_Postal__c = &apos;017240&apos;, Codigo_Postal__c = &apos;017242&apos;, Codigo_Postal__c = &apos;017244&apos;, Codigo_Postal__c = &apos;017246&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónMAC_4</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_MAC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario MAC en función de la provincia/código postal. (Cuarta parte, códigos postales restantes)</description>
+        <formula>AND(AND(Convertido__c = true, OR( Codigo_Postal__c = &apos;017248&apos;, Codigo_Postal__c = &apos;017249&apos;, Codigo_Postal__c = &apos;017250&apos;, Codigo_Postal__c = &apos;017251&apos;, Codigo_Postal__c = &apos;017252&apos;, Codigo_Postal__c = &apos;017253&apos;, Codigo_Postal__c = &apos;017255&apos;, Codigo_Postal__c = &apos;017256&apos;, Codigo_Postal__c = &apos;017257&apos;, Codigo_Postal__c = &apos;017258&apos;, Codigo_Postal__c = &apos;017300&apos;, Codigo_Postal__c = &apos;017310&apos;, Codigo_Postal__c = &apos;017320&apos;, Codigo_Postal__c = &apos;017400&apos;, Codigo_Postal__c = &apos;017401&apos;, Codigo_Postal__c = &apos;017403&apos;, Codigo_Postal__c = &apos;017404&apos;, Codigo_Postal__c = &apos;017410&apos;, Codigo_Postal__c = &apos;017411&apos;, Codigo_Postal__c = &apos;017412&apos;, Codigo_Postal__c = &apos;017419&apos;, Codigo_Postal__c = &apos;017421&apos;, Codigo_Postal__c = &apos;017430&apos;, Codigo_Postal__c = &apos;017441&apos;, Codigo_Postal__c = &apos;017450&apos;, Codigo_Postal__c = &apos;017451&apos;, Codigo_Postal__c = &apos;017454&apos;, Codigo_Postal__c = &apos;017455&apos;, Codigo_Postal__c = &apos;017457&apos;, Codigo_Postal__c = &apos;017458&apos;, Codigo_Postal__c = &apos;017459&apos;, Codigo_Postal__c = &apos;017460&apos;, Codigo_Postal__c = &apos;017461&apos;, Codigo_Postal__c = &apos;017462&apos;, Codigo_Postal__c = &apos;017464&apos;, Codigo_Postal__c = &apos;017466&apos;, Codigo_Postal__c = &apos;017481&apos;, Codigo_Postal__c = &apos;017482&apos;, Codigo_Postal__c = &apos;017529&apos;, Codigo_Postal__c = &apos;017709&apos; ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónMM</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_MM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario IM en función de la provincia/código postal.</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;La Coruña&apos;), ISPICKVAL(Provincia__c, &apos;Lugo&apos;) ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>AsignaciónTR</fullName>
+        <actions>
+            <name>Cambiar_propietario_a_TR</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flujo de trabajo que asigna las cuentas al usuario TR en función de la provincia/código postal.</description>
+        <formula>AND(AND(Convertido__c = true, OR( ISPICKVAL(Provincia__c, &apos;La Rioja&apos;), ISPICKVAL(Provincia__c, &apos;Navarra&apos;), ISPICKVAL(Provincia__c, &apos;Álava&apos;), ISPICKVAL(Provincia__c, &apos;Guipúzcoa&apos;), ISPICKVAL(Provincia__c, &apos;Vizcaya&apos;) ) ), Actividad_oculta__c &lt;&gt; &apos;Autogas&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cambio en IBAN sin bloqueo</fullName>
+        <actions>
+            <name>Cuenta_no_actualizada_desde_codigo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Origen_de_modificacion_Salesforce</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Se ejecuta en caso de que el IBAN se haya modificado y no esté &apos;bloqueado&apos; el cambio</description>
+        <formula>IF(ISCHANGED(IBAN__c) &amp;&amp;  NOT(Cuenta_bloqueada_cambio__c) &amp;&amp; NOT(ISCHANGED(Origen_de_modificacion__c)) &amp;&amp; NOT(ISCHANGED(Cuenta_bloqueada_cambio__c)), true, false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Comprueba tipo registro lead</fullName>
+        <actions>
+            <name>Actualiza_tipo_registro_cuenta</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.AccountRecord_Type__c</field>
+            <operation>equals</operation>
+            <value>0122p000000t6WFAAY</value>
+        </criteriaItems>
+        <description>se usa para CTC</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Desbloqueo de cuenta en actualización</fullName>
+        <actions>
+            <name>Actualizacion_desde_codigo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Desbloqueo_de_actualizacion</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>&apos;Desbloquea&apos; la cuenta tras una actualización en el código</description>
+        <formula>IF( Cuenta_bloqueada_cambio__c == true &amp;&amp; ISCHANGED(Cuenta_bloqueada_cambio__c), true, false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Establecer Cuenta como de tipo GNL</fullName>
+        <active>false</active>
+        <description>Establece el tipo de registro de una cuenta a GNL</description>
+        <formula>Tipo__c = &apos;GNL&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Establecer Cuenta como de tipo cliente empresa</fullName>
+        <actions>
+            <name>Establece_tipo_de_registro_a_cliente_emp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Establece el tipo de registro de una cuenta a cliente empresa</description>
+        <formula>Tipo__c = &apos;Cliente Empresa&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

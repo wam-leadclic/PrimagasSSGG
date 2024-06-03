@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_cami_n__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo camión</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7 tns</fullName>
+                <default>false</default>
+                <label>7 tns</label>
+            </value>
+            <value>
+                <fullName>11 tns</fullName>
+                <default>false</default>
+                <label>11 tns</label>
+            </value>
+            <value>
+                <fullName>19 tns</fullName>
+                <default>false</default>
+                <label>19 tns</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

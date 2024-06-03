@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>A_partir_de_un_consumo_anual_en_Kg</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>A partir de un consumo anual en Kg</shortDescription>
+        <value>A partir de un consumo anual en Kg</value>
+    </labels>
+    <labels>
+        <fullName>Aplica_tramos</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Aplica tramos</shortDescription>
+        <value>En tu caso, se te aplicará el tramo remarcado en rojo:</value>
+    </labels>
+    <labels>
+        <fullName>Asunto</fullName>
+        <categories>CorreoOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Asunto</shortDescription>
+        <value>Su oferta personalizada de Primagas</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_ErrorOccurred</fullName>
+        <categories>CPQ</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_ErrorOccurred</shortDescription>
+        <value>Se ha producido un error. Contacta con el administrador.</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_EuroKg</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_EuroKg</shortDescription>
+        <value>€/kg</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_KgYear</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_KgYear</shortDescription>
+        <value>kg/year</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_MinimumStretchesNumberError</fullName>
+        <categories>CPQ</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_MinimumStretchesNumberError</shortDescription>
+        <value>Deben existir al menos {0} tramos.</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_MissingSettings</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_MissingSettings</shortDescription>
+        <value>CPQ_Settings are not configured. Please contact the system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_NoDiscountDurationSet</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_NoDiscountDurationSet</shortDescription>
+        <value>There is no discount duration for the quote. The discount will not be applied.</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_NoRate</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_NoRate</shortDescription>
+        <value>No rate</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_SaveSuccess</fullName>
+        <categories>CPQ</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_SaveSuccess</shortDescription>
+        <value>Guardado con éxito</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_StretchesCLVHeader</fullName>
+        <categories>CPQ</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_StretchesCLVHeader</shortDescription>
+        <value>CLV5/10</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_SuggestDiscount</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_SuggestDiscount</shortDescription>
+        <value>Suggest a discount</value>
+    </labels>
+    <labels>
+        <fullName>CPQ_UseStretches</fullName>
+        <categories>CPQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQ_UseStretches</shortDescription>
+        <value>Use stretches</value>
+    </labels>
+    <labels>
+        <fullName>Campanyas_y_promociones</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Campañas y promociones</shortDescription>
+        <value>Campañas y promociones</value>
+    </labels>
+    <labels>
+        <fullName>Campanyas_y_promociones_extension</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Campañas y promociones extension</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+Primagas contacta periódicamente con todos o algunos de sus clientes y potenciales clientes para proporcionarles información de interés y promociones puntuales.
+&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt; 
+Dichas campañas pueden realizarse a través de alguno o varios de los siguientes canales:
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td&gt; 
+- Llamada. Alguien de nuestro equipo podrá llamarte para ofrecerte más información.
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td&gt; 
+- Correo electrónico a la cuenta que nos has facilitado.
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td&gt; 
+- SMS al número de teléfono móvil que nos hayas facilitado.
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td&gt; 
+- Aplicación de mensajería instantánea: Whatsapp, Telegram, Facebook Messenger o semejantes.
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+- Online a través de plataformas como Facebook o Google, basándonos en tus datos de contacto (teléfono o email) o tu navegación por nuestra página (cookies).
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CaseAlreadyClosed</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>CaseAlreadyClosed</shortDescription>
+        <value>El caso ya se encuentra cerrado. 🙂</value>
+    </labels>
+    <labels>
+        <fullName>Completada</fullName>
+        <categories>trigger de tareas y eventos</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Completada</shortDescription>
+        <value>Completada</value>
+    </labels>
+    <labels>
+        <fullName>Comunicacion_de_los_datos</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Comunicación de los datos</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+&lt;b&gt;Comunicación de los datos&lt;/b&gt;: no se comunicarán los datos a terceros, salvo obligación legal.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Consumo_anual_contratado</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Consumo anual contratado</shortDescription>
+        <value>Consumo anual contratado:</value>
+    </labels>
+    <labels>
+        <fullName>Consumo_anual_estimado</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Consumo anual estimado</shortDescription>
+        <value>Consumo anual estimado:</value>
+    </labels>
+    <labels>
+        <fullName>Coste_a_financiar_CLIENTE</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Coste a financiar CLIENTE:</shortDescription>
+        <value>Coste a financiar CLIENTE:</value>
+    </labels>
+    <labels>
+        <fullName>Coste_depositos_asumidos_Primagas</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Coste depositos asumidos Primagas</shortDescription>
+        <value>Coste de Depósito/s asumido por Primagas</value>
+    </labels>
+    <labels>
+        <fullName>Coste_que_asume_Primagas</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Coste que asume Primagas</shortDescription>
+        <value>Coste que asume Primagas:</value>
+    </labels>
+    <labels>
+        <fullName>Coste_que_asume_el_Cliente</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Coste que asume el Cliente</shortDescription>
+        <value>Coste que asume el CLIENTE:</value>
+    </labels>
+    <labels>
+        <fullName>Coste_total_de_instalacion_sin_deposito</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Coste total de instalación (sin depósito)</shortDescription>
+        <value>Coste total de instalación (sin depósito):</value>
+    </labels>
+    <labels>
+        <fullName>Criterios_de_conservacion</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Criterios de conservación</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+&lt;b&gt;Criterios de conservación de los datos&lt;/b&gt;: se conservarán mientras exista un interés mutuo para mantener el fin del tratamiento y cuando ya no sea necesario para tal fin, se suprimirán con medidas de seguridad adecuadas para garantizar la seudonimización de los datos o la destrucción total de los mismos.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Cuerpo_del_email</fullName>
+        <categories>CorreoOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Cuerpo del email</shortDescription>
+        <value>Le adjunto su oferta personalizada, por favor recuerde que estará vigente durante 1 mes. 
+No dude en contactarme para cualquier cuestión. 
+Quedo a la espera de su respuesta, reciba un saludo cordial,</value>
+    </labels>
+    <labels>
+        <fullName>Datos_de_contacto</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Datos de contacto</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+&lt;b&gt;Datos de contacto para ejercer sus derechos&lt;/b&gt;:  
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+PRIMAGAS ENERGÍA, S.A.U. C/ Beethoven, 15 08021 Barcelona (BARCELONA). Email: &lt;a style=&quot;color:blue; text-decoration: underline&quot;&gt;privacidad@primagas.es&lt;/a&gt;
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td height=&quot;10&quot;&gt;&lt;/td&gt;&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+El &lt;b&gt;Interesado&lt;/b&gt; consiente el tratamiento de sus datos en los términos expuestos.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Depositos_a_instalar</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Depositos a instalar</shortDescription>
+        <value>Depósito/s a instalar:</value>
+    </labels>
+    <labels>
+        <fullName>Derechos</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Derechos</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+&lt;b&gt;Derechos que asisten al Interesado&lt;/b&gt;:  
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt;
+- Derecho a retirar el consentimiento en cualquier momento.                                                   
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt;
+- Derecho de acceso, rectificación, portabilidad y supresión de sus datos y a la limitación u oposición a su tratamiento.                                                               
+&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt;
+- Derecho a presentar una reclamación ante la Autoridad de control (agpd.es) si considera que el tratamiento no se ajusta a la normativa vigente.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Descuentos_en_negativo</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Descuentos en negativo</shortDescription>
+        <value>* Los descuentos en negativo son incrementos en el precio</value>
+    </labels>
+    <labels>
+        <fullName>Disclaimer</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Disclaimer</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+PRIMAGAS ENERGÍA, S.A.U es el &lt;b&gt;Responsable del tratamiento&lt;/b&gt; de los datos personales del &lt;b&gt;Interesado&lt;/b&gt; y le informa que estos datos serán tratados de conformidad con lo dispuesto en las normativas vigentes en protección de datos personales, el Reglamento (UE) 2016/679 de 27 de abril de 2016 (GDPR), por lo que se le facilita la siguiente información de los tratamientos:
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Duracion_del_descuento</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Duracion del descuento</shortDescription>
+        <value>Duración del descuento:</value>
+    </labels>
+    <labels>
+        <fullName>Encuestas_de_satisfaccion</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Encuestas de satisfacción</shortDescription>
+        <value>Encuestas de satisfacción</value>
+    </labels>
+    <labels>
+        <fullName>Encuestas_de_satisfaccion_extension</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Encuestas de satisfacción extension</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+En Primagas nos interesa la opinión de nuestros clientes, por este motivo, realizamos puntualmente breves encuestas para garantizar tu satisfacción e identificar los puntos de mejora.&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+Agradecemos de antemano que nos autorices a contactar contigo de forma ocasional para llevar a cabo estas encuestas de satisfacción que siempre serán anónimas salvo que nos indiques lo contrario.&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt; 
+Gracias por ayudarnos a mejorar y poder ofrecerte el mejor servicio.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Exclusividad_de_suministro</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Exclusividad de suministro</shortDescription>
+        <value>Exclusividad de suministro:</value>
+    </labels>
+    <labels>
+        <fullName>Explicacion_opcion_de_gas_escogida</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Explicacion opcion de gas escogida</shortDescription>
+        <value>Encuadrado en rojo, opción de gas escogida por cliente</value>
+    </labels>
+    <labels>
+        <fullName>Fin_de_los_tratamientos</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Fin de los tratamientos</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+&lt;b&gt;Fin de los tratamientos&lt;/b&gt;: mantener una relación comercial mediante el envío de comunicaciones de nuestros productos o servicios, y así ofrecer siempre el servicio que mejor se adapte a nuestros clientes y potenciales clientes.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Hash_invalido</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Hash invalido</shortDescription>
+        <value>&lt;tr&gt; 
+&lt;td style=&quot;text-align: justify;&quot;&gt; 
+La página no está disponible. Póngase en contacto con nosotros a través de &lt;a style=&quot;color:blue; text-decoration: underline&quot;&gt;privacidad@primagas.es&lt;/a&gt;.
+&lt;/td&gt; 
+&lt;/tr&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Importes_sin_IVA</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Importes sin IVA</shortDescription>
+        <value>Importes sin IVA. Oferta Válida hasta</value>
+    </labels>
+    <labels>
+        <fullName>Incluye</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Incluye</shortDescription>
+        <value>El Servicio incluye:</value>
+    </labels>
+    <labels>
+        <fullName>Informacion_Condiciones_Contractuales</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Informacion Condiciones Contractuales</shortDescription>
+        <value>El importe de financiación en gas se regularizará cada 12 meses en función del consumo real</value>
+    </labels>
+    <labels>
+        <fullName>Informacion_precio_gas</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Informacion precio gas</shortDescription>
+        <value>Tu precio de gas, será la suma del importe de financiación en gas (1) + el precio de gas vigente (2)</value>
+    </labels>
+    <labels>
+        <fullName>Intro</fullName>
+        <categories>Preferencias</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Intro</shortDescription>
+        <value>Desde esta página puedes ver y actualizar las preferencias sobre el uso que hacemos de tus datos para comunicaciones. Despliega los menús para obtener más información:</value>
+    </labels>
+    <labels>
+        <fullName>JSON_SERIALIZE_ERROR</fullName>
+        <categories>JSON</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>JSON_SERIALIZE_ERROR</shortDescription>
+        <value>Error al serializar JSON de respuesta.</value>
+    </labels>
+    <labels>
+        <fullName>Nueva_URL_Primagas</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Nueva URL Primagas</shortDescription>
+        <value>www.primagas.es</value>
+    </labels>
+    <labels>
+        <fullName>OBSERVACIONES</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OBSERVACIONES</shortDescription>
+        <value>OBSERVACIONES</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Ahora_tambien_puede_sumarse_a</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Ahora_también_puede_sumarse_a</shortDescription>
+        <value>Ahora también puede sumarse a…</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_AhorreEspacio</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_AhorreEspacio</shortDescription>
+        <value>Ahorre espacio&lt;strong&gt;, evite olores, ruidos y suciedad.&lt;/strong&gt;</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_AhorroDe</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ AhorroDe</shortDescription>
+        <value>Ahorro de</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Anyos</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Años</shortDescription>
+        <value>AÑOS</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Anyos2</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Años2</shortDescription>
+        <value>años</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Atencion24h365d</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Atencion24h365d</shortDescription>
+        <value>&lt;strong&gt;Atención las 24 h los 365 días&lt;/strong&gt;, todos los mantenimientos y revisiones de la instalación incluidos en su cuota mensual.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Aviso_Pendiente_Aprobar</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Aviso_Pendiente_Aprobar</shortDescription>
+        <value>Este presupuesto está aún pendiente de aprobar.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_CambieHoy</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_CambieHoy</shortDescription>
+        <value>CAMBIE HOY</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_CantidadDepositos</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_CantidadDepósitos</shortDescription>
+        <value>Cantidad depósitos:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Cliente</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Cliente</shortDescription>
+        <value>CLIENTE:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ConPrimagas</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF ConPrimagas</shortDescription>
+        <value>Con Primagas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ConPrimagasEnergia</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ConPrimagasEnergia</shortDescription>
+        <value>Con Primagas Energía</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Con_PrimagasEnergia</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Con_PrimagasEnergía</shortDescription>
+        <value>&lt;b&gt;CON&lt;/b&gt; &lt;br/&gt;PRIMAGAS ENERGIA</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_CondicionesContractuales</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_CondicionesContractuales</shortDescription>
+        <value>CONDICIONES CONTRACTUALES</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Consiga_maximo_confort</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Consiga_máximo_confort</shortDescription>
+        <value>Consiga el máximo confort</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ConsumoAnual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ConsumoAnual</shortDescription>
+        <value>CONSUMO ANUAL</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ConsumoAnualContratado</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ConsumoAnualContratado</shortDescription>
+        <value>Consumo anual contratado</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ConsumoAnualEstimado</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ConsumoAnualEstimado</shortDescription>
+        <value>Consumo anual estimado:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Contador</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Contador</shortDescription>
+        <value>Contador</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_CosteTotalInstalacion_SinDeposito</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_CosteTotalInstalacion_SinDepósito</shortDescription>
+        <value>Coste total de instalación (sin depósito):</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Coste_Total</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Coste_Total</shortDescription>
+        <value>Coste total:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_CuotaMensual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_CuotaMensual</shortDescription>
+        <value>Cuota mensual</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DTO</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DTO</shortDescription>
+        <value>DTO</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DTO_EurosKg</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DTO_EurosKg</shortDescription>
+        <value>DTO*&lt;br /&gt;€/kg</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DepositoAInstalar</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DepósitoAInstalar</shortDescription>
+        <value>Depósito a instalar:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DepositoEnterrado</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DepositoEnterrado</shortDescription>
+        <value>&lt;strong&gt;Depósito enterrado&lt;/strong&gt; sin impacto visual para su negocio.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Descuento_Euros_Kg</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Descuento_Euros_Kg</shortDescription>
+        <value>Descuento € / kg</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Desde_KgAnual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Desde_KgAnual</shortDescription>
+        <value>Desde&lt;br /&gt;(kg / año)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Desde_PorcConsumoContratado</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Desde_PorcConsumoContratado</shortDescription>
+        <value>Desde (% consumo&lt;br /&gt;contratado)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DuracionContrato</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DuracionContrato</shortDescription>
+        <value>Duración Contrato</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DuracionCuotas_Anyos</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DuracionCuotas_Años</shortDescription>
+        <value>Duración cuotas&lt;br /&gt;(años)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DuracionDTO</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DuracionDTO</shortDescription>
+        <value>Duración DTO</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_DuracionDescuento_Anyos</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_DuracionDescuento_Años</shortDescription>
+        <value>Duración descuento (años)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_El_importe_de_financiacion_en_gas_sera</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_El_importe_de_financiacion_en_gas_sera</shortDescription>
+        <value>El importe de financiación en gas será</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_En</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_En</shortDescription>
+        <value>en</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_EnergiaActual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_EnergiaActual</shortDescription>
+        <value>ENERGÍA ACTUAL</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Escalado</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Escalado</shortDescription>
+        <value>ESCALADO</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Euro_Simbolo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Euro_Símbolo</shortDescription>
+        <value>€</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_EurosLitro</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_EurosLitro</shortDescription>
+        <value>€/l</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_EurosLitro2</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_EurosLitro2</shortDescription>
+        <value>€/litro</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_EurosMes</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_EurosMes</shortDescription>
+        <value>€/mes</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Euros_Kg</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Euros_Kg</shortDescription>
+        <value>€/kg</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ExclusividadDeSuministro</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ExclusividadDeSuministro</shortDescription>
+        <value>Exclusividad de suministro:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_FacturacionMensualPorContador</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_FacturacionMensualPorContador</shortDescription>
+        <value>&lt;strong&gt;Facturación mensual por contador&lt;/strong&gt; según su consumo real, pago domiciliado.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Financiacion_en_cuotas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Financiacion_en_cuotas</shortDescription>
+        <value>Financiación en cuotas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Financiacion_en_gas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Financiacion_en_gas</shortDescription>
+        <value>Financiación en gas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_GAS_titulo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_GAS_título</shortDescription>
+        <value>GAS</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Gas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Gas</shortDescription>
+        <value>Gas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ImporteDeFinanciacionEnGasSeRegularizara</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ImporteDeFinanciacionEnGasSeRegularizará</shortDescription>
+        <value>El importe de financiación en gas se regularizará cada 12 meses en función del consumo real</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ImporteMensual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ImporteMensual</shortDescription>
+        <value>Importe mensual</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Instalacion</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF Instalación</shortDescription>
+        <value>INSTALACIÓN</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Inversion</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Inversión</shortDescription>
+        <value>Inversión</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_InversionQueAsumePrimagas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_InversiónQueAsumePrimagas</shortDescription>
+        <value>Inversión que asume Primagas:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_L</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_L</shortDescription>
+        <value>l</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_LaInstalacionIncluye</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_LaInstalaciónIncluye</shortDescription>
+        <value>La instalación incluye:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_La_cuota_de_servicio_pasara_a_ser_de</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_La cuota de servicio pasará a ser de</shortDescription>
+        <value>La cuota de servicio pasará a ser de</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Litros</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Litros</shortDescription>
+        <value>litros</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Meses_al</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Meses_al</shortDescription>
+        <value>meses al</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Oferta</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Oferta</shortDescription>
+        <value>OFERTA</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_OpcionesInstalacionExterior</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_OpcionesInstalacionExterior</shortDescription>
+        <value>Opciones instalación exterior</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_OpcionesInstalacionInterior</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_OpcionesInstalacionInterior</shortDescription>
+        <value>Opciones instalación interior</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_OpcionesServicio</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_OpcionesServicio</shortDescription>
+        <value>Opciones servicio</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_OtrosEquiposAInstalar</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_OtrosEquiposAInstalar</shortDescription>
+        <value>Otros equipos a instalar:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PagoEnCuotas_EurosAnyo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PagoEnCuotas_EurosAño</shortDescription>
+        <value>Pago en cuotas&lt;br /&gt;(€ / año)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PagoInicial</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PagoInicial</shortDescription>
+        <value>Pago inicial:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PagoInicial_PorParteCliente</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PagoInicial_PorParteCliente</shortDescription>
+        <value>Pago inicial &lt;br /&gt;por parte del cliente</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PorAnyoPendiente</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PorAñoPendiente</shortDescription>
+        <value>por año pendiente</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PrecioActual_EurosKg</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PrecioActual_EurosKg</shortDescription>
+        <value>Precio actual&lt;br /&gt;€/kg</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PrecioDeGas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PrecioDeGas</shortDescription>
+        <value>Precio de gas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PrecioGasActual_ParaCliente</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PrecioGasActual_ParaCliente</shortDescription>
+        <value>Precio de gas actual &lt;br /&gt;para el cliente (€ / kg)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PrecioSEP</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PrecioSEP</shortDescription>
+        <value>Precio SEP</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Precio_Fijo_Anual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Precio_Fijo_Anual</shortDescription>
+        <value>Precio Fijo Anual</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Precio_Mensual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Precio_Mensual</shortDescription>
+        <value>Precio Mensual</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Precio_de_gas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Precio_de_gas</shortDescription>
+        <value>Precio de gas</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_PreciosVigentesFechaHoy</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_PreciosVigentesFechaHoy</shortDescription>
+        <value>Precios vigentes a fecha de hoy</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Precios_sin_IVA</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Precios sin IVA</shortDescription>
+        <value>Precios sin IVA.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Primaservicios_EurosMes</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Primaservicios_EurosMes</shortDescription>
+        <value>Primaservicios&lt;br /&gt;€/mes</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ProductoGasEscogido</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ProductoGasEscogido</shortDescription>
+        <value>Producto de Gas escogido</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ResolucionAnticipada</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ResoluciónAnticipada</shortDescription>
+        <value>Resolución anticipada:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Seleccion_de_primaservicios</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Seleccion_de_primaservicios</shortDescription>
+        <value>Selección de Primaservicios:</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_ServicioEscogido</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ServicioEscogido</shortDescription>
+        <value>Servicio escogido</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Servicios_titulo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Servicios_título</shortDescription>
+        <value>SERVICIOS</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Sin_PrimagasEnergia</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Sin_PrimagasEnergía</shortDescription>
+        <value>&lt;b&gt;SIN&lt;/b&gt;&lt;br/&gt;PRIMAGAS ENERGIA</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Sin_preocuparse_de_nada</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Sin_preocuparse_de_nada</shortDescription>
+        <value>sin tener que preocuparse de nada...</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_SituacionActual</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_SituacionActual</shortDescription>
+        <value>Situación actual</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_SuministroAutomatico</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_SuministroAutomatico</shortDescription>
+        <value>&lt;strong&gt;Suministro automático&lt;/strong&gt; de gas gestionado por telemedida.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Tarifa</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Tarifa</shortDescription>
+        <value>Tarifa</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Tarifa_Plana</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Tarifa_Plana</shortDescription>
+        <value>Tarifa Plana</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Tarifa_Titulo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Tarifa_Título</shortDescription>
+        <value>TARIFA</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_URL_Primagas</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_URL_Primagas</shortDescription>
+        <value>www.primagasenergía.es</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_UnfiqueEnergias</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_UnfiqueEnergias</shortDescription>
+        <value>&lt;strong&gt;Unifique energías:&lt;/strong&gt; calefacción, agua caliente y cocina con un mismo sistema.</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_Valido_hasta_el</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_ Válido hasta el</shortDescription>
+        <value>Válido hasta el</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_YEmpieceAAhorrar</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_YEmpieceAAhorrar</shortDescription>
+        <value>Y EMPIEZA A AHORRAR</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_a_partir_de_un_consumo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_a_partir_de_un_consumo</shortDescription>
+        <value>A partir de un consumo anual en litros (Kg)</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_kWh</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_kWh</shortDescription>
+        <value>kWh</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_kg</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_kg</shortDescription>
+        <value>kg</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_kgCO2</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_kgCO2</shortDescription>
+        <value>kg CO&lt;sub&gt;2&lt;/sub&gt;</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_precio_para</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_precio_para</shortDescription>
+        <value>Precio para</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDF_vigente_el</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_vigente_el</shortDescription>
+        <value>vigente el</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDf_EurosAnyo</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDf_EurosAño</shortDescription>
+        <value>€/AÑO</value>
+    </labels>
+    <labels>
+        <fullName>OfertaPDf_Servicio</fullName>
+        <categories>OfertaPDF</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>OfertaPDF_Servicio</shortDescription>
+        <value>Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Oferta_de_instalacion_y_suministro_de_gas_propano</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Oferta de instalación y suministro de gas propano</shortDescription>
+        <value>OFERTA DE INSTALACIÓN 
+Y SUMINISTRO DE GAS PROPANO</value>
+    </labels>
+    <labels>
+        <fullName>Otros_equipos_a_instalar</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Otros equipos a instalar</shortDescription>
+        <value>Otros equipos a instalar:</value>
+    </labels>
+    <labels>
+        <fullName>Pago_en_cuotas_Cliente</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Pago en cuotas Cliente</shortDescription>
+        <value>Pago en cuotas CLIENTE:</value>
+    </labels>
+    <labels>
+        <fullName>Pago_inicial_CLIENTE</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Pago inicial CLIENTE:</shortDescription>
+        <value>Pago inicial CLIENTE:</value>
+    </labels>
+    <labels>
+        <fullName>PerfilComercial</fullName>
+        <categories>trigger de tareas y eventos</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Id Perfil Comercial</shortDescription>
+        <value>00eD000000166N6</value>
+    </labels>
+    <labels>
+        <fullName>Precios_vigentes_a_fecha_de_hoy</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Precios vigentes a fecha de hoy</shortDescription>
+        <value>Precios vigentes a fecha de hoy:</value>
+    </labels>
+    <labels>
+        <fullName>Primaservicios_escogido</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Primaservicios escogido</shortDescription>
+        <value>Servicio escogido:</value>
+    </labels>
+    <labels>
+        <fullName>Producto_de_gas_escogido</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Producto de gas escogido</shortDescription>
+        <value>Producto de gas escogido:</value>
+    </labels>
+    <labels>
+        <fullName>Servicio_escogido</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Servicio escogido</shortDescription>
+        <value>Servicio escogido:</value>
+    </labels>
+    <labels>
+        <fullName>Significado_recuadro_rojo</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Significado recuadro rojo</shortDescription>
+        <value>Encuadrado en rojo, opción de financiación escogida por cliente</value>
+    </labels>
+    <labels>
+        <fullName>Suministro</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Suministro</shortDescription>
+        <value>SUMINISTRO</value>
+    </labels>
+    <labels>
+        <fullName>Tarifa</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Tarifa</shortDescription>
+        <value>Tarifa:</value>
+    </labels>
+    <labels>
+        <fullName>Titulo_Primaservicios</fullName>
+        <categories>NuevasOfertas</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Titulo Primaservicios</shortDescription>
+        <value>PRIMASERVICIOS</value>
+    </labels>
+    <labels>
+        <fullName>WSError_100</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_100</shortDescription>
+        <value>Imagen recuperada correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_101</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_101</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_102</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_102</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_103</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_103</shortDescription>
+        <value>No existe una imagen con el nombre:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_104</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_104</shortDescription>
+        <value>El identificador de la imagen no es correcto:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_105</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_105</shortDescription>
+        <value>El cuerpo de la imagen está vacío.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_200_1</fullName>
+        <categories>Logs</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_200</shortDescription>
+        <value>Se han insertado todos los logs correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_200_2</fullName>
+        <categories>Logs</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_200</shortDescription>
+        <value>PENDIENTE DE IDENTIFICAR</value>
+    </labels>
+    <labels>
+        <fullName>WSError_201</fullName>
+        <categories>Logs</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_201</shortDescription>
+        <value>Error en la petición de logs, petición vacía.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_202</fullName>
+        <categories>Logs</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_202</shortDescription>
+        <value>Error genérico al procesar logs.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_203</fullName>
+        <categories>Logs</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_203</shortDescription>
+        <value>No se ha insertado ningún log porque a todos les faltaba algún campo.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_400</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_400</shortDescription>
+        <value>Datos maestros recuperados correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_401</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_401</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_402</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_402</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_500_1</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_500</shortDescription>
+        <value>Contacto, oportunidades e identificadores de oferta recuperados correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_500_2</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_500</shortDescription>
+        <value>Ofertas recuperadas correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_501</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_501</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_502</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_502</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_503</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_503</shortDescription>
+        <value>No existen clientes con esos datos:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_600_1</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_600</shortDescription>
+        <value>Estado de ofertas recuperado correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_600_2</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_600</shortDescription>
+        <value>No se han enviado identificadores de oferta.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_601</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_601</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_602</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_602</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_603</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_603</shortDescription>
+        <value>No se han encontrado ofertas con los siguientes identificadores:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_700</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_700</shortDescription>
+        <value>Oferta creada correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_701</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_701</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_702</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_702</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_800</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_800</shortDescription>
+        <value>El contrato se ha creado correctamente.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_801</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_801</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_802</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_802</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_803</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_803</shortDescription>
+        <value>Se ha producido un error al actualizar el contacto asociado a la cuenta:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_804</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_804</shortDescription>
+        <value>No existe una función de contacto asociada a la oportunidad:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_805</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_805</shortDescription>
+        <value>Se ha producido un error al actualizar la cuenta.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_806</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_806</shortDescription>
+        <value>No existe una cuenta con el siguiente identificador:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_807</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_807</shortDescription>
+        <value>No existe una lista de precios cuyo nombre sea el siguiente:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_808</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_808</shortDescription>
+        <value>Se ha producido un error al crear la dirección de entrega.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_809</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_809</shortDescription>
+        <value>Se ha producido un error al actualizar la dirección de entrega.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_810</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_810</shortDescription>
+        <value>El identificador de la cuenta no es correcto:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_811</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_811</shortDescription>
+        <value>Se ha producido un error al asociar la dirección de entrega al contrato.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_812</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_812</shortDescription>
+        <value>Se ha producido un error al insertar el contrato.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_813</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_813</shortDescription>
+        <value>Se ha producido un error al actualizar el presupuesto:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_814</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_814</shortDescription>
+        <value>Se ha producido un error al actualizar la oportunidad:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_815</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_815</shortDescription>
+        <value>Se ha producido un error al enviar el contrato a aprobar.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_816</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_816</shortDescription>
+        <value>El identificador del presupuesto no es correcto:</value>
+    </labels>
+    <labels>
+        <fullName>WSError_900</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_900</shortDescription>
+        <value>Versión actualizada.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_901</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_901</shortDescription>
+        <value>Los datos de la petición no son correctos.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_902</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_902</shortDescription>
+        <value>Se ha producido un error inesperado. Póngase en contacto con su proveedor.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_903</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_903</shortDescription>
+        <value>Se ha producido un error al recuperar las versiones de la configuración personalizada.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_904</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_904</shortDescription>
+        <value>Existe una nueva versión de la app. Contacte con el administrador.</value>
+    </labels>
+    <labels>
+        <fullName>WSError_905</fullName>
+        <categories>ErroresWSNewSales</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>WSError_905</shortDescription>
+        <value>Dispone de una versión obsoleta de la app. Contacte con el administrador para su actualización.</value>
+    </labels>
+</CustomLabels>

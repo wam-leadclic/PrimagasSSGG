@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Datos_de_Instalacion_Deposito_Propio</fullName>
+    <description>Datos de Instalación Depósito Propio</description>
+    <displayedFields>
+        <field>Subcontratista__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Subcontratista_no_BD__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Capacidad_tanque__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Tipo_de_tanque__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Fecha_prevista_1er_llenado__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Datos de Instalación Depósito Propio</label>
+</FieldSet>

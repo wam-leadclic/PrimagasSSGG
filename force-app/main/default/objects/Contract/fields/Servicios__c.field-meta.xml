@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Servicios__c</fullName>
+    <externalId>false</externalId>
+    <label>Servicios</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALQUILER</fullName>
+                <default>false</default>
+                <label>ALQUILER</label>
+            </value>
+            <value>
+                <fullName>MANTENIMIENTO</fullName>
+                <default>false</default>
+                <label>MANTENIMIENTO</label>
+            </value>
+            <value>
+                <fullName>MTO TELEMEDIDA</fullName>
+                <default>false</default>
+                <label>MTO TELEMEDIDA</label>
+            </value>
+            <value>
+                <fullName>NIVELDIST</fullName>
+                <default>false</default>
+                <label>NIVELDIST</label>
+            </value>
+            <value>
+                <fullName>NIVELDISTINST</fullName>
+                <default>false</default>
+                <label>NIVELDISTINST</label>
+            </value>
+            <value>
+                <fullName>NIVELDISTMANT</fullName>
+                <default>false</default>
+                <label>NIVELDISTMANT</label>
+            </value>
+            <value>
+                <fullName>PRIMACONFORT</fullName>
+                <default>false</default>
+                <label>PRIMACONFORT</label>
+            </value>
+            <value>
+                <fullName>PRIMAFACIL</fullName>
+                <default>false</default>
+                <label>PRIMAFACIL</label>
+            </value>
+            <value>
+                <fullName>PS CONFORT DOM</fullName>
+                <default>false</default>
+                <label>PS CONFORT DOM</label>
+            </value>
+            <value>
+                <fullName>PS CONFORT PROF</fullName>
+                <default>false</default>
+                <label>PS CONFORT PROF</label>
+            </value>
+            <value>
+                <fullName>PS OPTIMO</fullName>
+                <default>false</default>
+                <label>PS OPTIMO</label>
+            </value>
+            <value>
+                <fullName>PZ REV INT</fullName>
+                <default>false</default>
+                <label>PZ REV INT</label>
+            </value>
+            <value>
+                <fullName>TELEMEDIDA - EQUIPO</fullName>
+                <default>false</default>
+                <label>TELEMEDIDA - EQUIPO</label>
+            </value>
+            <value>
+                <fullName>TELEMEDIDA - SERVTOT</fullName>
+                <default>false</default>
+                <label>TELEMEDIDA - SERVTOT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

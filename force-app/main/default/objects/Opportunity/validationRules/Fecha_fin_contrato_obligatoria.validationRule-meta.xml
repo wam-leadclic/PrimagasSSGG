@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_fin_contrato_obligatoria</fullName>
+    <active>true</active>
+    <description>Si la oportunidad tiene un contrato en vigor con un competidor debe llenarse la &quot;Fecha fin contrato actual&quot;</description>
+    <errorConditionFormula>AND(
+OR(ISNEW(), ISCHANGED(Motivos_de_P_rdida__c)),
+ISBLANK(TEXT(Fecha_fin_contrato_actual__c )),
+ISPICKVAL(Motivos_de_P_rdida__c, &quot;Compromiso permanencia competencia&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Fecha_fin_contrato_actual__c</errorDisplayField>
+    <errorMessage>Si la oportunidad tiene un contrato en vigor con un competidor debe llenarse la &quot;Fecha fin contrato actual&quot;</errorMessage>
+</ValidationRule>

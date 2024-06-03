@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Comercial</fullName>
+        <default>false</default>
+        <label>Comercial</label>
+        <reverseRole>Comercial</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Instalador</fullName>
+        <default>false</default>
+        <label>Instalador</label>
+        <reverseRole>Instalador</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Ingeniería</fullName>
+        <default>false</default>
+        <label>Ingeniería</label>
+        <reverseRole>Ingeniería</reverseRole>
+    </standardValue>
+</StandardValueSet>

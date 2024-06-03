@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tarifas_Gas_GNL</fullName>
+    <description>Tarifas Gas GNL</description>
+    <displayedFields>
+        <field>Tarifa__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Tarifas Gas GNL</label>
+</FieldSet>

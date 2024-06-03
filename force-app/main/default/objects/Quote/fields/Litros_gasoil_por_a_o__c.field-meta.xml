@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Litros_gasoil_por_a_o__c</fullName>
+    <description>Litros de gasoil por año</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Solo si su energía actual es gasoil</inlineHelpText>
+    <label>Litros gasoil por año</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

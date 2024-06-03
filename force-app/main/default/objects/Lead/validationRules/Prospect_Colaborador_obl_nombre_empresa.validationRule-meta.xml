@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Colaborador_obl_nombre_empresa</fullName>
+    <active>true</active>
+    <description>Comprueba que si se el prospect es un Colaborador, se introduzca el nombre de la empresa</description>
+    <errorConditionFormula>AND(  RecordTypeId =&apos;012D0000000BOF8&apos; ,  Company = &apos;&apos; )</errorConditionFormula>
+    <errorDisplayField>Company</errorDisplayField>
+    <errorMessage>Debes introducir un valor</errorMessage>
+</ValidationRule>

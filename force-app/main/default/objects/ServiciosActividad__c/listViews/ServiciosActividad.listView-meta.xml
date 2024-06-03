@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiciosActividad</fullName>
+    <columns>NAME</columns>
+    <columns>Actividad__c</columns>
+    <columns>Activo__c</columns>
+    <columns>MOSTRAR1__c</columns>
+    <columns>MOSTRAR2__c</columns>
+    <columns>MOSTRAR3__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>ServiciosActividad</label>
+    <language>es</language>
+</ListView>

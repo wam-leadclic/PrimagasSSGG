@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo__c</fullName>
+    <description>Motivo según asunto</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Motivo según asunto</inlineHelpText>
+    <label>Motivo</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cerrado por baja productividad</fullName>
+                <default>false</default>
+                <label>Cerrado por baja productividad</label>
+            </value>
+            <value>
+                <fullName>Cliente indica que no lo ha solicitado</fullName>
+                <default>false</default>
+                <label>Cliente indica que no lo ha solicitado</label>
+            </value>
+            <value>
+                <fullName>Condiciones forma de pago</fullName>
+                <default>false</default>
+                <label>Condiciones forma de pago</label>
+            </value>
+            <value>
+                <fullName>Dificultad-Incidencias acceso</fullName>
+                <default>false</default>
+                <label>Dificultad-Incidencias acceso</label>
+            </value>
+            <value>
+                <fullName>Precio</fullName>
+                <default>false</default>
+                <label>Precio</label>
+            </value>
+            <value>
+                <fullName>GPO</fullName>
+                <default>false</default>
+                <label>GPO</label>
+            </value>
+            <value>
+                <fullName>Servicio prestado</fullName>
+                <default>false</default>
+                <label>Servicio prestado</label>
+            </value>
+            <value>
+                <fullName>Finalización de contrato</fullName>
+                <default>false</default>
+                <label>Finalización de contrato</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllInApprovalContracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CUSTOMER_SIGNED_DATE</columns>
+    <columns>CONTRACT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTRACT.STATUS_CODE</field>
+        <operation>equals</operation>
+        <value>P</value>
+    </filters>
+    <label>Todos los contratos en aprobación</label>
+    <language>es</language>
+</ListView>

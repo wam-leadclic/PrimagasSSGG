@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primagas_Post_Venta_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Tema__c</columns>
+    <columns>Asunto__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>Primagas Post Venta</label>
+    <queue>Primagas_Post_Venta</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

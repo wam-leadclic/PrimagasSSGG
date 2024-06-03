@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Mass update and mass edit selected records from list view or related list</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Mass Update And Mass Edit</label>
+    <tabs>About_Mass_Update_and_Mass_Edit</tabs>
+    <tabs>Direcci_n_de_entrega__c</tabs>
+    <tabs>Elemento_de_servicio__c</tabs>
+    <tabs>Proveedor__c</tabs>
+    <tabs>Comentarios__c</tabs>
+    <tabs>Energia_Actual__c</tabs>
+    <tabs>Socio_de_candidato__c</tabs>
+    <tabs>Pedido_de_gas__c</tabs>
+</CustomApplication>

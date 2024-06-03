@@ -1,0 +1,969 @@
+<apex:page controller="OfertaPersonalizadaPDFController" renderAs="pdf" showHeader="false"  applyHtmlTag="false">
+    <head>
+        <title></title>
+        <!--<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="telephone=no" name="format-detection" />-->
+        <style type="text/css">
+            @page {
+                margin-bottom:1in;
+                margin-top:14%;
+
+                @bottom-center {
+                    content:element(footer);
+                }
+                @bottom-right {
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size:10px;
+                }
+                @top-center {
+
+                    content: element(header);
+                }
+
+
+            }
+            .header {
+
+                       position: running(header);
+                   }
+            .footer {
+                       display: block;
+                       
+                       position: running(footer);
+                   }
+            .page-number:before {content: counter(page); }
+            .page-count:before {content: counter(pages);  }
+            .rcorners {
+                border-radius: 10px; 
+                font-family:Arial, Helvetica, sans-serif; 
+                font-size:12px; 
+                text-align:center; color:#333333; 
+                padding:5px;
+            }
+            .rcorners2 {
+                border-radius: 25px;
+                border: 2px solid #E9E9E9;
+                padding: 5px;
+                display: inline-block;
+            }
+
+        </style>
+</head>
+<div class="header">
+        <table width="92%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+                <tr>
+                  <td colspan="1" align="left" valign="top" width="45%">
+                      <apex:image url="{!$Resource.ImgOfertaLogoPrimagas}"/>
+                  </td>
+                  <td colspan="1"  valign="bottom" align="right" width="55%">
+                     <apex:outputText style="color:#E83129; font-weight:bold; font-size:18px; text-align: right;" value="OFERTA DE INSTALACIÓN"></apex:outputText><br/>
+                     <apex:outputText style="color:#E83129; font-weight:bold; font-size:18px; text-align: right;" value="Y SUMINISTRO DE GAS PROPANO"></apex:outputText>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="17" colspan="2" valign="top"></td>
+               </tr>
+               <tr>
+                  <td height="3" colspan="2" valign="top" bgcolor="#E83129"></td>
+               </tr>
+            </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <table width="92%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tbody>
+        <tr>
+             <td colspan="3" valign="middle" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; color:#7a7a7a;">
+                 <apex:outputText value="{!$Label.Importes_sin_IVA}"/>&nbsp;<apex:outputText value="{!fechaVigencia}"/>
+             </td>
+        </tr>
+        <tr>
+          <td height="15" colspan="2" valign="top"></td>
+       </tr>
+        <tr>
+          <td height="3" colspan="3" valign="top" bgcolor="#E83129"></td>
+       </tr>
+        <tr>
+            <td height="25" colspan="2" align="left" style="font-family:Arial, Helvetica, sans-serif;    font-size:12px; text-align:left; color:#7a7a7a;">
+                  <apex:outputText style=" color: black; font-weight:bold;" value="{!comercialNombre}"/>
+                  <apex:outputText value=" · {!comercialTelefono} · {!comercialEmail} · "/>
+                  <span> 
+                    <a href="#" style=" color:#7a7a7a; text-decoration:none;"><apex:outputText value="{!$Label.Nueva_URL_Primagas}"/></a>
+                  </span>
+                  
+            </td>
+            <td height="25" colspan="1" align="right" style="font-family:Arial, Helvetica, sans-serif;    font-size:12px; text-align:right; color:#7a7a7a;">
+              <a align="right" style=" color:#7a7a7a" class="page-number"/>/<a align="right" style=" color:#7a7a7a" class="page-count"/>
+            </td>
+
+        </tr>
+    </tbody>
+  </table>
+</div>
+    <body bgcolor="#dddddd" marginheight="0" marginwidth="0">
+     <apex:stylesheet value="{!URLFOR($Resource.EstilosOfertas, 'estilosOfertas.css')}"/>
+
+        <!-- PIXEL DE TRACKING PARA CAMPANAS A CLIENTES -->
+        <!--<img src='http://pixel.mathtag.com/event/img?mt_id=379158&mt_adid=109064&v1=&v2=&v3=&s1=&s2=&s3=' width='1' height='1' /> -->
+        <!-- FIN PIXEL DE TRACKING PARA CAMPANAS A CLIENTES -->
+         <apex:image url="{!$Resource.Separador}" style="position:absolute; left:280px; top:170px;height:{!alturaSeparador}px;width: 1px" rendered="{!if((oferta.Diferencia_kWh__c < 0) && (oferta.Diferencia_kgCO2__c < 0), true, false)}"/>
+      <apex:image url="{!$Resource.Separador2}" style="position:absolute; left:560px; top:170px;height:{!alturaSeparador}px;width: 1px" rendered="{!if((oferta.Diferencia_kWh__c < 0) && (oferta.Diferencia_kgCO2__c < 0), true, false)}"/>
+        <table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+      <tr>
+         <td align="left" ><!--Tabla de toda la oferta-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="margin-top: 0px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#ffffff;">
+
+               <tr>
+                <!--<td width="25">&nbsp;</td>-->
+                  <td style="padding-left: 0px; font-family:Arial, Helvetica, sans-serif; font-size:18px; text-align:left; color:#333333;" bgcolor="#ffffff" valign="top">
+                          <apex:outputText style="font-size:35px" value="{!oferta.Account.Name}"/>
+                      <br/>
+                          <apex:outputText style="font-size:15px" value="{!poblacionProvincia}"/>
+                      <br/>
+                          <apex:outputText style="font-size:15px" value="{!fechaFormateada}"/>
+                      <br/>                    
+                  </td>
+               </tr>
+               <br/>
+               
+
+               <!--TABLA DE ENERGIAS-->
+
+<!--COPIA DE LA TABLA DE ENERGIAS -->
+              <tr><!--outputPanel para el render de la tabla de energías-->
+              <td height="{!if((oferta.Diferencia_kWh__c < 0) && (oferta.Diferencia_kgCO2__c < 0), 250, 15)}" colspan="2" valign="top">
+
+              <!-- ***************************  outputPanel para el render de la tabla de energías ********************************-->
+              <apex:outputPanel layout="block" rendered="{!if((oferta.Diferencia_kWh__c < 0) && (oferta.Diferencia_kgCO2__c < 0), true, false)}"><!--outputPanel para el render de la tabla de energías-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" >
+              <tr>
+                <td style="color:#333333; padding:5px; border:1px solid #DDDDDD; ">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%"><!--outputPanel para el render de la tabla de energías-->
+
+                <tr>
+                  <td colspan="2" valign="top" >
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr><!--Primera linea con situacion actual y con primagas-->
+                        <td width="228" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333;border-bottom: solid 2px #333333" valign="middle">
+                          <strong><apex:outputText value="{!$Label.OfertaPDF_SituacionActual}"/></strong>
+                        </td>
+                        <td width="32">
+                          &nbsp;
+                        </td>
+                        <td width="233" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#E83129;border-bottom: solid 2px #E83129" valign="middle">
+                           <strong><apex:outputText value="{!$Label.OfertaPDF_ConPrimagas}"/></strong>
+                        </td>
+                        <td>
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="0" >&nbsp;</td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td  valign="top" >
+                  <apex:outputPanel layout="block" style="page-break-inside:avoid;">
+                    <apex:variable var="countEnergias" value="{!0}" />
+                    <apex:repeat var="energia" value="{!listEnergias}">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+
+                        
+                          <td align="center" width="130" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                             <strong> <apex:outputField value="{!energia.energia.Consumo__c}"/>&nbsp;
+                                    <apex:outputText value="{!energia.energia.Unidad_consumo_abreviada__c}"/></strong>
+                          </td>
+
+
+                        <!--COLUMNA 2, alturas variables en funcion de energias--> 
+                        <td align="center" width="98"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                            <div style="height: 32px;background-color:#bbbbbb; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputText value="{!energia.energia.Tipo_energia__c}"/>
+                            </div>  
+                        </td>
+                        <td width="32">
+                          &nbsp;
+                        </td>
+
+                        <!--COLUMNA 3, alturas variables en funcion de energias--> 
+                        <td align="center" width="130"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; font-weight:bold; color:#ffffff;">
+                            <div style="height: 32px;background-color:#E83129; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputText value="{!$Label.OfertaPDF_Gas}"/>
+                            </div>  
+                        </td>
+
+
+                        <!--COLUMNA 4-->
+                        <td  align="center" width="150"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333;">
+                          <strong><apex:outputField value="{!energia.energia.Consumo_L_Primagas__c} "/>{!$Label.OfertaPDF_L}</strong>
+                                    (<apex:outputField style="font-size: 10px;"  value="{!energia.energia.Consumo_Kg_Primagas__c}"/>{!$Label.OfertaPDF_kg})
+                        </td>
+
+                        <!--Ultima columna con los litros-->
+                        <apex:variable value="" var="v" rendered="{!if(countEnergias == 0, true, false)}">
+                        <td width="100" rowspan="{!numTotalEnergias + 1}" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333; vertical-align:bottom">
+                            <strong>
+                            <apex:outputField value="{!oferta.Litros__c}"/> {!$Label.OfertaPDF_Litros}</strong><br />
+                            (<apex:outputField value="{!oferta.Kg__c}"/> {!$Label.OfertaPDF_kg})
+                        </td>
+                        </apex:variable>
+                        <apex:variable value="" var="v" rendered="{!if(countEnergias == 0, false, true)}">
+                          <td >&nbsp;</td>
+                        </apex:variable>
+                        </tr>
+
+                        <tr>
+                        <td colspan="7" valign="top" >
+                          
+                        </td>
+                      </tr>
+                      </table>
+                    <apex:variable var="countEnergias" value="{!countEnergias+1}" />
+                  </apex:repeat>
+                  </apex:outputPanel>
+                  </td>
+                </tr>
+
+
+                <tr><!--Linea en blanco entre litros/kg y kwh-->
+                  <td colspan="0" height="10" >
+
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td  valign="top" >
+                    <!--NUEVO-->
+                    <apex:outputPanel layout="block" style="page-break-inside:avoid;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" width="100" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <strong><apex:outputField value="{!oferta.KWh__c}"/></strong><br />
+                          <apex:outputText value="{!$Label.OfertaPDF_kWh}"/>
+                        </td>
+
+
+                        <!--COLUMNA 2, alturas variables en funcion de energias--> 
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <apex:repeat var="energiaKwh" value="{!listEnergias}">
+                            <div style="height:{!energiaKwh.alturaKWH}px; background-color:#bbbbbb; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputField value="{!energiaKwh.energia.Consumo_KWH__c}"/>
+                            </div>
+                            <div style="height:1px; background-color:#ffffff">
+                              &nbsp;
+                            </div>
+                          </apex:repeat>
+                        </td>
+
+
+                        <!--COLUMNA 3, alturas variables en funcion de energias--> 
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; font-weight:bold; color:#ffffff;">
+                        <div style="height:{!alturaRellenoKwh}px;">
+                            &nbsp;
+                          </div>
+                          <apex:repeat var="energiaKwh" value="{!listEnergias}">
+                            <div style="height:{!energiaKwh.alturaKWHPrimagas}px; background-color:#E83129; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputField value="{!energiaKwh.energia.Consumo_KWH_Primagas__c}"/>
+                            </div>
+                            <div style="height:1px; background-color:#ffffff">
+                              &nbsp;
+                            </div>
+                          </apex:repeat>
+                        </td>
+
+
+                        <!--COLUMNA 4-->
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333;">
+                          <strong><apex:outputField value="{!oferta.KWh_Primagas__c}"/></strong><br />
+                          <apex:outputText value="{!$Label.OfertaPDF_kWh}"/>
+                        </td>
+                        <td width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <apex:outputPanel styleClass="circuloRojo" layout="block">
+                            <apex:outputText value="{!oferta.Diferencia_kWh__c}%" />
+                          </apex:outputPanel>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="0" valign="top" height="1">
+                        </td>
+                      </tr>
+                    </table>
+                    </apex:outputPanel>
+                  </td>
+                </tr>
+
+
+                <tr><!--Linea en blanco entre kwh y kg CO2-->
+                  <td colspan="0" height="5" >
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td colspan="2" valign="top" >
+                    <!--NUEVO-->
+                    <apex:outputPanel layout="block" style="page-break-inside:avoid;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <strong><apex:outputField value="{!oferta.KgCO2__c}"/></strong><br />
+                          <apex:outputText value="{!$Label.OfertaPDF_kgCO2}" escape="false"/>
+                        </td>
+                        <!--COLUMNA 2, alturas variables en funcion de energias--> 
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <apex:repeat var="energiaKg" value="{!listEnergias}">
+                            <div style="height:{!energiaKg.alturaKgCO2}px; background-color:#bbbbbb; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputField value="{!energiaKg.energia.Consumo_KgCO2__c}"/>
+                            </div>
+                            <div style="height:1px; background-color:#ffffff">
+                              &nbsp;
+                            </div>
+                          </apex:repeat>
+                        </td>
+                        <!--COLUMNA 2-->
+                        <!--COLUMNA 3, alturas variables en funcion de energias--> 
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; font-weight:bold; color:#ffffff;">
+                        <div style="height:{!alturaRellenoKgCO2}px; background-color:#f5f5f5">
+                            &nbsp;
+                          </div>
+                          <apex:repeat var="energiaKg" value="{!listEnergias}">
+                            <div style="height:{!energiaKg.alturaKgCO2Primagas}px; background-color:#E83129; display: table-cell; vertical-align: middle; width: 100px">
+                              <apex:outputField value="{!energiaKg.energia.Consumo_KgCO2_Primagas__c}"/>
+                            </div>
+                            <div style="height:1px; background-color:#ffffff">
+                              &nbsp;
+                            </div>
+                          </apex:repeat>
+                        </td>
+                        <!--COLUMNA 3-->
+                        <td align="center" width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333;">
+                          <strong><apex:outputField value="{!oferta.KgCO2_Primagas__c}"/></strong><br />
+                          <apex:outputText value="{!$Label.OfertaPDF_kgCO2}" escape="false"/>
+                        </td>
+                        <td width="100"  style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:center; color:#333333;">
+                          <apex:outputPanel styleClass="circuloRojo" layout="block">
+                            <apex:outputText value="{!oferta.Diferencia_kgCO2__c}%" />
+                          </apex:outputPanel>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="0" valign="top" height="1">
+                        </td>
+                      </tr>
+                    </table>
+                    </apex:outputPanel>
+                  </td>
+                </tr>                
+              </table>
+             </td>
+              </tr>
+              </table>
+               <!-- *************************** FIN outputPanel para el render de la tabla de energías ********************************-->
+               </apex:outputPanel>
+               <tr>
+                  <td height="10" colspan="2" valign="top"></td>
+               </tr>
+               <!--<tr>
+                  <td height="1" colspan="2" valign="top" bgcolor="#000000"></td>
+               </tr>-->
+               <tr>
+                  <td height="10" colspan="2" valign="top"></td>
+               </tr>
+
+               <!-- TERMINA LA TABLA DE LAS ENERGIAS-->
+
+               
+               </td>
+               </tr>
+<!--FIN COPIA DE LA TABLA DE ENERGIAS-->
+
+                        <!--INSTALACION-->  
+               <tr>
+                <td> 
+                  <apex:outputPanel layout="block"  style="{!if((numTotalEnergias <= 2), 'page-break-inside:avoid;','page-break-inside:avoid;page-break-before:always;')}">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                  <tr>
+                    <td height="{!alturaEspacioTabla}" colspan="2" valign="top"></td>
+                   </tr>
+                    <tr>
+                      <td colspan="1">
+                         <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+
+                               <td style="font-family:Arial, Helvetica, sans-serif; font-size:25px; text-align:left; color:#E83129;">
+                                    <strong>
+                                        <apex:outputText value="{!$Label.OfertaPDF_Instalacion}"/>
+                                    </strong>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td height="10">
+                                  
+                               </td>
+                            </tr>
+                            <tr>
+
+                               <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; color:#333333; line-height:18px">
+
+                               <table>
+                                
+                                  <tr>
+                                    <td>
+                                      <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Depositos_a_instalar}"/>
+                                    &nbsp;<strong><apex:outputText style="font-size:16px; color:#E83129" value="{!depositosNombres}."/></strong><br />
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Otros_equipos_a_instalar}"/>
+                                    &nbsp;<strong><apex:outputText style="font-size:16px; color:#E83129" value="{!equiposAjusteNombres}."/></strong><br /><br /> 
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <apex:outputText style="font-size:16px; color:black; font-weight: bold" value="{!$Label.Coste_depositos_asumidos_Primagas}"/><br /> 
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <strong>
+                                          <apex:outputText style="font-size:16px; color:black" value="{!$Label.Coste_total_de_instalacion_sin_deposito}"/>
+                                            
+                                            <apex:outputText value="{0, number, ###,##0} €" style="font-size:16px; color:#E83129" >
+                                            <apex:param value="{!FLOOR(costeTotalInstalacion)}"/>
+                                            </apex:outputText><br />
+                                        </strong>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                       <apex:image url="{!$Resource.CheckMark}" width="14" height="12"/>&nbsp;&nbsp;
+                                         <strong>
+                                          <apex:outputText style="font-size:16px; color:black" value="{!$Label.Coste_que_asume_Primagas}"/>
+                                            
+                                            <apex:outputText value="{0, number, ###,##0} €" style="font-size:16px; color:#E83129">
+                                            <apex:param value="{!FLOOR(inversionPrimagas)}"/>
+                                            </apex:outputText><br />
+                                        </strong>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <apex:image url="{!$Resource.CheckMark}" width="14" height="12"/>&nbsp;&nbsp;
+                                        <strong>
+                                          <apex:outputText style="font-size:16px; color:black" value="{!$Label.Coste_que_asume_el_Cliente}"/>
+
+                                            <apex:outputText value="{0, number, ###,##0} €" style="font-size:16px; color:#E83129">
+                                            <apex:param value="{!FLOOR(costeCliente)}"/>
+                                            </apex:outputText>
+                                            <br />
+                                          </strong>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<apex:image value="{!$Resource.CheckMark}" rendered="{!hayCosteCliente}"/>&nbsp;&nbsp;&nbsp;
+                                          <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Pago_inicial_CLIENTE}" rendered="{!hayCosteCliente}"/>
+                                          <strong><apex:outputText style="font-size:16px; color:#E83129" value="{!oferta.Pago_inicial_inversion__c} €" rendered="{!hayCosteCliente}"/><br /></strong>
+                                    </td>
+                                  </tr>
+                                  
+                                    <tr>
+                                    <td>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<apex:image value="{!$Resource.CheckMark}" rendered="{!hayCosteCliente}"/>&nbsp;&nbsp;&nbsp;
+                                        <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Pago_en_cuotas_Cliente}" rendered="{!hayCosteCliente}"/>
+                                          <strong><apex:outputText style="font-size:16px; color:#E83129" value="{!pagoEnCuotas}" rendered="{!hayCosteCliente}"/><br /></strong>
+                                    </td>
+                                  </tr>
+
+                          </table>
+                               </td>
+                            </tr>
+                         </table>
+                      </td>
+                   </tr>
+                   <br/>
+                   
+                  </table>
+                  </apex:outputPanel>
+                </td>
+               </tr>  
+
+                        <!--PRIMASERVICIOS-->
+
+                <tr>
+                <td style="padding-left: 12px ">
+                  <apex:outputPanel layout="block" style="page-break-inside:avoid;" >
+                    <table width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          
+                         <tr>
+                            <td >
+                               <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:25px; text-align:left; color:#E83129; ">
+                                      <strong><apex:outputText value="{!$Label.Titulo_Primaservicios}"/></strong>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                <td height="10" >&nbsp;</td>
+                             </tr>
+                                  <tr>
+                                     <td style="font-family:Arial, Helvetica, sans-serif;  text-align:left; color:#E83129;">
+                                        <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Primaservicios_escogido}"/>&nbsp;
+                                        <strong><apex:outputText style="font-size:16px; color:#E83129" value="{!oferta.Tipo_Primaservicios__c}"/></strong>
+                                     </td>
+                                  </tr>
+
+                                  <tr>
+                                <td height="10" valign="top">&nbsp;</td>
+                             </tr>
+                              <tr>
+                                   <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; color:#333333;line-height:18px">
+                                        <strong><apex:outputText style="font-size:16px; color:black" value="{!$Label.Incluye}" /></strong>
+                                        
+                                   </td>
+                              </tr>
+                              <tr>
+                                <td height="10" valign="top">&nbsp;</td>
+                             </tr>
+                                <tr>
+                                    <td height="15" valign="top"  >
+                                    <apex:outputPanel layout="block" style="height: {!alturaPrimaservicios}">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <apex:repeat var="txtServicio" value="{!listServiciosIncluidos}">
+                                            <tr>
+                                                <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#333333; ">
+                                                  
+                                                     <apex:image url="{!$Resource.CheckMark}" width="14" height="12"/>&nbsp;&nbsp;
+                                                    <strong><apex:outputText value="{!txtServicio}"/><br /></strong>
+                                                  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="5">
+                                                
+                                              </td>
+                                            </tr>
+                                          </apex:repeat>
+                                        </table>
+                                    </apex:outputPanel>
+                                    </td>
+                                </tr>
+                               </table>
+                            </td>
+                         </tr>
+                    </table>
+                  </apex:outputPanel>
+                </td>
+               </tr>
+
+
+                        <!--SUMINISTRO-->  
+
+
+                         <tr>
+                      <td style="padding-left: 18px ">
+                        <apex:outputPanel layout="block"  style="{!if((numTotalEnergias <= 2), 'page-break-inside:avoid;','page-break-inside:avoid;page-break-before:always;')}">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td height="30" valign="top">&nbsp;</td>
+                               </tr>
+                               <tr>
+                                  <td >
+                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:25px; text-align:left; color:#E83129;">
+                                            <strong><apex:outputText value="{!$Label.Suministro}"/></strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                      <td height="10" >&nbsp;</td>
+                                   </tr>
+                                     <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#E83129;">
+                                            
+
+                                            <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Consumo_anual_estimado}" />
+                                            &nbsp;<strong><apex:outputText style="font-size:16px; color:#E83129" value="{0, number, ###,##0}">
+                                                                <apex:param value="{!FLOOR(oferta.Kg__c)}"/>
+                                                          </apex:outputText>
+                                              <apex:outputText style="font-size:16px" value=" {!$Label.OfertaPDF_kg}"/></strong><br />
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                              <td height="5">
+                                                
+                                              </td>
+                                            </tr>
+                                        <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#E83129;">
+                                            <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Tarifa}" />
+                                            &nbsp;<strong><apex:outputText style="font-size:16px" value="{!oferta.Tipo_de_tarifa__c}" /></strong><br />
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                              <td height="5">
+                                                
+                                              </td>
+                                            </tr>
+                                        <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#E83129; ">
+                                            <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Exclusividad_de_suministro}" />
+                                            &nbsp;<strong><apex:outputText style="font-size:16px" value="{!oferta.Duracion_contratado__c}" />
+                                              <apex:outputText style="font-size:16px" value=" {!$Label.OfertaPDF_Anyos2}"/></strong><br />
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                              <td height="5">
+                                                
+                                              </td>
+                                            </tr>
+                                        <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#E83129;">
+                                            <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!$Label.Duracion_del_descuento}" />
+                                            &nbsp;<strong><apex:outputText style="font-size:16px" value="{!oferta.Duracion_descuento__c}" />
+                                              <apex:outputText style="font-size:16px" value=" {!$Label.OfertaPDF_Anyos2}"/></strong><br /><br />
+                                          </td>
+                                        </tr>
+                                         <tr>
+                                              <td height="5">
+                                                
+                                              </td>
+                                            </tr>
+                                        <tr>
+
+                                          <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; text-align:left; color:#E83129;">
+                                            <strong><apex:outputText style="font-size:16px; color:#000000" value="{!$Label.Aplica_tramos}" /></strong><br />
+                                          </td>
+                                        </tr>
+                                     </table>
+                                  </td>
+                               </tr>
+                          </table>
+                        </apex:outputPanel>
+                      </td>
+                     </tr>
+
+                     <!--TABLA DE TRAMOS-->
+                   <tr>
+                          <td style="padding-left: 18px;" height="15" colspan="2" valign="top">
+                          <table width="98%" border="0" cellspacing="0" cellpadding="0" align="left" >
+                            <tr>
+                              <td style="color:#333333; padding:5px; border:1px solid #DDDDDD">
+                                
+                              
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                 <tr>
+                                    <td width="20%" bgcolor="FFFFFF"> <br/>
+                                      
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="5">&nbsp;</td>
+                                    <td width="20%" bgcolor="FFFFFF" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; color:#333333; "> <br/>
+                                      
+                                      <strong><apex:outputText value="{!$Label.OfertaPDF_Desde_KgAnual}" escape="false"/></strong>
+
+                                    </td>
+
+                                    <td bgcolor="#FFFFFF" width="5">&nbsp;</td>
+                                    <td width="20%" bgcolor="FFFFFF" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; color:#333333; "> <br/>
+                                      
+                                      <strong><apex:outputText value="{!$Label.OfertaPDF_DTO_EurosKg}" escape="false"/></strong>
+
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="5">&nbsp;</td>
+                                    <td width="20%" bgcolor="FFFFFF" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; color:#333333; "> <br/>
+                                      
+                                      <strong><apex:outputText value="{!$Label.OfertaPDF_PrecioActual_EurosKg}" escape="false"/></strong>
+
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="5">&nbsp;</td>
+                                    <td width="20%" bgcolor="FFFFFF" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; color:#333333; "> <br/>
+                                      
+                                      <strong><apex:outputText value="{!$Label.OfertaPDF_Primaservicios_EurosMes}" escape="false"/></strong>
+
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                  <td height="9" colspan="4" valign="top"></td>
+                                </tr>
+
+                                <apex:variable var="colorTramo" value="#E9E9E9"/>
+
+                                <apex:repeat value="{!listTramos}" var="tramo">
+                                <apex:variable var="primaServMensual" value="{!tramo.Prima_servicios_A__c}"/>
+                                  <!--<tr style="display: {!IF(lastRow, 'none', 'table-row')};">-->
+                                  <tr>
+                                    <td width="20%" height="25" bgcolor="{!if(tramo.Name == nombreTramoMedio, '#E32E2E', '#E9E9E9')}" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; {!if(tramo.Name == nombreTramoMedio, '; color:#ffffff; ', '; color:#575756;')}">
+                                      
+                                      <apex:outputText value="{!tramo.Name}"/>
+
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="2">&nbsp;</td>
+                                    <td width="20%" bgcolor="{!if(tramo.Name == nombreTramoMedio, '#E32E2E', '#E9E9E9')}" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; {!if(tramo.Name == nombreTramoMedio, '; color:#ffffff; ', '; color:#575756;')}">
+                                          <apex:outputText value="{0, number, ###,##0}">
+                                          <apex:param value="{!FLOOR(tramo.Consumo_desde_Kg__c)}"/>
+                                          </apex:outputText>
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="2">&nbsp;</td>
+                                    <td width="20%" bgcolor="{!if(tramo.Name == nombreTramoMedio, '#E32E2E', '#E9E9E9')}" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; {!if(tramo.Name == nombreTramoMedio, '; color:#ffffff; ', '; color:#575756;')}">
+                                          <apex:outputText value="{0, number, 0.00}" style="{!if(tramo.Name == nombreTramoMedio, 'font-weight: bold;','font-size:12px')}">
+                                              <apex:param value="{!tramo.Dto_Kg__c}"/>
+                                            </apex:outputText>
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="2">&nbsp;</td>
+                                    <td width="20%" bgcolor="{!if(tramo.Name == nombreTramoMedio, '#E32E2E', '#E9E9E9')}" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; {!if(tramo.Name == nombreTramoMedio, '; color:#ffffff; ', '; color:#575756;')}">
+                                          <apex:outputText value="{0, number, 0.00}" style="{!if(tramo.Name == nombreTramoMedio, 'font-weight: bold;','font-size:12px')}">
+                                                <apex:param value="{!tramo.Precio_HOY_Kg__c}"/>
+                                              </apex:outputText>
+                                    </td>
+                                    <td bgcolor="#FFFFFF" width="2">&nbsp;</td>
+                                    <td width="20%" bgcolor="{!if(tramo.Name == nombreTramoMedio, '#E32E2E', '#E9E9E9')}" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; {!if(tramo.Name == nombreTramoMedio, '; color:#ffffff; ', '; color:#575756;')}">
+                                          <apex:outputText value="{0, number, 0.00}" style="{!if(tramo.Name == nombreTramoMedio, 'font-weight: bold;','font-size:12px')}">
+                                              <apex:param value="{!primaServMensual}"/>
+                                            </apex:outputText>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                  <td height="4" colspan="3" valign="top"></td>
+                                  </tr>
+                                 <apex:variable var="colorTramo" value="{!if(colorTramo == '#E9E9E9', '#FFFFFF', '#E9E9E9')}"/>
+                                </apex:repeat>
+                              </table>
+
+                            </td>
+                            </tr>
+                          </table>                           
+                          </td>
+                       </tr>
+
+                      
+                       <tr>
+                            <td height="{!numTramos}">&nbsp;</td>
+                        </tr>
+
+                      <tr>
+                          <td>
+                            <apex:outputPanel layout="block" style="page-break-inside:avoid;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%">                             
+                                <tr>
+                                  <td>
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <tr>
+                                       <td width="20" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333; ">&nbsp;</td>
+                                       <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; color:#333333; line-height:18px">
+                                          
+                                            <apex:outputText style="font-size:14px; color:#7a7a7a" value="{!$Label.Precios_vigentes_a_fecha_de_hoy}" />
+                                            &nbsp;<apex:outputText style="font-size:14px" value="{!fechaFormateada}" /><br />
+
+                                            <apex:outputText style="font-size:14px; color:#7a7a7a" value="{!$Label.Descuentos_en_negativo}" /><br />
+                                       </td>
+                                  </tr>
+                                                                   
+                                      </table>
+                                  </td> 
+                              </tr>
+                              </table>
+                            </apex:outputPanel>
+                          </td>
+                        </tr>
+
+               <!--Observaciones--> 
+
+
+                <tr>
+                    <td style="padding-left: 12px">
+                      <apex:outputPanel layout="block" style="{!if((oferta.Diferencia_kWh__c < 0) && (oferta.Diferencia_kgCO2__c < 0), 'page-break-inside:avoid;','page-break-before:always;')}">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tr>
+                            <td height="15" colspan="2" valign="top">&nbsp;</td>
+                         </tr>
+                        
+                         <tr>
+                            <td colspan="1">
+                               <table style="margin-left: 5px" width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                  <!--<tr>
+                                    <td height="1" bgcolor="#000000" align="center">
+                                    </td>
+                                  </tr>-->
+                                  <tr>
+                                    <td height="5" colspan="2" valign="top">&nbsp;</td>
+                                 </tr>
+                                  <tr>
+                                    
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:20px; text-align:left; color:black;">
+                                      <strong><apex:outputText value="{!$Label.OBSERVACIONES}"/></strong>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                     <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; color:#333333; line-height:18px">
+                                        <apex:outputText style="font-size:16px; color:#7a7a7a" value="{!oferta.Observaciones__c}" rendered="{!hayObservaciones}"/>
+                                        <br />
+                                     </td>
+                                  </tr>
+                                   <tr>
+                                  <td width="663"  height="180" align="center">
+                                  </td>
+                                </tr>
+                                <!-- <tr>
+                                  <td height="1" bgcolor="#000000" align="center">
+                                  </td>
+                                </tr>-->
+                               </table>
+                            </td>
+                         </tr>
+
+
+                        </table>
+                      </apex:outputPanel>
+                    </td>
+               </tr>
+               
+               
+
+               <!--IMAGEN PARA CUANDO SALE MEJOR PASARSE A PRIMAGAS-->
+               <tr>
+                  <td style="padding-left: 18px" colspan="2" valign="top">
+                      <apex:outputPanel layout="block" style="page-break-inside:avoid;">
+                      <!--<apex:outputPanel >-->
+                      <apex:outputPanel rendered="{!if(oferta.Diferencia_importes_totales_numeric__c > 0, true, false)}">
+                       <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                           <td height="{!numTramos2 * 10}" width="25">&nbsp;</td>
+                        </tr>
+                        </table>
+                     <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+                        <tr>
+                           
+                           <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left;" valign="top">
+                              
+                                <apex:outputText style="color:black;" value="CAMBIA HOY"/><br />
+                                <strong>
+                                <apex:outputText style="color:#E83129;" value="{!$Label.OfertaPDF_YEmpieceAAhorrar}"/>
+                              </strong>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#333333; padding-left: ">
+                            <apex:outputPanel styleClass="graficoFinal" layout="block" >
+                                              <div style="position:absolute; left:85px; top:{!posYBarraGrafico + 22}px; background-color:#0093BE; width:110px;height:{!altoBarraGrafico + 19}px;">&nbsp;
+                                              </div>
+                                              <div style="position:absolute; left:220px; top:{!posYBarraPrimagasGrafico + 22}px; background-color:#00537B; width:110px;height:{!altoBarraPrimagasGrafico + 19}px;">&nbsp;
+                                              </div>
+                                              <apex:image url="{!$Resource.ImgFlechaGrafico}" style="position:absolute; left:197px; top:{!posYBarraGrafico + 27}px;height:35px"/>
+                                              
+                                              <apex:outputPanel style="width:105px;color:white;text-align: center;
+                                                                        position:absolute; left:88px; top:{!posYBarraGrafico + 31}px;
+                                                                      display: inline-block;">
+                                                    <b><apex:outputText style="font-size:15px" value="SIN"/></b>
+                                                    <span style="font-size:14px" >
+                                                      <br/><apex:outputText value="PRIMAGAS"/><br/>
+                                                    </span>
+                                                    <span style="font-size:18px">
+                                                      <b><apex:outputField value="{!oferta.Importe_total_numeric__c}"/> €</b>
+                                                    </span>
+                                              </apex:outputPanel>
+                                              
+                                              <apex:outputPanel style="width:110px;color: black; text-align: center;
+                                                                      position:absolute;left:260px; top:-5px;
+                                                                      display: inline-block;">
+                                                  <table width="120" align="center" bgcolor="white" style=" position:absolute; left:290px; top:0px;border-color: grey;border: 1px solid grey">
+                                                    <tr>
+                                                      <td>
+                                                        <apex:outputText style="padding-left: 15px;color:black" value="{!$Label.OfertaPDF_AhorroDe}"/>
+                                                          <br/><b>
+                                                          <apex:outputText style="padding-left: 5px;color:#E83129" value="{0, number, ###,##0}">
+                                                                <apex:param value="{!FLOOR(oferta.Diferencia_importes_totales_numeric__c)}"/>
+                                                          </apex:outputText>&nbsp;
+                                                          <apex:outputText style="color:#E83129" value="{!$Label.OfertaPDf_EurosAnyo}"/></b>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                  
+                                              </apex:outputPanel>
+                                              
+                                              <apex:outputPanel style="width:105px;color:white;text-align: center;
+                                                                      position:absolute; left:224px; top:100px;
+                                                                      display: inherit;">
+                                                  <b><apex:outputText style="font-size:15px" value="CON"/></b>
+                                                  <span style="font-size:14px">
+                                                    <br/><apex:outputText value="PRIMAGAS"/><br/>
+                                                  </span>
+                                                  <span style="font-size:18px">
+                                                    <b><apex:outputField value="{!oferta.Importe_total_primagas_numeric__c}"/> €</b>
+                                                  </span>
+                                              </apex:outputPanel>
+                                              
+                                             <!-- <apex:outputPanel style="width:105px;color:white;text-align: center;
+                                                                      position:absolute; left:224px; top:90px;
+                                                                      display: inherit;">
+                                                  <b><apex:outputText style="font-size:15px" value="CON"/></b>
+                                                  <span style="font-size:14px">
+                                                    <br/><apex:outputText value="PRIMAGAS"/><br/>
+                                                  </span>
+                                                  <span style="font-size:18px">
+                                                    <b><apex:outputField value="{!oferta.Importe_total_primagas_numeric__c}"/> €</b>
+                                                  </span>
+                                              </apex:outputPanel> -->
+
+                              </apex:outputPanel>               
+                           </td>
+                        </tr>
+                        <tr>
+                        <td height="10" align="center">
+                        </td>
+                      </tr>
+                      <!--<tr>
+                        <td height="1" bgcolor="#000000" align="center">
+                        </td>
+                      </tr>-->
+                     </table>
+                     <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                           <td width="25">&nbsp;</td>
+                           <td width="550"></td>
+                           <td width="25">&nbsp;</td>
+                        </tr>
+                     </table>
+                     </apex:outputPanel>
+                     <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td height="15" colspan="2" valign="top">&nbsp; </td>
+                      </tr>
+                     </table>
+                     </apex:outputPanel>
+                  </td>
+               </tr>
+
+              <tr>
+                  <td style="padding-left: 12px" align="center" valign="middle">
+                      <img src="{!$Resource.ExplicacionSHV}" width="670" height="217" alt=""/>
+                  </td>
+              </tr>                           
+                    </table>        
+                </td> 
+            </tr>   
+        </table>
+    </body>
+</apex:page>

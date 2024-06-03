@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opcion_seleccionada_producto__c</fullName>
+    <externalId>false</externalId>
+    <label>Opción seleccionada producto</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mensual</fullName>
+                <default>false</default>
+                <label>Mensual</label>
+            </value>
+            <value>
+                <fullName>Fijo</fullName>
+                <default>false</default>
+                <label>Fijo</label>
+            </value>
+            <value>
+                <fullName>Contador</fullName>
+                <default>false</default>
+                <label>Contador</label>
+            </value>
+            <value>
+                <fullName>Plana</fullName>
+                <default>false</default>
+                <label>Plana</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

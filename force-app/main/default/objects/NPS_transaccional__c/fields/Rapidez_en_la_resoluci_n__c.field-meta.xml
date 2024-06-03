@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rapidez_en_la_resoluci_n__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>2. Claridad y rapidez en la resolución</inlineHelpText>
+    <label>Rapidez en la resolución</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Satisfacci_n_global</valueSetName>
+    </valueSet>
+</CustomField>

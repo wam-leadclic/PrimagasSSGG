@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Venta_Nueva</fullName>
+    <active>true</active>
+    <businessProcess>Venta Nueva</businessProcess>
+    <label>Nueva</label>
+    <picklistValues>
+        <picklist>C_d_Unidad_de_medida__c</picklist>
+        <values>
+            <fullName>KG</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>C_d_Zona__c</picklist>
+        <values>
+            <fullName>ANDORRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANTALEJO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASTELLON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CENTRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PORTUGAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUINTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEDE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>C_d_cotizaci_n__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APLIFUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BP %2B SH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAN  UF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAN UF -1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIF BIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIF C3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIGAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FASA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOB SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUND%2E FATI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIX SH CIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP AMBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP GIJON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP LABENN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP MED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP SANTUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP TARRAG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>County__c</picklist>
+        <values>
+            <fullName>A Coruña%2FLa Coruña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alava%2FAraba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albacete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alicante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Almería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asturias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Badajoz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barcelona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bizkaia%2FVizcaya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burgos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cantabria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Castellón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciudad Real</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuenca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cáceres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cádiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Córdoba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gipuzkoa%2FGuipuzcoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girona%2FGerona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guadalajara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huelva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huesca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaén</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Rioja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>León</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lleida%2FLérida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lugo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murcia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Málaga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navarra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orense%2FOurense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontevedra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salamanca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segovia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sevilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarragona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teruel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toledo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valladolid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zamora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zaragoza</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CurrentEnergy__c</picklist>
+        <values>
+            <fullName>Biomasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botellas propano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasoleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geotermia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LNG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CustomerTypeSource__c</picklist>
+        <values>
+            <fullName>Cambio botellas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito BP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito CEPSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito REPSOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio depósito VITOGAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Fuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Gasóleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambio energía Otro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dimension1__c</picklist>
+        <values>
+            <fullName>10-BULK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20-LNG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30-AUTOGAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dimension3__c</picklist>
+        <values>
+            <fullName>1000-DU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1100-CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1200-AGRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1300-IND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1400-HRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1500-COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1800-PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1850-PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1900-FLT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2000-OP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2100-DIGR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2200-DIPC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado_del_contrato_actual__c</picklist>
+        <values>
+            <fullName>Contrato en vigor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrato finalizado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sin contrato</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Cerrada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Máximo previsto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oportunidades en curso</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ganador__c</picklist>
+        <values>
+            <fullName>Cepsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasindur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repsol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitogas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Galp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasindur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licitaciones Públicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamada entrante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negociación cliente existente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Primagas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescriptor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescriptor Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospección directa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_oportunidad__c</picklist>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Reneg - Ampliación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reneg - Cambio Condiciones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_p_rdida__c</picklist>
+        <values>
+            <fullName>Disponibilidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivos_de_P_rdida__c</picklist>
+        <values>
+            <fullName>Canalizado GLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Causas técnico-legales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compromiso permanencia competencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elige competencia %28precio%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuera zona Primagas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Me lo estoy pensando</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Me quedo con mi energía actual %28precio%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No contesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No dispuesto a realizar inversión inicial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No receptivo al cambio %28negativo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra energía%3A biomasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra energía%3A electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra energía%3A gasóleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra energía%3A renovables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poco volumen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red de gas natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riesgo alto de crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visita Técnica- No viable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>GLP1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>GLP2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLP3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_actividad__c</picklist>
+        <values>
+            <fullName>Abonos líquidos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerosoles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albergue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Almacén de distribución</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Almacén de materiales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artes decorativas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artes gráficas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balnearios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bodegas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calderería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casa de colonias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro de formación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro de jardinería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro de salud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro lavado de coches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro penitenciario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro reinserción social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerámica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Club de alterne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Club de golf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Club deportivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Club hípica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colegios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Componentes automoción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservera pescado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservera vegetales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuartel militar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dependencias de AAPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración ahumados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración de piensos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración de queso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración de turrones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración embutidos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración galletas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración productos alimenticios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboración productos cárnicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elementos de construcción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embotellado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estación sky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extracción de aceite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación de chimeneas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación de harinas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación envases de vidrio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación envases metálicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación maquinaria para manipulado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación piezas de caucho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricación señales de tráfico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundición aluminio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundición metálica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundición vidrio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fábrica Maquinaria pintura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fábrica de paneles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fábrica maquinaria agrícola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fábrica papel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fábricación de carrocería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Globos aerostáticos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja avestruces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja avícola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja cunícula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja patos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja perdices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granja porcina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industria láctea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invernadero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratorio químico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lavandería industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matadero - sala de despiece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mecanizados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mecheros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metalurgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monasterio - seminario - orden religiosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxicorte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panadería industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parques de bomberos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parques temáticos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pastelería industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piscifactorías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polideportivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precocinados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefabricados de hormigón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residencia canina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residencia geriátrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residencia principal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residencia psiquiátrica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secadero de cereales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segunda residencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siderurgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanatorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tapones de corcho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tornillería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tratamiento de residuos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tratamiento de superficies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turismo rural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téxtil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaquerías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viveros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_Cliente__c</picklist>
+        <values>
+            <fullName>GG</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>PMG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_Tarifa__c</picklist>
+        <values>
+            <fullName>Polinómica</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Profesional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPOT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_energ_a_despu_s_de_p_rdida__c</picklist>
+        <values>
+            <fullName>Biomasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botellas propano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbón</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Natural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasoleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geotermia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LNG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Propano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_venta__c</picklist>
+        <values>
+            <fullName>Campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grupo precio cliente</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Todos los clientes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Empresa existente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresa nueva</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unidad_consumo_energ_a_1a_estimaci_n__c</picklist>
+        <values>
+            <fullName>%E2%82%AC</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Botellas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kilos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MWh%2Faño</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Uso__c</picklist>
+        <values>
+            <fullName>Agua caliente sanitaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autogas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calefacción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cocina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generación electricidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procesos Industriales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

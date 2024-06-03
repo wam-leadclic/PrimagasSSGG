@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>status_baja_anulado</fullName>
+    <active>true</active>
+    <description>Si estatus baja = anulado pedir motivo de baja</description>
+    <errorConditionFormula>AND(ISPICKVAL( Status_baja__c,&quot;Anulado&quot;), ISPICKVAL(  Motivo_baja__c,&quot;&quot; ))</errorConditionFormula>
+    <errorDisplayField>Motivo_baja__c</errorDisplayField>
+    <errorMessage>No puedes dejar en blanco este campo</errorMessage>
+</ValidationRule>

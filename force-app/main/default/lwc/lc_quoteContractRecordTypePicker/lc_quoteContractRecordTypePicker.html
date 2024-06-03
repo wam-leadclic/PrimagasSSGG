@@ -1,0 +1,25 @@
+<template>
+    <lightning-modal-header label="Selecciona el tipo de contrato">
+
+    </lightning-modal-header>
+
+    <lightning-modal-body lwc:if={isAllloaded}>
+        <div class="slds-p-around_small"  lwc:if={areOptionsLoaded}>
+            <lightning-radio-group name="radioGroup"
+                                options={options}
+                                value={recordTypeId}
+                                onchange={handlePickRecordType}
+                                type="radio"></lightning-radio-group>
+
+        </div>
+    </lightning-modal-body>
+    
+    <lightning-modal-body lwc:else>
+        <lightning-spinner></lightning-spinner>
+    </lightning-modal-body>
+    
+    <lightning-modal-footer>
+        <lightning-button class="slds-button" onclick={navigateToNewContractWithDefaults} disabled={isRecordTypeNotSelected} label="Crear"></lightning-button>
+    </lightning-modal-footer>
+
+</template>

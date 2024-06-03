@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uso__c</fullName>
+    <externalId>false</externalId>
+    <label>Uso</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autogas</fullName>
+                <default>false</default>
+                <label>Autogas</label>
+            </value>
+            <value>
+                <fullName>Calefacción</fullName>
+                <default>false</default>
+                <label>Calefacción</label>
+            </value>
+            <value>
+                <fullName>Climatización</fullName>
+                <default>false</default>
+                <label>Climatización</label>
+            </value>
+            <value>
+                <fullName>Cocina</fullName>
+                <default>false</default>
+                <label>Cocina</label>
+            </value>
+            <value>
+                <fullName>Generar electricidad</fullName>
+                <default>false</default>
+                <label>Generar electricidad</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Oxicorte</fullName>
+                <default>false</default>
+                <label>Oxicorte</label>
+            </value>
+            <value>
+                <fullName>Procesos Industriales</fullName>
+                <default>false</default>
+                <label>Procesos Industriales</label>
+            </value>
+            <value>
+                <fullName>Vapor</fullName>
+                <default>false</default>
+                <label>Vapor</label>
+            </value>
+            <value>
+                <fullName>Agua caliente sanitaria</fullName>
+                <default>false</default>
+                <label>Agua caliente sanitaria</label>
+            </value>
+            <value>
+                <fullName>Kit carretillas</fullName>
+                <default>false</default>
+                <label>Kit carretillas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

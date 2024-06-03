@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ganado_por_competidor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Este campo sustituye al campo &quot;Ganado por&quot; de tipo lista de selección. Se ha creado este campo ya que no se permite cambiar el tipo del campo de lista de selección a lookup.</description>
+    <externalId>false</externalId>
+    <label>Ganado por</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Competidor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Oportunidades (Ganado por)</relationshipLabel>
+    <relationshipName>Oportunidades_ganadas</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>conv_total2_ds__c</fullName>
+    <description>No borrar, se usa para la integración con Docusign</description>
+    <externalId>false</externalId>
+    <formula>Importe_SAU__c +  Importe_alquiler_contador__c +  Importe_t_rmino_fijo__c</formula>
+    <inlineHelpText>No borrar, se usa para la integración con Docusign</inlineHelpText>
+    <label>conv_total2_ds</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

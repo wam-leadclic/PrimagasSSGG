@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credito__c</fullName>
+    <description>Se ha cambiado el label de Credito a Riesgo</description>
+    <externalId>false</externalId>
+    <label>Riesgo</label>
+    <summarizedField>Deposito__c.Credito_divisa__c</summarizedField>
+    <summaryForeignKey>Deposito__c.Presupuesto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

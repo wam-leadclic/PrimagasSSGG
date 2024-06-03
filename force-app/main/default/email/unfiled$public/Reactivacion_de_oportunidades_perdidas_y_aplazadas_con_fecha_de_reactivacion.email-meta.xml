@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mail a propietario de la oportunidad “esta oportunidad ha sido reactivada link SF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reactivación de oportunidades perdidas y aplazadas con fecha de reactivación</name>
+    <style>none</style>
+    <subject>Oportunidad re-activada</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fecha_respuesta__c</fullName>
+    <description>Fecha en la que se se recibe la respuesta.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Fecha en la que se se recibe la respuesta.</inlineHelpText>
+    <label>Fecha respuesta</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

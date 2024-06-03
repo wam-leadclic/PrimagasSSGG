@@ -1,0 +1,2 @@
+Se ha creado un registro en el log de sincronización de SF NAV
+{!Log__c.CreatedDate};{!Log__c.Descripcion__c}

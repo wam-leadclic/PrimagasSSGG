@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campo lookup a User que corresponde a OwnerId</description>
+    <externalId>false</externalId>
+    <label>Aprobador</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Solicitudes_de_aprobaci_n</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

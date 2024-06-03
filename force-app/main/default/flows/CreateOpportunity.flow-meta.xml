@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Asigna la lista de precios estándar</description>
+        <name>PriceBookAssign</name>
+        <label>Asignar Lista de precios</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Pricebook2Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PriceBookSearch.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Asigna la lista de precios estándar a la oportunidad</description>
+    <environments>Default</environments>
+    <interviewLabel>Asignar Lista de Precios estándar Oportunidad {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Crear oportunidad</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Buscar la lista de precios estándar</description>
+        <name>PriceBookSearch</name>
+        <label>Buscar Lista de precios Estándar</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>PriceBookAssign</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsStandard</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Pricebook2</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PriceBookSearch</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

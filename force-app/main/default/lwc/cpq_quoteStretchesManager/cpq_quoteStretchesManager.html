@@ -1,0 +1,125 @@
+<template>
+
+    <div class="slds-p-around_small" lwc:if={isBasicDataLoaded}>
+        <span>
+            <lightning-spinner lwc:if={isRequestLoading} alternative-text="Loading" size="medium" ></lightning-spinner>
+        </span>
+        <div class="slds-grid slds-m-around_small">
+            <lightning-input class="" type="toggle" label={Labels.CPQ_UseStretches} disabled={areQuoteStretchesNotEditable} onchange={handleStretchesToggle}
+                checked={stretchesToggleChecked} message-toggle-active="" message-toggle-inactive=""></lightning-input>
+                
+            <div class="slds-col"></div>
+
+            <lightning-button-icon class="float-right" lwc:if={areStretchesCreated} disabled={areInputsDisabled}
+                                    icon-name="utility:save" onclick={handleSave}></lightning-button-icon>
+        </div>
+
+        <div lwc:if={error} class="slds-notify slds-notify_alert slds-alert_error">
+            {error}
+        </div>
+
+        <table lwc:elseif={areStretchesCreated}
+            class="slds-table slds-table_bordered slds-no-row-hover table">
+            <thead>
+                <th style="width: 90px;">{stretchInfo.data.fields.FromPercentage__c.label}</th>
+                <th style="width: 100px;">{stretchInfo.data.fields.FromConsumptionKG__c.label}</th>
+                <th style="width: 120px;">{stretchInfo.data.fields.DiscountKG__c.label}</th>
+                <th                      >{stretchInfo.data.fields.PriceTodayKG__c.label}</th>
+                <th style="width: 125px;">{stretchInfo.data.fields.PrimaServiciosA__c.label}</th>
+                <th style="width: 56px;">{stretchInfo.data.fields.PBA__c.label}</th>
+                <th                      >{Labels.CPQ_StretchesCLVHeader}</th>
+                <th style="width: 30px;"></th>
+                <th style="width: 30px;"></th>
+            </thead>
+            <tbody>
+                <tr iterator:it={stretchesList} key={it.value.index}>
+                    <!-- Desde -->
+                    <td class="editable-column">
+                        <lightning-input variant="label-hidden" type="number" data-field="FromValue" data-index={it.index}
+                            data-draft={it.value.isFromValueNotSaved} 
+                            value={it.value.FromValue} formatter="percent-fixed" step="1" onfocusout={handleInputChange} required
+                            disabled={areInputsDisabled}></lightning-input>
+                    </td>
+                    <!-- Desde -->
+                    <td>
+                        <lightning-formatted-number value={it.value.from_KGXYear}
+                            maximum-fraction-digits="2"></lightning-formatted-number> {Labels.CPQ_KgYear}
+                    </td>
+                    <!-- DTO -->
+                    <td class="editable-column">
+                        <span>
+                            <lightning-input variant="label-hidden" type="number" data-field="DTO_EurosXKG" data-index={it.index}
+                                data-draft={it.value.isDiscountNotSaved} value={it.value.DTO_EurosXKG} step="0.0001" required
+                                onfocusout={handleInputChange} disabled={areInputsDisabled}></lightning-input>
+                        </span>
+                    </td>
+
+                    <!-- Precio HOY -->
+                    <td style="text-wrap:wrap">
+                        <div style="text-align:center">
+                            <template lwc:if={it.value.priceToday_EurosXKG} >
+                                <lightning-formatted-number value={it.value.priceToday_EurosXKG}
+                                    maximum-fraction-digits="2"></lightning-formatted-number> {Labels.CPQ_EuroKg}
+                                <br/>
+                                <i>
+                                    (<lightning-formatted-number value={it.value.priceToday_EurosXKG_with_discount}
+                                    maximum-fraction-digits="2"></lightning-formatted-number> {Labels.CPQ_EuroKg})
+                                </i>
+                                    
+                            </template>
+                            <template lwc:else>
+                                {Labels.CPQ_NoRate}
+                            </template>
+                        </div>
+                    </td>
+                    <!-- PRIMASERVICIOS MES -->
+                    <td class="editable-column">
+                        <lightning-input variant="label-hidden" type="number" data-field="Primaservicios" data-index={it.index}
+                            data-draft={it.value.isPrimaserviciosNotSaved} 
+                            value={it.value.Primaservicios} formatter="currency" step="0.01" required
+                            onfocusout={handleInputChange} disabled={areInputsDisabled}></lightning-input>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={it.value.stretch.PBA__c}
+                            maximum-fraction-digits="2"></lightning-formatted-number>
+                    </td>
+                    <td style="text-wrap:wrap">
+                        <lightning-formatted-number value={it.value.stretch.CLV5__c}
+                            maximum-fraction-digits="2"></lightning-formatted-number>
+                            <br/>
+                        <lightning-formatted-number value={it.value.stretch.CLV10__c}
+                            maximum-fraction-digits="2"></lightning-formatted-number>
+                    </td>
+                    <td class="no-ellipsis">
+                        <!-- Suggest discount button -->
+                        <lightning-button-icon lwc:if={areInputsEnabled} icon-name="utility:discounts" onclick={handleFillDiscountForStretch}
+                            data-index={it.index} variant="bare" tooltip={Labels.CPQ_SuggestDiscount}></lightning-button-icon>
+                    </td>
+                    <td class="no-ellipsis">
+                        <!-- Delete button -->
+                        <lightning-button-icon lwc:if={areInputsEnabled} icon-name="utility:delete" onclick={handleDeleteStretch}
+                            data-index={it.index} variant="bare"></lightning-button-icon>
+                    </td>
+                </tr>
+                <tr lwc:if={areInputsEnabled}>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column"></td>
+                    <td class="editable-column no-ellipsis" >
+                        <lightning-button-icon icon-name="utility:add" onclick={handleInsertNewStretch}
+                            data-quote-id={recordId} variant="bare"></lightning-button-icon>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning slds-m-top_small" lwc:if={isDiscountDurationMissing}>
+            * {Labels.CPQ_NoDiscountDurationSet}
+        </div>
+    </div>
+</template>
