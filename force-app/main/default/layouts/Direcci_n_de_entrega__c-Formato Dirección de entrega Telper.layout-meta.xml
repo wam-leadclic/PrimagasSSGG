@@ -64,6 +64,10 @@
                 <behavior>Edit</behavior>
                 <field>Producto__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Gestor_Logistico__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
