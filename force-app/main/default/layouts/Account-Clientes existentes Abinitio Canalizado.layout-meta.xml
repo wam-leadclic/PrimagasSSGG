@@ -49,6 +49,14 @@
                 <field>canalizado_promotor__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Usuario_Web_Clientes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Contrasenya_web_visible__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Nombre_erroneo__c</field>
             </layoutItems>
@@ -66,7 +74,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Usuario_web_cifrado__c</field>
+                <field>Sincronizada__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -263,6 +271,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Emp_Gesti_n_Impagados__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>C_digo_tarifa__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

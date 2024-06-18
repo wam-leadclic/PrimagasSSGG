@@ -30,7 +30,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Contrasenya_web_visible__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Notas_Maestro__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sincronizada__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -148,6 +156,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Emp_Gesti_n_Impagados__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>C_digo_tarifa__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
