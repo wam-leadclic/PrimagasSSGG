@@ -265,10 +265,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>C_digo_tarifa__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Origen_de_modificacion__c</field>
             </layoutItems>
             <layoutItems>
